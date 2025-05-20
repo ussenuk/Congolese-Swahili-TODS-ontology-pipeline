@@ -1,0 +1,74 @@
+version: "3.1"
+
+nlu:
+  - intent: query_health_facilities_swa
+    examples: |
+      - nina penda nijue [hospitali](health_facility) [ndogo](change_amount) zenye ziko apa  
+      - ni wapi njo kuko ma [hospitali](health_facility) [ndogo](change_amount) apa [Goma](location)?
+      - nina penda nifike ku [hospitali](health_facility) [ndogo](change_amount) yenye iko karibu na [Bulengo](location)
+      - [hospitali](health_facility) [ndogo](change_amount) zina pana [ndui](service_type)?
+      - wapi njo nina weza [tunziwa](service_type) [malaria](sickness_type) pembeni ya [Nyiragongo](location)?
+      - nina weza [tunziwa](service_type) [Rutshuru](location)?
+      - [Kliniki](health_facility) zaku [tunza](service_type) [watoto](person) ziko wapi? 
+      - pa [Goma](location) ma [hospitali](health_facility) zina [tunzaka](service_type) [malali](sickness_type) gani?
+      - wapi njo nta pata [hospitali](health_facility) kwenye bata nipa [dawa](service_type) ya [mtu](person) wa [ukimwi](sickness_type)
+      - wapi njo nineza [tunziwa](service_type) [homa](sickness_type)?
+      - [hospitali](health_facility) za [Bulengo](location) zina [tunzaka](service_type) nini?
+      - kuko [hospitali](health_facility) zaku [zalisha](service_type)?
+      - niko na lazima ya [hospitali](health_facility) yenye ina [tunza](service_type) [malaria](sickness_type) pa [Nyiragongo](location)
+      - [hospitali](health_facility) zenye zina panaka [ndui](service_type) ziko [wapi](location)?
+      - Nitafute [hospitali](health_facility) karibu na [kambi](location) ya [Rutshuru](location)
+
+  - intent: query_water_sources_swa
+    examples: |
+      - kuko [fasi](location) yaku [shoteya](service_type) [mayi](water_source)?
+      - [wapi](location) njo nta pata [mayi](water_source) ya kunywa mu [Goma]?
+      - [robinets](water_source) ziko [wapi](location) apa [Bulengo](location)?
+      - [majii](water_source) safi ita patikana [wapi](location)? 
+      - [Nyiragongo](location) kuko mayi yaku tueneya siye bote?
+      - [Kisima](location) cha [maji](water_source) kiko [wapi](location) karibu na [Rutshuru](location)?
+      - kuko shida ya [mayi](water_source) [Goma](location)?
+      - [fasi](location) yaku [shoteya](service_type) kuko muzuri ndani ya [kambi](location)?
+      - [maji](water_source) ya kunywa tuta ipata [wapi](location)?
+      - nina penda nijue gisi ntakuwa na pata [mayi](water_source) [Bulengo](location)
+      - pemmbeni ya [kambi](location) kuko [fasi](location) yaku [shoteya](service_type) [mayi](water_source)?
+      - [mayi](water_source) yenye tuko na tumikisha ina tokaka [wapi](location)?
+      - [mayi](water_source) ya [Nyiragongo](location) ni ya muzuri?
+      - [robinet](water_source) yenye iko na [mayi](water_source) ya muzuri iko [wapi](location)?
+      - [mayi](water_source) iko [wapi](location) karibu na [Rutshuru](location)?
+
+  - intent: query_camps_swa
+    examples: |
+      - [Kambi](location) za [wakimbizi](person) ziko [wapi](location)?
+      - [Kambi](location) ya [wakimbizi](person) iko ngambo gani mu [Goma](location)?
+      - niambiye byenye una juwa juu ya [kambi](location) ya [bulengo](location)
+      - ku kambi gani njo kungali [fasi](location) yaku [pokeya](service_type) batu ba mupya?
+      - [kambi](location) za [Nyiragongo](location) zina weza pokeya [watu](person) ngapi?
+      - nina penda nijue [kambi](location) zenye ziko [rutshuru](location)
+      - ni [kambi](location) gani njo iko na [batu](person) ba mingi?
+      - [Kambi](location) za mupya ziko [wapi](location)?
+      - nina penda nipate habari juu ya [kambi](location) za [Goma](location)
+      - ni [kambi](location) gani njo iko na [pokeya](service_type) [bakimbizi](person) ba mupya?
+      - [kambi](location) ya [Bulengo](location) ina weza [pokeya](service_type) [batu](person) ngapi? 
+      - mu [kambi](location) gani njo bana [kamata](service_type) [batu](person) bien?
+      - [nyiragongo](location) kuko [kambi](location)?
+      - niko na tafuta [kambi](location) ya karibu
+      - ma [kambi](location) za [Rutshuru](location) zina fanana aye?
+
+  - intent: submit_aid_request_swa
+    examples: |
+      - niko na lazima ya [mayi](request_type)
+      - niko na lazima yaku [tunziwa](request_type)
+      - niko na lazima ya [dawa](request_type)
+      - nina taka sema juu ya ukosefu wa [usalama](request_type)
+      - niko na lazima ya [hema](request_type) kwaku lalisha [familia](person) yangu
+      - Ninaomba [dawa](request_type) kwa [mtoto](person) mgonjwa
+      - [viongozi](person) watu saidiye na [masomo ya bure](request_type)
+      - [familia](person) yangu iko na lazima ya [chakula](request_type)
+      - Mimi ni [Bahati](person_name), niko na lazima ya [mayi](request_type)
+      - [Mugisha](person_name) iko na lazima ya [kutunziwa](request_type)
+      - niko na lazima ya [blanketi](request_type) juu nisi pate baridi
+      - Naomba [sabuni](request_type) ya kuoga
+      - niko na lazima ya [nafasi](request_type) yaku ishi mu [Goma](location)
+      - niko na lazima yaku kuenda [Bulengo](location)
+      - niko na lazima [pesa](request_type) ya kusaidiya [familia](person) yangu

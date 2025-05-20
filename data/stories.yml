@@ -1,0 +1,2143 @@
+version: "3.1"
+
+stories:
+
+- story: happy path_swa
+  steps:
+  - intent: greet_swa
+  - action: utter_greet_swa
+  - intent: mood_great_swa
+  - action: utter_happy_swa
+
+- story: happy path_fr
+  steps:
+  - intent: greet_fr
+  - action: utter_greet_fr
+  - intent: mood_great_fr
+  - action: utter_happy_fr
+
+- story: sad path 1_swa
+  steps:
+  - intent: greet_swa
+  - action: utter_greet_swa
+  - intent: mood_unhappy_swa
+  - action: utter_cheer_up_swa
+  - action: utter_did_that_help_swa
+  - intent: affirm_swa
+  - action: utter_happy_swa
+
+- story: sad path 1_fr
+  steps:
+  - intent: greet_fr
+  - action: utter_greet_fr
+  - intent: mood_unhappy_fr
+  - action: utter_cheer_up_fr
+  - action: utter_did_that_help_fr
+  - intent: affirm_fr
+  - action: utter_happy_fr
+
+- story: sad path 2_swa
+  steps:
+  - intent: greet_swa
+  - action: utter_greet_swa
+  - intent: mood_unhappy_swa
+  - action: utter_cheer_up_swa
+  - action: utter_did_that_help_swa
+  - intent: deny_swa
+  - action: utter_goodbye_swa
+
+- story: sad path 2_fr
+  steps:
+  - intent: greet_fr
+  - action: utter_greet_fr
+  - intent: mood_unhappy_fr
+  - action: utter_cheer_up_fr
+  - action: utter_did_that_help_fr
+  - intent: deny_fr
+  - action: utter_goodbye_fr
+
+- story: story path one_swa
+  steps:
+  - intent: maji_kunywa_swa
+  - action: utter_maji_kunywa_swa
+
+- story: story path two_swa
+  steps:
+  - intent: mafunzo_kupata_swa
+  - action: utter_mafunzo_kupata_swa
+
+- story: story path three_swa
+  steps:
+  - intent: hema_kupata_swa
+  - action: utter_hema_kupata_swa
+
+- story: story path four_swa
+  steps:
+  - intent: kunyanyaswa_swa
+  - action: utter_kunyanyaswa_swa
+
+- story: story path five_swa
+  steps:
+  - intent: vita_wakati_swa
+  - action: utter_vita_wakati_swa
+
+- story: story path six_swa
+  steps:
+  - intent: choo_swa
+  - action: utter_choo_swa
+
+- story: story path seven_swa
+  steps:
+  - intent: kupokelewa_swa
+  - action: utter_kupokelewa_swa
+
+- story: story path eight_swa
+  steps:
+  - intent: kupata_ndui_swa
+  - action: utter_kupata_ndui_swa
+
+- story: story path nine_swa
+  steps:
+  - intent: chakula_swa
+  - action: utter_chakula_swa
+
+- story: story path ten_swa
+  steps:
+  - intent: maji_kuwa_kidogo_swa
+  - action: utter_maji_kuwa_kidogo_swa
+
+- story: story path eleven_swa
+  steps:
+  - intent: matibabu_swa
+  - action: utter_matibabu_swa
+
+- story: story path twelve_swa
+  steps:
+  - intent: kazi_bila_kazi_swa
+  - action: utter_kazi_bila_kazi_swa
+
+- story: story path thirteen_swa
+  steps:
+  - intent: masomo_bure_swa
+  - action: utter_masomo_bure_swa
+
+- story: story path fourteen_swa
+  steps:
+  - intent: vyeti_vya_shule_swa
+  - action: utter_vyeti_vya_shule_swa
+
+- story: story path fifteen_swa
+  steps:
+  - intent: watoto_walio_poteya_swa
+  - action: utter_watoto_walio_poteya_swa
+
+- story: story path sixteen_swa
+  steps:
+  - intent: ubakaji_wakimbizi_wapi_swa
+  - action: utter_ubakaji_wakimbizi_wapi_swa
+
+- story: story path seventeen_swa
+  steps:
+  - intent: usalama_swa
+  - action: utter_usalama_swa
+
+- story: story path eighteen_swa
+  steps:
+  - intent: viongozi_nyamaza_swa
+  - action: utter_viongozi_nyamaza_swa
+
+- story: story path nineteen_swa
+  steps:
+  - intent: kuhara_swa
+  - action: utter_kuhara_swa
+
+- story: story path twenty_swa
+  steps:
+  - intent: kuandikiwa_swa
+  - action: utter_kuandikiwa_swa
+
+- story: story path twentyone_swa
+  steps:
+  - intent: maisha_swa
+  - action: utter_maisha_swa
+
+- story: story path twentytwo_swa
+  steps:
+  - intent: serkali_swa
+  - action: utter_serkali_swa
+
+- story: story path twentythree_swa
+  steps:
+  - intent: kazi_zita_pata_swa
+  - action: utter_kazi_zita_pata_swa
+
+- story: story path twentyfour_swa
+  steps:
+  - intent: kazi_zitakapata_swa
+  - action: utter_kazi_zitakapata_swa
+
+- story: story path twentyfive_swa
+  steps:
+  - intent: msaada_kwa_siye_bote_swa
+  - action: utter_msaada_kwa_siye_bote_swa
+
+- story: story path twentysix_swa
+  steps:
+  - intent: msaada_kwa_mtu_swa
+  - action: utter_msaada_kwa_mtu_swa
+
+- story: story path twentyseven_swa
+  steps:
+  - intent: kuandikisha_swa
+  - action: utter_kuandikisha_swa
+
+- story: story path twentyeight_swa
+  steps:
+  - intent: mashindano_ya_serkali_swa
+  - action: utter_mashindano_ya_serkali_swa
+
+- story: story path twentynine_swa
+  steps:
+  - intent: mashindano_wa_serikali_swa
+  - action: utter_mashindano_wa_serikali_swa
+
+- story: story path thirty_swa
+  steps:
+  - intent: haki_kwa_wakimbizi_swa
+  - action: utter_haki_kwa_wakimbizi_swa
+
+- story: story path thirtyone_swa
+  steps:
+  - intent: malisho_mabaya_swa
+  - action: utter_malisho_mabaya_swa
+
+- story: story path thirtytwo_swa
+  steps:
+  - intent: wakimbizi_swa
+  - action: utter_wakimbizi_swa
+
+- story: story path thirtythree_swa
+  steps:
+  - intent: uizi_swa
+  - action: utter_uizi_swa
+
+- story: story path thirtyfour_swa
+  steps:
+  - intent: mafugo_swa
+  - action: utter_mafugo_swa
+
+- story: story path thirtyfive_swa
+  steps:
+  - intent: kulala_kwa_wanaume_na_wanawake_swa
+  - action: utter_kulala_kwa_wanaume_na_wanawake_swa
+
+- story: story path thirtysix_swa
+  steps:
+  - intent: msaada_swa
+  - action: utter_msaada_swa
+
+- story: story path thirtyseven_swa
+  steps:
+  - intent: vita_kwetu_swa
+  - action: utter_vita_kwetu_swa
+
+- story: story path thirtyeight_swa
+  steps:
+  - intent: uchafu_swa
+  - action: utter_uchafu_swa
+
+- story: story path thirtynine_swa
+  steps:
+  - intent: kurudi_swa
+  - action: utter_kurudi_swa
+
+- story: story path forty_swa
+  steps:
+  - intent: vita_m23_swa
+  - action: utter_vita_m23_swa
+
+- story: story path fortyone_swa
+  steps:
+  - intent: vita_jeshi_yetu_swa
+  - action: utter_vita_jeshi_yetu_swa
+
+- story: story path fortytwo_swa
+  steps:
+  - intent: maongezi_swa
+  - action: utter_maongezi_swa
+
+- story: story path fortythree_swa
+  steps:
+  - intent: vita_kongo_rwanda_swa
+  - action: utter_vita_kongo_rwanda_swa
+
+- story: story path fortyfour_swa
+  steps:
+  - intent: askari_swa
+  - action: utter_askari_swa
+
+- story: story path fortyfive_swa
+  steps:
+  - intent: viongozi_swa
+  - action: utter_viongozi_swa
+
+- story: story path fortysix_swa
+  steps:
+  - intent: wazalendo_swa
+  - action: utter_wazalendo_swa
+
+- story: story path fortyseven_swa
+  steps:
+  - intent: wazalendo_jeshi_yetu_swa
+  - action: utter_wazalendo_jeshi_yetu_swa
+
+- story: story path fortyeight_swa
+  steps:
+  - intent: masomo_shida_swa
+  - action: utter_masomo_shida_swa
+
+- story: story path fortynine_swa
+  steps:
+  - intent: vita_faidika_swa
+  - action: utter_vita_faidika_swa
+
+- story: story path fifty_swa
+  steps:
+  - intent: vita_sababu_swa
+  - action: utter_vita_sababu_swa
+
+- story: story path fiftyone_swa
+  steps:
+  - intent: vita_rutchuru_swa
+  - action: utter_vita_rutchuru_swa
+
+- story: story path fiftytwo_swa
+  steps:
+  - intent: kuzika_swa
+  - action: utter_kuzika_swa
+
+- story: story path fiftythree_swa
+  steps:
+  - intent: kuliya_swa
+  - action: utter_kuliya_swa
+
+- story: story path fiftyfour_swa
+  steps:
+  - intent: kuliya_lala_baches_swa
+  - action: utter_kuliya_lala_baches_swa
+
+- story: story path fiftyfive_swa
+  steps:
+  - intent: kuliya_maliza_vita_swa
+  - action: utter_kuliya_maliza_vita_swa
+
+- story: story path fiftysix_swa
+  steps:
+  - intent: vita_ime_anza_swa
+  - action: utter_vita_ime_anza_swa
+
+- story: story path fiftyseven_swa
+  steps:
+  - intent: kuliya_wakongomani_wengine_swa
+  - action: utter_kuliya_wakongomani_wengine_swa
+
+- story: story path fiftyeight_swa
+  steps:
+  - intent: ubakaji_wabinti_wamama_swa
+  - action: utter_ubakaji_wabinti_wamama_swa
+
+- story: story path fiftynine_swa
+  steps:
+  - intent: kuliya_faida_wakongomani_swa
+  - action: utter_kuliya_faida_wakongomani_swa
+
+- story: story path sixty_swa
+  steps:
+  - intent: kuliya_kongo_rwanda_swa
+  - action: utter_kuliya_kongo_rwanda_swa
+
+- story: story path sixtyone_swa
+  steps:
+  - intent: kuliya_eac_sadec_wazungu_swa
+  - action: utter_kuliya_eac_sadec_wazungu_swa
+
+- story: story path sixtytwo_swa
+  steps:
+  - intent: kuliya_viongozi_wa_kongo_na_m23_swa
+  - action: utter_kuliya_viongozi_wa_kongo_na_m23_swa
+
+- story: story path sixtythree_swa
+  steps:
+  - intent: kuliya_m23_wakongomani_swa
+  - action: utter_kuliya_m23_wakongomani_swa
+
+- story: story path sixtyfour_swa
+  steps:
+  - intent: kuliya_ina_sapoti_swa
+  - action: utter_kuliya_ina_sapoti_swa
+
+- story: story path sixtyfive_swa
+  steps:
+  - intent: kuliya_uganda_kongo_swa
+  - action: utter_kuliya_uganda_kongo_swa
+
+- story: story path sixtysix_swa
+  steps:
+  - intent: kuliya_wetu_viongozi_sisi_swa
+  - action: utter_kuliya_wetu_viongozi_sisi_swa
+
+- story: story path sixtyseven_swa
+  steps:
+  - intent: kuzika_wakimbizi_wapi_swa
+  - action: utter_kuzika_wakimbizi_wapi_swa
+
+- story: story path sixtyeight_swa
+  steps:
+  - intent: kuzika_wanao_kufa_swa
+  - action: utter_kuzika_wanao_kufa_swa
+
+- story: story path sixtynine_swa
+  steps:
+  - intent: kambi_wakimbizi_wote_swa
+  - action: utter_kambi_wakimbizi_wote_swa
+
+- story: story path seventy_swa
+  steps:
+  - intent: usalama_kambi_swa
+  - action: utter_usalama_kambi_swa
+
+- story: story path seventyone_swa
+  steps:
+  - intent: kuliya_saidiya_kwa_wakongomani_swa
+  - action: utter_kuliya_saidiya_kwa_wakongomani_swa
+
+- story: story path seventytwo_swa
+  steps:
+  - intent: wazalendo_wame_kwa_wapi_swa
+  - action: utter_wazalendo_wame_kwa_wapi_swa
+
+- story: story path seventythree_swa
+  steps:
+  - intent: mauwaji_swa
+  - action: utter_mauwaji_swa
+
+- story: story path seventyfour_swa
+  steps:
+  - intent: wazalendo_wame_pewa_mamlaka_swa
+  - action: utter_wazalendo_wame_pewa_mamlaka_swa
+
+- story: bot challenge_swa
+  steps:
+  - intent: bot_challenge_swa
+  - action: utter_bot_challenge_swa
+
+- story: bot challenge_fr
+  steps:
+  - intent: bot_challenge_fr
+  - action: utter_bot_challenge_fr
+
+- story: who are you_swa
+  steps:
+  - intent: who_are_you_swa
+  - action: utter_who_are_you_swa
+
+- story: who are you_fr
+  steps:
+  - intent: who_are_you_fr
+  - action: utter_who_are_you_fr
+
+- story: goodbye_swa
+  steps:
+  - intent: goodbye_swa
+  - action: utter_goodbye_swa
+
+- story: goodbye_fr
+  steps:
+  - intent: goodbye_fr
+  - action: utter_goodbye_fr
+
+- story: story path twohundredtwentysix_swa
+  steps:
+  - intent: mashaka_nani_ali_anzaka_vita_swa
+  - action: utter_mashaka_nani_ali_anzaka_vita_swa
+
+- story: story path twohundredtwentyseven_swa
+  steps:
+  - intent: mashaka_watoto_wakimbizi_wapi_kwa_kesho_swa
+  - action: utter_mashaka_watoto_wakimbizi_wapi_kwa_kesho_swa
+
+- story: story path twohundredtwentyeight_swa
+  steps:
+  - intent: mashaka_wenswa_kwa_wakimbizi_wapi_swa
+  - action: utter_mashaka_wenswa_kwa_wakimbizi_wapi_swa
+
+- story: story path twohundredtwentynine_swa
+  steps:
+  - intent: mashaka_duniya_mzima_kwa_kilio_swa
+  - action: utter_mashaka_duniya_mzima_kwa_kilio_swa
+
+- story: story path twohundredthirty_swa
+  steps:
+  - intent: mashaka_umoja_wa_mataifa_kwa_teseka_swa
+  - action: utter_mashaka_umoja_wa_mataifa_kwa_teseka_swa
+
+- story: story path twohundredthirtyone_swa
+  steps:
+  - intent: mashaka_kuko_kwa_teseka_apa_swa
+  - action: utter_mashaka_kuko_kwa_teseka_apa_swa
+
+- story: story path twohundredthirtytwo_swa
+  steps:
+  - intent: mashaka_nyumbani_kwa_goma_swa
+  - action: utter_mashaka_nyumbani_kwa_goma_swa
+
+- story: story path twohundredthirtythree_swa
+  steps:
+  - intent: mashaka_apa_kuko_usalama_swa
+  - action: utter_mashaka_apa_kuko_usalama_swa
+
+- story: story path twohundredthirtyfour_swa
+  steps:
+  - intent: kulala_na_watoto_wanazaliwa_swa
+  - action: utter_kulala_na_watoto_wanazaliwa_swa
+
+- story: story path twohundredthirtyfive_swa
+  steps:
+  - intent: kulala_na_wazehe_wakongwe_swa
+  - action: utter_kulala_na_wazehe_wakongwe_swa
+
+- story: story path twohundredthirtysix_swa
+  steps:
+  - intent: kulala_na_wazazi_na_watoto_swa
+  - action: utter_kulala_na_wazazi_na_watoto_swa
+
+- story: story path twohundredthirtyseven_swa
+  steps:
+  - intent: mashaka_viongosi_nafasi_swa
+  - action: utter_mashaka_viongosi_nafasi_swa
+
+- story: story path twohundredthirtyeight_swa
+  steps:
+  - intent: viwanja_chakula_kila_siku_ku_mustariswa_swa
+  - action: utter_viwanja_chakula_kila_siku_ku_mustariswa_swa
+
+- story: story path twohundredthirtynine_swa
+  steps:
+  - intent: mashaka_chakula_sawa_sawa_swa
+  - action: utter_mashaka_chakula_sawa_sawa_swa
+
+- story: story path twohundredforty_swa
+  steps:
+  - intent: chakula_chagua_nina_penda_swa
+  - action: utter_chakula_chagua_nina_penda_swa
+
+- story: story path twohundredfortyone_swa
+  steps:
+  - intent: chakula_tuta_kuwa_na_shiba_swa
+  - action: utter_chakula_tuta_kuwa_na_shiba_swa
+
+- story: story path twohundredfortytwo_swa
+  steps:
+  - intent: chakula_hai_eneye_swa
+  - action: utter_chakula_hai_eneye_swa
+
+- story: story path twohundredfortyfour_swa
+  steps:
+  - intent: maisha_onekana_kama_wa_maskini_sana_swa
+  - action: utter_maisha_onekana_kama_wa_maskini_sana_swa
+
+- story: story path twohundredfortyfive_swa
+  steps:
+  - intent: maisha_hali_itadumu_siku_mingi_swa
+  - action: utter_maisha_hali_itadumu_siku_mingi_swa
+
+- story: story path twohundredfortysix_swa
+  steps:
+  - intent: matunzo_nyiragongo_kuko_vituo_ngapi_vya_afya_swa
+  - action: utter_matunzo_nyiragongo_kuko_vituo_ngapi_vya_afya_swa
+
+- story: story path twohundredfortyseven_swa
+  steps:
+  - intent: maisha_yenye_nili_ishi_swa
+  - action: utter_maisha_yenye_nili_ishi_swa
+
+- story: story path twohundredfortyeight_swa
+  steps:
+  - intent: maisha_zala_katika_hali_nzuri_swa
+  - action: utter_maisha_zala_katika_hali_nzuri_swa
+
+- story: story path twohundredseventyone_swa
+  steps:
+  - intent: mashaka_nasiye_tukamate_silaha_swa
+  - action: utter_mashaka_nasiye_tukamate_silaha_swa
+
+- story: story path twohundredseventytwo_swa
+  steps:
+  - intent: mashaka_juu_ya_nini_niko_na_pumua_mubaya_swa
+  - action: utter_mashaka_juu_ya_nini_niko_na_pumua_mubaya_swa
+
+- story: story path twohundredseventythree_swa
+  steps:
+  - intent: mashaka_juu_ya_nini_usiku_silale_swa
+  - action: utter_mashaka_juu_ya_nini_usiku_silale_swa
+
+- story: story path twohundredseventyfour_swa
+  steps:
+  - intent: mashaka_kuna_Kongo_na_Rwanda_wata_ishi_kwa_Amani_swa
+  - action: utter_mashaka_kuna_Kongo_na_Rwanda_wata_ishi_kwa_Amani_swa
+
+- story: story path twohundredseventyfive_swa
+  steps:
+  - intent: mashaka_watoto_wetu_wata_komala_na_roho_muzuri_swa
+  - action: utter_mashaka_watoto_wetu_wata_komala_na_roho_muzuri_swa
+
+- story: story path twohundredseventysix_swa
+  steps:
+  - intent: mashaka_watoto_wetu_hawata_geuka_wa_bandiya_swa
+  - action: utter_mashaka_watoto_wetu_hawata_geuka_wa_bandiya_swa
+
+- story: story path twohundredseventyseven_swa
+  steps:
+  - intent: mashaka_juu_ya_nini_bangi_iko_mu_kambi_swa
+  - action: utter_mashaka_juu_ya_nini_bangi_iko_mu_kambi_swa
+
+- story: story path twohundredseventyeight_swa
+  steps:
+  - intent: mashaka_tuta_sahawaka_iyi_mateso_ndani_swa
+  - action: utter_mashaka_tuta_sahawaka_iyi_mateso_ndani_swa
+
+- story: story path twohundredseventynine_swa
+  steps:
+  - intent: mashaka_tuta_pataka_amani_ya_roho_ndani_zetu_swa
+  - action: utter_mashaka_tuta_pataka_amani_ya_roho_ndani_zetu_swa
+
+- story: story path twohundredeighty_swa
+  steps:
+  - intent: mashaka_na_weza_kuwaminiya_tena_viongozi_swa
+  - action: utter_mashaka_na_weza_kuwaminiya_tena_viongozi_swa
+
+- story: story path twohundredeightyone_swa
+  steps:
+  - intent: mashaka_kusema_kinyarwanda_apa_goma_ita_onekana_je_swa
+  - action: utter_mashaka_kusema_kinyarwanda_apa_goma_ita_onekana_je_swa
+
+- story: story path twohundredeightytwo_swa
+  steps:
+  - intent: mashaka_ubaguzi_wa_kabila_ina_toka_wapi_swa
+  - action: utter_mashaka_ubaguzi_wa_kabila_ina_toka_wapi_swa
+
+- story: story path twohundredeightythree_swa
+  steps:
+  - intent: mashaka_wanande_wata_itika_na_wa_hutu_bila_shida_apa_swa
+  - action: utter_mashaka_wanande_wata_itika_na_wa_hutu_bila_shida_apa_swa
+
+- story: story path twohundredeightyfour_swa
+  steps:
+  - intent: mashaka_watoto_wata_pendana_wetu_swa
+  - action: utter_mashaka_watoto_wata_pendana_wetu_swa
+
+- story: story path twohundredeightyfive_swa
+  steps:
+  - intent: mashaka_sisi_wakimbiziwenye_tuna_weza_kuwa_na_enda_tembeya_swa
+  - action: utter_mashaka_sisi_wakimbiziwenye_tuna_weza_kuwa_na_enda_tembeya_swa
+
+- story: story path twohundredeightysix_swa
+  steps:
+  - intent: mashaka_duniya_ita_badilikaka_siku_moya_swa
+  - action: utter_mashaka_duniya_ita_badilikaka_siku_moya_swa
+
+- story: story path twohundredeightyseven_swa
+  steps:
+  - intent: wakati_tuta_wezaka_rudisha_wakati_yenye_tusha_poteza_swa
+  - action: utter_wakati_tuta_wezaka_rudisha_wakati_yenye_tusha_poteza_swa
+
+- story: story path twohundredeightyeight_swa
+  steps:
+  - intent: kifo_hatuta_kufa_siye_bote_swa
+  - action: utter_kifo_hatuta_kufa_siye_bote_swa
+
+- story: story path twohundredeightynine_swa
+  steps:
+  - intent: mashaka_mwisho_ya_iyi_mateso_ni_nini_swa
+  - action: utter_mashaka_mwisho_ya_iyi_mateso_ni_nini_swa
+
+- story: story path twohundredninety_swa
+  steps:
+  - intent: mashaka_tuna_weza_saidiyana_namna_gani_kati_yetu_swa
+  - action: utter_mashaka_tuna_weza_saidiyana_namna_gani_kati_yetu_swa
+
+- story: story path twohundrednintyone_swa
+  steps:
+  - intent: ugonvi_tuta_epuka_ugonvi_namna_gani_swa
+  - action: utter_ugonvi_tuta_epuka_ugonvi_namna_gani_swa
+
+- story: story path twohundrednintytwo_swa
+  steps:
+  - intent: masambo_jirani_wake_kosana_wata_samba_wapi_swa
+  - action: utter_masambo_jirani_wake_kosana_wata_samba_wapi_swa
+
+- story: story path twohundredninetythree_swa
+  steps:
+  - intent: mashaka_tuna_onekana_kama_watu_swa
+  - action: utter_mashaka_tuna_onekana_kama_watu_swa
+
+- story: story path twohundredninetyfour_swa
+  steps:
+  - intent: mali_nani_ata_lipaka_mali_yetu_yenye_isha_poteya_swa
+  - action: utter_mali_nani_ata_lipaka_mali_yetu_yenye_isha_poteya_swa
+
+- story: story path twohundredninetyfive_swa
+  steps:
+  - intent: mashaka_wenye_wali_baki_masisi_wana_ishi_je_swa
+  - action: utter_mashaka_wenye_wali_baki_masisi_wana_ishi_je_swa
+
+- story: story path twohundredninetysix_swa
+  steps:
+  - intent: mashaka_ju_ya_nini_ma_gombora_ziko_na_anguka_mu_ma_kambi_swa
+  - action: utter_mashaka_ju_ya_nini_ma_gombora_ziko_na_anguka_mu_ma_kambi_swa
+
+- story: story path twohundredninetyseven_swa
+  steps:
+  - intent: mashaka_apa_kuko_wa_askari_waku_tosha_juya_ku_tu_chunga_sisi_wote_swa
+  - action: utter_mashaka_apa_kuko_wa_askari_waku_tosha_juya_ku_tu_chunga_sisi_wote_swa
+
+- story: story path twohundrednintyeight_swa
+  steps:
+  - intent: vita_nasiye_tuende_fanya_vita_rwanda_swa
+  - action: utter_vita_nasiye_tuende_fanya_vita_rwanda_swa
+
+- story: story path twohundrednintynine_swa
+  steps:
+  - intent: maswali_kazi_ya_croix_rouge_ni_nini_swa
+  - action: utter_maswali_kazi_ya_croix_rouge_ni_nini_swa
+
+- story: story path threehundred_swa
+  steps:
+  - intent: wakimbizi_mukimbizi_ana_pashwa_kula_mara_ngapi_kwa_siku_swa
+  - action: utter_wakimbizi_mukimbizi_ana_pashwa_kula_mara_ngapi_kwa_siku_swa
+
+- story: story path threehundredone_swa
+  steps:
+  - intent: watutsi_nina_weza_fanya_urafiki_na_mututsi_swa
+  - action: utter_watutsi_nina_weza_fanya_urafiki_na_mututsi_swa
+
+- story: story path threehundredtwo_swa
+  steps:
+  - intent: wakimbizi_watutsi_wote_ni_watu_wabaya_swa
+  - action: utter_wakimbizi_watutsi_wote_ni_watu_wabaya_swa
+
+- story: story path threehundredthree_swa
+  steps:
+  - intent: undugu_wa_nani_njo_wa_ndugu_yetu_apa_swa
+  - action: utter_undugu_wa_nani_njo_wa_ndugu_yetu_apa_swa
+
+- story: story path threehundredfour_swa
+  steps:
+  - intent: utulizo_ya_iyi_matata_yote_ita_fanyikaka_swa
+  - action: utter_utulizo_ya_iyi_matata_yote_ita_fanyikaka_swa
+
+- story: story path threehundredfive_swa
+  steps:
+  - intent: mashaka_reparation_ita_fanyikaka_swa
+  - action: utter_mashaka_reparation_ita_fanyikaka_swa
+
+- story: story path threehundredsix_swa
+  steps:
+  - intent: mashaka_tuna_weza_ona_iyi_vita_kama_genocide_swa
+  - action: utter_mashaka_tuna_weza_ona_iyi_vita_kama_genocide_swa
+
+- story: story path threehundredseven_swa
+  steps:
+  - intent: mashaka_ni_wakati_gani_njo_tuna_weza_sema_vita_ni_genocide_swa
+  - action: utter_mashaka_ni_wakati_gani_njo_tuna_weza_sema_vita_ni_genocide_swa
+
+- story: story path threehundredeight_swa
+  steps:
+  - intent: mashaka_kabila_tafauti_na_tu_aminiyane_swa
+  - action: utter_mashaka_kabila_tafauti_na_tu_aminiyane_swa
+
+- story: story path threehundrednine_swa
+  steps:
+  - intent: mashaka_o_swa
+  - action: utter_mashaka_o_swa
+
+- story: story path threehundredten_swa
+  steps:
+  - intent: ziwa_kivu_iko_wapi_swa
+  - action: utter_ziwa_kivu_iko_wapi_swa
+
+- story: story path threehundredeleven_swa
+  steps:
+  - intent: muungano_tuna_weza_ungana_na_hatu_juwane_swa
+  - action: utter_muungano_tuna_weza_ungana_na_hatu_juwane_swa
+
+- story: story path threehundredtwelve_swa
+  steps:
+  - intent: watu_wazuri_wangali_duniyani_swa
+  - action: utter_watu_wazuri_wangali_duniyani_swa
+
+- story: story path threehundredthirteen_swa
+  steps:
+  - intent: vita_juu_ya_nini_ina_kwaiya_swa
+  - action: utter_vita_juu_ya_nini_ina_kwaiya_swa
+
+- story: story path threehundredfourteen_swa
+  steps:
+  - intent: amani_ingali_nakuwaka_swa
+  - action: utter_amani_ingali_nakuwaka_swa
+
+- story: story path threehundredfifteen_swa
+  steps:
+  - intent: hasira_ita_ishaka_kweli_swa
+  - action: utter_hasira_ita_ishaka_kweli_swa
+
+- story: story path threehundredsixteen_swa
+  steps:
+  - intent: mungu_mungu_ata_hurumiyaka_rwanda_swa
+  - action: utter_mungu_mungu_ata_hurumiyaka_rwanda_swa
+
+- story: story path threehundredseventeen_swa
+  steps:
+  - intent: sheriya_weza_lomba_bila_hasira_swa
+  - action: utter_sheriya_weza_lomba_bila_hasira_swa
+
+- story: story path threehundredeighteen_swa
+  steps:
+  - intent: sheriya_ina_kuwaka_mu_kongo_kweli_swa
+  - action: utter_sheriya_ina_kuwaka_mu_kongo_kweli_swa
+
+- story: story path threehundrednineteen_swa
+  steps:
+  - intent: sheriya_waziri_wa_sheriya_swa
+  - action: utter_sheriya_waziri_wa_sheriya_swa
+
+- story: story path threehundredtwenty_swa
+  steps:
+  - intent: kibinadamu_waziri_wa_mambo_ya_kibinadamu_swa
+  - action: utter_kibinadamu_waziri_wa_mambo_ya_kibinadamu_swa
+
+- story: story path threehundredtwentyone_swa
+  steps:
+  - intent: sheriya_waziri_wa_genre_famille_et_enfant_swa
+  - action: utter_sheriya_waziri_wa_genre_famille_et_enfant_swa
+
+- story: story path threehundredtwentytwo_swa
+  steps:
+  - intent: wanyarwanda_wana_pata_usingizi_kweli_swa
+  - action: utter_wanyarwanda_wana_pata_usingizi_kweli_swa
+
+- story: story path threehundredtwentythree_swa
+  steps:
+  - intent: kutoka_tutoke_mu_kongo_swa
+  - action: utter_kutoka_tutoke_mu_kongo_swa
+
+- story: story path threehundredtwentyfour_swa
+  steps:
+  - intent: wanyarwanda_ita_lombaka_huruma_swa
+  - action: utter_wanyarwanda_ita_lombaka_huruma_swa
+
+- story: story path threehundredtwentyfive_swa
+  steps:
+  - intent: watoto_watoto_wetu_wata_pendaka_wanyarwanda_swa
+  - action: utter_watoto_watoto_wetu_wata_pendaka_wanyarwanda_swa
+
+- story: story path threehundredtwentysix_swa
+  steps:
+  - intent: wanyarwanda_wana_pendaka_watu_malize_swa
+  - action: utter_wanyarwanda_wana_pendaka_watu_malize_swa
+
+- story: story path threehundredtwentyseven_swa
+  steps:
+  - intent: watoto_namna_gani_na_weza_kinga_watoto_wangu_swa
+  - action: utter_watoto_namna_gani_na_weza_kinga_watoto_wangu_swa
+
+- story: story path threehundredtwentyeight_swa
+  steps:
+  - intent: ndoa_zita_kuwa_na_wezekana_swa
+  - action: utter_ndoa_zita_kuwa_na_wezekana_swa
+
+- story: story path threehundredtwentynine_swa
+  steps:
+  - intent: ndoa_nani_njo_ata_kuwa_na_tu_lungisha_swa
+  - action: utter_ndoa_nani_njo_ata_kuwa_na_tu_lungisha_swa
+
+- story: story path threehundredthirty_swa
+  steps:
+  - intent: ndoa_tuta_kuwa_na_lungiya_wapi_swa
+  - action: utter_ndoa_tuta_kuwa_na_lungiya_wapi_swa
+
+- story: story path threehundredthirtyone_swa
+  steps:
+  - intent: ndoa_vijana_wa_uku_wana_eza_owa_basika_betu_swa
+  - action: utter_ndoa_vijana_wa_uku_wana_eza_owa_basika_betu_swa
+
+- story: story path threehundredthirtytwo_swa
+  steps:
+  - intent: maisha_uku_wana_eshimiyaka_watu_ya_kazi_swa
+  - action: utter_maisha_uku_wana_eshimiyaka_watu_ya_kazi_swa
+
+- story: story path threehundredthirtythree_swa
+  steps:
+  - intent: maisha_hawata_kuwa_natu_ogopa_uku_swa
+  - action: utter_maisha_hawata_kuwa_natu_ogopa_uku_swa
+
+- story: story path threehundredthirtyfour_swa
+  steps:
+  - intent: maisha_watu_wa_uku_biko_na_umutu_swa
+  - action: utter_maisha_watu_wa_uku_biko_na_umutu_swa
+
+- story: story path threehundredthirtyfive_swa
+  steps:
+  - intent: maisha_nafasi_gani_njo_hatuezi_enda_bila_ruhusa_swa
+  - action: utter_maisha_nafasi_gani_njo_hatuezi_enda_bila_ruhusa_swa
+
+- story: story path threehundredthirtysix_swa
+  steps:
+  - intent: mazuku_na_lac_vert_swa
+  - action: utter_mazuku_na_lac_vert_swa
+
+- story: story path threehundredthirtyseven_swa
+  steps:
+  - intent: mazuku_ni_nini_swa
+  - action: utter_mazuku_ni_nini_swa
+
+- story: story path threehundredthirtyeight_swa
+  steps:
+  - intent: mazuku_ina_uwa_swa
+  - action: utter_mazuku_ina_uwa_swa
+
+- story: story path threehundredthirtynine_swa
+  steps:
+  - intent: mazuku_tufanye_je_ju_tusi_kufe_na_mazuku_swa
+  - action: utter_mazuku_tufanye_je_ju_tusi_kufe_na_mazuku_swa
+
+- story: story path threehundredforty_swa
+  steps:
+  - intent: kambi_kwa_nini_wali_tu_tiya_kambi_ya_bulengo_mbali_na_watu_swa
+  - action: utter_kambi_kwa_nini_wali_tu_tiya_kambi_ya_bulengo_mbali_na_watu_swa
+
+- story: story path threehundredfortyone_swa
+  steps:
+  - intent: kambi_kwa_nini_wali_tiya_kambi_fasi_na_mazuku_swa
+  - action: utter_kambi_kwa_nini_wali_tiya_kambi_fasi_na_mazuku_swa
+
+- story: story path threehundredfortytwo_swa
+  steps:
+  - intent: mazuku_ake_kamatwa_na_mazuku_tunaeza_muokowa_je_swa
+  - action: utter_mazuku_ake_kamatwa_na_mazuku_tunaeza_muokowa_je_swa
+
+- story: story path threehundredfortythree_swa
+  steps:
+  - intent: mazuku_ita_ishaka_kweli_kambi_swa
+  - action: utter_mazuku_ita_ishaka_kweli_kambi_swa
+
+- story: story path threehundredfortyfour_swa
+  steps:
+  - intent: mazuku_mazuku_nayo_ni_moja_kati_ya_mali_za_kongo_swa
+  - action: utter_mazuku_mazuku_nayo_ni_moja_kati_ya_mali_za_kongo_swa
+
+- story: story path threehundredfortyfive_swa
+  steps:
+  - intent: amani_oo_swa
+  - action: utter_amani_oo_swa
+
+- story: story path threehundredfortysix_swa
+  steps:
+  - intent: wakongomani_wanapendaka_wenzao_wenzao_swa
+  - action: utter_wakongomani_wanapendaka_wenzao_wenzao_swa
+
+- story: story path threehundredfortyseven_swa
+  steps:
+  - intent: duniya_ina_fika_mwisho_swa
+  - action: utter_duniya_ina_fika_mwisho_swa
+
+- story: story path threehundredfortyeight_swa
+  steps:
+  - intent: vijana_wa_binti_wa_goma_wata_penda_wa_vijana_wa_masisi_swa
+  - action: utter_vijana_wa_binti_wa_goma_wata_penda_wa_vijana_wa_masisi_swa
+
+- story: story path threehundredfortynine_swa
+  steps:
+  - intent: vijana_wa_binti_wa_goma_wata_penda_wa_vijana_wa_ructhuru_swa
+  - action: utter_vijana_wa_binti_wa_goma_wata_penda_wa_vijana_wa_ructhuru_swa
+
+- story: story path threehundredfifty_swa
+  steps:
+  - intent: kanisa_ita_tu_saidiya_je_swa
+  - action: utter_kanisa_ita_tu_saidiya_je_swa
+
+- story: story path threehundredfiftyone_swa
+  steps:
+  - intent: vijana_wa_goma_wata_pokeya_je_vijana_wenzao_wa_masisi_swa
+  - action: utter_vijana_wa_goma_wata_pokeya_je_vijana_wenzao_wa_masisi_swa
+
+- story: story path threehundredfiftytwo_swa
+  steps:
+  - intent: vijana_kazi_ya_vijana_ita_kuwa_nini_mu_kambi_swa
+  - action: utter_vijana_kazi_ya_vijana_ita_kuwa_nini_mu_kambi_swa
+
+- story: story path threehundredfiftythree_swa
+  steps:
+  - intent: wababa_kazi_ya_wa_baba_ni_nini_ndani_ya_kambi_swa
+  - action: utter_wababa_kazi_ya_wa_baba_ni_nini_ndani_ya_kambi_swa
+
+- story: story path threehundredfiftyfour_swa
+  steps:
+  - intent: radios_za_goma_zita_tu_teteya_swa
+  - action: utter_radios_za_goma_zita_tu_teteya_swa
+
+- story: story path threehundredfiftyfive_swa
+  steps:
+  - intent: makabila_kuko_ubaguzi_ya_wale_ambao_wana_baguwana_juu_ya_ukabila_swa
+  - action: utter_makabila_kuko_ubaguzi_ya_wale_ambao_wana_baguwana_juu_ya_ukabila_swa
+
+- story: story path threehundredfiftysix_swa
+  steps:
+  - intent: makabila_kuko_kabila_gani_njo_ina_watu_wengi_swa
+  - action: utter_makabila_kuko_kabila_gani_njo_ina_watu_wengi_swa
+
+- story: story path threehundredfiftyseven_swa
+  steps:
+  - intent: maisha_watu_wote_wa_goma_wana_ishi_vizuri_swa
+  - action: utter_maisha_watu_wote_wa_goma_wana_ishi_vizuri_swa
+
+- story: story path threehundredfiftyeight_swa
+  steps:
+  - intent: uchumi_goma_ina_simama_swa
+  - action: utter_uchumi_goma_ina_simama_swa
+
+- story: story path threehundredfiftynine_swa
+  steps:
+  - intent: vijana_wa_goma_wana_changiya_je_kwa_amani_swa
+  - action: utter_vijana_wa_goma_wana_changiya_je_kwa_amani_swa
+
+- story: story path threehundredsixty_swa
+  steps:
+  - intent: usalama_hali_ya_usalama_iko_je_mjini_goma_swa
+  - action: utter_usalama_hali_ya_usalama_iko_je_mjini_goma_swa
+
+- story: story path threehundredsixtyone_swa
+  steps:
+  - intent: haki_viongozi_wa_goma_wana_juwa_haki_zetu_swa
+  - action: utter_haki_viongozi_wa_goma_wana_juwa_haki_zetu_swa
+
+- story: story path threehundredsixtytwo_swa
+  steps:
+  - intent: shamba_goma_hakuna_shamba_tuta_paishi_je_swa
+  - action: utter_shamba_goma_hakuna_shamba_tuta_paishi_je_swa
+
+- story: story path threehundredsixtythree_swa
+  steps:
+  - intent: ukarimu_watu_wa_goma_ni_wakarimu_swa
+  - action: utter_ukarimu_watu_wa_goma_ni_wakarimu_swa
+
+- story: story path threehundredsixtyfour_swa
+  steps:
+  - intent: wakristu_wa_goma_wata_saidiya_wa_kristo_wenzao_swa
+  - action: utter_wakristu_wa_goma_wata_saidiya_wa_kristo_wenzao_swa
+
+- story: story path threehundredsixtyfive_swa
+  steps:
+  - intent: waislamu_wa_goma_wata_saidiya_wa_islamu_wenzao_swa
+  - action: utter_waislamu_wa_goma_wata_saidiya_wa_islamu_wenzao_swa
+
+- story: story path threehundredsixtysix_swa
+  steps:
+  - intent: vita_iiyi_ita_ishaka_je_namna_gani_swa
+  - action: utter_vita_iiyi_ita_ishaka_je_namna_gani_swa
+
+- story: story path threehundredsixtyseven_swa
+  steps:
+  - intent: vita_iongozi_biko_naona_iyi_mauwaji_yote_swa
+  - action: utter_vita_iongozi_biko_naona_iyi_mauwaji_yote_swa
+
+- story: story path threehundredsixtyeight_swa
+  steps:
+  - intent: vita_kongo_na_rwanda_naona_iyi_buchokozi_ili_anziyaka_wapi_swa
+  - action: utter_vita_kongo_na_rwanda_naona_iyi_buchokozi_ili_anziyaka_wapi_swa
+
+- story: story path threehundredsixtynine_swa
+  steps:
+  - intent: vita_ju_ya_nini_haki_za_binadamu_hazi_eshimike_swa
+  - action: utter_vita_ju_ya_nini_haki_za_binadamu_hazi_eshimike_swa
+
+- story: story path threehundredseventy_swa
+  steps:
+  - intent: chakula_iyi_chakula_ya_pam_haita_tu_gonjwesha_swa
+  - action: utter_chakula_iyi_chakula_ya_pam_haita_tu_gonjwesha_swa
+
+- story: story path threehundredseventyone_swa
+  steps:
+  - intent: kuni_tuta_kuwa_na_tosha_kuni_wapi_swa
+  - action: utter_kuni_tuta_kuwa_na_tosha_kuni_wapi_swa
+
+- story: story path threehundredseventytwo_swa
+  steps:
+  - intent: kuni_kuwaka_makuni_swa
+  - action: utter_kuni_kuwaka_makuni_swa
+
+- story: story path threehundredseventythree_swa
+  steps:
+  - intent: makala_mufuko_ni_ngapi_goma_swa
+  - action: utter_makala_mufuko_ni_ngapi_goma_swa
+
+- story: story path threehundredseventyfour_swa
+  steps:
+  - intent: makala_nyiragongo_swa
+  - action: utter_makala_nyiragongo_swa
+
+- story: story path threehundredseventyfive_swa
+  steps:
+  - intent: makala_mercycorps_swa
+  - action: utter_makala_mercycorps_swa
+
+- story: story path threehundredseventysix_swa
+  steps:
+  - intent: maisha_kambi_vizuri_siku_swa
+  - action: utter_maisha_kambi_vizuri_siku_swa
+
+- story: story path threehundredseventyseven_swa
+  steps:
+  - intent: maisha_tena_ku_mwanzo_swa
+  - action: utter_maisha_tena_ku_mwanzo_swa
+
+- story: story path threehundredseventyeight_swa
+  steps:
+  - intent: maisha_umaskini_watoto_wangu_wana_niona_je_swa
+  - action: utter_maisha_umaskini_watoto_wangu_wana_niona_je_swa
+
+- story: story path threehundredseventynine_swa
+  steps:
+  - intent: maisha_watoto_hawata_ni_chukiya_swa
+  - action: utter_maisha_watoto_hawata_ni_chukiya_swa
+
+- story: story path threehundredeighty_swa
+  steps:
+  - intent: maisha_i_watoto_endeleya_kuni_sikiya_katika_umaskini_swa
+  - action: utter_maisha_i_watoto_endeleya_kuni_sikiya_katika_umaskini_swa
+
+- story: story path threehundredeightyOne_swa
+  steps:
+  - intent: maisha_iko_nguvu_goma_swa
+  - action: utter_maisha_iko_nguvu_goma_swa
+
+- story: story path threehundredeightyTwo_swa
+  steps:
+  - intent: maisha_tuta_weza_maisha_ya_goma_bila_makazi_swa
+  - action: utter_maisha_tuta_weza_maisha_ya_goma_bila_makazi_swa
+
+- story: story path threehundredeightyThree_swa
+  steps:
+  - intent: maisha_wa_ume_wetu_hawata_geuka_wa_mwizi_swa
+  - action: utter_maisha_wa_ume_wetu_hawata_geuka_wa_mwizi_swa
+
+- story: story path threehundredeightyFour_swa
+  steps:
+  - intent: maisha_tuta_choma_mwizi_gani_swa
+  - action: utter_maisha_tuta_choma_mwizi_gani_swa
+
+- story: story path threehundredeightySix_swa
+  steps:
+  - intent: wizi_wata_isha_je_ndani_ya_kambi_swa
+  - action: utter_wizi_wata_isha_je_ndani_ya_kambi_swa
+
+- story: story path threehundredeightySeven_swa
+  steps:
+  - intent: usalama_bunduki_zina_fikaka_swa
+  - action: utter_usalama_bunduki_zina_fikaka_swa
+
+- story: story path threehundredeightyEight_swa
+  steps:
+  - intent: usalama_bunduki_patiyaka_wakimbizi_swa
+  - action: utter_usalama_bunduki_patiyaka_wakimbizi_swa
+
+- story: story path threehundredeightyNine_swa
+  steps:
+  - intent: muchoko_dawa_muchoko_gani_swa
+  - action: utter_muchoko_dawa_muchoko_gani_swa
+
+- story: story path threehundredninety_swa
+  steps:
+  - intent: matunzo_kwa_nini_wakimbizi_wote_wana_tunziwa_tu_fasi_moja_swa
+  - action: utter_matunzo_kwa_nini_wakimbizi_wote_wana_tunziwa_tu_fasi_moja_swa
+
+- story: story path threehundredninetyOne_swa
+  steps:
+  - intent: watoto_watoto_masomo_suluhisho_swa
+  - action: utter_watoto_watoto_masomo_suluhisho_swa
+
+- story: story path threehundredninetyTwo_swa
+  steps:
+  - intent: duniya_badilikaka_siku_moja_swa
+  - action: utter_duniya_badilikaka_siku_moja_swa
+
+- story: story path threehundredninetyThree_swa
+  steps:
+  - intent: mapendo_swa
+  - action: utter_mapendo_swa
+
+- story: story path threehundredninetyFour_swa
+  steps:
+  - intent: nyimbo_zetu_zita_itikiwa_uku_ukui_swa
+  - action: utter_nyimbo_zetu_zita_itikiwa_uku_ukui_swa
+
+- story: story path threehundredninetyFive_swa
+  steps:
+  - intent: michezo_kuwa_na_ruhusa_swa
+  - action: utter_michezo_kuwa_na_ruhusa_swa
+
+- story: story path threehundredninetysix_swa
+  steps:
+  - intent: wafu_wenye_wali_kufa_na_wafu_wenye_wali_tuacha_swa
+  - action: utter_wafu_wenye_wali_kufa_na_wafu_wenye_wali_tuacha_swa
+
+- story: story path threehundredninetySeven_swa
+  steps:
+  - intent: wafu_tuna_weza_jenga_nafasi_ya_ukumbusho_swa
+  - action: utter_wafu_tuna_weza_jenga_nafasi_ya_ukumbusho_swa
+
+- story: story path threehundrednintyeight_swa
+  steps:
+  - intent: wafu_wali_fariki_tuwasahau_bila_kulipiza_kisasi_swa
+  - action: utter_wafu_wali_fariki_tuwasahau_bila_kulipiza_kisasi_swa
+
+- story: story path threehundrednintynine_swa
+  steps:
+  - intent: kisasi_tuta_weza_lipiza_kisasi_je_swa
+  - action: utter_kisasi_tuta_weza_lipiza_kisasi_je_swa
+
+- story: story path fourhundred_swa
+  steps:
+  - intent: kisasi_tuta_weza_lipiza_kisasi_je_na_kulipiza_kisasi_swa
+  - action: utter_kisasi_tuta_weza_lipiza_kisasi_je_na_kulipiza_kisasi_swa
+
+- story: story path fourhundredOne_swa
+  steps:
+  - intent: kisasi_komala_na_chuki_swa
+  - action: utter_kisasi_komala_na_chuki_swa
+
+- story: story path fourhundredTwo_swa
+  steps:
+  - intent: manunguniko_komala_na_chuki_na_mungu_taka_swa
+  - action: utter_manunguniko_komala_na_chuki_na_mungu_taka_swa
+
+- story: story path fourhundredThree_swa
+  steps:
+  - intent: manunguniko_komala_na_chuki_na_mungu_taka_kuji_maliziya_maisha_swa
+  - action: utter_manunguniko_komala_na_chuki_na_mungu_taka_kuji_maliziya_maisha_swa
+
+- story: story path fourhundredFour_swa
+  steps:
+  - intent: manunguniko_chuki_hapendake_komala_na_chuki_na_mungu_taka_kuji_maliziya_maisha_swa
+  - action: utter_manunguniko_chuki_hapendake_komala_na_chuki_na_mungu_taka_kuji_maliziya_maisha_swa
+
+- story: story path fourhundredFive_swa
+  steps:
+  - intent: chakula_kupiganiya_chakula_swa
+  - action: utter_chakula_kupiganiya_chakula_swa
+
+- story: story path fourhundredSix_swa
+  steps:
+  - intent: njala_haiwezi_fanya_watu_majambazi_swa
+  - action: utter_njala_haiwezi_fanya_watu_majambazi_swa
+
+- story: story path fourhundredSeven_swa
+  steps:
+  - intent: maisha_tufanye_majambazi_swa
+  - action: utter_maisha_tufanye_majambazi_swa
+
+- story: story path fourhundredEight_swa
+  steps:
+  - intent: watoto_wake_shindikana_tuta_liliya_nani_watoto_wana_tushinda_swa
+  - action: utter_watoto_wake_shindikana_tuta_liliya_nani_watoto_wana_tushinda_swa
+
+- story: story path fourhundredNine_swa
+  steps:
+  - intent: maisha_waume_wetu_wake_geuka_wabandiya_tuta_fanya_je_swa
+  - action: utter_maisha_waume_wetu_wake_geuka_wabandiya_tuta_fanya_je_swa
+
+- story: story path fourhundredTen_swa
+  steps:
+  - intent: sheria_iko_na_ona_haya_ypte_jj_swa
+  - action: utter_sheria_iko_na_ona_haya_ypte_jj_swa
+
+- story: story path fourhundredEleven_swa
+  steps:
+  - intent: sheria_iko_na_ona_haya_ypte_jj_tua_swa
+  - action: utter_sheria_iko_na_ona_haya_ypte_jj_tua_swa
+
+- story: story path fourhundredTwelve_swa
+  steps:
+  - intent: malalamiko_mungu_ana_tupenda_swa
+  - action: utter_malalamiko_mungu_ana_tupenda_swa
+
+- story: story path fourhundredThirteen_swa
+  steps:
+  - intent: wazalendo_wame_nyanyasa_wakimbizi_swa
+  - action: utter_wazalendo_wame_nyanyasa_wakimbizi_swa
+
+- story: story path fourhundredFourteen_swa
+  steps:
+  - intent: mateso_swa
+  - action: utter_mateso_swa
+
+- story: story path fourhundredFifteen_swa
+  steps:
+  - intent: kilio_sacrifier_swa
+  - action: utter_kilio_sacrifier_swa
+
+- story: story path fourhundredSixteen_swa
+  steps:
+  - intent: jeshi_swa
+  - action: utter_jeshi_swa
+
+- story: story path fourhundredSeventeen_swa
+  steps:
+  - intent: jeshi_shindwa_vita_swa
+  - action: utter_jeshi_shindwa_vita_swa
+
+- story: story path fourhundredEighteen_swa
+  steps:
+  - intent: shule_swa
+  - action: utter_shule_swa
+
+- story: story path fourhundredNineteen_swa
+  steps:
+  - intent: shule_viongozi_wakimbizi_wapi_swa
+  - action: utter_shule_viongozi_wakimbizi_wapi_swa
+
+- story: story path fourhundredTwenty_swa
+  steps:
+  - intent: kilio_amani_swa
+  - action: utter_kilio_amani_swa
+
+- story: story path fourhundredTwentyOne_swa
+  steps:
+  - intent: kilio_jeshi_ya_eac_swa
+  - action: utter_kilio_jeshi_ya_eac_swa
+
+- story: story path fourhundredTwentyTwo_swa
+  steps:
+  - intent: kilio_umoja_ya_africaswa
+  - action: utter_kilio_umoja_ya_africaswa
+
+- story: story path fourhundredTwentyThree_swa
+  steps:
+  - intent: kilio_wasaidizi_wamoja_wakimbizi_wapi_swa
+  - action: utter_kilio_wasaidizi_wamoja_wakimbizi_wapi_swa
+
+- story: story path fourhundredTwentyFour_swa
+  steps:
+  - intent: kilio_wakimbizi_wa_uongo_swa
+  - action: utter_kilio_wakimbizi_wa_uongo_swa
+
+- story: story path fourhundredTwentyFive_swa
+  steps:
+  - intent: kilio_wakimbizi_wenye_haiko_swa
+  - action: utter_kilio_wakimbizi_wenye_haiko_swa
+
+- story: story path fourhundredTwentySix_swa
+  steps:
+  - intent: kilio_jetons_swa
+  - action: utter_kilio_jetons_swa
+
+- story: story path fourhundredTwentySeven_swa
+  steps:
+  - intent: kilio_wakimbizi_wenye_damu_swa
+  - action: utter_kilio_wakimbizi_wenye_damu_swa
+
+- story: story path fourhundredTwentyEight_swa
+  steps:
+  - intent: kilio_chakula_bila_makala_swa
+  - action: utter_kilio_chakula_bila_makala_swa
+
+- story: story path fourhundredTwentyNine_swa
+  steps:
+  - intent: kilio_maisha_yetu_swa
+  - action: utter_kilio_maisha_yetu_swa
+
+- story: story path fourhundredThirty_swa
+  steps:
+  - intent: kilio_sikia_kwa_kilio_swa
+  - action: utter_kilio_sikia_kwa_kilio_swa
+
+- story: story path fourhundredThirtyOne_swa
+  steps:
+  - intent: chakula_pandisha_swa
+  - action: utter_chakula_pandisha_swa
+
+- story: story path fourhundredThirtyTwo_swa
+  steps:
+  - intent: kulima_swa
+  - action: utter_kulima_swa
+
+- story: story path fourhundredThirtyThree_swa
+  steps:
+  - intent: kilio_tetezi_wakimbizi_wapi_njo_swa
+  - action: utter_kilio_tetezi_wakimbizi_wapi_njo_swa
+
+- story: story path fourhundredThirtyFour_swa
+  steps:
+  - intent: kilio_watoto_wangu_wata_chezeya_wapi_swa
+  - action: utter_kilio_watoto_wangu_wata_chezeya_wapi_swa
+
+- story: story path fourhundredThirtyFive_swa
+  steps:
+  - intent: kilio_kambi_zimoja_ziko_ku_barabara_swa
+  - action: utter_kilio_kambi_zimoja_ziko_ku_barabara_swa
+
+- story: story path fourhundredThirtySix_swa
+  steps:
+  - intent: usafi_swa
+  - action: utter_usafi_swa
+
+- story: story path fourhundredThirtySeven_swa
+  steps:
+  - intent: hema_zetu_zengine_swa
+  - action: utter_hema_zetu_zengine_swa
+
+- story: story path fourhundredThirtyEight_swa
+  steps:
+  - intent: kujikinga_swa
+  - action: utter_kujikinga_swa
+
+- story: story path fourhundredFourty_swa
+  steps:
+  - intent: maji_safi_swa
+  - action: utter_maji_safi_swa
+
+- story: story path fourhundredFourtyOne_swa
+  steps:
+  - intent: rwanda_furahi_swa
+  - action: utter_rwanda_furahi_swa
+
+- story: story path fourhundredFourtyTwo_swa
+  steps:
+  - intent: rwanda_teseka_swa
+  - action: utter_rwanda_teseka_swa
+
+- story: story path fourhundredFourtyThree_swa
+  steps:
+  - intent: jeshi_wana_malizika_swa
+  - action: utter_jeshi_wana_malizika_swa
+
+- story: story path fourhundredFourtyFour_swa
+  steps:
+  - intent: jeshi_wana_gombolewa_swa
+  - action: utter_jeshi_wana_gombolewa_swa
+
+- story: story path fourhundredFourtyFive_swa
+  steps:
+  - intent: jeshi_wana_juwa_mateso_swa
+  - action: utter_jeshi_wana_juwa_mateso_swa
+
+- story: story path fourhundredFourtySix_swa
+  steps:
+  - intent: rwanda_chukiya_swa
+  - action: utter_rwanda_chukiya_swa
+
+- story: story path fourhundredFourtySeven_swa
+  steps:
+  - intent: chunvi_swa
+  - action: utter_chunvi_swa
+
+- story: story path fourhundredFourtyEight_swa
+  steps:
+  - intent: maji_juwa_swa
+  - action: utter_maji_juwa_swa
+
+- story: story path fourhundredFourtyNine_swa
+  steps:
+  - intent: maji_shoteya_swa
+  - action: utter_maji_shoteya_swa
+
+- story: story path fourhundredFifty_swa
+  steps:
+  - intent: kanisa_swa
+  - action: utter_kanisa_swa
+
+- story: story path fourhundredFiftyOne_swa
+  steps:
+  - intent: vita_mm23_njo_kusema_nini_swa
+  - action: utter_vita_mm23_njo_kusema_nini_swa
+
+- story: story path fourhundredFiftyFour_swa
+  steps:
+  - intent: dini_swa
+  - action: utter_dini_swa
+
+- story: story path fourhundredFiftyFive_swa
+  steps:
+  - intent: kanisa_nyirangongo_swa
+  - action: utter_kanisa_nyirangongo_swa
+
+- story: story path fourhundredFiftySix_swa
+  steps:
+  - intent: kanisa_njenga_kwa_kambi_swa
+  - action: utter_kanisa_njenga_kwa_kambi_swa
+
+- story: story path fourhundredFiftySeven_swa
+  steps:
+  - intent: chakula_tuiweke_swa
+  - action: utter_chakula_tuiweke_swa
+
+- story: story path fourhundredFiftyEight_swa
+  steps:
+  - intent: bwaki_swa
+  - action: utter_bwaki_swa
+
+- story: story path fourhundredFiftyNine_swa
+  steps:
+  - intent: bwaki_ya_wajawazito_swa
+  - action: utter_bwaki_ya_wajawazito_swa
+
+- story: story path fourhundredSixty_swa
+  steps:
+  - intent: kulima_viongozi_wakimbizi_wapi_swa
+  - action: utter_kulima_viongozi_wakimbizi_wapi_swa
+
+- story: story path fourhundredSixtyOne_swa
+  steps:
+  - intent: wakati_swa
+  - action: utter_wakati_swa
+
+- story: story path fourhundredSixtyTwo_swa
+  steps:
+  - intent: hema_ike_aribika_swa
+  - action: utter_hema_ike_aribika_swa
+
+- story: story path fourhundredSixtyThree_swa
+  steps:
+  - intent: dawa_ya_wagojnwa_wa_ukimwi_swa
+  - action: utter_dawa_ya_wagojnwa_wa_ukimwi_swa
+
+- story: story path fourhundredSixtyFour_swa
+  steps:
+  - intent: dawa_ya_wagojnwa_wa_sukari_swa
+  - action: utter_dawa_ya_wagojnwa_wa_sukari_swa
+
+- story: story path fourhundredSixtyFive_swa
+  steps:
+  - intent: chakula_watu_wa_regime_swa
+  - action: utter_chakula_watu_wa_regime_swa
+
+- story: story path fourhundredSixtySix_swa
+  steps:
+  - intent: chadaruwa_swa
+  - action: utter_chadaruwa_swa
+
+- story: story path fourhundredSixtySeven_swa
+  steps:
+  - intent: wagonjwa_swa
+  - action: utter_wagonjwa_swa
+
+- story: story path fourhundredSixtyEight_swa
+  steps:
+  - intent: psychologues_swa
+  - action: utter_psychologues_swa
+
+- story: story path fourhundredSixtyNine_swa
+  steps:
+  - intent: volkeno_swa
+  - action: utter_volkeno_swa
+
+- story: story path fourhundredSeventy_swa
+  steps:
+  - intent: nvula_swa
+  - action: utter_nvula_swa
+
+- story: story path fourhundredSeventyOne_swa
+  steps:
+  - intent: ambulance_swa
+  - action: utter_ambulance_swa
+
+- story: story path fourhundredSeventyTwo_swa
+  steps:
+  - intent: usafi_ndani_kambi_swa
+  - action: utter_usafi_ndani_kambi_swa
+
+- story: story path fourhundredSeventyThree_swa
+  steps:
+  - intent: chakula_haribika_swa
+  - action: utter_chakula_haribika_swa
+
+- story: story path fourhundredSeventyFour_swa
+  steps:
+  - intent: dawa_ina_haribika_swa
+  - action: utter_dawa_ina_haribika_swa
+
+- story: story path fourhundredSeventyFive_swa
+  steps:
+  - intent: uzazi_swa
+  - action: utter_uzazi_swa
+
+- story: story path fourhundredSeventySix_swa
+  steps:
+  - intent: uzazi_kwa_wakimbizi_wapi_swa
+  - action: utter_uzazi_kwa_wakimbizi_wapi_swa
+
+- story: story path fourhundredSeventySeven_swa
+  steps:
+  - intent: choo_tujengeya_swa
+  - action: utter_choo_tujengeya_swa
+
+- story: story path fourhundredSeventyEight_swa
+  steps:
+  - intent: magongwa_swa
+  - action: utter_magongwa_swa
+
+- story: story path fourhundredSeventyNine_swa
+  steps:
+  - intent: magongwa_ya_infections_swa
+  - action: utter_magongwa_ya_infections_swa
+
+- story: story path fourhundredEighty_swa
+  steps:
+  - intent: homa_swa
+  - action: utter_homa_swa
+
+- story: story path fourhundredEightyOne_swa
+  steps:
+  - intent: magongwa_ya_malaria_swa
+  - action: utter_magongwa_ya_malaria_swa
+
+- story: story path fourhundredEightyTwo_swa
+  steps:
+  - intent: magongwa_ya_walemavu_swa
+  - action: utter_magongwa_ya_walemavu_swa
+
+- story: story path fourhundredEightyThree_swa
+  steps:
+  - intent: masomo_tumika_swa
+  - action: utter_masomo_tumika_swa
+
+- story: story path fourhundredEightyFour_swa
+  steps:
+  - intent: kazi_kulipa_swa
+  - action: utter_kazi_kulipa_swa
+
+- story: story path fourhundredEightyFive_swa
+  steps:
+  - intent: kazi_za_goma_swa
+  - action: utter_kazi_za_goma_swa
+
+- story: story path fourhundredEightySix_swa
+  steps:
+  - intent: kazi_endeleya_lipiwa_swa
+  - action: utter_kazi_endeleya_lipiwa_swa
+
+- story: story path fourhundredEightySeven_swa
+  steps:
+  - intent: kazi_goma_zitakapata_swa
+  - action: utter_kazi_goma_zitakapata_swa
+
+- story: story path fourhundredEightyEight_swa
+  steps:
+  - intent: kazi_serkali_zitakapata_swa
+  - action: utter_kazi_serkali_zitakapata_swa
+
+- story: story path fourhundredEightyNine_swa
+  steps:
+  - intent: uchuruzi_swa
+  - action: utter_uchuruzi_swa
+
+- story: story path fourhundredNinety_swa
+  steps:
+  - intent: kuni_swa
+  - action: utter_kuni_swa
+
+- story: story path fourhundredNinetyOne_swa
+  steps:
+  - intent: uongozi_swa
+  - action: utter_uongozi_swa
+
+- story: story path fourhundredNinetyTwo_swa
+  steps:
+  - intent: uongozi_kwa_wakimbizi_wapi_swa
+  - action: utter_uongozi_kwa_wakimbizi_wapi_swa
+
+- story: story path fourhundredNinetyThree_swa
+  steps:
+  - intent: vita_kanyarutshinya_swa
+  - action: utter_vita_kanyarutshinya_swa
+
+- story: story path fourhundredNinetyFour_swa
+  steps:
+  - intent: vita_salama_swa
+  - action: utter_vita_salama_swa
+
+- story: story path fourhundredNinetyFive_swa
+  steps:
+  - intent: vita_wapi_swa
+  - action: utter_vita_wapi_swa
+
+- story: story path fourhundredNinetySix_swa
+  steps:
+  - intent: usalama_apa_ndani_kambi_swa
+  - action: utter_usalama_apa_ndani_kambi_swa
+
+- story: story path fourhundredNinetySeven_swa
+  steps:
+  - intent: vita_fika_swa
+  - action: utter_vita_fika_swa
+
+- story: story path fourhundredNinetyEight_swa
+  steps:
+  - intent: vita_karibu_na_sisi_swa
+  - action: utter_vita_karibu_na_sisi_swa
+
+- story: story path fourhundredNinetyNine_swa
+  steps:
+  - intent: vita_ingiya_kambi_swa
+  - action: utter_vita_ingiya_kambi_swa
+
+- story: story path fivehundred_swa
+  steps:
+  - intent: lugha_swa
+  - action: utter_lugha_swa
+
+- story: story path fivehundredOne_swa
+  steps:
+  - intent: lugha_kinyarwanda_swa
+  - action: utter_lugha_kinyarwanda_swa
+
+- story: story path fivehundredTwo_swa
+  steps:
+  - intent: usalama_mpaka_na_rwanda_swa
+  - action: utter_usalama_mpaka_na_rwanda_swa
+
+- story: story path fivehundredThree_swa
+  steps:
+  - intent: usalama_nyiragongo_swa
+  - action: utter_usalama_nyiragongo_swa
+
+- story: story path fivehundredFour_swa
+  steps:
+  - intent: mtandao_swa
+  - action: utter_mtandao_swa
+
+- story: story path fivehundredFive_swa
+  steps:
+  - intent: usalama_vita_nyiragongo_swa
+  - action: utter_usalama_vita_nyiragongo_swa
+
+- story: story path fivehundredSix_swa
+  steps:
+  - intent: usalama_askari_swa
+  - action: utter_usalama_askari_swa
+
+- story: story path fivehundredSeven_swa
+  steps:
+  - intent: jamaa_swa
+  - action: utter_jamaa_swa
+
+- story: story path fivehundredEight_swa
+  steps:
+  - intent: usalama_watoto_wangu_swa
+  - action: utter_usalama_watoto_wangu_swa
+
+- story: story path fivehundredNine_swa
+  steps:
+  - intent: usalama_bulengo_swa
+  - action: utter_usalama_bulengo_swa
+
+- story: story path fivehundredTen_swa
+  steps:
+  - intent: usalama_vita_kwa_watoto_wangu_swa
+  - action: utter_usalama_vita_kwa_watoto_wangu_swa
+
+- story: story path fivehundredEleven_swa
+  steps:
+  - intent: usalama_hasira_swa
+  - action: utter_usalama_hasira_swa
+
+- story: story path fivehundredTwelve_swa
+  steps:
+  - intent: uoga_swa
+  - action: utter_uoga_swa
+
+- story: story path fivehundredThirteen_swa
+  steps:
+  - intent: hali_swa
+  - action: utter_hali_swa
+
+- story: story path fivehundredFourteen_swa
+  steps:
+  - intent: hali_usingizi_swa
+  - action: utter_hali_usingizi_swa
+
+- story: story path fivehundredFifteen_swa
+  steps:
+  - intent: hali_ndoto_swa
+  - action: utter_hali_ndoto_swa
+
+- story: story path fivehundredSixteen_swa
+  steps:
+  - intent: hali_watoto_wangu_swa
+  - action: utter_hali_watoto_wangu_swa
+
+- story: story path fivehundredSeventeen_swa
+  steps:
+  - intent: hali_viongozi_wakimbizi_wapi_swa
+  - action: utter_hali_viongozi_wakimbizi_wapi_swa
+
+- story: story path fivehundredEighteen_swa
+  steps:
+  - intent: hali_mzigo_swa
+  - action: utter_hali_mzigo_swa
+
+- story: story path fivehundredNineteen_swa
+  steps:
+  - intent: malalamiko_sisi_wangu_swa
+  - action: utter_malalamiko_sisi_wangu_swa
+
+- story: story path fivehundredTwenty_swa
+  steps:
+  - intent: malalamiko_kwa_wakimbizi_wapi_swa
+  - action: utter_malalamiko_kwa_wakimbizi_wapi_swa
+
+- story: story path fivehundredTwentyOne_swa
+  steps:
+  - intent: malalamiko_wazima_swa
+  - action: utter_malalamiko_wazima_swa
+
+- story: story path fivehundredTwentyTwo_swa
+  steps:
+  - intent: malalamiko_elewe_swa
+  - action: utter_malalamiko_elewe_swa
+
+- story: story path fivehundredTwentyThree_swa
+  steps:
+  - intent: malalamiko_kula_chakula_swa
+  - action: utter_malalamiko_kula_chakula_swa
+
+- story: story path fivehundredTwentyFour_swa
+  steps:
+  - intent: malalamiko_mungu_swa
+  - action: utter_malalamiko_mungu_swa
+
+- story: story path fivehundredTwentyFive_swa
+  steps:
+  - intent: malalamiko_mungu_ana_ruhusu_tukuwe_wakimbizi_wapi_swa
+  - action: utter_malalamiko_mungu_ana_ruhusu_tukuwe_wakimbizi_wapi_swa
+
+- story: story path fivehundredTwentySix_swa
+  steps:
+  - intent: malalamiko_duniya_swa
+  - action: utter_malalamiko_duniya_swa
+
+- story: story path fivehundredTwentySeven_swa
+  steps:
+  - intent: malalamiko_mtetezi_wakimbizi_wapi_swa
+  - action: utter_malalamiko_mtetezi_wakimbizi_wapi_swa
+
+- story: story path fivehundredTwentyEight_swa
+  steps:
+  - intent: malalamiko_kiswahili_swa
+  - action: utter_malalamiko_kiswahili_swa
+
+- story: story path fivehundredTwentyNine_swa
+  steps:
+  - intent: malalamiko_kiswahili_kwa_wakimbizi_wapi_swa
+  - action: utter_malalamiko_kiswahili_kwa_wakimbizi_wapi_swa
+
+- story: story path fivehundredThirty_swa
+  steps:
+  - intent: malalamiko_goma_swa
+  - action: utter_malalamiko_goma_swa
+
+- story: story path fivehundredThirtyOne_swa
+  steps:
+  - intent: malalamiko_goma_kwa_wakimbizi_wapi_swa
+  - action: utter_malalamiko_goma_kwa_wakimbizi_wapi_swa
+
+- story: story path fivehundredThirtyTwo_swa
+  steps:
+  - intent: malalamiko_watoto_wa_goma_swa
+  - action: utter_malalamiko_watoto_wa_goma_swa
+
+- story: story path fivehundredThirtyThree_swa
+  steps:
+  - intent: malalamiko_itika_ku_changana_na_siye_swa
+  - action: utter_malalamiko_itika_ku_changana_na_siye_swa
+
+- story: story path fivehundredThirtyFour_swa
+  steps:
+  - intent: malalamiko_maisha_kwa_kesho_swa
+  - action: utter_malalamiko_maisha_kwa_kesho_swa
+
+- story: story path fivehundredThirtyFive_swa
+  steps:
+  - intent: malalamiko_maisha_kwa_zamani_swa
+  - action: utter_malalamiko_maisha_kwa_zamani_swa
+
+- story: story path fivehundredThirtySix_swa
+  steps:
+  - intent: malalamiko_waelezeya_kwa_kesho_swa
+  - action: utter_malalamiko_waelezeya_kwa_kesho_swa
+
+- story: story path fivehundredThirtySeven_swa
+  steps:
+  - intent: masomo_kawaida_swa
+  - action: utter_masomo_kawaida_swa
+
+- story: story path fivehundredThirtyEight_swa
+  steps:
+  - intent: malalamiko_vilonda_vya_ndani_swa
+  - action: utter_malalamiko_vilonda_vya_ndani_swa
+
+- story: story path fivehundredThirtyNine_swa
+  steps:
+  - intent: mashaka_swa
+  - action: utter_mashaka_swa
+
+- story: story path fivehundredForty_swa
+  steps:
+  - intent: mashaka_shuleni_kwa_watoto_wangu_swa
+  - action: utter_mashaka_shuleni_kwa_watoto_wangu_swa
+
+- story: story path fivehundredFortyOne_swa
+  steps:
+  - intent: malalamiko_waalimu_tayarishwa_kupokeya_watoto_wakimbizi_wapi_swa
+  - action: utter_malalamiko_waalimu_tayarishwa_kupokeya_watoto_wakimbizi_wapi_swa
+
+- story: story path fivehundredFortyTwo_swa
+  steps:
+  - intent: mashaka_waalimu_fundisha_watoto_wakimbizi_wapi_swa
+  - action: utter_mashaka_waalimu_fundisha_watoto_wakimbizi_wapi_swa
+
+- story: story path fivehundredFortyThree_swa
+  steps:
+  - intent: malalamiko_askari_kwa_wakimbizi_wapi_swa
+  - action: utter_malalamiko_askari_kwa_wakimbizi_wapi_swa
+
+- story: story path fivehundredFortyFour_swa
+  steps:
+  - intent: malalamiko_maibobo_kwa_wakimbizi_wapi_swa
+  - action: utter_malalamiko_maibobo_kwa_wakimbizi_wapi_swa
+
+- story: story path fivehundredFortyFive_swa
+  steps:
+  - intent: malalamiko_vitabu_kwa_watoto_wangu_swa
+  - action: utter_malalamiko_vitabu_kwa_watoto_wangu_swa
+
+- story: story path fivehundredFortySix_swa
+  steps:
+  - intent: malalamiko_kuko_kwa_watoto_wangu_swa
+  - action: utter_malalamiko_kuko_kwa_watoto_wangu_swa
+
+- story: story path fivehundredFortySeven_swa
+  steps:
+  - intent: malalamiko_masomo_i_kwa_watoto_wangu_swa
+  - action: utter_malalamiko_masomo_i_kwa_watoto_wangu_swa
+
+- story: story path fivehundredFortyEight_swa
+  steps:
+  - intent: malalamiko_maisha_kwa_watoto_raha_swa
+  - action: utter_malalamiko_maisha_kwa_watoto_raha_swa
+
+- story: story path fivehundredFortyNine_swa
+  steps:
+  - intent: malalamiko_waambiya_nini_kwa_watoto_wangu_swa
+  - action: utter_malalamiko_waambiya_nini_kwa_watoto_wangu_swa
+
+- story: story path fivehundredFifty_swa
+  steps:
+  - intent: masomo_weza_soma_swa
+  - action: utter_masomo_weza_soma_swa
+
+- story: story path fivehundredFiftyOne_swa
+  steps:
+  - intent: malalamiko_waweze_masomo_swa
+  - action: utter_malalamiko_waweze_masomo_swa
+
+- story: story path fivehundredFiftyTwo_swa
+  steps:
+  - intent: malalamiko_pendaka_tena_maisha_swa
+  - action: utter_malalamiko_pendaka_tena_maisha_swa
+
+- story: story path fivehundredFiftyThree_swa
+  steps:
+  - intent: malalamiko_tuchangiye_kwa_amani_swa
+  - action: utter_malalamiko_tuchangiye_kwa_amani_swa
+
+- story: story path fivehundredFiftyFour_swa
+  steps:
+  - intent: malalamiko_sherehe_kwa_wakimbizi_wapi_swa
+  - action: utter_malalamiko_sherehe_kwa_wakimbizi_wapi_swa
+
+- story: story path fivehundredFiftyFive_swa
+  steps:
+  - intent: malalamiko_kusherehe_mwaka_mpya_kwa_watoto_wangu_swa
+  - action: utter_malalamiko_kusherehe_mwaka_mpya_kwa_watoto_wangu_swa
+
+- story: story path fivehundredFiftySix_swa
+  steps:
+  - intent: malalamiko_kusherehe_mwaka_mpya_kwa_watoto_wangu_siku_mpya_swa
+  - action: utter_malalamiko_kusherehe_mwaka_mpya_kwa_watoto_wangu_siku_mpya_swa
+
+- story: story path fivehundredFiftySeven_swa
+  steps:
+  - intent: mashaka_yetu_elewa_nani_swa
+  - action: utter_mashaka_yetu_elewa_nani_swa
+
+- story: story path fivehundredFiftyEight_swa
+  steps:
+  - intent: mashaka_tuta_wezaka_hurumiya_wanyarwanda_swa
+  - action: utter_mashaka_tuta_wezaka_hurumiya_wanyarwanda_swa
+
+- story: story path fivehundredFiftyNine_swa
+  steps:
+  - intent: mashaka_historia_kwa_kongo_swa
+  - action: utter_mashaka_historia_kwa_kongo_swa
+
+- story: story path fivehundredSixty_swa
+  steps:
+  - intent: mashaka_tunzwa_kwa_vilonda_vya_ndani_swa
+  - action: utter_mashaka_tunzwa_kwa_vilonda_vya_ndani_swa
+
+- story: story path fivehundredSixtyOne_swa
+  steps:
+  - intent: mashaka_amani_kwa_masisi_swa
+  - action: utter_mashaka_amani_kwa_masisi_swa
+
+- story: story path fivehundredSixtyTwo_swa
+  steps:
+  - intent: mashaka_sheriya_kwa_rwanda_swa
+  - action: utter_mashaka_sheriya_kwa_rwanda_swa
+
+- story: story path fivehundredSixtyThree_swa
+  steps:
+  - intent: mashaka_mahakama_kwa_rwanda_swa
+  - action: utter_mashaka_mahakama_kwa_rwanda_swa
+
+- story: story path fivehundredSixtyFour_swa
+  steps:
+  - intent: mashaka_amani_bila_vita_haiwezi_patikana_swa
+  - action: utter_mashaka_amani_bila_vita_haiwezi_patikana_swa
+
+- story: story path fivehundredSixtyFive_swa
+  steps:
+  - intent: mashaka_iyi_vita_ni_ya_nini_swa
+  - action: utter_mashaka_iyi_vita_ni_ya_nini_swa
+
+- story: story path fivehundredSixtySix_swa
+  steps:
+  - intent: rwanda_shida_swa
+  - action: utter_rwanda_shida_swa
+
+- story: story path fivehundredSixtySeven_swa
+  steps:
+  - intent: malalamiko_nani_ata_fatana_na_trauma_swa
+  - action: utter_malalamiko_nani_ata_fatana_na_trauma_swa
+
+- story: story path fivehundredSixtyEight_swa
+  steps:
+  - intent: malalamiko_waganga_wata_tu_tunza_na_mapendo_swa
+  - action: utter_malalamiko_waganga_wata_tu_tunza_na_mapendo_swa
+
+- story: story path fivehundredSixtyNine_swa
+  steps:
+  - intent: malalamiko_sheriya_zamu_kambi_swa
+  - action: utter_malalamiko_sheriya_zamu_kambi_swa
+
+- story: story path fivehundredSeventy_swa
+  steps:
+  - intent: malalamiko_mungu_angali_swa
+  - action: utter_malalamiko_mungu_angali_swa
+
+- story: story path fivehundredSeventyOne_swa
+  steps:
+  - intent: malalamiko_mungu_lipiza_zambi_zetu_swa
+  - action: utter_malalamiko_mungu_lipiza_zambi_zetu_swa
+
+- story: story path fivehundredSeventyTwo_swa
+  steps:
+  - intent: malalamiko_mungu_ngufu_yaku_omba_mungu_swa
+  - action: utter_malalamiko_mungu_ngufu_yaku_omba_mungu_swa
+
+- story: story path fivehundredSeventyThree_swa
+  steps:
+  - intent: mashaka_tunzwa_na_MSF_bure_swa
+  - action: utter_mashaka_tunzwa_na_MSF_bure_swa
+
+- story: story path fivehundredSeventyFour_swa
+  steps:
+  - intent: mashaka_MSF_iko_na_banganga_bazuri_swa
+  - action: utter_mashaka_MSF_iko_na_banganga_bazuri_swa
+
+- story: story path fivehundredSeventyFive_swa
+  steps:
+  - intent: mashaka_MSF_ita_tunza_na_malali_ya_kichwa_swa
+  - action: utter_mashaka_MSF_ita_tunza_na_malali_ya_kichwa_swa
+
+- story: story path fivehundredSeventySix_swa
+  steps:
+  - intent: mashaka_juwa_wakimbizi_wa_uongo_swa
+  - action: utter_mashaka_juwa_wakimbizi_wa_uongo_swa
+
+- story: story path fivehundredSeventySeven_swa
+  steps:
+  - intent: mashaka_wakimbizi_wa_uongo_kati_yetu_swa
+  - action: utter_mashaka_wakimbizi_wa_uongo_kati_yetu_swa
+
+- story: story path fivehundredSeventyEight_swa
+  steps:
+  - intent: mashaka_wafanya_kazi_wa_PAM_wakorofi_swa
+  - action: utter_mashaka_wafanya_kazi_wa_PAM_wakorofi_swa
+
+- story: story path fivehundredSeventyNine_swa
+  steps:
+  - intent: mashaka_mganga_wa_MSF_ana_ni_tunza_mubaya_nina_eza_end_kwa_nani_swa
+  - action: utter_mashaka_mganga_wa_MSF_ana_ni_tunza_mubaya_nina_eza_end_kwa_nani_swa
+
+- story: story path fivehundredEighty_swa
+  steps:
+  - intent: mashaka_yangu_iko_na_maana_swa
+  - action: utter_mashaka_yangu_iko_na_maana_swa
+
+- story: story path fivehundredEightyOne_swa
+  steps:
+  - intent: mashaka_siku_iyi_yote_ita_badilika_swa
+  - action: utter_mashaka_siku_iyi_yote_ita_badilika_swa
+
+- story: story path fivehundredEightyTwo_swa
+  steps:
+  - intent: mashaka_viongozi_wata_tuambiyaka_nini_tena_ok_swa
+  - action: utter_mashaka_viongozi_wata_tuambiyaka_nini_tena_ok_swa
+
+- story: story path fivehundredEightyThree_swa
+  steps:
+  - intent: mashaka_ita_jenga_sule_umu_swa
+  - action: utter_mashaka_ita_jenga_sule_umu_swa
+
+- story: story path fivehundredEightyFour_swa
+  steps:
+  - intent: mashaka_ita_patiya_watoto_vyombo_vya_shule_swa
+  - action: utter_mashaka_ita_patiya_watoto_vyombo_vya_shule_swa
+
+- story: story path fivehundredEightyFive_swa
+  steps:
+  - intent: mashaka_tuta_pataka_tena_onjo_ya_maisha_swa
+  - action: utter_mashaka_tuta_pataka_tena_onjo_ya_maisha_swa
+
+- story: story path fivehundredEightySix_swa
+  steps:
+  - intent: mashaka_watoto_kititi_hawaelewe_swa
+  - action: utter_mashaka_watoto_kititi_hawaelewe_swa
+
+- story: story path fivehundredEightySeven_swa
+  steps:
+  - intent: mashaka_vita_ni_ya_muzuri_kwetu_kweli_swa
+  - action: utter_mashaka_vita_ni_ya_muzuri_kwetu_kweli_swa
+
+- story: story path fivehundredEightyEight_swa
+  steps:
+  - intent: mashaka_ju_ya_nini_hakuna_suhulisho_swa
+  - action: utter_mashaka_ju_ya_nini_hakuna_suhulisho_swa
+
+- story: story path fivehundredEightyNine_swa
+  steps:
+  - intent: maisha_tuke_choma_mwizi_shida_ni_nini_swa
+  - action: utter_maisha_tuke_choma_mwizi_shida_ni_nini_swa
+  

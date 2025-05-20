@@ -1,0 +1,1606 @@
+{
+  "dialogues": [
+    {
+      "id": "dialogue_1",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: nina penda nijue hospitali ndogo zenye ziko apa Goma?",
+          "speaker": "user",
+          "content": "nina penda nijue hospitali ndogo zenye ziko apa Goma?",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: Samahani, hakuna vituo vya afya vilivyopatikana.",
+          "speaker": "bot",
+          "content": "Samahani, hakuna vituo vya afya vilivyopatikana.",
+          "tasks": []
+        },
+        {
+          "id": "turn_3",
+          "text": "User: nina weza tunziwa Goma?",
+          "speaker": "user",
+          "content": "nina weza tunziwa Goma?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: kuaminiya watu wa goma haiko muzuri juu kilamutu iko na tabiya yake, kuko bazuri na babaya ,haiombe Ku aminiyana kabisa.",
+          "speaker": "bot",
+          "content": "kuaminiya watu wa goma haiko muzuri juu kilamutu iko na tabiya yake, kuko bazuri na babaya ,haiombe Ku aminiyana kabisa.",
+          "tasks": [],
+          "error_type": "insertion"
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: nina penda nijue hospitali ndogo zenye ziko apa Goma?",
+          "content": "nina penda nijue hospitali ndogo zenye ziko apa Goma?"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: Hii ni vituo vya afya vilivyopo: - Karisimbi (Goma) - Goma (Goma)",
+          "content": "Hii ni vituo vya afya vilivyopo: - Karisimbi (Goma) - Goma (Goma)"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: nina weza tunziwa Goma?",
+          "content": "nina weza tunziwa Goma?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: wakimbizi kwa kambi wana haki ya ulinzi ,kutunzwa, ku zikwa,kulishwa,elimu kwa watoto wa musingi",
+          "content": "wakimbizi kwa kambi wana haki ya ulinzi ,kutunzwa, ku zikwa,kulishwa,elimu kwa watoto wa musingi"
+        }
+      ]
+    },
+    {
+      "id": "dialogue_2",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: nitafute hospitali karibu na kambi ya Rutshuru",
+          "speaker": "user",
+          "content": "nitafute hospitali karibu na kambi ya Rutshuru",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: Hii ni vituo vya afya vilivyopo: - Kibirizi (Rutshuru) -Birambizo (Rutshuru)",
+          "speaker": "bot",
+          "content": "Hii ni vituo vya afya vilivyopo: - Kibirizi (Rutshuru) -Birambizo (Rutshuru)",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_2",
+              "type": "list_entities",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_3",
+              "type": "provide_entity_details",
+              "success": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3",
+          "text": "User: kanyarutshinya iko mbali sana na rutshuru kwenye vita iko?",
+          "speaker": "user",
+          "content": "kanyarutshinya iko mbali sana na rutshuru kwenye vita iko?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: kanyarutshinya ni fasi kwenye viongozi vili chagula kwaku weka kambi kwa sababu akuna vita",
+          "speaker": "bot",
+          "content": "kanyarutshinya ni fasi kwenye viongozi vili chagula kwaku weka kambi kwa sababu akuna vita",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_3",
+              "type": "explain_relationship",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: nitafute hospitali karibu na kambi ya Rutshuru",
+          "content": "nitafute hospitali karibu na kambi ya Rutshuru"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: Hii ni vituo vya afya vilivyopo: - Kibirizi (Rutshuru) -Birambizo (Rutshuru)",
+          "content": "Hii ni vituo vya afya vilivyopo: - Kibirizi (Rutshuru) -Birambizo (Rutshuru)"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: kanyarutshinya iko mbali sana na rutshuru kwenye vita iko?",
+          "content": "kanyarutshinya iko mbali sana na rutshuru kwenye vita iko?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: kanyarutshinya ni fasi kwenye viongozi vili chagula kwaku weka kambi kwa sababu akuna vita",
+          "content": "kanyarutshinya ni fasi kwenye viongozi vili chagula kwaku weka kambi kwa sababu akuna vita"
+        }
+      ]
+    },
+    {
+      "id": "dialogue_3",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: nyiragongo kuko kambi?",
+          "speaker": "user",
+          "content": "nyiragongo kuko kambi?",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: - RUSAYO (nyiragongo) - Uwezo: 1063 - MUDJA (nyiragongo) - Uwezo: 4918 - KANYARUCHINYA (nyiragongo) - Uwezo: 4918 - MUNIGI (nyiragongo) - Uwezo: 2280 - RUSAYO (nyiragongo) - Uwezo: 2280",
+          "speaker": "bot",
+          "content": "- RUSAYO (nyiragongo) - Uwezo: 1063 - MUDJA (nyiragongo) - Uwezo: 4918 - KANYARUCHINYA (nyiragongo) - Uwezo: 4918 - MUNIGI (nyiragongo) - Uwezo: 2280 - RUSAYO (nyiragongo) - Uwezo: 2280",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_2",
+              "type": "list_entities",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_3",
+              "type": "provide_entity_details",
+              "success": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3",
+          "text": "User: uku nyiragongo watu juwa lugha yetu kinyarwanda?",
+          "speaker": "user",
+          "content": "uku nyiragongo watu juwa lugha yetu kinyarwanda?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: apana apa nyiragongo bana semaka kinyabwisha haiko kinyarwanda lakini binataka fanana.",
+          "speaker": "bot",
+          "content": "apana apa nyiragongo bana semaka kinyabwisha haiko kinyarwanda lakini binataka fanana.",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "provide_information",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: nyiragongo kuko kambi?",
+          "content": "nyiragongo kuko kambi?"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: - RUSAYO (nyiragongo) - Uwezo: 1063 - MUDJA (nyiragongo) - Uwezo: 4918 - KANYARUCHINYA (nyiragongo) - Uwezo: 4918 - MUNIGI (nyiragongo) - Uwezo: 2280 - RUSAYO (nyiragongo) - Uwezo: 2280",
+          "content": "- RUSAYO (nyiragongo) - Uwezo: 1063 - MUDJA (nyiragongo) - Uwezo: 4918 - KANYARUCHINYA (nyiragongo) - Uwezo: 4918 - MUNIGI (nyiragongo) - Uwezo: 2280 - RUSAYO (nyiragongo) - Uwezo: 2280"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: uku nyiragongo watu juwa lugha yetu kinyarwanda?",
+          "content": "uku nyiragongo watu juwa lugha yetu kinyarwanda?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: apana apa nyiragongo bana semaka kinyabwisha haiko kinyarwanda lakini binataka fanana.",
+          "content": "apana apa nyiragongo bana semaka kinyabwisha haiko kinyarwanda lakini binataka fanana."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_4",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: kambi ya Bulengo ina weza pokeya batu ngapi?",
+          "speaker": "user",
+          "content": "kambi ya Bulengo ina weza pokeya batu ngapi?",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot:  kuna aina mbili ya kambi kuko yenyi ime njengwa na ma shirika ya umoja duniyani na yenyi wakimbizi wame njenga peke yao,zile zenyi ziko pembeni ya barabara ni zenyi bakimbizi bame jijengeya, kuihamisha ina omba viongozi vya inchi ipate kwenyi wata wa peleka.",
+          "speaker": "bot",
+          "content": "kuna aina mbili ya kambi kuko yenyi ime njengwa na ma shirika ya umoja duniyani na yenyi wakimbizi wame njenga peke yao,zile zenyi ziko pembeni ya barabara ni zenyi bakimbizi bame jijengeya, kuihamisha ina omba viongozi vya inchi ipate kwenyi wata wa peleka.",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_2",
+              "type": "answer_query",
+              "success": false
+            }
+          ],
+          "error_type": "deletion"
+        },
+        {
+          "id": "turn_3",
+          "text": "User: watoto wangu wata weza nikuta hapa bulengo ?",
+          "speaker": "user",
+          "content": "watoto wangu wata weza nikuta hapa bulengo ?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: watoto ,watapata njiya,balabala iko wazi ,Ila itakuomba ubebe malalamiko Ku shirika ya CNR na OIM, juu baku saidiye kuba tafuta na kuwaleta.",
+          "speaker": "bot",
+          "content": "watoto ,watapata njiya,balabala iko wazi ,Ila itakuomba ubebe malalamiko Ku shirika ya CNR na OIM, juu baku saidiye kuba tafuta na kuwaleta.",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_3",
+              "type": "explain_relationship",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: kambi ya Bulengo ina weza pokeya batu ngapi?",
+          "content": "kambi ya Bulengo ina weza pokeya batu ngapi?"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot:  kuna aina mbili ya kambi kuko yenyi ime njengwa na ma shirika ya umoja duniyani na yenyi wakimbizi wame njenga peke yao,zile zenyi ziko pembeni ya barabara ni zenyi bakimbizi bame jijengeya, kuihamisha ina omba viongozi vya inchi ipate kwenyi wata wa peleka.",
+          "content": "kuna aina mbili ya kambi kuko yenyi ime njengwa na ma shirika ya umoja duniyani na yenyi wakimbizi wame njenga peke yao,zile zenyi ziko pembeni ya barabara ni zenyi bakimbizi bame jijengeya, kuihamisha ina omba viongozi vya inchi ipate kwenyi wata wa peleka."
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: watoto wangu wata weza nikuta hapa bulengo ?",
+          "content": "watoto wangu wata weza nikuta hapa bulengo ?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: watoto ,watapata njiya,balabala iko wazi ,Ila itakuomba ubebe malalamiko Ku shirika ya CNR na OIM, juu baku saidiye kuba tafuta na kuwaleta.",
+          "content": "watoto ,watapata njiya,balabala iko wazi ,Ila itakuomba ubebe malalamiko Ku shirika ya CNR na OIM, juu baku saidiye kuba tafuta na kuwaleta."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_5",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: niko na lazima yaku tunziwa",
+          "speaker": "user",
+          "content": "niko na lazima yaku tunziwa",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: chuki haiezi kosa kuona ngisi wana pitiya hali iyi juu ku zarauliwa na ku onelewa,hakuna mwenyi aliitafuta iyi hali",
+          "speaker": "bot",
+          "content": "chuki haiezi kosa kuona ngisi wana pitiya hali iyi juu ku zarauliwa na ku onelewa,hakuna mwenyi aliitafuta iyi hali",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": false
+            }
+          ],
+          "error_type": "deletion"
+        },
+        {
+          "id": "turn_3",
+          "text": "User: watoto wenye malisho mabaya wata tunziwa wapi?",
+          "speaker": "user",
+          "content": "watoto wenye malisho mabaya wata tunziwa wapi?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: Watoto wenye malisho mabaya tuwapeleke kwenye kituo cha afia (Heal Africa) ili wapate chakula na dawa ya kujenga mwili",
+          "speaker": "bot",
+          "content": "Watoto wenye malisho mabaya tuwapeleke kwenye kituo cha afia (Heal Africa) ili wapate chakula na dawa ya kujenga mwili",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_3",
+              "type": "provide_entity_details",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: niko na lazima yaku tunziwa",
+          "content": "niko na lazima yaku tunziwa"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot:  wakimbizi kwa kambi wana haki ya ulinzi ,kutunzwa, ku zikwa,kulishwa,elimu kwa watoto wa musingi",
+          "content": " wakimbizi kwa kambi wana haki ya ulinzi ,kutunzwa, ku zikwa,kulishwa,elimu kwa watoto wa musingi"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: watoto wenye malisho mabaya wata tunziwa wapi?",
+          "content": "watoto wenye malisho mabaya wata tunziwa wapi?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: Watoto wenye malisho mabaya tuwapeleke kwenye kituo cha afia (Heal Africa) ili wapate chakula na dawa ya kujenga mwili",
+          "content": "Watoto wenye malisho mabaya tuwapeleke kwenye kituo cha afia (Heal Africa) ili wapate chakula na dawa ya kujenga mwili"
+        }
+      ]
+    },
+    {
+      "id": "dialogue_6",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: Kambi za wakimbizi wapi?",
+          "speaker": "user",
+          "content": "Kambi za wakimbizi wapi?",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: - RUSAYO 2 (Rutshuru) - Uwezo: 2280 - KASHUGA (Rutshuru) - Uwezo: 10976 - MATER DEI  (Rutshuru) - Uwezo: 460 - MPATI (Rutshuru) - Uwezo: 10976",
+          "speaker": "bot",
+          "content": "- RUSAYO 2 (Rutshuru) - Uwezo: 2280 - KASHUGA (Rutshuru) - Uwezo: 10976 - MATER DEI  (Rutshuru) - Uwezo: 460 - MPATI (Rutshuru) - Uwezo: 10976",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_2",
+              "type": "provide_entity_details",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_3",
+              "type": "list_entities",
+              "success": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3",
+          "text": "User: usalama ya wakimbizi ita wezekana?",
+          "speaker": "user",
+          "content": "usalama ya wakimbizi ita wezekana?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: kandokando ya kambi kuna patikana wa polisi",
+          "speaker": "bot",
+          "content": "kandokando ya kambi kuna patikana wa polisi",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: Kambi za wakimbizi wapi?",
+          "content": "Kambi za wakimbizi wapi?"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: - RUSAYO 2 (Rutshuru) - Uwezo: 2280 - KASHUGA (Rutshuru) - Uwezo: 10976 - MATER DEI  (Rutshuru) - Uwezo: 460 - MPATI (Rutshuru) - Uwezo: 10976",
+          "content": "- RUSAYO 2 (Rutshuru) - Uwezo: 2280 - KASHUGA (Rutshuru) - Uwezo: 10976 - MATER DEI  (Rutshuru) - Uwezo: 460 - MPATI (Rutshuru) - Uwezo: 10976"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: usalama ya wakimbizi ita wezekana?",
+          "content": "usalama ya wakimbizi ita wezekana?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: kandokando ya kambi kuna patikana wa polisi",
+          "content": "kandokando ya kambi kuna patikana wa polisi"
+        }
+      ]
+    },
+    {
+      "id": "dialogue_7",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: Nahitaji msaada wa chakula",
+          "speaker": "user",
+          "content": "Nahitaji msaada wa chakula",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: Samahani, hakuna mashirika yanayotoa huduma hiyo yaliyopatikana.",
+          "speaker": "bot",
+          "content": "Samahani, hakuna mashirika yanayotoa huduma hiyo yaliyopatikana.",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3",
+          "text": "User: kwa nini tupiganiye chakula",
+          "speaker": "user",
+          "content": "kwa nini tupiganiye chakula",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: watu wana pinganiya chakula juu ya hali gumu ya maisha apa kwa kambi",
+          "speaker": "bot",
+          "content": "watu wana pinganiya chakula juu ya hali gumu ya maisha apa kwa kambi",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: Nahitaji msaada wa chakula",
+          "content": "Nahitaji msaada wa chakula"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: musaada inapaniwaka ku fatana na kategoriya, alafu shirika yahu kabizi ya chakula (PAM) njo inapatiyaka wakimbizi wote",
+          "content": "musaada inapaniwaka ku fatana na kategoriya, alafu shirika yahu kabizi ya chakula (PAM) njo inapatiyaka wakimbizi wote"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: kwa nini tupiganiye chakula",
+          "content": "kwa nini tupiganiye chakula"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: watu wana pinganiya chakula juu ya hali gumu ya maisha apa kwa kambi",
+          "content": "watu wana pinganiya chakula juu ya hali gumu ya maisha apa kwa kambi"
+        }
+      ]
+    },
+    {
+      "id": "dialogue_8",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: wapi hii ni vituo vya afya katika Goma?",
+          "speaker": "user",
+          "content": "wapi hii ni vituo vya afya katika Goma?",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: Hii ni vituo vya afya vilivyopo: - Karisimbi (Goma) - Goma (Goma)",
+          "speaker": "bot",
+          "content": "Hii ni vituo vya afya vilivyopo: - Karisimbi (Goma) - Goma (Goma)",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_2",
+              "type": "provide_entity_details",
+              "success": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3",
+          "text": "User: namna gani tuta tunzwa vilonda vya ndani ?",
+          "speaker": "user",
+          "content": "namna gani tuta tunzwa vilonda vya ndani ?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: bitatunzwa kwaku itika hali ngisi iko,nakwa umoja wa mataifa Ku hamisha batu mu inchi yenyi bata djisikiya na Amani kabisa.",
+          "speaker": "bot",
+          "content": "bitatunzwa kwaku itika hali ngisi iko,nakwa umoja wa mataifa Ku hamisha batu mu inchi yenyi bata djisikiya na Amani kabisa.",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: wapi hii ni vituo vya afya katika Goma?",
+          "content": "wapi hii ni vituo vya afya katika Goma?"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: Hii ni vituo vya afya vilivyopo: - Karisimbi (Goma) - Goma (Goma)",
+          "content": "Hii ni vituo vya afya vilivyopo: - Karisimbi (Goma) - Goma (Goma)"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: namna gani tuta tunzwa vilonda vya ndani ?",
+          "content": "namna gani tuta tunzwa vilonda vya ndani ?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: bitatunzwa kwaku itika hali ngisi iko,nakwa umoja wa mataifa Ku hamisha batu mu inchi yenyi bata djisikiya na Amani kabisa.",
+          "content": "bitatunzwa kwaku itika hali ngisi iko,nakwa umoja wa mataifa Ku hamisha batu mu inchi yenyi bata djisikiya na Amani kabisa."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_9",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: wapii vituo vya afia katika bulengo",
+          "speaker": "user",
+          "content": "wapii vituo vya afia katika bulengo",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: Apa tuko Ku kambi ya kanyaruchinya na kambi ya bushagara.",
+          "speaker": "bot",
+          "content": "Apa tuko Ku kambi ya kanyaruchinya na kambi ya bushagara.",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": false
+            }
+          ],
+          "error_type": "substitution"
+        },
+        {
+          "id": "turn_3",
+          "text": "User: tuna weza jenga nafasi ya ukumbusho juu wenzetu wenye wali fariki ?",
+          "speaker": "user",
+          "content": "tuna weza jenga nafasi ya ukumbusho juu wenzetu wenye wali fariki ?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: juya kumbukumbu ya wenzetu wenye wali fariki uko huru kutiya hema juu ya kilio lakini inaomba vyiongozi  vya kambi wakuwe wamewa arifu.",
+          "speaker": "bot",
+          "content": "juya kumbukumbu ya wenzetu wenye wali fariki uko huru kutiya hema juu ya kilio lakini inaomba vyiongozi  vya kambi wakuwe wamewa arifu.",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: wapii vituo vya afia katika bulengo",
+          "content": "wapii vituo vya afia katika bulengo"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: Hii ni vituo vya afya vilivyopo: - Kibirizi (R",
+          "content": "Hii ni vituo vya afya vilivyopo: - Kibirizi (R"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: tuna weza jenga nafasi ya ukumbusho juu wenzetu wenye wali fariki ?",
+          "content": "tuna weza jenga nafasi ya ukumbusho juu wenzetu wenye wali fariki ?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: juya kumbukumbu ya wenzetu wenye wali fariki uko huru kutiya hema juu ya kilio lakini inaomba vyiongozi  vya kambi wakuwe wamewa arifu.",
+          "content": "juya kumbukumbu ya wenzetu wenye wali fariki uko huru kutiya hema juu ya kilio lakini inaomba vyiongozi  vya kambi wakuwe wamewa arifu."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_10",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: wapi hii ni vituo vya afya katika Masisi?",
+          "speaker": "user",
+          "content": "wapi hii ni vituo vya afya katika Masisi?",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: Hii ni vituo vya afya vilivyopo: - Kirotshe (Masisi) - Masisi (Masisi) - Mweso (Masisi)",
+          "speaker": "bot",
+          "content": "Hii ni vituo vya afya vilivyopo: - Kirotshe (Masisi) - Masisi (Masisi) - Mweso (Masisi)",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_2",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_3",
+              "type": "list_entities",
+              "success": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3",
+          "text": "User: wenye wali baki masisi wana ishi je?",
+          "speaker": "user",
+          "content": "wenye wali baki masisi wana ishi je?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: wailiye bakiya masisi bana ishi muhali mbaya sana, hawana musaada, wana fariki namagonjwa na njaa.",
+          "speaker": "bot",
+          "content": "wailiye bakiya masisi bana ishi muhali mbaya sana, hawana musaada, wana fariki namagonjwa na njaa.",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_3",
+              "type": "explain_relationship",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: wapi hii ni vituo vya afya katika Masisi?",
+          "content": "wapi hii ni vituo vya afya katika Masisi?"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: Hii ni vituo vya afya vilivyopo: - Kirotshe (Masisi) - Masisi (Masisi) - Mweso (Masisi)",
+          "content": "Hii ni vituo vya afya vilivyopo: - Kirotshe (Masisi) - Masisi (Masisi) - Mweso (Masisi)"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: wenye wali baki masisi wana ishi je?",
+          "content": "wenye wali baki masisi wana ishi je?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: wailiye bakiya masisi bana ishi muhali mbaya sana, hawana musaada, wana fariki namagonjwa na njaa.",
+          "content": "wailiye bakiya masisi bana ishi muhali mbaya sana, hawana musaada, wana fariki namagonjwa na njaa."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_11",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: vituo vya afya Mweso?",
+          "speaker": "user",
+          "content": "vituo vya afya Mweso?",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: Hii ni vituo vya afya vilivyopo: - Kirotshe (Masisi) - Masisi (Masisi) - Mweso (Masisi)",
+          "speaker": "bot",
+          "content": "Hii ni vituo vya afya vilivyopo: - Kirotshe (Masisi) - Masisi (Masisi) - Mweso (Masisi)",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_2",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_3",
+              "type": "list_entities",
+              "success": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3",
+          "text": "User: wa binti wa goma wata penda wa vijana wa masisi?",
+          "speaker": "user",
+          "content": "wa binti wa goma wata penda wa vijana wa masisi?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: ijapo kuwa hali mapenzi haifate ile yote, wasika wakimbizi wata pendwa hakuna shida.",
+          "speaker": "bot",
+          "content": "ijapo kuwa hali mapenzi haifate ile yote, wasika wakimbizi wata pendwa hakuna shida.",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "explain_relationship",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: vituo vya afya Mweso?",
+          "content": "vituo vya afya Mweso?"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: Hii ni vituo vya afya vilivyopo: - Kirotshe (Masisi) - Masisi (Masisi) - Mweso (Masisi)",
+          "content": "Hii ni vituo vya afya vilivyopo: - Kirotshe (Masisi) - Masisi (Masisi) - Mweso (Masisi)"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: wa binti wa goma wata penda wa vijana wa masisi?",
+          "content": "wa binti wa goma wata penda wa vijana wa masisi?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: ijapo kuwa hali mapenzi haifate ile yote, wasika wakimbizi wata pendwa hakuna shida.",
+          "content": "ijapo kuwa hali mapenzi haifate ile yote, wasika wakimbizi wata pendwa hakuna shida."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_12",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: kambi za Nyiragongo zina weza pokeya watu ngapi?",
+          "speaker": "user",
+          "content": "kambi za Nyiragongo zina weza pokeya watu ngapi?",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: inakatazwa silaha kuingiya munkambi,zingine zina ingiya ku manyanga.",
+          "speaker": "bot",
+          "content": "inakatazwa silaha kuingiya munkambi,zingine zina ingiya ku manyanga.",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": false
+            }
+          ],
+          "error_type": "substitution"
+        },
+        {
+          "id": "turn_3",
+          "text": "User: tukamate silaha sisi wote?",
+          "speaker": "user",
+          "content": "tukamate silaha sisi wote?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: apana haiko njo suluhisho ,kila mtu iko na byenyi anaweza fanya, hatuezikuwa siye bote ba djeshi.",
+          "speaker": "bot",
+          "content": "apana haiko njo suluhisho ,kila mtu iko na byenyi anaweza fanya, hatuezikuwa siye bote ba djeshi.",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: kambi za Nyiragongo zina weza pokeya watu ngapi?",
+          "content": "kambi za Nyiragongo zina weza pokeya watu ngapi?"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: wakimbizi kwa kambi wana haki ya ulinzi ,kutunzwa, ku zikwa,kulishwa,elimu kwa watoto wa musingi",
+          "content": "wakimbizi kwa kambi wana haki ya ulinzi ,kutunzwa, ku zikwa,kulishwa,elimu kwa watoto wa musingi"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: tukamate silaha sisi wote?",
+          "content": "tukamate silaha sisi wote?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: apana haiko njo suluhisho ,kila mtu iko na byenyi anaweza fanya, hatuezikuwa siye bote ba djeshi.",
+          "content": "apana haiko njo suluhisho ,kila mtu iko na byenyi anaweza fanya, hatuezikuwa siye bote ba djeshi."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_13",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: nina taka sema juu ya ukosefu wa usalama",
+          "speaker": "user",
+          "content": "nina taka sema juu ya ukosefu wa usalama",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: masasi ina liya kila siku katika kambi kwa sababu ya wabandi wanao ingiya kwa kambi",
+          "speaker": "bot",
+          "content": "masasi ina liya kila siku katika kambi kwa sababu ya wabandi wanao ingiya kwa kambi",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3",
+          "text": "User: mungu iko naona ibi byote ?",
+          "speaker": "user",
+          "content": "mungu iko naona ibi byote ?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: ndiyo nakilakitu Kiko na mwanzo na mwisho, ni kadari",
+          "speaker": "bot",
+          "content": "ndiyo nakilakitu Kiko na mwanzo na mwisho, ni kadari",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: nina taka sema juu ya ukosefu wa usalama",
+          "content": "nina taka sema juu ya ukosefu wa usalama"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: masasi ina liya kila siku katika kambi kwa sababu ya wabandi wanao ingiya kwa kambi",
+          "content": "masasi ina liya kila siku katika kambi kwa sababu ya wabandi wanao ingiya kwa kambi"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: mungu iko naona ibi byote ?",
+          "content": "mungu iko naona ibi byote ?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: ndiyo nakilakitu Kiko na mwanzo na mwisho, ni kadari",
+          "content": "ndiyo nakilakitu Kiko na mwanzo na mwisho, ni kadari"
+        }
+      ]
+    },
+    {
+      "id": "dialogue_14",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: viongozi watu saidiye na masomo ya bure",
+          "speaker": "user",
+          "content": "viongozi watu saidiye na masomo ya bure",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: kwakupata jibu Ku malalamiko,na wakuu vyiogozi vya kambi",
+          "speaker": "bot",
+          "content": "kwakupata jibu Ku malalamiko,na wakuu vyiogozi vya kambi",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3",
+          "text": "User: watoto wetu wata soma bure?",
+          "speaker": "user",
+          "content": "watoto wetu wata soma bure?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: Watasoma bila tatizo ndani ya kambi ,kwani kuna ma ONG zenyi zina usika na masomo ya watoto wakimbizi",
+          "speaker": "bot",
+          "content": "Watasoma bila tatizo ndani ya kambi ,kwani kuna ma ONG zenyi zina usika na masomo ya watoto wakimbizi",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_3",
+              "type": "provide_entity_details",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: viongozi watu saidiye na masomo ya bure",
+          "content": "viongozi watu saidiye na masomo ya bure"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: kwakupata jibu Ku malalamiko,na wakuu vyiogozi vya kambi",
+          "content": "kwakupata jibu Ku malalamiko,na wakuu vyiogozi vya kambi"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: watoto wetu wata soma bure?",
+          "content": "watoto wetu wata soma bure?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: Watasoma bila tatizo ndani ya kambi ,kwani kuna ma ONG zenyi zina usika na masomo ya watoto wakimbizi",
+          "content": "Watasoma bila tatizo ndani ya kambi ,kwani kuna ma ONG zenyi zina usika na masomo ya watoto wakimbizi"
+        }
+      ]
+    },
+    {
+      "id": "dialogue_15",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: niko na lazima ya hema kwaku lalisha familia yangu",
+          "speaker": "user",
+          "content": "niko na lazima ya hema kwaku lalisha familia yangu",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: Kama uko na hema moja na akuya kuwa musaada yoyote, ba responsable ba kambi Bata tiya mu hangar, mu kanisa, mu masomo, etc ( centres collectifs) ju ya ku chunga jibu ku husu fasi ya ku ishi na familia.",
+          "speaker": "bot",
+          "content": "Kama uko na hema moja na akuya kuwa musaada yoyote, ba responsable ba kambi Bata tiya mu hangar, mu kanisa, mu masomo, etc ( centres collectifs) ju ya ku chunga jibu ku husu fasi ya ku ishi na familia.",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_2",
+              "type": "answer_query",
+              "success": false
+            }
+          ],
+          "error_type": "insertion"
+        },
+        {
+          "id": "turn_3",
+          "text": "User: nina watoto kumi nita ishi nao namna gani na sina kazi?",
+          "speaker": "user",
+          "content": "nina watoto kumi nita ishi nao namna gani na sina kazi?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi",
+          "speaker": "bot",
+          "content": "niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: niko na lazima ya hema kwaku lalisha familia yangu",
+          "content": "niko na lazima ya hema kwaku lalisha familia yangu"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: niku fanya malalamiko kwenye viongozi vya Kambi",
+          "content": "niku fanya malalamiko kwenye viongozi vya Kambi"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: nina watoto kumi nita ishi nao namna gani na sina kazi?",
+          "content": "nina watoto kumi nita ishi nao namna gani na sina kazi?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi",
+          "content": "niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi"
+        }
+      ]
+    },
+    {
+      "id": "dialogue_16",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: Ninaomba dawa kwa mtoto mgonjwa",
+          "speaker": "user",
+          "content": "Ninaomba dawa kwa mtoto mgonjwa",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: Samahani, hakuna mashirika yanayotoa huduma hiyo yaliyopatikana.",
+          "speaker": "bot",
+          "content": "Samahani, hakuna mashirika yanayotoa huduma hiyo yaliyopatikana.",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3",
+          "text": "User: ni namna gani njo tuta epuka homa?",
+          "speaker": "user",
+          "content": "ni namna gani njo tuta epuka homa?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: tudji kinge na homa kwaku kunywa maji mingi na kuji funika wakati ya baridi.",
+          "speaker": "bot",
+          "content": "tudji kinge na homa kwaku kunywa maji mingi na kuji funika wakati ya baridi.",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: Ninaomba dawa kwa mtoto mgonjwa",
+          "content": "Ninaomba dawa kwa mtoto mgonjwa"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: Samahani, hakuna mashirika yanayotoa huduma hiyo yaliyopatikana.",
+          "content": "Samahani, hakuna mashirika yanayotoa huduma hiyo yaliyopatikana."
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: ni namna gani njo tuta epuka homa?",
+          "content": "ni namna gani njo tuta epuka homa?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: tudji kinge na homa kwaku kunywa maji mingi na kuji funika wakati ya baridi.",
+          "content": "tudji kinge na homa kwaku kunywa maji mingi na kuji funika wakati ya baridi."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_17",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: Mimi ni Bahati, niko na lazima ya mayi",
+          "speaker": "user",
+          "content": "Mimi ni Bahati, niko na lazima ya mayi",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: Samahani, hakuna mashirika yanayotoa huduma hiyo yaliyopatikana.",
+          "speaker": "bot",
+          "content": "Samahani, hakuna mashirika yanayotoa huduma hiyo yaliyopatikana.",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": false
+            }
+          ],
+          "error_type": "deletion"
+        },
+        {
+          "id": "turn_3",
+          "text": "User: mercycorps ita leta mayi siku gani ?",
+          "speaker": "user",
+          "content": "mercycorps ita leta mayi siku gani ?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: mercycorps inaleta sa yoyote maji ikataka isha.",
+          "speaker": "bot",
+          "content": "mercycorps inaleta sa yoyote maji ikataka isha.",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: Mimi ni Bahati, niko na lazima ya mayi",
+          "content": "Mimi ni Bahati, niko na lazima ya mayi"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: mercycorps inaleta sa yoyote maji ikataka isha.",
+          "content": "mercycorps inaleta sa yoyote maji ikataka isha."
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: mercycorps ita leta mayi siku gani ?",
+          "content": "mercycorps ita leta mayi siku gani ?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: mercycorps inaleta sa yoyote maji ikataka isha.",
+          "content": "mercycorps inaleta sa yoyote maji ikataka isha."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_18",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: niko na lazima pesa ya kusaidiya familia yangu",
+          "speaker": "user",
+          "content": "niko na lazima pesa ya kusaidiya familia yangu",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: ndiyo, wataikala pale ndani ya kambi kwa hema,juu wakagonjwa wata bebwa Ku matunzo.",
+          "speaker": "bot",
+          "content": "ndiyo, wataikala pale ndani ya kambi kwa hema,juu wakagonjwa wata bebwa Ku matunzo.",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "answer_query",
+              "success": false
+            }
+          ],
+          "error_type": "substitution"
+        },
+        {
+          "id": "turn_3",
+          "text": "User: matunzo ita bakiya ya bure mpaka mwisho ya vita?",
+          "speaker": "user",
+          "content": "matunzo ita bakiya ya bure mpaka mwisho ya vita?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: ndiyo MSF batatunza kya bure na mpaka vita iishe juu yaku heshimu ahadi yawo kwa wakimbizi.",
+          "speaker": "bot",
+          "content": "ndiyo MSF batatunza kya bure na mpaka vita iishe juu yaku heshimu ahadi yawo kwa wakimbizi.",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_3",
+              "type": "provide_entity_details",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: niko na lazima pesa ya kusaidiya familia yangu",
+          "content": "niko na lazima pesa ya kusaidiya familia yangu"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi",
+          "content": "niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: matunzo ita bakiya ya bure mpaka mwisho ya vita?",
+          "content": "matunzo ita bakiya ya bure mpaka mwisho ya vita?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: ndiyo MSF batatunza kya bure na mpaka vita iishe juu yaku heshimu ahadi yawo kwa wakimbizi.",
+          "content": "ndiyo MSF batatunza kya bure na mpaka vita iishe juu yaku heshimu ahadi yawo kwa wakimbizi."
+        }
+      ]
+    },
+    {
+      "id": "dialogue_19",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: apa nyiragongo kuko vituo ngapi vya afya ?",
+          "speaker": "user",
+          "content": "apa nyiragongo kuko vituo ngapi vya afya ?",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: vituwo vya afia ni vya mingi apa nyiragongo juu ya kuudumiya wakimbizi muziri kwa afia.",
+          "speaker": "bot",
+          "content": "vituwo vya afia ni vya mingi apa nyiragongo juu ya kuudumiya wakimbizi muziri kwa afia.",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_2",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3",
+          "text": "User: vituwo vya afia nyiragongo",
+          "speaker": "user",
+          "content": "vituwo vya afia nyiragongo",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: vita ika fika apa nikukimbiya pamoya na bengine bakaaji kwenyi patakimbiliya.",
+          "speaker": "bot",
+          "content": "vita ika fika apa nikukimbiya pamoya na bengine bakaaji kwenyi patakimbiliya.",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "answer_query",
+              "success": false
+            }
+          ],
+          "error_type": "substitution"
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: apa nyiragongo kuko vituo ngapi vya afya ?",
+          "content": "apa nyiragongo kuko vituo ngapi vya afya ?"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: vituwo vya afia ni vya mingi apa nyiragongo juu ya kuudumiya wakimbizi muziri kwa afia.",
+          "content": "vituwo vya afia ni vya mingi apa nyiragongo juu ya kuudumiya wakimbizi muziri kwa afia."
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: vituwo vya afia nyiragongo",
+          "content": "vituwo vya afia nyiragongo"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: ",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": "dialogue_20",
+      "turns": [
+        {
+          "id": "turn_1",
+          "text": "User: niko na lazima ya nafasi yaku ishi mu Goma",
+          "speaker": "user",
+          "content": "niko na lazima ya nafasi yaku ishi mu Goma",
+          "tasks": []
+        },
+        {
+          "id": "turn_2",
+          "text": "Bot: niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi",
+          "speaker": "bot",
+          "content": "niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi",
+          "tasks": [
+            {
+              "id": "task_turn_2_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_2_2",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3",
+          "text": "User: tuta pata makazi uku?",
+          "speaker": "user",
+          "content": "tuta pata makazi uku?",
+          "tasks": []
+        },
+        {
+          "id": "turn_4",
+          "text": "Bot: Kama kuna kazi za mikono kwenye kambi ao kandokando viongozi ya ONG vita pewa wakimbizi ma kazi zamikono",
+          "speaker": "bot",
+          "content": "Kama kuna kazi za mikono kwenye kambi ao kandokando viongozi ya ONG vita pewa wakimbizi ma kazi zamikono",
+          "tasks": [
+            {
+              "id": "task_turn_4_1",
+              "type": "provide_information",
+              "success": true
+            },
+            {
+              "id": "task_turn_4_2",
+              "type": "answer_query",
+              "success": true
+            }
+          ]
+        }
+      ],
+      "ground_truth_turns": [
+        {
+          "id": "gt_turn_1",
+          "speaker": "user",
+          "text": "User: niko na lazima ya nafasi yaku ishi mu Goma",
+          "content": "niko na lazima ya nafasi yaku ishi mu Goma"
+        },
+        {
+          "id": "gt_turn_2",
+          "speaker": "bot",
+          "text": "Bot: niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi",
+          "content": "niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi"
+        },
+        {
+          "id": "gt_turn_3",
+          "speaker": "user",
+          "text": "User: tuta pata makazi uku?",
+          "content": "tuta pata makazi uku?"
+        },
+        {
+          "id": "gt_turn_4",
+          "speaker": "bot",
+          "text": "Bot: Kama kuna kazi za mikono kwenye kambi ao kandokando viongozi ya ONG vita pewa wakimbizi ma kazi zamikono",
+          "content": "Kama kuna kazi za mikono kwenye kambi ao kandokando viongozi ya ONG vita pewa wakimbizi ma kazi zamikono"
+        }
+      ]
+    }
+  ]
+}

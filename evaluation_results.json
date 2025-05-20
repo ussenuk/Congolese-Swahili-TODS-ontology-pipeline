@@ -1,0 +1,26 @@
+{
+  "task_completion_rate": {
+    "provide_information": 1.0,
+    "answer_query": 0.7894736842105263,
+    "provide_entity_details": 1.0,
+    "list_entities": 1.0,
+    "explain_relationship": 1.0,
+    "other": 0.0,
+    "overall": 0.8933333333333333
+  },
+  "task_completion_cost": {
+    "provide_information": 1.0,
+    "answer_query": 1.0,
+    "provide_entity_details": 1.0,
+    "list_entities": 1.0,
+    "explain_relationship": 1.0,
+    "other": 0.0,
+    "overall": 1.0
+  },
+  "edit_distance": {
+    "mean_edit_distance": 0.0975,
+    "median_edit_distance": 0.0,
+    "min_edit_distance": 0.0,
+    "max_edit_distance": 0.25
+  }
+}

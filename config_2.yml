@@ -1,0 +1,25 @@
+language: sw
+pipeline:
+- name: WhitespaceTokenizer
+- name: LanguageModelFeaturizer
+  model_name: "bert"
+  model_weights: "bert-base-multilingual-cased"
+  cache_dir: "./cache_models"
+- name: DIETClassifier
+  epochs: 100
+  batch_size: [16, 32]
+  entity_recognition: true
+- name: EntitySynonymMapper
+- name: ResponseSelector
+  epochs: 100
+
+policies:
+- name: MemoizationPolicy
+- name: RulePolicy
+  priority: 5
+  enable_fallback_prediction: false
+- name: TEDPolicy
+  priority: 10
+  max_history: 5
+  epochs: 100
+assistant_id: 20250518-113815-tough-lily

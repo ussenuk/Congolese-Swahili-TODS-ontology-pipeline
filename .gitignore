@@ -1,0 +1,37 @@
+# Rasa cache and model files
+.rasa/
+models/
+
+# Apache Jena Fuseki
+apache-jena-fuseki-5.4.0/
+apache-jena-fuseki-5.4.0.zip
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Lock files
+*.lock
+
+# Temporary files
+.~lock*
+*.swp
+*.swo
+*~ 

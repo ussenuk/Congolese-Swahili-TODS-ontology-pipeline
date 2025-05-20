@@ -1,0 +1,2956 @@
+version: "3.1"
+
+intents: 
+  - greet_swa
+  - greet_fr
+  - goodbye_swa
+  - goodbye_fr
+  - affirm_swa
+  - affirm_fr
+  - deny_swa
+  - deny_fr
+  - mood_great_swa
+  - mood_great_fr
+  - mood_unhappy_swa
+  - mood_unhappy_fr
+  - bot_challenge_swa
+  - bot_challenge_fr
+  - who_are_you_swa
+  - who_are_you_fr
+  # Humanitarian RDF query intents
+  - query_health_facilities_swa
+  - query_water_sources_swa
+  - query_camps_swa
+  - submit_aid_request_swa
+  - rwanda_shida_swa
+  - maji_kunywa_swa
+  - mafunzo_kupata_swa
+  - hema_kupata_swa
+  - kunyanyaswa_swa
+  - vita_wakati_swa
+  - choo_swa
+  - kupokelewa_swa
+  - kupata_ndui_swa
+  - chakula_swa
+  - maji_kuwa_kidogo_swa
+  - matibabu_swa
+  - kazi_bila_kazi_swa
+  - masomo_bure_swa
+  - vyeti_vya_shule_swa
+  - watoto_walio_poteya_swa
+  - ubakaji_wakimbizi_wapi_swa
+  - usalama_swa
+  - viongozi_nyamaza_swa
+  - kuhara_swa
+  - kuandikiwa_swa
+  - maisha_swa
+  - serkali_swa
+  - kazi_zita_pata_swa
+  - kazi_zitakapata_swa
+  - msaada_kwa_siye_bote_swa
+  - msaada_kwa_mtu_swa
+  - kuandikisha_swa
+  - mashindano_ya_serkali_swa
+  - mashindano_wa_serikali_swa
+  - haki_kwa_wakimbizi_swa
+  - malisho_mabaya_swa
+  - wakimbizi_swa
+  - uizi_swa
+  - mafugo_swa
+  - kulala_kwa_wanaume_na_wanawake_swa
+  - msaada_swa
+  - vita_kwetu_swa
+  - uchafu_swa
+  - kurudi_swa
+  - vita_m23_swa
+  - vita_jeshi_yetu_swa
+  - maongezi_swa
+  - vita_kongo_rwanda_swa
+  - askari_swa
+  - viongozi_swa
+  - wazalendo_swa
+  - wazalendo_jeshi_yetu_swa
+  - masomo_shida_swa
+  - vita_faidika_swa
+  - vita_sababu_swa
+  - vita_rutchuru_swa
+  - kuzika_swa
+  - kuliya_swa
+  - kuliya_lala_baches_swa
+  - kuliya_maliza_vita_swa
+  - vita_ime_anza_swa
+  - kuliya_wakongomani_wengine_swa
+  - ubakaji_wabinti_wamama_swa
+  - kuliya_faida_wakongomani_swa
+  - kuliya_kongo_rwanda_swa
+  - kuliya_eac_sadec_wazungu_swa
+  - kuliya_viongozi_wa_kongo_na_m23_swa
+  - kuliya_m23_wakongomani_swa
+  - kuliya_ina_sapoti_swa
+  - kuliya_uganda_kongo_swa
+  - kuliya_wetu_viongozi_sisi_swa
+  - kuzika_wakimbizi_wapi_swa
+  - kuzika_wanao_kufa_swa
+  - kambi_wakimbizi_wote_swa
+  - usalama_kambi_swa
+  - kuliya_saidiya_kwa_wakongomani_swa
+  - wazalendo_wame_kwa_wapi_swa
+  - mauwaji_swa
+  - wazalendo_wame_pewa_mamlaka_swa
+  - wazalendo_wame_nyanyasa_wakimbizi_swa
+  - mateso_swa
+  - kilio_sacrifier_swa
+  - jeshi_swa
+  - jeshi_shindwa_vita_swa
+  - shule_swa
+  - shule_viongozi_wakimbizi_wapi_swa
+  - kilio_amani_swa
+  - kilio_jeshi_ya_eac_swa
+  - kilio_umoja_ya_africaswa
+  - kilio_wasaidizi_wamoja_wakimbizi_wapi_swa
+  - kilio_wakimbizi_wa_uongo_swa
+  - kilio_wakimbizi_wenye_haiko_swa
+  - kilio_jetons_swa
+  - kilio_wakimbizi_wenye_damu_swa
+  - kilio_chakula_bila_makala_swa
+  - kilio_maisha_yetu_swa
+  - kilio_sikia_kwa_kilio_swa
+  - chakula_pandisha_swa
+  - kulima_swa
+  - kilio_tetezi_wakimbizi_wapi_njo_swa
+  - kilio_watoto_wangu_wata_chezeya_wapi_swa
+  - kilio_kambi_zimoja_ziko_ku_barabara_swa
+  - usafi_swa
+  - hema_zetu_zengine_swa
+  - kujikinga_swa
+  - maji_safi_swa
+  - rwanda_furahi_swa
+  - rwanda_teseka_swa
+  - jeshi_wana_malizika_swa
+  - jeshi_wana_gombolewa_swa
+  - jeshi_wana_juwa_mateso_swa
+  - rwanda_chukiya_swa
+  - chunvi_swa
+  - maji_juwa_swa
+  - maji_shoteya_swa
+  - kanisa_swa
+  - dini_swa
+  - kanisa_nyirangongo_swa
+  - kanisa_njenga_kwa_kambi_swa
+  - chakula_tuiweke_swa
+  - bwaki_swa
+  - bwaki_ya_wajawazito_swa
+  - kulima_viongozi_wakimbizi_wapi_swa
+  - wakati_swa
+  - hema_ike_aribika_swa
+  - dawa_ya_wagojnwa_wa_ukimwi_swa
+  - dawa_ya_wagojnwa_wa_sukari_swa
+  - chakula_watu_wa_regime_swa
+  - chadaruwa_swa
+  - wagonjwa_swa
+  - psychologues_swa
+  - volkeno_swa
+  - nvula_swa
+  - ambulance_swa
+  - usafi_ndani_kambi_swa
+  - chakula_haribika_swa
+  - dawa_ina_haribika_swa
+  - uzazi_swa
+  - uzazi_kwa_wakimbizi_wapi_swa
+  - choo_tujengeya_swa
+  - magongwa_swa
+  - magongwa_ya_infections_swa
+  - homa_swa
+  - magongwa_ya_malaria_swa
+  - magongwa_ya_walemavu_swa
+  - masomo_tumika_swa
+  - kazi_kulipa_swa
+  - kazi_za_goma_swa
+  - kazi_endeleya_lipiwa_swa
+  - kazi_goma_zitakapata_swa
+  - kazi_serkali_zitakapata_swa
+  - uchuruzi_swa
+  - kuni_swa
+  - uongozi_swa
+  - uongozi_kwa_wakimbizi_wapi_swa
+  - vita_kanyarutshinya_swa
+  - vita_salama_swa
+  - vita_wapi_swa
+  - usalama_apa_ndani_kambi_swa
+  - vita_fika_swa
+  - vita_karibu_na_sisi_swa
+  - vita_ingiya_kambi_swa
+  - lugha_swa
+  - lugha_kinyarwanda_swa
+  - usalama_mpaka_na_rwanda_swa
+  - usalama_nyiragongo_swa
+  - mtandao_swa
+  - usalama_vita_nyiragongo_swa
+  - usalama_askari_swa
+  - jamaa_swa
+  - usalama_watoto_wangu_swa
+  - usalama_bulengo_swa
+  - usalama_vita_kwa_watoto_wangu_swa
+  - usalama_hasira_swa
+  - uoga_swa
+  - hali_swa
+  - hali_usingizi_swa
+  - hali_ndoto_swa
+  - hali_watoto_wangu_swa
+  - hali_viongozi_wakimbizi_wapi_swa
+  - hali_mzigo_swa
+  - malalamiko_sisi_wangu_swa
+  - malalamiko_kwa_wakimbizi_wapi_swa
+  - malalamiko_wazima_swa
+  - malalamiko_elewe_swa
+  - malalamiko_kula_chakula_swa
+  - malalamiko_mungu_swa
+  - malalamiko_mungu_ana_tupenda_swa
+  - malalamiko_mungu_ana_ruhusu_tukuwe_wakimbizi_wapi_swa
+  - malalamiko_duniya_swa
+  - malalamiko_mtetezi_wakimbizi_wapi_swa
+  - malalamiko_kiswahili_swa
+  - malalamiko_kiswahili_kwa_wakimbizi_wapi_swa
+  - malalamiko_goma_swa
+  - malalamiko_goma_kwa_wakimbizi_wapi_swa
+  - malalamiko_watoto_wa_goma_swa
+  - malalamiko_itika_ku_changana_na_siye_swa
+  - malalamiko_maisha_kwa_kesho_swa
+  - malalamiko_maisha_kwa_zamani_swa
+  - malalamiko_waelezeya_kwa_kesho_swa
+  - masomo_kawaida_swa
+  - malalamiko_vilonda_vya_ndani_swa
+  - mashaka_swa
+  - mashaka_shuleni_kwa_watoto_wangu_swa
+  - malalamiko_waalimu_tayarishwa_kupokeya_watoto_wakimbizi_wapi_swa
+  - mashaka_waalimu_fundisha_watoto_wakimbizi_wapi_swa
+  - malalamiko_askari_kwa_wakimbizi_wapi_swa
+  - malalamiko_maibobo_kwa_wakimbizi_wapi_swa
+  - malalamiko_vitabu_kwa_watoto_wangu_swa
+  - malalamiko_kuko_kwa_watoto_wangu_swa
+  - malalamiko_masomo_i_kwa_watoto_wangu_swa
+  - malalamiko_maisha_kwa_watoto_raha_swa
+  - malalamiko_waambiya_nini_kwa_watoto_wangu_swa
+  - masomo_weza_soma_swa
+  - malalamiko_waweze_masomo_swa
+  - malalamiko_pendaka_tena_maisha_swa
+  - malalamiko_tuchangiye_kwa_amani_swa
+  - malalamiko_sherehe_kwa_wakimbizi_wapi_swa
+  - malalamiko_kusherehe_mwaka_mpya_kwa_watoto_wangu_swa
+  - malalamiko_kusherehe_mwaka_mpya_kwa_watoto_wangu_siku_mpya_swa
+  - mashaka_yetu_elewa_nani_swa
+  - mashaka_tuta_wezaka_hurumiya_wanyarwanda_swa
+  - mashaka_historia_kwa_kongo_swa
+  - mashaka_tunzwa_kwa_vilonda_vya_ndani_swa
+  - mashaka_amani_kwa_masisi_swa
+  - mashaka_sheriya_kwa_rwanda_swa
+  - mashaka_mahakama_kwa_rwanda_swa
+  - mashaka_amani_bila_vita_haiwezi_patikana_swa
+  - mashaka_iyi_vita_ni_ya_nini_swa
+  - mashaka_nani_ali_anzaka_vita_swa
+  - mashaka_watoto_wakimbizi_wapi_kwa_kesho_swa
+  - mashaka_wenswa_kwa_wakimbizi_wapi_swa
+  - mashaka_duniya_mzima_kwa_kilio_swa
+  - mashaka_umoja_wa_mataifa_kwa_teseka_swa
+  - mashaka_kuko_kwa_teseka_apa_swa
+  - mashaka_nyumbani_kwa_goma_swa
+  - mashaka_apa_kuko_usalama_swa
+  - kulala_na_watoto_wanazaliwa_swa
+  - kulala_na_wazehe_wakongwe_swa
+  - kulala_na_wazazi_na_watoto_swa
+  - mashaka_viongosi_nafasi_swa
+  - viwanja_chakula_kila_siku_ku_mustariswa_swa
+  - mashaka_chakula_sawa_sawa_swa
+  - chakula_chagua_nina_penda_swa
+  - chakula_tuta_kuwa_na_shiba_swa
+  - chakula_hai_eneye_swa
+  - chakula_hii_swa
+  - maisha_onekana_kama_wa_maskini_sana_swa
+  - maisha_hali_itadumu_siku_mingi_swa
+  - matunzo_nyiragongo_kuko_vituo_ngapi_vya_afya_swa
+  - maisha_yenye_nili_ishi_swa
+  - maisha_zala_katika_hali_nzuri_swa
+  - malalamiko_nani_ata_fatana_na_trauma_swa
+  - malalamiko_waganga_wata_tu_tunza_na_mapendo_swa
+  - malalamiko_sheriya_zamu_kambi_swa
+  - malalamiko_mungu_angali_swa
+  - malalamiko_mungu_lipiza_zambi_zetu_swa
+  - malalamiko_mungu_ngufu_yaku_omba_mungu_swa
+  - mashaka_tunzwa_na_MSF_bure_swa
+  - mashaka_MSF_iko_na_banganga_bazuri_swa
+  - mashaka_MSF_ita_tunza_na_malali_ya_kichwa_swa
+  - mashaka_juwa_wakimbizi_wa_uongo_swa
+  - mashaka_wakimbizi_wa_uongo_kati_yetu_swa
+  - mashaka_wafanya_kazi_wa_PAM_wakorofi_swa
+  - mashaka_mganga_wa_MSF_ana_ni_tunza_mubaya_nina_eza_end_kwa_nani_swa
+  - mashaka_yangu_iko_na_maana_swa
+  - mashaka_siku_iyi_yote_ita_badilika_swa
+  - mashaka_viongozi_wata_tuambiyaka_nini_tena_ok_swa
+  - mashaka_ita_jenga_sule_umu_swa
+  - mashaka_ita_patiya_watoto_vyombo_vya_shule_swa
+  - mashaka_tuta_pataka_tena_onjo_ya_maisha_swa
+  - mashaka_watoto_kititi_hawaelewe_swa
+  - mashaka_vita_ni_ya_muzuri_kwetu_kweli_swa
+  - mashaka_ju_ya_nini_hakuna_suhulisho_swa
+  - mashaka_nasiye_tukamate_silaha_swa
+  - mashaka_juu_ya_nini_niko_na_pumua_mubaya_swa
+  - mashaka_juu_ya_nini_usiku_silale_swa
+  - mashaka_kuna_Kongo_na_Rwanda_wata_ishi_kwa_Amani_swa
+  - mashaka_watoto_wetu_wata_komala_na_roho_muzuri_swa
+  - mashaka_watoto_wetu_hawata_geuka_wa_bandiya_swa
+  - mashaka_juu_ya_nini_bangi_iko_mu_kambi_swa
+  - mashaka_tuta_sahawaka_iyi_mateso_ndani_swa
+  - mashaka_tuta_pataka_amani_ya_roho_ndani_zetu_swa
+  - mashaka_na_weza_kuwaminiya_tena_viongozi_swa
+  - mashaka_kusema_kinyarwanda_apa_goma_ita_onekana_je_swa
+  - mashaka_ubaguzi_wa_kabila_ina_toka_wapi_swa
+  - mashaka_wanande_wata_itika_na_wa_hutu_bila_shida_apa_swa
+  - mashaka_watoto_wata_pendana_wetu_swa
+  - mashaka_sisi_wakimbiziwenye_tuna_weza_kuwa_na_enda_tembeya_swa
+  - mashaka_duniya_ita_badilikaka_siku_moya_swa
+  - wakati_tuta_wezaka_rudisha_wakati_yenye_tusha_poteza_swa
+  - kifo_hatuta_kufa_siye_bote_swa
+  - mashaka_mwisho_ya_iyi_mateso_ni_nini_swa
+  - mashaka_tuna_weza_saidiyana_namna_gani_kati_yetu_swa
+  - ugonvi_tuta_epuka_ugonvi_namna_gani_swa
+  - masambo_jirani_wake_kosana_wata_samba_wapi_swa
+  - mashaka_tuna_onekana_kama_watu_swa
+  - mali_nani_ata_lipaka_mali_yetu_yenye_isha_poteya_swa
+  - mashaka_wenye_wali_baki_masisi_wana_ishi_je_swa
+  - mashaka_ju_ya_nini_ma_gombora_ziko_na_anguka_mu_ma_kambi_swa
+  - mashaka_apa_kuko_wa_askari_waku_tosha_juya_ku_tu_chunga_sisi_wote_swa
+  - vita_nasiye_tuende_fanya_vita_rwanda_swa
+  - maswali_kazi_ya_croix_rouge_ni_nini_swa
+  - wakimbizi_mukimbizi_ana_pashwa_kula_mara_ngapi_kwa_siku_swa
+  - watutsi_nina_weza_fanya_urafiki_na_mututsi_swa
+  - wakimbizi_watutsi_wote_ni_watu_wabaya_swa
+  - undugu_wa_nani_njo_wa_ndugu_yetu_apa_swa
+  - utulizo_ya_iyi_matata_yote_ita_fanyikaka_swa
+  - mashaka_reparation_ita_fanyikaka_swa
+  - mashaka_tuna_weza_ona_iyi_vita_kama_genocide_swa
+  - mashaka_ni_wakati_gani_njo_tuna_weza_sema_vita_ni_genocide_swa
+  - mashaka_kabila_tafauti_na_tu_aminiyane_swa
+  - mashaka_o_swa
+  - ziwa_kivu_iko_wapi_swa
+  - muungano_tuna_weza_ungana_na_hatu_juwane_swa
+  - watu_wazuri_wangali_duniyani_swa
+  - vita_juu_ya_nini_ina_kwaiya_swa
+  - amani_ingali_nakuwaka_swa
+  - hasira_ita_ishaka_kweli_swa
+  - mungu_mungu_ata_hurumiyaka_rwanda_swa
+  - sheriya_weza_lomba_bila_hasira_swa
+  - sheriya_ina_kuwaka_mu_kongo_kweli_swa
+  - sheriya_waziri_wa_sheriya_swa
+  - kibinadamu_waziri_wa_mambo_ya_kibinadamu_swa
+  - sheriya_waziri_wa_genre_famille_et_enfant_swa
+  - wanyarwanda_wana_pata_usingizi_kweli_swa
+  - kutoka_tutoke_mu_kongo_swa
+  - wanyarwanda_ita_lombaka_huruma_swa
+  - watoto_watoto_wetu_wata_pendaka_wanyarwanda_swa
+  - wanyarwanda_wana_pendaka_watu_malize_swa
+  - watoto_namna_gani_na_weza_kinga_watoto_wangu_swa
+  - ndoa_zita_kuwa_na_wezekana_swa
+  - ndoa_nani_njo_ata_kuwa_na_tu_lungisha_swa
+  - ndoa_tuta_kuwa_na_lungiya_wapi_swa
+  - ndoa_vijana_wa_uku_wana_eza_owa_basika_betu_swa
+  - maisha_uku_wana_eshimiyaka_watu_ya_kazi_swa
+  - maisha_hawata_kuwa_natu_ogopa_uku_swa
+  - maisha_watu_wa_uku_biko_na_umutu_swa
+  - maisha_nafasi_gani_njo_hatuezi_enda_bila_ruhusa_swa
+  - mazuku_na_lac_vert_swa
+  - mazuku_ni_nini_swa
+  - mazuku_ina_uwa_swa
+  - mazuku_tufanye_je_ju_tusi_kufe_na_mazuku_swa
+  - kambi_kwa_nini_wali_tu_tiya_kambi_ya_bulengo_mbali_na_watu_swa
+  - kambi_kwa_nini_wali_tiya_kambi_fasi_na_mazuku_swa
+  - mazuku_ake_kamatwa_na_mazuku_tunaeza_muokowa_je_swa
+  - mazuku_ita_ishaka_kweli_kambi_swa
+  - mazuku_mazuku_nayo_ni_moja_kati_ya_mali_za_kongo_swa
+  - amani_oo_swa
+  - wakongomani_wanapendaka_wenzao_wenzao_swa
+  - duniya_ina_fika_mwisho_swa
+  - vijana_wa_binti_wa_goma_wata_penda_wa_vijana_wa_masisi_swa
+  - vijana_wa_binti_wa_goma_wata_penda_wa_vijana_wa_ructhuru_swa
+  - kanisa_ita_tu_saidiya_je_swa
+  - vijana_wa_goma_wata_pokeya_je_vijana_wenzao_wa_masisi_swa
+  - vijana_kazi_ya_vijana_ita_kuwa_nini_mu_kambi_swa
+  - wababa_kazi_ya_wa_baba_ni_nini_ndani_ya_kambi_swa
+  - radios_za_goma_zita_tu_teteya_swa
+  - makabila_kuko_ubaguzi_ya_wale_ambao_wana_baguwana_juu_ya_ukabila_swa
+  - makabila_kuko_kabila_gani_njo_ina_watu_wengi_swa
+  - maisha_watu_wote_wa_goma_wana_ishi_vizuri_swa
+  - uchumi_goma_ina_simama_swa
+  - vijana_wa_goma_wana_changiya_je_kwa_amani_swa
+  - usalama_hali_ya_usalama_iko_je_mjini_goma_swa
+  - haki_viongozi_wa_goma_wana_juwa_haki_zetu_swa
+  - shamba_goma_hakuna_shamba_tuta_paishi_je_swa
+  - ukarimu_watu_wa_goma_ni_wakarimu_swa
+  - wakristu_wa_goma_wata_saidiya_wa_kristo_wenzao_swa
+  - waislamu_wa_goma_wata_saidiya_wa_islamu_wenzao_swa
+  - vita_iiyi_ita_ishaka_je_namna_gani_swa
+  - vita_iongozi_biko_naona_iyi_mauwaji_yote_swa
+  - vita_kongo_na_rwanda_naona_iyi_buchokozi_ili_anziyaka_wapi_swa
+  - vita_ju_ya_nini_haki_za_binadamu_hazi_eshimike_swa
+  - chakula_iyi_chakula_ya_pam_haita_tu_gonjwesha_swa
+  - kuni_tuta_kuwa_na_tosha_kuni_wapi_swa
+  - kuni_kuwaka_makuni_swa
+  - makala_mufuko_ni_ngapi_goma_swa
+  - makala_nyiragongo_swa
+  - makala_mercycorps_swa
+  - maisha_kambi_vizuri_siku_swa
+  - maisha_tena_ku_mwanzo_swa
+  - maisha_umaskini_watoto_wangu_wana_niona_je_swa
+  - maisha_watoto_hawata_ni_chukiya_swa
+  - maisha_i_watoto_endeleya_kuni_sikiya_katika_umaskini_swa
+  - maisha_iko_nguvu_goma_swa
+  - maisha_tuta_weza_maisha_ya_goma_bila_makazi_swa
+  - maisha_wa_ume_wetu_hawata_geuka_wa_mwizi_swa
+  - maisha_tuta_choma_mwizi_gani_swa
+  - wizi_wata_isha_je_ndani_ya_kambi_swa
+  - usalama_bunduki_zina_fikaka_swa
+  - usalama_bunduki_patiyaka_wakimbizi_swa
+  - muchoko_dawa_muchoko_gani_swa
+  - matunzo_kwa_nini_wakimbizi_wote_wana_tunziwa_tu_fasi_moja_swa
+  - watoto_watoto_masomo_suluhisho_swa
+  - duniya_badilikaka_siku_moja_swa
+  - mapendo_swa
+  - nyimbo_zetu_zita_itikiwa_uku_ukui_swa
+  - michezo_kuwa_na_ruhusa_swa
+  - wafu_wenye_wali_kufa_na_wafu_wenye_wali_tuacha_swa
+  - wafu_tuna_weza_jenga_nafasi_ya_ukumbusho_swa
+  - wafu_wali_fariki_tuwasahau_bila_kulipiza_kisasi_swa
+  - kisasi_tuta_weza_lipiza_kisasi_je_swa
+  - kisasi_tuta_weza_lipiza_kisasi_je_na_kulipiza_kisasi_swa
+  - kisasi_komala_na_chuki_swa
+  - manunguniko_komala_na_chuki_na_mungu_taka_swa
+  - manunguniko_komala_na_chuki_na_mungu_taka_kuji_maliziya_maisha_swa
+  - manunguniko_chuki_hapendake_komala_na_chuki_na_mungu_taka_kuji_maliziya_maisha_swa
+  - chakula_kupiganiya_chakula_swa
+  - njala_haiwezi_fanya_watu_majambazi_swa
+  - maisha_tufanye_majambazi_swa
+  - watoto_wake_shindikana_tuta_liliya_nani_watoto_wana_tushinda_swa
+  - maisha_waume_wetu_wake_geuka_wabandiya_tuta_fanya_je_swa
+  - sheria_iko_na_ona_haya_ypte_jj_swa
+  - sheria_iko_na_ona_haya_ypte_jj_tua_swa
+  - vita_mm23_njo_kusema_nini_swa
+  - maisha_tuke_choma_mwizi_shida_ni_nini_swa
+
+responses:
+  utter_greet_swa:
+    - text: "Jambo!"
+
+  utter_greet_fr:
+    - text: "Salut!"
+
+  utter_cheer_up_swa:
+  - text: "Hapa kuna jambo la kukutia moyo:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  
+  utter_cheer_up_fr:
+  - text: "Voici de quoi vous inspirer:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help_swa:
+  - text: "Je, hiyo ilikusaidia?"
+
+  utter_did_that_help_fr:
+  - text: "Cela vous a-t-il aidé ?"
+
+  utter_happy_swa:
+  - text: "Vizuri, endelea!"
+
+  utter_happy_fr:
+  - text: "Super, continuez !"
+
+  utter_goodbye_swa:
+  - text: "Kwaheri"
+
+  utter_goodbye_fr:
+  - text: "Au revoir"
+
+  utter_bot_challenge_swa:
+  - text: "Mimi ni roboti, inayoendeshwa na Kwaku jibu swali ya wakimbizi."
+
+  utter_bot_challenge_fr:
+  - text: "Je suis un bot, propulsé pour repondre aux questions des refugies et des migrants."
+
+  utter_who_are_you_swa:
+  - text: "Mimi ni boti ya wanawake - AI bot.
+           Mimi ni msaidizi wa sauti ya ku onyesha swali ya wakimbizi nchini DRC. Nikusaidie vipi?"
+
+  utter_who_are_you_fr:
+  - text: "Je suis Swali AI bot créé par des chercheurs.
+           Je suis une assistante vocale en droit des refugiees en RDC. Comment puis-je vous aider?"
+
+  utter_rwanda_shida_swa:
+  - text: |-
+      Akuna kitu tune koseya rwanda, iyi ni politiki ya ngazi ya juu ku usu madini ya Kongo.
+  
+  utter_maji_kunywa_swa:
+  - text: |-
+      Maji uta patikana ku namuna mbili. Ya kwanza, kama kambi ili tengenezewa na ma agences onusiennes
+      kuna pashwa kuwa partenaire mwenye ana usika na maji. Ya pili Kama Kambi ili ombiwa nawa kimbizi wenye wana shotaka maji muma vilages ya kandokando.
+
+  utter_mafunzo_kupata_swa:
+  - text: |-
+      Ata fata ma fundisho na bi pimo (CPN) ku centre de santé yenye iko Kandokando. kama mukimbizi iko
+      mu kambi yenye ili tengenezewa na ma agences onusiennes, kuna kuwaka partenaires mwenye ata
+      usika na afia.
+
+  utter_hema_kupata_swa:
+  - text: |-
+      Kama uko na hema moja na akuya kuwa musaada yoyote, ba responsable ba kambi Bata tiya mu hangar,
+      mu kanisa, mu masomo, etc ( centres collectifs) ju ya ku chunga jibu ku husu fasi ya ku ishi na familia.
+
+  utter_kunyanyaswa_swa:
+  - text: |-
+      Kama ina fika ume nyanyaswa unaji repotii kwa viongozi ya kambi
+
+  utter_vita_wakati_swa:
+  - text: |-
+      Iyi ulizo ni viongozi njo ina pashwa jibu kwa iyi swali.
+  
+  utter_choo_swa:
+  - text: |-
+      Kama muna ishi mu kambi yenye ili tengenezewa na ma agences onusiennes, bana jengaka ma choo
+      na fasi yaku kogeya. kama ni yenye ili umbiwa bila ku tengenezewa na agences onusiennes Bata ba
+      endeza kwenye choo zenye ziko kandokando.
+
+  utter_kupokelewa_swa:
+  - text: |-
+      Niku pana malalamiko kwa serkali yenye iko. Kisha serkali ina tafuwa tatizo
+
+  utter_kupata_ndui_swa:
+  - text: |-
+      Ku kituu ya afia inao patikana ndani ao kandokando ya kambi
+
+  utter_chakula_e_swa:
+  - text: |-
+      Niku pana malalamiko kwa viongozi vya kambi, kisha viongozi vina pandisha malalamiko ku wenye wana
+      usika na ugawanyaji ya Chakula.
+
+  utter_maji_kuwa_kidogo_swa:
+  - text: |-
+      Niku pana malalamiko ku viongozi wala wenye wana usika ku gawa maji ndani ya kambi.
+
+  utter_matibabu_swa:
+  - text: |-
+     Matibabu ita pewa na wenye wana usikika na afia ndani ya kambi tena ita pewa ku bure. 
+
+  utter_kazi_bila_kazi_swa:
+  - text: |-
+      niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi
+  
+  utter_masomo_bure_swa:
+  - text: |-
+     Watasoma bila tatizo ndani ya kambi ,kwani kuna ma ONG zenyi zina usika na masomo ya watoto wakimbizi
+  
+  utter_vyeti_vya_shule_swa:
+  - text: |-
+      Watoto wata andikwa shuleni ku pitaya ile kitanbulisho ya ukimbizi ya wa zazi
+  
+  utter_watoto_walio_poteya_swa:
+  - text: |-
+      niku fanya malalamiko kwenye viongozi vya Kambi, kisha viongozi vya kambi ita julisha viongozi by inchi
+      
+  utter_ubakaji_wakimbizi_wapi_swa:
+  - text: |-
+      Niku enda ku viongozi vya chumba cha malalamiko, kisha viongozi vina mu beba ku
+      wanganga wenye wana usika na afia za wanawake ndani ya kambi na kandokando.
+      
+  utter_usalama_swa:
+  - text: |-
+      kandokando ya kambi kuna patikana wa polisi
+  
+  utter_viongozi_nyamaza_swa:
+  - text: |-
+      Viongozi hawa nyamaze kwa sababu biko na ji funza namuna gani ya ku leta usalama na ku ona
+      namna gani kila mukimbizi ata rudi kwake.
+
+  utter_kuhara_swa:
+  - text: |-
+      Niku pana malalamiko ku viongozi bya kambi kuhusu shida ya chakula inayo wa harisha
+
+  utter_kuandikiwa_swa:
+  - text: |-
+      viongozi vya kambi ku pitiya shirika ya uongozi ya kambi ina usika na uandikiswaji ya wakimbizi, iyo shirika ina patikana katikati ya kambi.
+
+  utter_maisha_swa:
+  - text: |-
+      Ku rudi maisha ya zamani kwa wakimbizi ita wezekana kama serekali ina rudisha usalama  na kama wakimbizi wana amuwa ku rudi nyumbani kwao.
+
+  utter_serkali_swa:
+  - text: |-
+      Serekali ita wa saidiya na ku leta usalama ju wakimbizi wa rudi nyumbani kwao.
+  
+  utter_kazi_zita_pata_swa:
+  - text: |-
+      Kama kuna kazi za mikono kwenye kambi ao kandokando viongozi ya ONG vita pewa wakimbizi ma kazi zamikono
+
+  utter_kazi_zitakapata_swa:
+  - text: |-
+     kazi zamikono zenyi zinapatikana ndani wala kandokando na kambi
+
+  utter_msaada_kwa_siye_bote_swa:
+  - text: |-
+      Ndiyo msaada itapatikana kufatana na masikitiko ya wakimbizi.
+
+  utter_msaada_kwa_mtu_swa:
+  - text: |-
+      mwenyi hapate musaada ata enda ku chumba ya malalamiko juu biongozi bya kambi bipewe
+      malalamiko kwa wenye wanausika.
+      
+  utter_kuandikisha_swa:
+  - text: |-
+      Ndani ya kambi katika kila kituwo ya afia kuna patikana viongozi ya inchi ,mwenyi kuusika na ku andika
+      watoto ndani yakitabu kya serekali na kupana vitambulisho vya kuzaliwa kwa watoto wenye wame zaliwa mu
+      kambi
+
+  utter_mashindano_ya_serkali_swa:
+  - text: |-
+      hakuna kituwo kwa kambi kina simamiya mashindano ya serekali kwa bure kwa wa finalistes wakimbizi.
+
+  utter_mashindano_wa_serikali_swa:
+  - text: |-
+      hakuna kituwo kwa kambi kina usika na masomo ya chewo kikubwa kwa wa finalistes wakimbizi.
+
+  utter_haki_kwa_wakimbizi_swa:
+  - text: |-
+      wakimbizi kwa kambi wana haki ya ulinzi ,kutunzwa, ku zikwa,kulishwa,elimu kwa watoto wa musingi
+
+  utter_malisho_mabaya_swa:
+  - text: |-
+      Watoto wenye malisho mabaya tuwapeleke kwenye kituo cha afia (Heal Africa) ili wapate chakula na dawa ya kujenga mwili
+
+  utter_wakimbizi_swa:
+  - text: |-
+      Ku pitiya ugunduliwo ya usiku ambayo viongozi vina endesha ku gunduwa wakimbizi wenye ku vaha vikomo yahu tambulishi (fixing)
+  
+  utter_uizi_swa:
+  - text: |-
+      mwizi aki shikwa apelekwe ku ofisi ya polisi ya kandokando na kambi
+
+  utter_mafugo_swa:
+  - text: |-
+      mafugo yenu ika poteya tuji elekeze kwa viongozi vya kambi kwa malalamiko.
+
+  utter_kulala_kwa_wanaume_na_wanawake_swa:
+  - text: |-
+      Kwa wakati chache wanawake na wanaume wana lala pamoja katika hangar ju ya uchunguzi ya ku hakikisha kwamba niwa kimbizi wa kweli
+  
+  utter_msaada_swa:
+  - text: |-
+      viongozi ya inchi piya vina tu saidiya kwa ku weka usalama ndani ya kambi
+
+  utter_vita_kwetu_swa:
+  - text: |-
+      Vita ili anzaka kwetu ku pitiya mizozano
+
+  utter_uchafu_swa:
+  - text: |-
+      uchafu ita tupwa kwa fasi viongozi vya kambi iliunga 
+
+  utter_kurudi_swa:
+  - text: |-
+      ni shida ku rudi kuishi na wa rebelles kwa sababu usalama bado auja rudi
+
+  utter_vita_m23_swa:
+  - text: |-
+      M23 ime rudi tena kwa sababu ao pekeye wanao fahamu.
+  
+  utter_vita_jeshi_yetu_swa:
+  - text: |-
+      iyi swali inausu viongozi vya inchi. Sisi atuezi fahamu kwa nini jeshi yetu ime shindwa kupigana na M23
+
+  utter_maongezi_swa:
+  - text: |-
+      viongozi wa Kongo wana katala maongezi kwa sababu mafasiliyano haieshimiye kanuni ya inchi.
+
+  utter_vita_kongo_rwanda_swa:
+  - text: |-
+      Ile ni politiki ya ngazi ya juu, sisi wana inchi hatujuwe sababu kweli ya vita
+
+  utter_askari_swa:
+  - text: |-
+      Askari wetu wana kimbiya pahali paku pigana kwaku eshimu oda ya viongozi wawo
+
+  utter_viongozi_swa:
+  - text: |-
+      viongozi vya inchi yetu wame shindwa kuya ona wakimbizi kwa sababu isuwe julikana, ila tuna waza wakati vitaa ita isha wata kuja kutuona.
+
+  utter_wazalendo_swa:
+  - text: |-
+      wazalendo hawa ezi nyanyasa wa kimbizi kwasababu wote ni raiya
+
+  utter_wazalendo_jeshi_yetu_swa:
+  - text: |-
+      wazalendo wame changana na jeshi kwaku saidiyana juu yaku rudisha usalama ndani ya inchi
+
+  utter_masomo_shida_swa:
+  - text: |-
+     watoto hawa some kwasababu tuko ndani ya vita , hakuna hela ya kulipa masomo,na usalama hakuna. 
+
+  utter_vita_faidika_swa:
+  - text: |-
+      wenyi walileta iyi vita njo wana faidika nayo
+  
+  utter_vita_sababu_swa:
+  - text: |-
+      Sababu ya rwanda ku piganisha kongo aijulikane, iyo ni politiki ya juu 
+
+  utter_vita_rutchuru_swa:
+  - text: |-
+      mipango ya vita ni wapiganaji njo wana iungaka, sisi hatujuwe sababu gani vita ili anziya rutchuru
+
+  utter_kuzika_swa:
+  - text: |-
+      shirika ya usalama mwekundu(croix rouge) ina usika na zika waliye kufiya njiyani
+
+  utter_kuliya_swa:
+  - text: |-
+      mungu pekeyake anajuwa kwa nini tuna teseka
+  
+  utter_kuliya_lala_baches_swa:
+  - text: |-
+      kulala kwa baches kwa wakimbizi ni kwa muda tuh, haiko ya maisha yote. vita ika icha tuta rudiliya nyumba zetu
+
+  utter_kuliya_maliza_vita_swa:
+  - text: |-
+      viongozi wame sema wata maliza vita kwa maongezi
+
+  utter_vita_ime_anza_swa:
+  - text: |-
+      iyi vita hili anza kwasababu ya mapendeleo ya kibinadamu  ya viongozi vya inchi ya rwanda na kongo
+
+  utter_kuliya_wakongomani_wengine_swa:
+  - text: |-
+      hatupishane ila wengine wametubaguwa kwa sababu ya kuu ishi pembeni Rwanda
+
+  utter_ubakaji_wabinti_wamama_swa:
+  - text: |-
+      tuna bakwa kwa sababu ndani ya vita kuna maswi mingi sana
+
+  utter_kuliya_faida_wakongomani_swa:
+  - text: |-
+      Rwanda ina faidika kwa madini ya Kongo katika vita
+
+  utter_kuliya_kongo_rwanda_swa:
+  - text: |-
+      Kongo haipige Rwanda kwa sababu ya kueshimu kanuni ya vita
+
+  utter_kuliya_eac_sadec_wazungu_swa:
+  - text: |-
+      iyi swali inausu viongozi vya izo inchi, sisi wakimbizi hatujuwe sababu gani eac, sadec na marekani hawa pane malipizi kwa Rwanda
+
+  utter_kuliya_viongozi_wa_kongo_na_m23_swa:
+  - text: |-
+      sisi hatujuwe kabisa mapatano ya namna gani njo Kongo ili kamataka na M23
+
+  utter_kuliya_m23_wakongomani_swa:
+  - text: |-
+      M23 ina faidika kwasababu ya mapendeleo ya kibinadamu  ya viongozi yao
+
+  utter_kuliya_ina_sapoti_swa:
+  - text: |-
+      Rwanda ina sapoti M23 Kwa sababu ndani ya chama m23 muna patikana wa nyarwanda wengi
+
+  utter_kuliya_uganda_kongo_swa:
+  - text: |-
+      Uganda ime geukiya Kongo kwa sababu ouganda na rwanda wana politiki moya
+
+  utter_kuliya_wetu_viongozi_sisi_swa:
+  - text: |-
+      viongozi wetu wako mu maongezi juu yaku rudisha usalama
+
+  utter_kuzika_wakimbizi_wapi_swa:
+  - text: |-
+      wenyi kukufa ndani ya vita shirika ya musalaba mwekundu (croix rouge) ina wazikaka, na wenyi balisha kawiya mu morgue viongozi vya inchi
+      inabazikaka
+
+  utter_kuzika_wanao_kufa_swa:
+  - text: |-
+      shirika ya musalaba mwekundu na wafanya kazi ya shirika ya raiya wata wasaidiya kwa maziko
+
+  utter_kambi_wakimbizi_wote_swa:
+  - text: |-
+      wakimbizi wota hawa tiliwe fasi moya kwa sababu viongozi vya inchi haina ma parcelle, ina sikilizanaka na waka anji juu yaku tumiya ma parcelles zabo.
+
+  utter_usalama_kambi_swa:
+  - text: |-
+      masasi ina liya kila siku katika kambi kwa sababu ya wabandi wanao ingiya kwa kambi
+
+  utter_kuliya_saidiya_kwa_wakongomani_swa:
+  - text: |-
+      Kongo aina faida kwa iyi vita, Kwani Kongo njo ina poteza zaidi
+
+  utter_wazalendo_wame_kwa_wapi_swa:
+  - text: |-
+      wazalendo ni raiya ina saidiya wa jeshi wetu
+
+  utter_mauwaji_swa:
+  - text: |-
+      mauwaji ina endeleya katika kambi kwa sababu ya vita ya ma kabila
+
+  utter_wazalendo_wame_pewa_mamlaka_swa:
+  - text: |-
+      kwa vita mwenyi iko na silaha njo ana kuwaka na mamulaka ku mwenyi hana
+
+  utter_wazalendo_wame_nyanyasa_wakimbizi_swa:
+  - text: |-
+      wazalendo wake nyanyasa mkimbizi, ataenda pana malalamiko ku shirika ya wakimbizi CNR, iyi shirika njo ina simamiya wakimbizi kwenye kambi
+
+  utter_mateso_swa:
+  - text: |-
+      Tuna teseka kwa sababu ya mali na madini ya inchi
+
+  utter_kilio_sacrifier_swa:
+  - text: |-
+      Viongozi vya inchi haiya sacrifier wakimbizi, ina semekana kwani viongozi vya inchi bako mu maongezi na chama ya M23
+
+  utter_jeshi_swa:
+  - text: |-
+      apana jeshi yetu hawakose nguvu wala vifaa ya vita
+
+  utter_jeshi_shindwa_vita_swa:
+  - text: |-
+      iyi vita niya ngazi ya juu, walipewa oda wasipigane kutoka kwaviongozi wawo
+
+  utter_shule_swa:
+  - text: |-
+      ndani ya kambi kuko masomo ya musingi na wana panaka vifaa vya masomo ila masomo secondari
+      haipatikani kwa kambi
+
+  utter_shule_viongozi_wakimbizi_wapi_swa:
+  - text: |-
+      ndiyo kuko ma shirika kwa kambi yenyi ina shimamiya swali za shule njo mwenyi anapatiyaka
+      watoto vifaa ya shule
+
+  utter_kilio_amani_swa:
+  - text: |-
+      Tume kosa amani kwa sababu ya vita
+
+  utter_kilio_jeshi_ya_eac_swa:
+  - text: |-
+      jeshi ya eac aifaidike wakongomani kwa sababu iyo jeshi ilikimbiya yote 
+
+  utter_kilio_umoja_ya_africaswa:
+  - text: |-
+      umoja ya afica iko mumazungumuzo juu yaky rudisha usalama
+
+  utter_kilio_wasaidizi_wamoja_wakimbizi_wapi_swa:
+  - text: |-
+      wasaidizi awa lombe pesa kwa wakimbizi, iyo niuongo hakuna rushwa juu ni musaada, shida inayo onekana kwa kambi
+      ni ku tafautisha mukimbizi wa kweli na mukimbizi wa uongo
+
+  utter_kilio_wakimbizi_wa_uongo_swa:
+  - text: |-
+      wakimbizi wauwongo hawa ikalake mu kambi wana kuyaka tu sa kuko msaada njo mana waongozi
+      wakambi wanafanyaka ushunguzi busiku
+
+  utter_kilio_wakimbizi_wenye_haiko_swa:
+  - text: |-
+      mtu anaeza kuwa mukimbizi leo akisha pata vitambulisho vyote anatoka mu kambi ana enda mu
+      famille d'accueil, saa kutakuwa musaada naye ata kuya kama mikimbizi, alafu benyi habana bitambulisho
+      habapatake musaada juu habako bakimbizi
+
+  utter_kilio_jetons_swa:
+  - text: |-
+      musaada inapaniwaka ku fatana na kategoriya, alafu shirika yahu kabizi ya chakula (PAM) njo inapatiyaka wakimbizi wote
+
+  utter_kilio_wakimbizi_wenye_damu_swa:
+  - text: |-
+      wakimbizi wenye wana lumiya wata pata damu ya bure aka onesha kitambulisho yake yahu kimbizi (jetons)
+
+  utter_kilio_chakula_bila_makala_swa:
+  - text: |-
+      maisha ya ukimbizi haiko rahaa ni mateso, akuna shirika yenye ku pokeza wakimbizi makala, wakimbizi wana pigiyaka kukuni, wala wanatengeneza makala pekeyao, 
+      kwa sababu shirika yahu pokezeji ya makala aija umbika.
+    
+  utter_kilio_maisha_yetu_swa:
+  - text: |-
+      Apana atuta teseka maisha yetu yote, Kwa sababu tuna imani kama vita itaisha, kila kitu kiko na mwisho
+
+  utter_kilio_sikia_kwa_kilio_swa:
+  - text: |-
+      tuliliye mwenyezi mungi mwenye aliumba ulimwengu
+
+  utter_chakula_pandisha_swa:
+  - text: |-
+      Chakula ina panda beyi kwa sababu wakati ya vita hakuna ngisi ba limaji baende ku shamba 
+
+  utter_kulima_swa:
+  - text: |-
+      viongozi awata peya wakimbizi nafasi yaku lima kwa sababu serekali haina mashamba, mukimbizi anaeza ku lima pembeni ya kwake kunyumba kwaku tumiya mbegu ziliyo pewa na shirika ya walimaji duniyani(FAO)
+
+  utter_kilio_tetezi_wakimbizi_wapi_njo_swa:
+  - text: |-
+      viyongozi vya kambi wata wa teteya kupiya malalamiko yenu
+
+  utter_kilio_watoto_wangu_wata_chezeya_wapi_swa:
+  - text: |-
+      kuna shirika yenye ku usika na muchezo ya watoto kwa kambi
+
+  utter_kilio_kambi_zimoja_ziko_ku_barabara_swa:
+  - text: |-
+      kuna aina mbili ya kambi kuko yenyi ime njengwa na ma shirika ya umoja duniyani na yenyi wakimbizi wame
+      njenga peke yao,zile zenyi ziko pembeni ya barabara ni zenyi bakimbizi bame jijengeya, kuihamisha ina omba
+      viongozi vya inchi ipate kwenyi wata wa peleka.
+
+  utter_usafi_swa:
+  - text: |-
+      watoto wakimbii watapata mafundisho juu ya usafi kwa ku epuka na magonjwa
+
+  utter_hema_zetu_zengine_swa:
+  - text: |-
+      Hema za wakimbizi zika aribika watapata zengine waki peya malalamiko kwa viongozi wa kambi
+
+  utter_kujikinga_swa:
+  - text: |-
+      Ndiyo viongozi vya kambi vita funza wakimbizi namuna yaku ji kinga na maradhi ya ngono,
+      Iyo mafundisho ita pewa na shirika zinayo usika na maladhi ya ngono (SVBG) kwa makambi,
+      iyo shirika ina usika tena na ufatiliyaji wa wakonjwa wa maladhi ya ngono (SVBG) kwa makambi
+
+  utter_maji_safi_swa:
+  - text: |-
+      iyi maji iko Safi na tayari kwa kuitumikisha, juu inapata dawa mbele ya kuipatiya watu na ima pimwa na wa taalamu wa vipimo vya maji Safi mbele ya utumiadji.
+
+  utter_rwanda_furahi_swa:
+  - text: |-
+      tunateseka ndiyo ,Ila Rwanda haiwezi furaiya iyi hali ,kazi zamingi tunazifanya pamoya iyi hali haiezi furaisha mtu ni siasa mubaya iliyo chezewa.
+
+  utter_rwanda_teseka_swa:
+  - text: |-
+      mateso yetu haiwa faidike kukitu labda wausika wanapata faida ya wizi wa mali ya congo ,Ku iba bila uchunguzi yoyote kwa sababu ya vita.
+
+  utter_jeshi_wana_malizika_swa:
+  - text: |-
+      apana haita isha sababu wako wengi na nimuchanganyiko ya wanajeshi na wazamendo njo wenyi wako na pingana ,na Wana pata musaada kidogo ya wengine kutoka province mbali mbali ya inchi.
+
+  utter_jeshi_wana_gombolewa_swa:
+  - text: |-
+      jeshi itatugombowa  baada  ya mazungumuzo  ya M23 na FARDC,apana Kwa vita.
+  
+  utter_jeshi_wana_juwa_mateso_swa:
+  - text: |-
+      jeshi yetu inajuwa kama tuna teseka juu tuko na ma familia wawo ndani ya yaiyi hali, inapataka ripoti kwawo na kuko byenyi bakingali mu shirika ya usalama yamonusco mpaka ivi na wengine wanaishi ndani ya pori
+
+  utter_rwanda_chukiya_swa:
+  - text: |-
+      Rwanda ni inchi ambayo viongozi wabo ndiyo bana tumikishiwa na Marekani juu  ya Ku fanya vita kwa faida zakibinafsi,Ila Rwanda haina shida na congo.
+
+  utter_chunvi_swa:
+  - text: |-
+      tuna weza pata chunvi sokoni,kwakuuza. Napiya wakati yaku pokeya chakuya kunakuwaka chunvi mu ile muzigo ,inayo patiwa na shirika ya ugawaji ya chakula (PAM).
+
+  utter_maji_juwa_swa:
+  - text: |-
+      tuna juwa maji safi kama ina eshimiya kanuni za maji Safi ,na kama haitatize afia ya wakimbizi ,kwa utumizi.
+
+  utter_maji_shoteya_swa:
+  - text: |-
+      tu shoteye mu ma bidon wala ma mbengeti zenyi wa fazili Wana tupokeleshaka ndani ya kambi. Mara na mara 
+
+  utter_kanisa_swa:
+  - text: |-
+      makanisa ziko ndani na kandokando yaa kambi ,na wakimbizi Wana rusiwa kunjenga kanisa ndani ya kambi kama hakuna.
+
+  utter_dini_swa:
+  - text: |-
+      ndiyo dini zote zinaitikiwa apa nyirangongo,kama haupate Yako, nikuenda tu Kuba biongozi bakambi munapana malalamiko,Ili upate ruusa na mahali unapenda djenga kanisa.
+
+  utter_kanisa_nyirangongo_swa:
+  - text: |-
+      hapa kwetu nyiragongo kunapatikana ma kanisa nyingi,juu dini zote ziko apa na zinakubaliwa bila shida.
+
+  utter_kanisa_njenga_kwa_kambi_swa:
+  - text: |-
+      Hakuna shida, muna weza jenga kanisa yenu ndani ya kambi, nikuenda tu ona biongozi bya kambi muna pana malalamiko yenyi kuusu kanisa ,na uta pata jibu.
+
+  utter_chakula_tuiweke_swa:
+  - text: |-
+      chakula yote ina pokelewaka mu mifuko ,nikuiweka tu ndani ya mifuko Wala ndani ya ndoo  juu nazo bana zipokeleshaka mu kambi juu zipime saidiya Ku namna zote
+
+  utter_bwaki_swa:
+  - text: |-
+      kandokando na ndani ya kambi fulani, kuko ma vituo vya afia byenyi bina usika na ile magonjwa. Kuna watu wanao usika  na kutunza hiyo maladhi
+
+  utter_bwaki_ya_wajawazito_swa:
+  - text: |-
+      matibabu na vipimo bya wadjawazito viko Kwenye vituo vya afya ambazo ziko ndani yakambi Wala kandokando
+
+  utter_kulima_viongozi_wakimbizi_wapi_swa:
+  - text: |-
+      ndiyo, viongozi bataitika kulima kwa kambi kwa sababu hiyo milimo ina saidiya wakimbizi kwa chakula
+
+  utter_wakati_swa:
+  - text: |-
+      inatakiwa Ku rudiya mapema kwa kambi baada yaku maliza kushurulika juu kuko ma kambi zenyi ziko pembeni ya Wana djeshi.
+
+  utter_hema_ike_aribika_swa:
+  - text: |-
+      Hema ika aribika beba malalamiko kwa viongozi vya kambi ,utapata djibu.
+  
+  utter_dawa_ya_wagojnwa_wa_ukimwi_swa:
+  - text: |-
+      ndiyo wa gonjwa wa ukimwi wanapataka dawa ku vituo vya afia ambavyo binapatikana ndani ya kambi na kandokando.
+
+  utter_dawa_ya_wagojnwa_wa_sukari_swa:
+  - text: |-
+      kama kuko wagonjwa wasukari wanakuwaka nawaelekeza kwa vituo vya afia kando ya kambi kwa sababu hakuna wafazili ambao Wana husika nakutibu ugonjwa wa kisukari ndani ya kambi.
+
+  utter_chakula_watu_wa_regime_swa:
+  - text: |-
+       Apana ,wafazili wanapana tu chakula ya kawaida ni kwako kukula byenyi unaruusiwa kukula ili isipate matatizo
+
+  utter_chadaruwa_swa:
+  - text: |-
+      chadaruwa utapata bilamalipo yoyote, Zina paniwaka bilashida yoyote na hakuna shurti juu yakuipata wafazili wako juu yakuzipana 
+
+  utter_wagonjwa_swa:
+  - text: |-
+      apana, ndani ya kambi hakuna mufazili  mwenyi uhusika na magonjwa ya kichwa, Ila mugunjwa anaweza elekezwa ku kituo kinacho husika.
+
+  utter_psychologues_swa:
+  - text: |-
+      ndiyo, ndani ya kambi kuna wafazili waki psychologia, Wana husika na watu walio bakwa ao wenye matatizo ya kimafikiri.
+
+  utter_volkeno_swa:
+  - text: |-
+      volkeno nyiragongo ika tomboka tunachunga viongonzi Wetu watupatiye maelekezo ya vile tutakimbia ,na tunapashwa enda Kwenye bengine Beko naenda.
+
+  utter_nvula_swa:
+  - text: |-
+      Hema Zika zama tutajielekeza kwenye chumba ya malalamiko , na Hao watatafuta mufadhili ambaye anaweza kusaidiya kututatuliya ile tatizo
+
+  utter_ambulance_swa:
+  - text: |-
+      ndiyo tuko na wafazili ambao banaletaka ile gari ya kubeba wagonjwa kwa haraka kwa hospitali
+
+  utter_usafi_ndani_kambi_swa:
+  - text: |-
+      usafi ndani ya kambi una fanyika na kamati yenyi ina usika na usafi na wanawapatiyaka sabuni ya kuwasisimuwa kwa kazi
+
+  utter_chakula_haribika_swa:
+  - text: |-
+      Chakula yaku aribika haiezi paniwa kwa wakimbizi juu mbele ya Ku pana chakula ,kamati ya afya inafanyaka uchunguzi kabla ya kugabula chakula kuwanao usika
+
+  utter_dawa_ina_haribika_swa:
+  - text: |-
+      kamati ya afia haiezi ruusu dawa zaku aribika zipaniwe mu vituwo vya afia  vya mukambi,juu ile ni sumu tahari.
+
+  utter_uzazi_swa:
+  - text: |-
+      kwenyi vituwo vya afia vyenyi kupatikana mu kambi  na kando kando ya kambi,Wana fundishaka wa zazi namna ya Ku panga uzazi 
+
+  utter_uzazi_kwa_wakimbizi_wapi_swa:
+  - text: |-
+      utapata mafunzo yakupanga uzazi ndani ya vituwo vya afia vinavio patikana ndani ya kambi na kandokando ya kambi
+
+  utter_choo_tujengeya_swa:
+  - text: |-
+      kuko wafazili wenyi wana uusika na magezi ya choo na fasi yaku nawiya kama vile fond humanitaire,OIM na NRC
+
+  utter_magongwa_swa:
+  - text: |-
+      Tuji kinge na malali ya kifudifudi kwa Ku vaa mupira wakati ya nvua juu baridi isi tutatize na magaribi kujifunika vizuri na kutumiya Sawa vizuri kama tayari tunapata Ile ugonjwa
+
+  utter_magongwa_ya_infections_swa:
+  - text: |-
+      tudji kinge na malali ya infection kwaku zidisha usafi wa mwili naku tumiya ma dawa zakukinga na infections,yenyi zinapaniwa Ku vituwo vya afia.
+
+  utter_homa_swa:
+  - text: |-
+      tudji kinge na homa kwaku kunywa maji mingi na kuji funika wakati ya baridi.
+
+  utter_magongwa_ya_malaria_swa:
+  - text: |-
+      tutadjikinga na malaria kwaku lala ndani ya chandaruwa, nakutumiya maji sana
+
+  utter_magongwa_ya_walemavu_swa:
+  - text: |-
+      walemvu wata udumiwa na mufadhili wa walemavu ndani ya kambi, kwakupitiya kamati yawo juu ya kukamilisha mulemavu wa kweli
+
+  utter_masomo_tumika_swa:
+  - text: |-
+      watoto watumwe kilasiku kumasomo yamu kambi inayo fungula kila kila Siku tangu Siku ya  kwanza mpaka Siku ya sita
+
+  utter_kazi_kulipa_swa:
+  - text: |-
+      serekali ana tuma mushahara Ku waalimu wenyi wako na namba ya mataifa (numéro matricule),wengine waalimu ndani ya kambi Wana lipwa na wafazili kama walipata kazi yaku fundisha.
+
+  utter_kazi_za_goma_swa:
+  - text: |-
+      ndiyo nikutafutisha kwenyi bako na lazima ya walimi, kama mu kambi Wala inje ya kambi hakuna fasi.
+
+  utter_kazi_endeleya_lipiwa_swa:
+  - text: |-
+      waganga wenyi wako na namba ya taifa (numéro matricule) wanapataka mushahara yabo na wenyi wako a tunza mu kambi
+
+  utter_kazi_goma_zitakapata_swa:
+  - text: |-
+      waganga wa goma wata itika kutumika na waganga wakimbi juu wote ni wa congomani , na hakuna mwenyi anaweza penda akuwe mukimbizi , mukazi hamukuwake ubagusi wa Kabila Wala wanrangi ni Ku tumika kwanza.
+
+  utter_kazi_serkali_zitakapata_swa:
+  - text: |-
+      wafanya kazi wa serekali Wana pokelewaka na  CNR ,shirika yenyi ina usika na uchinguzi na yenyi ina simamiya serekali ndani ya kambi
+
+  utter_uchuruzi_swa:
+  - text: |-
+      muchuruzi una rusiwa ndani ya kwambi ,kila mutu na pato yake,Ila ina katazwa Ku churuza bitu bya kuleta ugonvi
+
+  utter_kuni_swa:
+  - text: |-
+      inakatazwa kuenda Kata miti Wala kutafutiya kuni ndani ya parc, juu ya ma nyamanya za pori zenyi ziko amo, naku haribisha mazingira ndani.
+
+  utter_uongozi_swa:
+  - text: |-
+      mukila kambi munakuwaka kiongozi wa kambi na bengine ba saidizi mbalimbali benyi banachaguliwaka na bakimbizi.
+
+  utter_uongozi_kwa_wakimbizi_wapi_swa:
+  - text: |-
+      ndiyo anapashwa kuwa mukimbizi, na ana pashwa ishi ndani ya kambi na wakimbizi.
+
+  utter_kanyarutshinya_swa:
+  - text: |-
+      ndiyo vita ni mbali na kambi ya kanyarutshinya nanjo mana kume wekwa na kujengeya wakimbizi.
+
+  utter_vita_salama_swa:
+  - text: |-
+      dalili ya salamu iyo onekana APA ni kuona ngisi wakuu viongozi wame itika ku jengeya wakimbizi APA kanyaruchinya ,inamaanisha ngisi kuko usalama
+
+  utter_vita_wapi_swa:
+  - text: |-
+      documents zako uta ziweka mwenyewe juu usalama hauko kamili. 
+
+  utter_usalama_apa_ndani_kambi_swa:
+  - text: |-
+      watoto wakimbizi wata ishi ndani ya usalama juu kunakuwaka wa fadhili wenye Wana pangaka muchezo za batoto juu ya Ku epuka Ku Waya Waya bure.
+
+  utter_vita_fika_swa:
+  - text: |-
+      Apa tuko Ku kambi ya kanyaruchinya na kambi ya bushagara.
+
+  utter_vita_karibu_na_sisi_swa:
+  - text: |-
+      ndiyo ina rusiwa ma position zikuwe pembeni ya kambi juu ya kuhakikisha usalama wa wakimbizi
+
+  utter_vita_ingiya_kambi_swa:
+  - text: |-
+      wakuu viongozi wa wakimbizi na serekali Wana ruhusu , jeshi ku ingiya ndani ya kambi ,bila silaha.
+
+  utter_lugha_swa:
+  - text: |-
+      Apa kanyaruchinya, Wana sema kiswahili,na kinyabwisha.
+
+  utter_lugha_kinyarwanda_swa:
+  - text: |-
+      apana apa nyiragongo bana semaka kinyabwisha haiko kinyarwanda lakini binataka fanana.
+
+  utter_usalama_mpaka_na_rwanda_swa:
+  - text: |-
+      tuko ndani ya usalama juu kambi haiko kumupaka na Rwanda, apa tuko mbali na mpaka na Rwanda.
+
+  utter_usalama_nyiragongo_swa:
+  - text: |-
+      vita ika fika apa nikukimbiya pamoya na bengine bakaaji kwenyi patakimbiliya.
+
+  utter_mtandao_swa:
+  - text: |-
+      Mtandao zote ziko kabisa.
+
+  utter_usalama_vita_nyiragongo_swa:
+  - text: |-
+      vita inafikaka rafla,lakini kamaunaona ba viongozi vya kambi bana djenga kambi fasi na kutiya wakimbizi juwa kama kuko usalama.
+
+  utter_usalama_askari_swa:
+  - text: |-
+      tuna weza ba aminiya juu kusema askari akuwe pale ni masikilizano ya chirika ya wafazili mbalimbali ONG na serekali njo inaruusi kutiya askari pembeni na kambi juu ya usalama ya bakimbizi 
+
+  utter_jamaa_swa:
+  - text: |-
+      kama mulipoteyana na djama Yako unabeba malalamiko yako Ku wakuu biongozi zya kambi ,ilibakusaidiye Ku pandisha malalaiko Ku ngazi za juu, juu uweze pata batoto.
+  
+  utter_usalama_watoto_wangu_swa:
+  - text: |-
+      kwakupata jibu Ku malalamiko,na wakuu vyiogozi vya kambi
+
+  utter_usalama_bulengo_swa:
+  - text: |-
+      watoto ,watapata njiya,balabala iko wazi ,Ila itakuomba ubebe malalamiko Ku shirika ya CNR na OIM, juu baku saidiye kuba tafuta na kuwaleta.
+
+  utter_usalama_vita_kwa_watoto_wangu_swa:
+  - text: |-
+      tuta fanya vipimo vya kichwa na kwenda onana na munganga wa psychologiya juu ya mafikiri na mawazo mingi
+
+  utter_usalama_hasira_swa:
+  - text: |-
+      iyi hasira kubwa yenyi uko nabyo ni sababu ya iyi vita na kuona ngisi umepoteza bitu mingi na swali mingi zenyi inakosa ata djibu.
+
+  utter_uoga_swa:
+  - text: |-
+      apana hali yazamani hauezi rudiya juu tumepoteza bitu mingi na watu wengi sana
+
+  utter_hali_swa:
+  - text: |-
+      una djisikiya muchoko juu ya mawazo ya mingi ,auna Raha kabisa na kazi mingi bila pesa inakufanya kuchoka roho na mwili
+
+  utter_hali_usingizi_swa:
+  - text: |-
+      unakosa usingisi kwa sababu hali iyi ya ukimbizi ni ya nguvu kuielewa haiko raisi,busingisi hauezi kuya mu wasiwasi
+    
+  utter_hali_ndoto_swa:
+  - text: |-
+      ndoto mubaya ni kumbukumbu ya masasi ya vita ambayo umepitiya.
+
+  utter_hali_watoto_wangu_swa:
+  - text: |-
+      haitakuwa raisi kwa watoto Ku elewa iyi hali juu bakingali batoto na bame Hama rafla, wakiona wengine watoto Wana ishi tafauti nawo ,wanapashwa jiswali,na kukosa kuielewa kabisa
+
+  utter_hali_viongozi_wakimbizi_wapi_swa:
+  - text: |-
+      viongozi Wana tu saidiya kwaku tupaandishiya malalamiko zetu ,ilitupate madjibu Ku maswali zetu kwa wa fazili.
+
+  utter_hali_mzigo_swa:
+  - text: |-
+      ndiyo banatuona mzigo sana juu musaada ambao yenye banatupatiyaka inaishaka kisha tunaanza pitapita mumamilango ya bakaaji kulomba msaada
+
+  utter_malalamiko_sisi_wangu_swa:
+  - text: |-
+      apana haiko njo suluhisho ,kila mtu iko na byenyi anaweza fanya, hatuezikuwa siye bote ba djeshi.
+
+  utter_malalamiko_kwa_wakimbizi_wapi_swa:
+  - text: |-
+      mungu njo musaada wetu sisi wote kwaku pitiya mu viongozi vya serekali kutiya Salama fasi yote ndani ya congo
+  
+  utter_malalamiko_wazima_swa:
+  - text: |-
+      tuta kuwa watu wazima kwa msaada ya watu ambao Wana weza kutusadiiya kwa mashauri na kwa mda tunaweza kuwa vizuri
+
+  utter_malalamiko_elewe_swa:
+  - text: |-
+      watu Hawa elewe mateso yetu juu habaishi iyi maisha yenyi tunapita na byenyi tulishaka pitiaya amo
+
+  utter_malalamiko_kula_chakula_swa:
+  - text: |-
+      chakula haipokezewe kwa wakimbizi kila Siku ,ni kwako Ku juwa ngisi ya Ku tunza byenyi umepata.
+
+  utter_malalamiko_mungu_swa:
+  - text: |-
+      ndiyo nakilakitu Kiko na mwanzo na mwisho, ni kadari.
+
+  utter_malalamiko_mungu_ana_tupenda_swa:
+  - text: |-
+      mapenzi ya mungu kwetu ni ya mingi haina bipimo, anatupenda, tusikate kitumaini
+
+  utter_malalamiko_mungu_ana_ruhusu_tukuwe_wakimbizi_wapi_swa:
+  - text: |-
+      kilakitu na wakati na yote ni fundisho kwetu Ili kesho Tuji rekebishe.
+
+  utter_malalamiko_duniya_swa:
+  - text: |-
+      tutaona faida ya duniya kwakujikaza Ku bielewa juu ya Siku zidjazo ,ni mapito
+
+  utter_malalamiko_mtetezi_wakimbizi_wapi_swa:
+  - text: |-
+      mutetezi wetu sisi wakimbizi ni chirika ya kuteteya na Ku karibisha wakimbizi ama ma ONG na serekali Ku saidiyana na umodja wama taifa, kwaku rudisha usalama.
+
+  utter_malalamiko_kiswahili_swa:
+  - text: |-
+      utapewa vitambulisho vya ukimbizi,na kama njo byenyi bilipoteya utaenda Ku chumba ya malalamiko juu viongozi vya kambi vikusaidiye
+
+  utter_malalamiko_kiswahili_kwa_wakimbizi_wapi_swa:
+  - text: |-
+      kupitiya wengine wakimbizi wenyi Wana sema kiswahili ndani ya kambi
+
+  utter_malalamiko_goma_swa:
+  - text: |-
+      hawana byaku fanya juu yenyi inakufikiya inaeza ba fikiya nabo.
+
+  utter_malalamiko_goma_kwa_wakimbizi_wapi_swa:
+  - text: |-
+      apana ,kila batu bana kuwaka na tabiya zabo
+
+  utter_malalamiko_watoto_wa_goma_swa:
+  - text: |-
+      basi batoto habakuwake na shida ,bana pataka ba rafiki sa bakomu muchezo.
+
+  utter_malalamiko_itika_ku_changana_na_siye_swa:
+  - text: |-
+      hakuna vyaku fanya juu hakuna mwenyi anaezi penda akuwe mukimbizi.
+
+  utter_malalamiko_maisha_kwa_kesho_swa:
+  - text: |-
+      yakesho ajuwaye mungu ,Niku jipanga kweli kweli.
+
+  utter_malalamiko_maisha_kwa_zamani_swa:
+  - text: |-
+      apana juu watu wame poteza bitu mingi,na batu bamingi,ata kama ma umoja wa ma taifa ina saidiya juu ya intégration kwaku rudiya.
+
+  utter_malalamiko_waelezeya_kwa_kesho_swa:
+  - text: |-
+      tuta waambiya wakuwe ngufu,wazindishe upendo .juu watu wakapendana awaezi uwana.
+
+  utter_masomo_kawaida_swa:
+  - text: |-
+      watoto wata jikaza Ku sikiya mafunzo juu nikufaida yawo atakama ,maisha ya ukimbizi ,ni yanguvu , na umasikini wa hali yote iko sana.
+
+  utter_malalamiko_vilonda_vya_ndani_swa:
+  - text: |-
+      ndiyo tuna juwa kabisa  na binaone kana Ku macho ya wakimbizi.
+
+  utter_mashaka_swa:
+  - text: |-
+      vilonda vya ndani vina dawa, ni kujikaza Ku elewa kwanza nakwenda onana na munganga wa psychologiya juu ya mafikiri.
+
+  utter_mashaka_shuleni_kwa_watoto_wangu_swa:
+  - text: |-
+      kuko usalama ndani ya shule juu inapatikana mukambi na mufazili ana tiya na Ku hakikisha usalama wa watoto mahali walipo.
+
+  utter_malalamiko_waalimu_tayarishwa_kupokeya_watoto_wakimbizi_wapi_swa:
+  - text: |-
+      watoto wakimbizi wata pokelewa na walimi bila shida kabisa.
+
+  utter_mashaka_waalimu_fundisha_watoto_wakimbizi_wapi_swa:
+  - text: |-
+      watapona kupitiya kunji eleza kwa munganga wa psychologiya na kuongeya na wenjawo juu yaku punguza stress.
+
+  utter_malalamiko_askari_kwa_wakimbizi_wapi_swa:
+  - text: |-
+      apana batu bote haba ezi kuwa Wana djeshi
+
+  utter_malalamiko_maibobo_kwa_wakimbizi_wapi_swa:
+  - text: |-
+      ku epuka watoto kuwa wa maibobo tuwa tiye Ku masomo,pale habata pata wakati ya Ku angaika ovyo
+
+  utter_malalamiko_vitabu_kwa_watoto_wangu_swa:
+  - text: |-
+      Wana zaraulika juu ya maisha yenyi iko chini, hali hairuhusu eshima kabisa.
+
+  utter_malalamiko_kuko_kwa_watoto_wangu_swa:
+  - text: |-
+      ndiyo wa fadhili wana gabulaka ma vitabu Ku waalimu na watoto ndani ya kambi.
+
+  utter_malalamiko_masomo_i_kwa_watoto_wangu_swa:
+  - text: |-
+      masomo itasaidiya watoto Ku sahawu vita kidogo juu batasoma bitu mbalimbali na juu baji sikiye kwabo kidogo.
+
+  utter_malalamiko_maisha_kwa_watoto_raha_swa:
+  - text: |-
+      watoto watapata Raha ya maisha juu kungali bya mingi byamuzuri mbele yawo ,haiombe Ku Kata kitumaini.
+
+  utter_malalamiko_waambiya_nini_kwa_watoto_wangu_swa:
+  - text: |-
+      nikuwaelewesha kama mumaisha muna wakati ya Raha na tabu na vita inakuwa na kwisho,inaomba kujikamata muzuri ndani ya vita juu usiingiye hatarini.
+
+  utter_masomo_weza_soma_swa:
+  - text: |-
+      kwakuona ambayo wamepitiya,hawako tayari ila Niku wasaidiya juu yaku punguza Ku mawazo(stress).
+
+  utter_malalamiko_waweze_masomo_swa:
+  - text: |-
+      Ili watoto waweze masomo,Niku fanya ma fundisho za mingi na ku zawadiya wa toto wenye Wana ji kaza Ku masomo juu bengine bakuwe najuudi ya kusoma.
+
+  utter_malalamiko_pendaka_tena_maisha_swa:
+  - text: |-
+      watoto wata kuwa na onjo ya maisha wakapata neema yakuelewa watapenda tu ,hakuna byakunfanya.
+
+  utter_malalamiko_tuchangiye_kwa_amani_swa:
+  - text: |-
+      muchango yetu kwakuleta Amani,Niku eshimiya neno za waviongozi vyetu bila Chaka.
+
+  utter_malalamiko_sherehe_kwa_wakimbizi_wapi_swa:
+  - text: |-
+      tuta pata furaha ndani ya masherehe kama salama inarudiya na kila mtu anatumika bila shida
+
+  utter_malalamiko_kusherehe_mwaka_mpya_kwa_watoto_wangu_swa:
+  - text: |-
+      Raha itakuwa Ku buso ya batoto kama zamani kwa mwaka mpya, kama Salama na Amani inarudiya.
+
+  utter_malalamiko_kusherehe_mwaka_mpya_kwa_watoto_wangu_siku_mpya_swa:
+  - text: |-
+      kuaminiya watu wa goma haiko muzuri juu kilamutu iko na tabiya yake, kuko bazuri na babaya ,haiombe Ku aminiyana kabisa.
+
+  utter_mashaka_yetu_elewa_nani_swa:
+  - text: |-
+      mwenyi anaweza Ku elewa mukimbizi ni umoja wa mataifa na viongozi vya kambi wawo wenye kuishi nawo ndani ya kambi
+
+  utter_mashaka_tuta_wezaka_hurumiya_wanyarwanda_swa:
+  - text: |-
+      wanyarwanda wenyi wana uusika na iyi vita, tuta weza wa urumiya juu kutafuta na kuishi  na Amani njo ya maana mumaisha
+  
+  utter_mashaka_historia_kwa_kongo_swa:
+  - text: |-
+      ndiyo ina pashwa kuwa niya maana juu ni kumbukumbu ya inchi
+
+  utter_mashaka_tunzwa_kwa_vilonda_vya_ndani_swa:
+  - text: |-
+      bitatunzwa kwaku itika hali ngisi iko,nakwa umoja wa mataifa Ku hamisha batu mu inchi yenyi bata djisikiya na Amani kabisa.
+
+  utter_mashaka_amani_kwa_masisi_swa:
+  - text: |-
+      ndiyo Amani haiya rudiya lakini tuko na imani kama Amani itarudiya  juu tuko nasikiya kama byongovi biko mumazungumuzo.
+
+  utter_mashaka_sheriya_kwa_rwanda_swa:
+  - text: |-
+      tuko nauakika itarudiya na utafanya kazi yake na watu wamingi watafungwa kabisa wenyi walipenda wajipate Ku mateso ya bengine.
+
+  utter_mashaka_mahakama_kwa_rwanda_swa:
+  - text: |-
+      tuke taka kufata Rwanda nikwenda kwenyi mahakaa kuu ili wa azibiwe.
+
+  utter_mashaka_amani_bila_vita_haiwezi_patikana_swa:
+  - text: |-
+      tuna eza pata Amani bila vita kupitiya mazungumuzo ,Amani inaeza patikana.
+
+  utter_mashaka_iyi_vita_ni_ya_nini_swa:
+  - text: |-
+      tuko muvita juu ya mali ya inchi,yenyi inatamaniwa na inchi zote Zaki marekani ,na wajirani wote wa congo.
+
+  utter_mashaka_nani_ali_anzaka_vita_swa:
+  - text: |-
+      vita ilianzaka juu ya faida ya kibinafsi ya mali ya inchi.
+
+  utter_mashaka_watoto_wakimbizi_wapi_kwa_kesho_swa:
+  - text: |-
+      maisha ya watoto wetu itakuwa ya wasisi juu tume poteza bitu bya mingi sana ,ku bipata tena haiko raisi.
+
+  utter_mashaka_wenswa_kwa_wakimbizi_wapi_swa:
+  - text: |-
+      wenyi wana fanya vita kukosiku wata ukumiwaka kwenyi mahakaa juu na kuilipa.
+
+  utter_mashaka_duniya_mzima_kwa_kilio_swa:
+  - text: |-
+      ndiyo batu bote bako nasikiya kiliyo njo maana ya ile maongezi juu ya Ku rudisha amani
+
+  utter_mashaka_umoja_wa_mataifa_kwa_teseka_swa:
+  - text: |-
+      ndiyo na ile umoja wa mataifa njo iko na shurti ya kufanya maongezi kwama haraka,juu ya amani
+
+  utter_mashaka_kuko_kwa_teseka_apa_swa:
+  - text: |-
+      apana haiko kwaku lipiya juu serekali njo ilipapatiya wa fazili juu waku jengeya ako,tupa ishi kwa wakati kidogo.
+
+  utter_mashaka_nyumbani_kwa_goma_swa:
+  - text: |-
+      ndiyo yote ni inchi moya ,uko huru Ku ishi kokote.
+
+  utter_mashaka_apa_kuko_usalama_swa:
+  - text: |-
+      kama unaona ma Ong Zina jengeya wakimbizi . juwa kama kuko Salama ,aiezi tiya wakimbizi  fasi ya mubaya kuhatari
+
+  utter_kulala_na_watoto_wanazaliwa_swa:
+  - text: |-
+      ndiyo njo kwako,anapashwa jikaza uishi kwanza vile juu hakuna byengine byaku fanya.
+
+  utter_kulala_na_wazehe_wakongwe_swa:
+  - text: |-
+      ndiyo, wataikala pale ndani ya kambi kwa hema,juu wakagonjwa wata bebwa Ku matunzo.
+
+  utter_kulala_na_wazazi_na_watoto_swa:
+  - text: |-
+      watoto Wana lalaka Ku salon ,juu kivera inakuwaka ya chumba na salon,ni ngisi utapanga tu.
+
+  utter_mashaka_viongosi_nafasi_swa:
+  - text: |-
+      Amani itarudiya watu wote watarudiya kwawo tena izi parcelle za batu ,bana saidiya tu juu ya iyi hali ya ukimbizi,iyi mafasi ita rudiswa kwawenyewe  wakimbizi watarudiya.
+
+  utter_viwanja_chakula_kila_siku_ku_mustariswa_swa:
+  - text: |-
+      ndiyo juu mbele yaku fika Ku chakula inalazimishwa Ku pita Ku kitambulisho ya ukimbizi.
+
+  utter_mashaka_chakula_sawa_sawa_swa:
+  - text: |-
+      hauezi pata chakula Sawa Sawa juu kuna familia yenyi ni watu wamingi Ku chinda wengine,ina fatanaka na uwingi ya familia.
+
+  utter_chakula_chagua_nina_penda_swa:
+  - text: |-
+      apana hauezi changuwaka chakula bata kupa byenyi bengine batapewa  Ako , na kama haubipendi una biuzisha juu upatemakuta yakuza byenyi unapenda.
+
+  utter_chakula_tuta_kuwa_na_shiba_swa:
+  - text: |-
+      Apana ku shiba ita kuwa mugumu kwa kambi kwa sababu chakula ya wafazili iko kidogo.
+
+  utter_chakula_hai_eneye_swa:
+  - text: |-
+      kama chakula hai eneye akuna ku lomba yengine.
+
+  utter_chakula_swa:
+  - text: |-
+      apana hairusiwe Ku pana chakula yakuivya juu mipigiyo inapishana,isikuye fanya mubaya wakimbizi waka sema ume wapatiya sumu.
+
+  utter_maisha_onekana_kama_wa_maskini_sana_swa:
+  - text: |-
+      ndiyo juu tumepoteza bitu bya mingi sana ndani ya vita na njo mana ya iyi hali.
+
+  utter_maisha_hali_itadumu_siku_mingi_swa:
+  - text: |-
+      apana ita isha tu ,ilikukuwa na imani
+
+  utter_matunzo_nyiragongo_kuko_vituo_ngapi_vya_afya_swa:
+  - text: |-
+      vituwo vya afia ni vya mingi apa nyiragongo juu ya kuudumiya wakimbizi muziri kwa afia.
+
+  utter_maisha_yenye_nili_ishi_swa:
+  - text: |-
+      ni ya maana Ku iyi eleza.juu yaku punguza mawazo na stress za mingi za vita.
+
+  utter_maisha_zala_katika_hali_nzuri_swa:
+  - text: |-
+      ndiyo tuta zala mu hali muzuri  juu kuko ma dawa na ma hospitali juu ya kuudumiya wajawazito mu kambi.
+
+  utter_malalamiko_nani_ata_fatana_na_trauma_swa:
+  - text: |-
+      wakuu fatana na trauma ni mufazili mwenyi kuusika na kutunza magonja ya mawazo, ata lipa wangaga wa pschologiya juu batuunze wakimbizi.
+
+  utter_malalamiko_waganga_wata_tu_tunza_na_mapendo_swa:
+  - text: |-
+      waganga wata tunza na mapendo juu bananlipiwaka na wafazili Ku ile kazinyenyi bako na fanya ,haiko bya bure.
+
+  utter_malalamiko_sheriya_zamu_kambi_swa:
+  - text: |-
+      sheriya za mukambi ni zamingi ,Sawa vile ,za mukimbizi kuishi mukambi ni kukuwa na kivera ndani ya kambi na akuwa na vitambulisho ya wa kimbizi, 
+      na ukuwe unajulikana na mukubwa wa kambi
+
+  utter_malalamiko_mungu_angali_swa:
+  - text: |-
+      mbinguni na ndani ya watu kwa matendo.
+
+  utter_malalamiko_mungu_lipiza_zambi_zetu_swa:
+  - text: |-
+      apana iyi haiko kuilipa zambi juu hatuku mukoseya juu tulipe.
+
+  utter_malalamiko_mungu_ngufu_yaku_omba_mungu_swa:
+  - text: |-
+      ndiyo ni muhimu kuomba kabisa.
+
+  utter_mashaka_tunzwa_na_MSF_bure_swa:
+  - text: |-
+      ndiyo MSF batatunza kya bure na mpaka vita iishe juu yaku heshimu ahadi yawo kwa wakimbizi.
+
+  utter_mashaka_MSF_iko_na_banganga_bazuri_swa:
+  - text: |-
+      ndiyo MSF iko na baganga na ma dawa zamuzuri kabisa juu yaku tunza bakimbizi.
+
+  utter_mashaka_MSF_ita_tunza_na_malali_ya_kichwa_swa:
+  - text: |-
+      apana wao hawana zile dawa alakini wanapashwa kukuongoza katika vituo ambavyo vina husika 
+
+  utter_mashaka_juwa_wakimbizi_wa_uongo_swa:
+  - text: |-
+      ndiyo kupitiya vyombo ambavyo vya kitechologia wata juwa wakimbizi wa uongo.
+
+  utter_mashaka_wakimbizi_wa_uongo_kati_yetu_swa:
+  - text: |-
+      ndiyo kupitiya scope ao vyombo ambavyo vya kitechologia
+
+  utter_mashaka_wafanya_kazi_wa_PAM_wakorofi_swa:
+  - text: |-
+      tutawachongeya kwa wakuu biongozi bya kambi juu yaku pandisha malalamiko Ku PAM.
+
+  utter_mashaka_mganga_wa_MSF_ana_ni_tunza_mubaya_nina_eza_end_kwa_nani_swa:
+  - text: |-
+       tutawachongeya kwa wakuu biongozi bya kambi juu yaku pandisha malalamiko Ku shirika la wanganga(MSF).
+
+  utter_mashaka_yangu_iko_na_maana_swa:
+  - text: |-
+      ndiyo iko na maana sana
+
+  utter_mashaka_siku_iyi_yote_ita_badilika_swa:
+  - text: |-
+      itabadilika sa Amani itarudiya bitu bitakuwa muziri.
+
+  utter_mashaka_viongozi_wata_tuambiyaka_nini_tena_ok_swa:
+  - text: |-
+      maneno yaku djenga tu na ya Amani.
+
+  utter_mashaka_ita_jenga_sule_umu_swa:
+  - text: |-
+      ndiyo UNICEFinadjenga masomo na inagawa ma bitu ya chule.
+
+  utter_mashaka_ita_patiya_watoto_vyombo_vya_shule_swa:
+  - text: |-
+      UNICEF ita patiya watoto vyombo vya chule na ma shakoshi yakubebeya amo vitabu.
+
+  utter_mashaka_tuta_pataka_tena_onjo_ya_maisha_swa:
+  - text: |-
+      ndiyo ,kisha vita bitu bita rudiya polepole
+
+  utter_mashaka_watoto_kititi_hawaelewe_swa:
+  - text: |-
+      watoto hawaelewe iyi maisha, Niku waelewesha polepole
+
+  utter_mashaka_vita_ni_ya_muzuri_kwetu_kweli_swa:
+  - text: |-
+      apana vita haiko muzuri ata kidogo. ina tiya watu ndani ya maisha ya matatizo sana
+
+  utter_mashaka_ju_ya_nini_hakuna_suhulisho_swa:
+  - text: |-
+      suluhisho itakuwa tu polepole alakini mataifa makuu wako nyuma ya waasi
+
+  utter_mashaka_nasiye_tukamate_silaha_swa:
+  - text: |-
+      Ku kamata silaya haiko njo suluhosho ile.
+
+  utter_mashaka_juu_ya_nini_niko_na_pumua_mubaya_swa:
+  - text: |-
+      juu ya mawazo na kukosewa amani na mawazo mingi
+
+  utter_mashaka_juu_ya_nini_usiku_silale_swa:
+  - text: |-
+      juu ya ukosefu ya Amani ndani ya roho na wasi wasi ya maisha.
+
+  utter_mashaka_kuna_Kongo_na_Rwanda_wata_ishi_kwa_Amani_swa:
+  - text: |-
+      ndiyo, amani itakuyaka polepole kupitiya Ku eshimu mukataba ya kila inchi.
+
+  utter_mashaka_watoto_wetu_wata_komala_na_roho_muzuri_swa:
+  - text: |-
+      ni yamihimu na itafuatana na mafundisho yakila muzazi lakini niya maana kufundisha watoto vituwo vivuri
+
+  utter_mashaka_watoto_wetu_hawata_geuka_wa_bandiya_swa:
+  - text: |-
+      apana haiko byamuzuri byakutakiya batoto,tu jikaze na kutunza watoto muzuri juu basi jitiye muile hali.
+
+  utter_mashaka_juu_ya_nini_bangi_iko_mu_kambi_swa:
+  - text: |-
+      bangi haiko tu mu kambi njo iko ,inakuwaka na fasi nyengine na mukambi munaishi batu bote na kila mtu na byake.
+
+  utter_mashaka_tuta_sahawaka_iyi_mateso_ndani_swa:
+  - text: |-
+      Siku moya byote bitaishaka tuta sahawaka byote Ku pitiaya urudishwa wa amani
+
+  utter_mashaka_tuta_pataka_amani_ya_roho_ndani_zetu_swa:
+  - text: |-
+      ndiyo ,nikujikaza tu juu mtu njo anajiumbiyaka amani
+
+  utter_mashaka_na_weza_kuwaminiya_tena_viongozi_swa:
+  - text: |-
+      ndiyo tunaweza wa amini, kwaku jikaza tu sababu ni viongonzi wetu na njo watetezi wetu
+
+  utter_mashaka_kusema_kinyarwanda_apa_goma_ita_onekana_je_swa:
+  - text: |-
+      haionekane mubaya juu batu bakutoka bamoya rutchuru na masisi bana ongeyaka kinyarwanda
+
+  utter_mashaka_ubaguzi_wa_kabila_ina_toka_wapi_swa:
+  - text: |-
+      ndani ya majamaa zetu na ubaguazi ya makabila piya iko ndani yetu sana
+
+  utter_mashaka_wanande_wata_itika_na_wa_hutu_bila_shida_apa_swa:
+  - text: |-
+      ndio kama kutakuwa kiongonzi ambaye anaweza wasikilizisha na byote binaweza isha ,Wana weza ishi pamoya
+
+  utter_mashaka_watoto_wata_pendana_wetu_swa:
+  - text: |-
+      ndiyo tujikaze tufundishe watoto wetu upendo njo umoja ya mafanikiyo na maendeleo ya inchi.
+
+  utter_mashaka_sisi_wakimbiziwenye_tuna_weza_kuwa_na_enda_tembeya_swa:
+  - text: |-
+      ndiyo siwote ni wa congomani na  goma ni congo.
+
+  utter_mashaka_duniya_ita_badilikaka_siku_moya_swa:
+  - text: |- 
+      duniya haiezi badilika ni wanadamu njo wana badilikaka juu ya hali gumu ya maisha.
+
+  utter_wakati_tuta_wezaka_rudisha_wakati_yenye_tusha_poteza_swa:
+  - text: |-
+      wakati njo hairudiyake yenyi imepoteya imepoteya niku songa tu mbele
+
+  utter_kifo_hatuta_kufa_siye_bote_swa:
+  - text: |-
+      mu vita batubote habaezi isha kunakuwaka tu baku bakiya, nikwa wa ongozi kuonangisi yaku maliza iyi hali ya vita.
+
+  utter_mashaka_mwisho_ya_iyi_mateso_ni_nini_swa:
+  - text: |-
+      mwisho ya iyi mateso ni kupata amani,juu amani inarudishaka usalama na imani zina panda.
+
+  utter_mashaka_tuna_weza_saidiyana_namna_gani_kati_yetu_swa:
+  - text: |-
+      mu hali nguvu kama iyi niku tiyana moyo na kubadilisha mawazo kwaku ongeya.
+
+  utter_ugonvi_tuta_epuka_ugonvi_namna_gani_swa:
+  - text: |-
+      kwa kuepuka ugonvi nikuishi na amani kwa watu wote na kutafuta amani na wakuwote
+
+  utter_masambo_jirani_wake_kosana_wata_samba_wapi_swa:
+  - text: |-
+      ndani ya kambi kama kuko ungovi ni kuenda  kwa shirika la debloc  wala shirika la de zone waku tatuwa ile hali.
+
+  utter_mashaka_tuna_onekana_kama_watu_swa:
+  - text: |-
+      ndiyo tuko watu juu tugani na neema ya pumuzi, inatosha atakama iyi hali ya ukimbi.
+
+  utter_mali_nani_ata_lipaka_mali_yetu_yenye_isha_poteya_swa:
+  - text: |- 
+      byenyi bina poteleya muvita hakuna mwenyi nabilipaka ,bile bitu sahau na kujipa ngufu yaku tafuta byengine kusiku zenyi zifata
+
+  utter_mashaka_wenye_wali_baki_masisi_wana_ishi_je_swa:
+  - text: |-
+      wailiye bakiya masisi bana ishi muhali mbaya sana, hawana musaada, wana fariki namagonjwa na njaa.
+
+  utter_mashaka_ju_ya_nini_ma_gombora_ziko_na_anguka_mu_ma_kambi_swa:
+  - text: |-
+      kombora zime anguka ndani ya kambi juu kambi haiko mbali ya ma position ya wana djechi.
+
+  utter_mashaka_apa_kuko_wa_askari_waku_tosha_juya_ku_tu_chunga_sisi_wote_swa:
+  - text: |-
+      awa wa askari wata weza linda usalama juu awa njo wanajuwa hali yenyi tuna ishi amo apa kwetu.
+
+  utter_vita_nasiye_tuende_fanya_vita_rwanda_swa:
+  - text: |-
+      kupigana haiko njo suluhisho tutafute ngisi yaku ishi ndani ya amani njo tuta pata maendeleyo
+
+  utter_maswali_kazi_ya_croix_rouge_ni_nini_swa:
+  - text: |-
+      ndani ya kambi shirika la musalaba mwekundu ni yaku zika wakimbizi wenyi hawana jamaa, na nimu fajili ,ana pokeleshaka vitu mbalimbali (kit NFI) kwa  wakimbizi.
+
+  utter_wakimbizi_mukimbizi_ana_pashwa_kula_mara_ngapi_kwa_siku_swa:
+  - text: |-
+      hatakama uko mukimbizi  unapasha kula ngisi ina pashwa, kanuni ni mara tatu kwa siku.
+
+  utter_watutsi_nina_weza_fanya_urafiki_na_mututsi_swa:
+  - text: |-
+      inawezekana ku fanya urafiki na mututsi, juu haiko ba tuusi bote njo bako muiyi vita.
+
+  utter_wakimbizi_watutsi_wote_ni_watu_wabaya_swa:
+  - text: |-
+      apana, watutsi wote haiko wabaya, haiko wote njo uwanji,
+
+  utter_undugu_wa_nani_njo_wa_ndugu_yetu_apa_swa:
+  - text: |-
+      kila mutu iko huru kukamata rafiki mwenyi ananpenda hakuna shurti fulani.
+
+  utter_utulizo_ya_iyi_matata_yote_ita_fanyikaka_swa:
+  - text: |-
+      utulizo utapatikana sa amani na usalama utakapo rudiya ndani ya inchi, saa tuta anza fanya kazi zetu kwa kawaida
+
+  utter_mashaka_reparation_ita_fanyikaka_swa:
+  - text: |-
+      uta amini nkama itafi kaka ila hako kwa sasa itakamata muda sana ,juu byenyi tume poteza ku bi pata tena haiko leo.
+
+  utter_mashaka_tuna_weza_ona_iyi_vita_kama_genocide_swa:
+  - text: |-
+      iyi vita imepita ata genocide juu ma aswi ziko mingi sana kabisa, alafu iyi vita ya madini ina itwa genecost kwa sababu tuna uwa kwa wengi ju ya mali ya inchi.
+
+  utter_mashaka_ni_wakati_gani_njo_tuna_weza_sema_vita_ni_genocide_swa:
+  - text: |-
+      iyi ni vita ya madini ina inao itwa genecost kwa sababu tuna uwa kwa wengi ju ya mali ya inchi.
+
+  utter_mashaka_kabila_tafauti_na_tu_aminiyane_swa:
+  - text: |-
+      kupitiya iyi maisha ya nguvu , ya tabu yenyi tuko na pitiya ku aminiyana haiezi kuwa juu kila mtu iko naogopa mwenzake
+
+  utter_mashaka_o_swa:
+  - text: |-
+      upendo ni abri, tuna pashwa kupenda hatakama hauta seme luga moya.
+
+  utter_ziwa_kivu_iko_wapi_swa:
+  - text: |-
+      ziwa kivu ina patikana mu congo ku nord et sud ya inchi congo RDC.
+
+  utter_muungano_tuna_weza_ungana_na_hatu_juwane_swa:
+  - text: |-
+      kuugana haiko shida ni alama ya upendo na maendelewo.
+
+  utter_watu_wazuri_wangali_duniyani_swa:
+  - text: |-
+      mu maisha sa vile muduniya ukaona batu babaya juwa ngisi na bazuri bako sana, sawa vile batu benyi banatiyaka muchango yabo kidogo juu tupate chakula na vingine vyo.
+
+  utter_vita_juu_ya_nini_ina_kwaiya_swa:
+  - text: |-
+      iyi vita inakawiya juu ya upuuzi ya wakuu viongozi vya inchi ,bamelamuka na vita imeisha komala sana
+
+  utter_amani_ingali_nakuwaka_swa:
+  - text: |-
+      ndiyo kuko ma fasi zenyi bako na amani sana nikwenye hakuna mali njo hakuna vita, kwenyi aduhi haezi tosha kitu
+
+  utter_hasira_ita_ishaka_kweli_swa:
+  - text: |-
+      kisirani kitaishaka saa amani na usalama utarudi ,itaomba wakati juu hasira kiisha  kabisa
+
+  utter_mungu_mungu_ata_hurumiyaka_rwanda_swa:
+  - text: |-
+      mungu niwa rehema anasamehe atakae, na kwa wakati yake
+
+  utter_sheriya_weza_lomba_bila_hasira_swa:
+  - text: |-
+      ndiyo unaeza omba sheria bila kisirani juu usikiliwe salama
+
+  utter_sheriya_ina_kuwaka_mu_kongo_kweli_swa:
+  - text: |-
+      sheriya iko ila wakukamilisha njo wakorofi sana.
+
+  utter_sheriya_waziri_wa_sheriya_swa:
+  - text: |-
+      wenyi wana usika na sheriya ni waziri wa haki yaki bina damu.
+
+  utter_kibinadamu_waziri_wa_mambo_ya_kibinadamu_swa:
+  - text: |-
+      waziri ya haki yaki binadamu ina mawazo yaku maliza iyi vita na kila mutu arudiye kwake ,na usalama wakudumu urudiye ndani ya inchi.
+
+  utter_sheriya_waziri_wa_genre_famille_et_enfant_swa:
+  - text: |-
+      warizi wa haki ya watoto wana mawazo ya kukinga na ku linda watoto nakila hatariyoyote.
+
+  utter_wanyarwanda_wana_pata_usingizi_kweli_swa:
+  - text: |-
+      mina waza kama banyarwanda bana lala juu aiko banyarwanda wote njo bako kwa iyi vita kuko ba innocent ndani
+
+  utter_kutoka_tutoke_mu_kongo_swa:
+  - text: |-
+      kama unaona kama kuenda mu inchi yengine itaku saidiya kubadilisha mawazo naku sahau iyi hali ni ya lazima.
+
+  utter_wanyarwanda_ita_lombaka_huruma_swa:
+  - text: |-
+      kusema kama rwanda itaombaka uruma ,hatujuwe ,ni politiki ya ngazi za juu.
+
+  utter_watoto_watoto_wetu_wata_pendaka_wanyarwanda_swa:
+  - text: |-
+      watoto haiko baku patiya mafunzo ya mubaya, wafundisheni upendo na umoja juu ya maendeleo ya inchi ya kesho
+
+  utter_wanyarwanda_wana_pendaka_watu_malize_swa:
+  - text: |-
+      wanyarwanda habana shida na sifa ni politiki ya juu, na faida ya kibinafsi njo inaleta iyi hali.
+
+  utter_watoto_namna_gani_na_weza_kinga_watoto_wangu_swa:
+  - text: |-
+      ukitaka linda watoto nawaza ubatiye ku masomo na ukuwena baongelesha maneno yaku djenga na ya maendeleyo.
+
+  utter_ndoa_zita_kuwa_na_wezekana_swa:
+  - text: |-
+      ndiyo batu bana lungaka ndani ya kambi hakuna shida si njo kwenyi unaishi, uko nahaki yaku jisikiya uru.
+
+  utter_ndoa_nani_njo_ata_kuwa_na_tu_lungisha_swa:
+  - text: |-
+      ukitaka lunga unaendaka ku vyiongozi vya shirika la CNR, njo banaenda ku andikisha ndoa ku shirika kwenyi bana lungishaka.
+
+  utter_ndoa_tuta_kuwa_na_lungiya_wapi_swa:
+  - text: |-
+      tuta enda fanya ndoa ku shirika la ndoa yenyi iko kando kando na kambi
+
+  utter_ndoa_vijana_wa_uku_wana_eza_owa_basika_betu_swa:
+  - text: |-
+      vijana wa uku wana weza fanya ndowa waki pendana na wasika wakimbizi hakuna shida
+
+  utter_maisha_uku_wana_eshimiyaka_watu_ya_kazi_swa:
+  - text: |-
+      ndiyo haiko juu uko natumikiya mutu njo heshima itapoteya,mukila kasi inaomba yeshima mbele.
+
+  utter_maisha_hawata_kuwa_natu_ogopa_uku_swa:
+  - text: |-
+      apana habazi tu ogopa, tuko binadamu na tena ba congomani.
+      watu wa apa wako na umutu na kujuwa kuishi na watu juu leo ni nyiye kesho ni wawo.
+
+  utter_maisha_watu_wa_uku_biko_na_umutu_swa:
+  - text: |-
+      ndiyo wana juwa umutu na kuishi na watu kwa umoja.
+
+  utter_maisha_nafasi_gani_njo_hatuezi_enda_bila_ruhusa_swa:
+  - text: |-
+      hakuna fasi kwenyi juu ufike itaomba ruusa,ba kimbizi bako uru.
+
+  utter_mazuku_na_lac_vert_swa:
+  - text: |-
+      tutaishi kwinyi kuko mazuku na hange, juu kwenyi kunapatikana mazuku bana pajengeyaka na majiwe na bana andika hange na mazuku.
+
+  utter_mazuku_ni_nini_swa:
+  - text: |-
+      mazuku ina fanana na gaz, nani hatari
+
+  utter_mazuku_ina_uwa_swa:
+  - text: |-
+      ndiyo ina eza maliza maisha kwa haraka.
+
+  utter_mazuku_tufanye_je_ju_tusi_kufe_na_mazuku_swa:
+  - text: |-
+      tanaweza jikinga nayo kwaku djiepusha nakuzongeleya fasi kwenyi kuna semeka kama kuko mazuku.
+
+  utter_kambi_kwa_nini_wali_tu_tiya_kambi_ya_bulengo_mbali_na_watu_swa:
+  - text: |-
+      njo kwenyi viongozi ilipatiya ba fazili ba djengeye ba kimbizi.
+
+  utter_kambi_kwa_nini_wali_tiya_kambi_fasi_na_mazuku_swa:
+  - text: |-
+      kambi haiko katikati ya mazuku lakini kuko mazuku zenyi ziko amo na bana tiya majiwe kwenyi kuko ile mazuku.
+
+  utter_mazuku_ake_kamatwa_na_mazuku_tunaeza_muokowa_je_swa:
+  - text: |-
+      ili kuokowa mwenyi ana kamatwa na mazuku ni kumu kata kidogo.
+
+  utter_mazuku_mazuku_nayo_ni_moja_kati_ya_mali_za_kongo_swa:
+  - text: |-
+      ndiyo mazuku ni mali ya inchi
+
+  utter_amani_oo_swa:
+  - text: |-
+      ndiyo kuko mafasi kwenyi kuko amani, sana kwenyi hakukuwake madini sana.
+
+  utter_wakongomani_wanapendaka_wenzao_wenzao_swa:
+  - text: |-
+      upendo iko lakini haikamilike.
+
+  utter_duniya_ina_fika_mwisho_swa:
+  - text: |-
+      apana haiko mwisho ya duniya, hakuna mwenyi anajuwa mwisho ya duniya itakuya wakati gani.
+
+  utter_vijana_wa_binti_wa_goma_wata_penda_wa_vijana_wa_masisi_swa:
+  - text: |-
+      ijapo kuwa hali mapenzi haifate ile yote, wasika wakimbizi wata pendwa hakuna shida.
+
+  utter_vijana_wa_binti_wa_goma_wata_penda_wa_vijana_wa_ructhuru_swa:
+  - text: |-
+      ndiyo watapendewa bila shida wakapata mwenyi ana furahiyana naye.
+
+  utter_kanisa_ita_tu_saidiya_je_swa:
+  - text: |-
+      msaada ya kanisa mu iyi hali nikuombeyana,kuzidisha maombi juu amani irudiye na usalama urudi.
+
+  utter_vijana_wa_goma_wata_pokeya_je_vijana_wenzao_wa_masisi_swa:
+  - text: |-
+      wata pokeya vijana wenzao muzuri bila matatizo.
+
+  utter_vijana_kazi_ya_vijana_ita_kuwa_nini_mu_kambi_swa:
+  - text: |-
+      vidjana wana kazi za mingi ndani ya kambi sa vile mu majengo, saha yaku pokelesha wanasaidiyaka , na vingine kazi zinao utaji nguvu ya kimwili
+
+  utter_wababa_kazi_ya_wa_baba_ni_nini_ndani_ya_kambi_swa:
+  - text: |-
+      wa baba wanaendaka tafuta ma kazi indje ya kambi juu bapate makuta ya chakula ya familia, ila nawo wana saidiyanaka na wavidjana mu makazi mbalimbali zinao itaji nguvu ya kimwili
+
+  utter_radios_za_goma_zita_tu_teteya_swa:
+  - text: |-
+      ndiyo ma radio zina pitaka mu ma kambi juu yaku pata habari ya wa kimbizi,na wana pitisha malalamiko ya wakimbizi kwa radio.
+
+  utter_makabila_kuko_ubaguzi_ya_wale_ambao_wana_baguwana_juu_ya_ukabila_swa:
+  - text: |-
+      ndiyo kuko benyinbana baguwanaka ila haiko bamingi sana mu goma
+
+  utter_makabila_kuko_kabila_gani_njo_ina_watu_wengi_swa:
+  - text: |-
+      benyi ni bamingi ni bamushi na ba nande.
+
+  utter_maisha_watu_wote_wa_goma_wana_ishi_vizuri_swa:
+  - text: |-
+      apana batu bote habajiweze apa,kuko matadjiri na wamasikini.
+
+  utter_uchumi_goma_ina_simama_swa:
+  - text: |-
+      uchumi ilikuwaka na simama,ila hali ya vita ilishaka aribisha byote.
+
+  utter_vijana_wa_goma_wana_changiya_je_kwa_amani_swa:
+  - text: |-
+      vijana wa goma wana waza ku unga mkono serkali ambayo iko , kwasababu wenyewe hawaezi pigana kwakuogopa kupoteza maisha
+
+  utter_usalama_hali_ya_usalama_iko_je_mjini_goma_swa:
+  - text: |-
+      tunasikiya kama vyongozi vingali mumazungumuzo mpaka ivi.
+
+  utter_haki_viongozi_wa_goma_wana_juwa_haki_zetu_swa:
+  - text: |-
+      Ndiyo viongozi wa goma wanajuwa haki za wakimbizi ndiyo maana wana tuma shirika mbalimbali za kiusu kwaku boresha maisha ya wakimbizi
+
+  utter_shamba_goma_hakuna_shamba_tuta_paishi_je_swa:
+  - text: |-
+      walimadji watafute ngisi yaku unga mashamba kama bako na makuta wala waende limiya wakaadji walipiwe
+
+  utter_ukarimu_watu_wa_goma_ni_wakarimu_swa:
+  - text: |-
+      ndiyo wako wakarimu ila haiko wote.
+
+  utter_wakristu_wa_goma_wata_saidiya_wa_kristo_wenzao_swa:
+  - text: |-
+      ndiyo ba christu banasaidiya bila kubaguwa dini.
+
+  utter_waislamu_wa_goma_wata_saidiya_wa_islamu_wenzao_swa:
+  - text: |-
+      ndiyo wanansaidiyaka bila ubaguzi fulani
+
+  utter_vita_iiyi_ita_ishaka_je_namna_gani_swa:
+  - text: |-
+      vita itaishaka muzuri kwa mazungumuzo kwa vyiogozi
+
+  utter_vita_iongozi_biko_naona_iyi_mauwaji_yote_swa:
+  - text: |-
+      ndiyo viongozi bako na habari zote njo kwa mana ya iyi mazungumuzo.
+
+  utter_vita_kongo_na_rwanda_naona_iyi_buchokozi_ili_anziyaka_wapi_swa:
+  - text: |-
+      ni rwanda juu yonjo inaaonekana inatamaniya madini ya kongo.
+
+  utter_vita_ju_ya_nini_haki_za_binadamu_hazi_eshimike_swa:
+  - text: |-
+      Sababu ya umimi ya wanadamu , kila mutu anajipendeleya kupita kihasi na jamaa yake , ndiyo maana watu wanakula rushwa , hata kwaku vunja haki ya binadamu
+
+  utter_chakula_iyi_chakula_ya_pam_haita_tu_gonjwesha_swa:
+  - text: |-
+      chakula ya pam haiezi leta magonjwa juu ina pimiwa mbele yaku paniwa.
+
+  utter_kuni_tuta_kuwa_na_tosha_kuni_wapi_swa:
+  - text: |-
+      niku logotesha mu mashamba zenyi ziko kandokando ya kambi.
+
+  utter_kuni_kuwaka_makuni_swa:
+  - text: |-
+      ndiyo kuko makuni mumashamba,naza kuuzisha ziko.
+
+  utter_makala_mufuko_ni_ngapi_goma_swa:
+  - text: |-
+      ilishaka panda sana juu ya vita ,ilishakakuwa 50d ollars.
+
+  utter_makala_nyiragongo_swa:
+  - text: |-
+      50 dollars njo iko nauziwa.
+
+  utter_makala_mercycorps_swa:
+  - text: |-
+      mercycorps inaleta sa yoyote maji ikataka isha.
+
+  utter_maisha_kambi_vizuri_siku_swa:
+  - text: |-
+      maisha ya mukimbizi ni maisha ya mateso ili kuwe muzuri niku rudiyatu kwabo njo maisha inaweza kuwa muzuri
+
+  utter_maisha_tena_ku_mwanzo_swa:
+  - text: |-
+      ndiyo maisha ya mukimbizi nikuanza upia juu ulisha poteza byote niku anziliya tu.
+
+  utter_maisha_umaskini_watoto_wangu_wana_niona_je_swa:
+  - text: |-
+      watoto wana ona wazazi kama njo wa mungu wawo,wazazi wana pashwa linda na epusha na kila hatari kwa hali yoyote mzazi ana pitiya
+
+  utter_maisha_watoto_hawata_ni_chukiya_swa:
+  - text: |-
+      chuki haiezi kosa kuona ngisi wana pitiya hali iyi juu ku zarauliwa na ku onelewa,hakuna mwenyi aliitafuta iyi hali
+
+  utter_maisha_i_watoto_endeleya_kuni_sikiya_katika_umaskini_swa:
+  - text: |-
+      ndiyo Watoto wata eshimu wazazi juu ni maPashwa yabo kwa kila hali ya maisha.
+
+  utter_maisha_iko_nguvu_goma_swa:
+  - text: |-
+      maisha inaonekaka iko nguvu goma juu hakuna shamba za mingi batu bamingi ni ba churuzi.
+
+  utter_maisha_tuta_weza_maisha_ya_goma_bila_makazi_swa:
+  - text: |-
+      bila kazi mu goma mukimbizi ata jikaza tu juu hakuna bya kufanya,nikuitika hali ngisi iko.
+
+  utter_maisha_wa_ume_wetu_hawata_geuka_wa_mwizi_swa:
+  - text: |-
+      apana habata kuwa bamwizi ni ku jifunja ku nyenyekeya na kutosheka na ile kidogo yenyi unapata
+
+  utter_maisha_tuta_choma_mwizi_gani_swa:
+  - text: |-
+      ina kataziwa na sheriya ya inchi ku jilipishiya kisasi.
+
+  utter_maisha_tuke_choma_mwizi_shida_ni_nini_swa:
+  - text: |-
+      muka choma mwizi na baka bakamata mutaazibiwa vikali na sheria ya inchi.
+
+  utter_wizi_wata_isha_je_ndani_ya_kambi_swa:
+  - text: |-
+      wamwizi bataishaka  mu kambi sa banabakamata banamuazibu vikali.
+
+  utter_usalama_bunduki_zina_fikaka_swa:
+  - text: |-
+      inakatazwa silaha kuingiya munkambi,zingine zina ingiya ku manyanga.
+
+  utter_usalama_bunduki_patiyaka_wakimbizi_swa:
+  - text: |-
+      zina bafikiyaka kumanyanga yabo, ila sheriya ya kambi inakataza silaha mukambi kabita
+
+  utter_muchoko_dawa_muchoko_gani_swa:
+  - text: |-
+      hakuna inabidi tu ku pumzika, nakupunguza mawazo.
+
+  utter_matunzo_kwa_nini_wakimbizi_wote_wana_tunziwa_tu_fasi_moja_swa:
+  - text: |-
+      inaonekana kama vile banatunziwa fasi moya juu mufazili mumoya njo anaonekana mu afia mule katika kambi.
+
+  utter_watoto_watoto_masomo_suluhisho_swa:
+  - text: |-
+      watoto waki shindwa masomo niku waelewesha polepole haiko kwa haraka.
+
+  utter_duniya_badilikaka_siku_moja_swa:
+  - text: |-
+      tunaimani kama duniya haita badilika ila wanadamu njo watabadilika
+
+  utter_mapendo_swa:
+  - text: |-
+      ndiyo kuko siku watapenda juu banaishi pamoya ni vema wapendane.
+
+  utter_nyimbo_zetu_zita_itikiwa_uku_ukui_swa:
+  - text: |-
+      ndiyo ni muzuri kuimba nyimbo za kwetu juu njozenye tuna juwaa maana.
+
+  utter_michezo_kuwa_na_ruhusa_swa:
+  - text: |-
+      hata kama mtu ni mukimbizi iko huru na haezi sahau mila naa desturi za kwabo, tena iyi yote ni congo uko huru ku cheza muchezo ya kwenu
+
+  utter_wafu_wenye_wali_kufa_na_wafu_wenye_wali_tuacha_swa:
+  - text: |-
+      wenye walituachaka tuta watocheyaka heshima mu kanisa na kwenyi unapenda uko huru.
+
+  utter_wafu_tuna_weza_jenga_nafasi_ya_ukumbusho_swa:
+  - text: |-
+      juya kumbukumbu ya wenzetu wenye wali fariki uko huru kutiya hema juu ya kilio lakini inaomba vyiongozi  vya kambi wakuwe wamewa arifu.
+
+  utter_wafu_wali_fariki_tuwasahau_bila_kulipiza_kisasi_swa:
+  - text: |-
+      tuna pashwa sahau hata kama hatulipishe kisasi, kisasi ni ya mungu
+
+  utter_kisasi_tuta_weza_lipiza_kisasi_je_swa:
+  - text: |-
+      hatuezi lipisha kisasi ,mwenyi kutulipishiya ni mungu.
+
+  utter_kisasi_tuta_weza_lipiza_kisasi_je_na_kulipiza_kisasi_swa:
+  - text: |-
+      kulipisha kisawi haiko njo suluhisho na haiko mafunzo ya kupatiya watoto.
+
+  utter_kisasi_komala_na_chuki_swa:
+  - text: |-
+      njo mana haiko muzuri kulipisha kisasi ,tufundisheni watoto wetu mambo yamuzuri, natuwe nasema bitu byakudjenga mbele ya batoto juu basikuwe nakomala na ma asira ao chuki
+
+  utter_manunguniko_komala_na_chuki_na_mungu_taka_swa:
+  - text: |-
+      mawazo yavile haiko yakupatiya fasi, juwa kwanza ni zambi, ikafika usikiya mubaya wende onana na munganga waki psychologiya ataku saidiya
+
+  utter_manunguniko_komala_na_chuki_na_mungu_taka_kuji_maliziya_maisha_swa:
+  - text: |-
+      kuji uwa haiwezi tuliza maumivu ya roho. Kabisa, kuji uwa haiko njo suluhisho ya maumivu ya moyo.
+
+  utter_manunguniko_chuki_hapendake_komala_na_chuki_na_mungu_taka_kuji_maliziya_maisha_swa:
+  - text: |-
+      apana sisi wacongomani hatuezi chukiliwa na mungu, ni wakati tu bita pita
+
+  utter_chakula_kupiganiya_chakula_swa:
+  - text: |-
+      watu wana pinganiya chakula juu ya hali gumu ya maisha apa kwa kambi
+
+  utter_njala_haiwezi_fanya_watu_majambazi_swa:
+  - text: |-
+      hakuta uwana juu ya njala niku jifunza kutosheka na ile kidogo yenyi tuna pata
+
+  utter_maisha_tufanye_majambazi_swa:
+  - text: |-
+      kama maisha inakuwa nguvu tuna jikaza twende tafuta makazi juu tuweze pata ata kidogo yaku saidiya jamaa
+
+  utter_watoto_wake_shindikana_tuta_liliya_nani_watoto_wana_tushinda_swa:
+  - text: |-
+      Kama watoto wana shindikana tuende ona vyiongozi vya kambi juu wa one kama watapa wakuongeya na bale batoto
+
+  utter_maisha_waume_wetu_wake_geuka_wabandiya_tuta_fanya_je_swa:
+  - text: |-
+      kama waume wetu kuwa ma bandiya nikwenda peya ripoti kwa viongozi via kambi ,wata pata suluhisho
+
+  utter_sheria_iko_na_ona_haya_ypte_jj_swa:
+  - text: |-
+      ndiyo iyi hali ya vita na unyanyasaji unaonekana kwa macho wazi
+
+  utter_sheria_iko_na_ona_haya_ypte_jj_tua_swa:
+  - text: |-
+      cpi ina weza kutu saidiya kwaku hakikisha ao wenye wana tenda mauwaji ndani ya vita kwenda kwa gereza
+
+  utter_vita_mm23_njo_kusema_nini_swa:
+  - text: |-
+      ni kundi ya maa bandiya wenyi kumiliki silaha dani congo.
+
+  utter_utter_mazuku_ita_ishaka_kweli_kambi_swa:
+  - text: |-
+      mazuku ni madini inayo patikana fasi kuliko volkano, ina pashwa isha kama ina tumikishiwa kwaku piga shakula
+
+  utter_vita_kanyarutshinya_swa:
+  - text: |-
+      kanyarutshinya ni fasi kwenye viongozi vili chagula kwaku weka kambi kwa sababu akuna vita
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+actions:
+  - utter_greet_swa
+  - utter_greet_fr
+  - utter_goodbye_swa
+  - utter_goodbye_fr
+  - utter_bot_challenge_swa
+  - utter_bot_challenge_fr
+  - utter_who_are_you_swa
+  - utter_who_are_you_fr
+  - utter_cheer_up_swa
+  - utter_cheer_up_fr
+  - utter_did_that_help_swa
+  - utter_did_that_help_fr
+  - utter_happy_swa
+  - utter_happy_fr
+  - utter_rwanda_shida_swa
+  - utter_maji_kunywa_swa
+  - utter_mafunzo_kupata_swa
+  - utter_hema_kupata_swa
+  - utter_kunyanyaswa_swa
+  - utter_vita_wakati_swa
+  - utter_choo_swa
+  - utter_kupokelewa_swa
+  - utter_kupata_ndui_swa
+  - utter_chakula_e_swa
+  - utter_maji_kuwa_kidogo_swa
+  - utter_matibabu_swa
+  - utter_kazi_bila_kazi_swa
+  - utter_masomo_bure_swa
+  - utter_vyeti_vya_shule_swa
+  - utter_watoto_walio_poteya_swa
+  - utter_ubakaji_wakimbizi_wapi_swa
+  - utter_usalama_swa
+  - utter_viongozi_nyamaza_swa
+  - utter_kuhara_swa
+  - utter_kuandikiwa_swa
+  - utter_maisha_swa
+  - utter_serkali_swa
+  - utter_kazi_zita_pata_swa
+  - utter_kazi_zitakapata_swa
+  - utter_msaada_kwa_siye_bote_swa
+  - utter_msaada_kwa_mtu_swa
+  - utter_kuandikisha_swa
+  - utter_mashindano_ya_serkali_swa
+  - utter_mashindano_wa_serikali_swa
+  - utter_haki_kwa_wakimbizi_swa
+  - utter_malisho_mabaya_swa
+  - utter_wakimbizi_swa
+  - utter_uizi_swa
+  - utter_mafugo_swa
+  - utter_kulala_kwa_wanaume_na_wanawake_swa
+  - utter_msaada_swa
+  - utter_vita_kwetu_swa
+  - utter_uchafu_swa
+  - utter_kurudi_swa
+  - utter_vita_m23_swa
+  - utter_vita_jeshi_yetu_swa
+  - utter_maongezi_swa
+  - utter_vita_kongo_rwanda_swa
+  - utter_askari_swa
+  - utter_viongozi_swa
+  - utter_wazalendo_swa
+  - utter_wazalendo_jeshi_yetu_swa
+  - utter_masomo_shida_swa
+  - utter_vita_faidika_swa
+  - utter_vita_sababu_swa
+  - utter_vita_rutchuru_swa
+  - utter_kuzika_swa
+  - utter_kuliya_swa
+  - utter_kuliya_lala_baches_swa
+  - utter_kuliya_maliza_vita_swa
+  - utter_vita_ime_anza_swa
+  - utter_kuliya_wakongomani_wengine_swa
+  - utter_ubakaji_wabinti_wamama_swa
+  - utter_kuliya_faida_wakongomani_swa
+  - utter_kuliya_kongo_rwanda_swa
+  - utter_kuliya_eac_sadec_wazungu_swa
+  - utter_kuliya_viongozi_wa_kongo_na_m23_swa
+  - utter_kuliya_m23_wakongomani_swa
+  - utter_kuliya_ina_sapoti_swa
+  - utter_kuliya_uganda_kongo_swa
+  - utter_kuliya_wetu_viongozi_sisi_swa
+  - utter_kuzika_wakimbizi_wapi_swa
+  - utter_kuzika_wanao_kufa_swa
+  - utter_kambi_wakimbizi_wote_swa
+  - utter_usalama_kambi_swa
+  - utter_kuliya_saidiya_kwa_wakongomani_swa
+  - utter_wazalendo_wame_kwa_wapi_swa
+  - utter_mauwaji_swa
+  - utter_wazalendo_wame_pewa_mamlaka_swa
+  - utter_wazalendo_wame_nyanyasa_wakimbizi_swa
+  - utter_mateso_swa
+  - utter_kilio_sacrifier_swa
+  - utter_jeshi_swa
+  - utter_jeshi_shindwa_vita_swa
+  - utter_shule_swa
+  - utter_shule_viongozi_wakimbizi_wapi_swa
+  - utter_kilio_amani_swa
+  - utter_kilio_jeshi_ya_eac_swa
+  - utter_kilio_umoja_ya_africaswa
+  - utter_kilio_wasaidizi_wamoja_wakimbizi_wapi_swa
+  - utter_kilio_wakimbizi_wa_uongo_swa
+  - utter_kilio_wakimbizi_wenye_haiko_swa
+  - utter_kilio_jetons_swa
+  - utter_kilio_wakimbizi_wenye_damu_swa
+  - utter_kilio_chakula_bila_makala_swa
+  - utter_kilio_maisha_yetu_swa
+  - utter_kilio_sikia_kwa_kilio_swa
+  - utter_chakula_pandisha_swa
+  - utter_kulima_swa
+  - utter_kilio_tetezi_wakimbizi_wapi_njo_swa
+  - utter_kilio_watoto_wangu_wata_chezeya_wapi_swa
+  - utter_kilio_kambi_zimoja_ziko_ku_barabara_swa
+  - utter_usafi_swa
+  - utter_hema_zetu_zengine_swa
+  - utter_kujikinga_swa
+  - utter_maji_safi_swa
+  - utter_rwanda_furahi_swa
+  - utter_rwanda_teseka_swa
+  - utter_jeshi_wana_malizika_swa
+  - utter_jeshi_wana_gombolewa_swa
+  - utter_jeshi_wana_juwa_mateso_swa
+  - utter_rwanda_chukiya_swa
+  - utter_chunvi_swa
+  - utter_maji_juwa_swa
+  - utter_maji_shoteya_swa
+  - utter_kanisa_swa
+  - utter_dini_swa
+  - utter_kanisa_nyirangongo_swa
+  - utter_kanisa_njenga_kwa_kambi_swa
+  - utter_chakula_tuiweke_swa
+  - utter_bwaki_swa
+  - utter_bwaki_ya_wajawazito_swa
+  - utter_kulima_viongozi_wakimbizi_wapi_swa
+  - utter_wakati_swa
+  - utter_hema_ike_aribika_swa
+  - utter_dawa_ya_wagojnwa_wa_ukimwi_swa
+  - utter_dawa_ya_wagojnwa_wa_sukari_swa
+  - utter_chakula_watu_wa_regime_swa
+  - utter_chadaruwa_swa
+  - utter_wagonjwa_swa
+  - utter_psychologues_swa
+  - utter_volkeno_swa
+  - utter_nvula_swa
+  - utter_ambulance_swa
+  - utter_usafi_ndani_kambi_swa
+  - utter_chakula_haribika_swa
+  - utter_dawa_ina_haribika_swa
+  - utter_uzazi_swa
+  - utter_uzazi_kwa_wakimbizi_wapi_swa
+  - utter_choo_tujengeya_swa
+  - utter_magongwa_swa
+  - utter_magongwa_ya_infections_swa
+  - utter_homa_swa
+  - utter_magongwa_ya_malaria_swa
+  - utter_magongwa_ya_walemavu_swa
+  - utter_masomo_tumika_swa
+  - utter_kazi_kulipa_swa
+  - utter_kazi_za_goma_swa
+  - utter_kazi_endeleya_lipiwa_swa
+  - utter_kazi_goma_zitakapata_swa
+  - utter_kazi_serkali_zitakapata_swa
+  - utter_uchuruzi_swa
+  - utter_kuni_swa
+  - utter_uongozi_swa
+  - utter_uongozi_kwa_wakimbizi_wapi_swa
+  - utter_kanyarutshinya_swa
+  - utter_vita_salama_swa
+  - utter_vita_wapi_swa
+  - utter_usalama_apa_ndani_kambi_swa
+  - utter_vita_fika_swa
+  - utter_vita_karibu_na_sisi_swa
+  - utter_vita_ingiya_kambi_swa
+  - utter_lugha_swa
+  - utter_lugha_kinyarwanda_swa
+  - utter_usalama_mpaka_na_rwanda_swa
+  - utter_usalama_nyiragongo_swa
+  - utter_mtandao_swa
+  - utter_usalama_vita_nyiragongo_swa
+  - utter_usalama_askari_swa
+  - utter_jamaa_swa
+  - utter_usalama_watoto_wangu_swa
+  - utter_usalama_bulengo_swa
+  - utter_usalama_vita_kwa_watoto_wangu_swa
+  - utter_usalama_hasira_swa
+  - utter_uoga_swa
+  - utter_hali_swa
+  - utter_hali_usingizi_swa
+  - utter_hali_ndoto_swa
+  - utter_hali_watoto_wangu_swa
+  - utter_hali_viongozi_wakimbizi_wapi_swa
+  - utter_hali_mzigo_swa
+  - utter_malalamiko_sisi_wangu_swa
+  - utter_malalamiko_kwa_wakimbizi_wapi_swa
+  - utter_malalamiko_wazima_swa
+  - utter_malalamiko_elewe_swa
+  - utter_malalamiko_kula_chakula_swa
+  - utter_malalamiko_mungu_swa
+  - utter_malalamiko_mungu_ana_tupenda_swa
+  - utter_malalamiko_mungu_ana_ruhusu_tukuwe_wakimbizi_wapi_swa
+  - utter_malalamiko_duniya_swa
+  - utter_malalamiko_mtetezi_wakimbizi_wapi_swa
+  - utter_malalamiko_kiswahili_swa
+  - utter_malalamiko_kiswahili_kwa_wakimbizi_wapi_swa
+  - utter_malalamiko_goma_swa
+  - utter_malalamiko_goma_kwa_wakimbizi_wapi_swa
+  - utter_malalamiko_watoto_wa_goma_swa
+  - utter_malalamiko_itika_ku_changana_na_siye_swa
+  - utter_malalamiko_maisha_kwa_kesho_swa
+  - utter_malalamiko_maisha_kwa_zamani_swa
+  - utter_malalamiko_waelezeya_kwa_kesho_swa
+  - utter_masomo_kawaida_swa
+  - utter_malalamiko_vilonda_vya_ndani_swa
+  - utter_mashaka_swa
+  - utter_mashaka_shuleni_kwa_watoto_wangu_swa
+  - utter_malalamiko_waalimu_tayarishwa_kupokeya_watoto_wakimbizi_wapi_swa
+  - utter_mashaka_waalimu_fundisha_watoto_wakimbizi_wapi_swa
+  - utter_malalamiko_askari_kwa_wakimbizi_wapi_swa
+  - utter_malalamiko_maibobo_kwa_wakimbizi_wapi_swa
+  - utter_malalamiko_vitabu_kwa_watoto_wangu_swa
+  - utter_malalamiko_kuko_kwa_watoto_wangu_swa
+  - utter_malalamiko_masomo_i_kwa_watoto_wangu_swa
+  - utter_malalamiko_maisha_kwa_watoto_raha_swa
+  - utter_malalamiko_waambiya_nini_kwa_watoto_wangu_swa
+  - utter_masomo_weza_soma_swa
+  - utter_malalamiko_waweze_masomo_swa
+  - utter_malalamiko_pendaka_tena_maisha_swa
+  - utter_malalamiko_tuchangiye_kwa_amani_swa
+  - utter_malalamiko_sherehe_kwa_wakimbizi_wapi_swa
+  - utter_malalamiko_kusherehe_mwaka_mpya_kwa_watoto_wangu_swa
+  - utter_malalamiko_kusherehe_mwaka_mpya_kwa_watoto_wangu_siku_mpya_swa
+  - utter_mashaka_yetu_elewa_nani_swa
+  - utter_mashaka_tuta_wezaka_hurumiya_wanyarwanda_swa
+  - utter_mashaka_historia_kwa_kongo_swa
+  - utter_mashaka_tunzwa_kwa_vilonda_vya_ndani_swa
+  - utter_mashaka_amani_kwa_masisi_swa
+  - utter_mashaka_sheriya_kwa_rwanda_swa
+  - utter_mashaka_mahakama_kwa_rwanda_swa
+  - utter_mashaka_amani_bila_vita_haiwezi_patikana_swa
+  - utter_mashaka_iyi_vita_ni_ya_nini_swa
+  - utter_mashaka_nani_ali_anzaka_vita_swa
+  - utter_mashaka_watoto_wakimbizi_wapi_kwa_kesho_swa
+  - utter_mashaka_wenswa_kwa_wakimbizi_wapi_swa
+  - utter_mashaka_duniya_mzima_kwa_kilio_swa
+  - utter_mashaka_umoja_wa_mataifa_kwa_teseka_swa
+  - utter_mashaka_kuko_kwa_teseka_apa_swa
+  - utter_mashaka_nyumbani_kwa_goma_swa
+  - utter_mashaka_apa_kuko_usalama_swa
+  - utter_kulala_na_watoto_wanazaliwa_swa
+  - utter_kulala_na_wazehe_wakongwe_swa
+  - utter_kulala_na_wazazi_na_watoto_swa
+  - utter_mashaka_viongosi_nafasi_swa
+  - utter_viwanja_chakula_kila_siku_ku_mustariswa_swa
+  - utter_mashaka_chakula_sawa_sawa_swa
+  - utter_chakula_chagua_nina_penda_swa
+  - utter_chakula_tuta_kuwa_na_shiba_swa
+  - utter_chakula_hai_eneye_swa
+  - utter_maisha_onekana_kama_wa_maskini_sana_swa
+  - utter_maisha_hali_itadumu_siku_mingi_swa
+  - utter_matunzo_nyiragongo_kuko_vituo_ngapi_vya_afya_swa
+  - utter_maisha_yenye_nili_ishi_swa
+  - utter_maisha_zala_katika_hali_nzuri_swa
+  - utter_malalamiko_nani_ata_fatana_na_trauma_swa
+  - utter_malalamiko_waganga_wata_tu_tunza_na_mapendo_swa
+  - utter_malalamiko_sheriya_zamu_kambi_swa
+  - utter_malalamiko_mungu_angali_swa
+  - utter_malalamiko_mungu_lipiza_zambi_zetu_swa
+  - utter_malalamiko_mungu_ngufu_yaku_omba_mungu_swa
+  - utter_mashaka_tunzwa_na_MSF_bure_swa
+  - utter_mashaka_MSF_iko_na_banganga_bazuri_swa
+  - utter_mashaka_MSF_ita_tunza_na_malali_ya_kichwa_swa
+  - utter_mashaka_juwa_wakimbizi_wa_uongo_swa
+  - utter_mashaka_wakimbizi_wa_uongo_kati_yetu_swa
+  - utter_mashaka_wafanya_kazi_wa_PAM_wakorofi_swa
+  - utter_mashaka_mganga_wa_MSF_ana_ni_tunza_mubaya_nina_eza_end_kwa_nani_swa
+  - utter_mashaka_yangu_iko_na_maana_swa
+  - utter_mashaka_siku_iyi_yote_ita_badilika_swa
+  - utter_mashaka_viongozi_wata_tuambiyaka_nini_tena_ok_swa
+  - utter_mashaka_ita_jenga_sule_umu_swa
+  - utter_mashaka_ita_patiya_watoto_vyombo_vya_shule_swa
+  - utter_mashaka_tuta_pataka_tena_onjo_ya_maisha_swa
+  - utter_mashaka_watoto_kititi_hawaelewe_swa
+  - utter_mashaka_vita_ni_ya_muzuri_kwetu_kweli_swa
+  - utter_mashaka_ju_ya_nini_hakuna_suhulisho_swa
+  - utter_mashaka_nasiye_tukamate_silaha_swa
+  - utter_mashaka_juu_ya_nini_niko_na_pumua_mubaya_swa
+  - utter_mashaka_juu_ya_nini_usiku_silale_swa
+  - utter_mashaka_kuna_Kongo_na_Rwanda_wata_ishi_kwa_Amani_swa
+  - utter_mashaka_watoto_wetu_wata_komala_na_roho_muzuri_swa
+  - utter_mashaka_watoto_wetu_hawata_geuka_wa_bandiya_swa
+  - utter_mashaka_juu_ya_nini_bangi_iko_mu_kambi_swa
+  - utter_mashaka_tuta_sahawaka_iyi_mateso_ndani_swa
+  - utter_mashaka_tuta_pataka_amani_ya_roho_ndani_zetu_swa
+  - utter_mashaka_na_weza_kuwaminiya_tena_viongozi_swa
+  - utter_mashaka_kusema_kinyarwanda_apa_goma_ita_onekana_je_swa
+  - utter_mashaka_ubaguzi_wa_kabila_ina_toka_wapi_swa
+  - utter_mashaka_wanande_wata_itika_na_wa_hutu_bila_shida_apa_swa
+  - utter_mashaka_watoto_wata_pendana_wetu_swa
+  - utter_mashaka_sisi_wakimbiziwenye_tuna_weza_kuwa_na_enda_tembeya_swa
+  - utter_mashaka_duniya_ita_badilikaka_siku_moya_swa
+  - utter_wakati_tuta_wezaka_rudisha_wakati_yenye_tusha_poteza_swa
+  - utter_kifo_hatuta_kufa_siye_bote_swa
+  - utter_mashaka_mwisho_ya_iyi_mateso_ni_nini_swa
+  - utter_mashaka_tuna_weza_saidiyana_namna_gani_kati_yetu_swa
+  - utter_ugonvi_tuta_epuka_ugonvi_namna_gani_swa
+  - utter_masambo_jirani_wake_kosana_wata_samba_wapi_swa
+  - utter_mashaka_tuna_onekana_kama_watu_swa
+  - utter_mali_nani_ata_lipaka_mali_yetu_yenye_isha_poteya_swa
+  - utter_mashaka_wenye_wali_baki_masisi_wana_ishi_je_swa
+  - utter_mashaka_ju_ya_nini_ma_gombora_ziko_na_anguka_mu_ma_kambi_swa
+  - utter_mashaka_apa_kuko_wa_askari_waku_tosha_juya_ku_tu_chunga_sisi_wote_swa
+  - utter_vita_nasiye_tuende_fanya_vita_rwanda_swa
+  - utter_maswali_kazi_ya_croix_rouge_ni_nini_swa
+  - utter_wakimbizi_mukimbizi_ana_pashwa_kula_mara_ngapi_kwa_siku_swa
+  - utter_watutsi_nina_weza_fanya_urafiki_na_mututsi_swa
+  - utter_wakimbizi_watutsi_wote_ni_watu_wabaya_swa
+  - utter_undugu_wa_nani_njo_wa_ndugu_yetu_apa_swa
+  - utter_utulizo_ya_iyi_matata_yote_ita_fanyikaka_swa
+  - utter_mashaka_reparation_ita_fanyikaka_swa
+  - utter_mashaka_tuna_weza_ona_iyi_vita_kama_genocide_swa
+  - utter_mashaka_ni_wakati_gani_njo_tuna_weza_sema_vita_ni_genocide_swa
+  - utter_mashaka_kabila_tafauti_na_tu_aminiyane_swa
+  - utter_mashaka_o_swa
+  - utter_ziwa_kivu_iko_wapi_swa
+  - utter_muungano_tuna_weza_ungana_na_hatu_juwane_swa
+  - utter_watu_wazuri_wangali_duniyani_swa
+  - utter_vita_juu_ya_nini_ina_kwaiya_swa
+  - utter_amani_ingali_nakuwaka_swa
+  - utter_hasira_ita_ishaka_kweli_swa
+  - utter_mungu_mungu_ata_hurumiyaka_rwanda_swa
+  - utter_sheriya_weza_lomba_bila_hasira_swa
+  - utter_sheriya_ina_kuwaka_mu_kongo_kweli_swa
+  - utter_sheriya_waziri_wa_sheriya_swa
+  - utter_kibinadamu_waziri_wa_mambo_ya_kibinadamu_swa
+  - utter_sheriya_waziri_wa_genre_famille_et_enfant_swa
+  - utter_wanyarwanda_wana_pata_usingizi_kweli_swa
+  - utter_kutoka_tutoke_mu_kongo_swa
+  - utter_wanyarwanda_ita_lombaka_huruma_swa
+  - utter_watoto_watoto_wetu_wata_pendaka_wanyarwanda_swa
+  - utter_wanyarwanda_wana_pendaka_watu_malize_swa
+  - utter_watoto_namna_gani_na_weza_kinga_watoto_wangu_swa
+  - utter_ndoa_zita_kuwa_na_wezekana_swa
+  - utter_ndoa_nani_njo_ata_kuwa_na_tu_lungisha_swa
+  - utter_ndoa_tuta_kuwa_na_lungiya_wapi_swa
+  - utter_ndoa_vijana_wa_uku_wana_eza_owa_basika_betu_swa
+  - utter_maisha_uku_wana_eshimiyaka_watu_ya_kazi_swa
+  - utter_maisha_hawata_kuwa_natu_ogopa_uku_swa
+  - utter_maisha_watu_wa_uku_biko_na_umutu_swa
+  - utter_maisha_nafasi_gani_njo_hatuezi_enda_bila_ruhusa_swa
+  - utter_mazuku_na_lac_vert_swa
+  - utter_mazuku_ni_nini_swa
+  - utter_mazuku_ina_uwa_swa
+  - utter_mazuku_tufanye_je_ju_tusi_kufe_na_mazuku_swa
+  - utter_kambi_kwa_nini_wali_tu_tiya_kambi_ya_bulengo_mbali_na_watu_swa
+  - utter_kambi_kwa_nini_wali_tiya_kambi_fasi_na_mazuku_swa
+  - utter_mazuku_ake_kamatwa_na_mazuku_tunaeza_muokowa_je_swa
+  - utter_mazuku_mazuku_nayo_ni_moja_kati_ya_mali_za_kongo_swa
+  - utter_amani_oo_swa
+  - utter_wakongomani_wanapendaka_wenzao_wenzao_swa
+  - utter_duniya_ina_fika_mwisho_swa
+  - utter_vijana_wa_binti_wa_goma_wata_penda_wa_vijana_wa_masisi_swa
+  - utter_vijana_wa_binti_wa_goma_wata_penda_wa_vijana_wa_ructhuru_swa
+  - utter_kanisa_ita_tu_saidiya_je_swa
+  - utter_vijana_wa_goma_wata_pokeya_je_vijana_wenzao_wa_masisi_swa
+  - utter_vijana_kazi_ya_vijana_ita_kuwa_nini_mu_kambi_swa
+  - utter_wababa_kazi_ya_wa_baba_ni_nini_ndani_ya_kambi_swa
+  - utter_radios_za_goma_zita_tu_teteya_swa
+  - utter_makabila_kuko_ubaguzi_ya_wale_ambao_wana_baguwana_juu_ya_ukabila_swa
+  - utter_makabila_kuko_kabila_gani_njo_ina_watu_wengi_swa
+  - utter_maisha_watu_wote_wa_goma_wana_ishi_vizuri_swa
+  - utter_uchumi_goma_ina_simama_swa
+  - utter_vijana_wa_goma_wana_changiya_je_kwa_amani_swa
+  - utter_usalama_hali_ya_usalama_iko_je_mjini_goma_swa
+  - utter_haki_viongozi_wa_goma_wana_juwa_haki_zetu_swa
+  - utter_shamba_goma_hakuna_shamba_tuta_paishi_je_swa
+  - utter_ukarimu_watu_wa_goma_ni_wakarimu_swa
+  - utter_wakristu_wa_goma_wata_saidiya_wa_kristo_wenzao_swa
+  - utter_waislamu_wa_goma_wata_saidiya_wa_islamu_wenzao_swa
+  - utter_vita_iiyi_ita_ishaka_je_namna_gani_swa
+  - utter_vita_iongozi_biko_naona_iyi_mauwaji_yote_swa
+  - utter_vita_kongo_na_rwanda_naona_iyi_buchokozi_ili_anziyaka_wapi_swa
+  - utter_vita_ju_ya_nini_haki_za_binadamu_hazi_eshimike_swa
+  - utter_chakula_iyi_chakula_ya_pam_haita_tu_gonjwesha_swa
+  - utter_kuni_tuta_kuwa_na_tosha_kuni_wapi_swa
+  - utter_kuni_kuwaka_makuni_swa
+  - utter_makala_mufuko_ni_ngapi_goma_swa
+  - utter_makala_nyiragongo_swa
+  - utter_makala_mercycorps_swa
+  - utter_maisha_kambi_vizuri_siku_swa
+  - utter_maisha_tena_ku_mwanzo_swa
+  - utter_maisha_umaskini_watoto_wangu_wana_niona_je_swa
+  - utter_maisha_watoto_hawata_ni_chukiya_swa
+  - utter_maisha_i_watoto_endeleya_kuni_sikiya_katika_umaskini_swa
+  - utter_maisha_iko_nguvu_goma_swa
+  - utter_maisha_tuta_weza_maisha_ya_goma_bila_makazi_swa
+  - utter_maisha_wa_ume_wetu_hawata_geuka_wa_mwizi_swa
+  - utter_maisha_tuta_choma_mwizi_gani_swa
+  - utter_wizi_wata_isha_je_ndani_ya_kambi_swa
+  - utter_usalama_bunduki_zina_fikaka_swa
+  - utter_usalama_bunduki_patiyaka_wakimbizi_swa
+  - utter_muchoko_dawa_muchoko_gani_swa
+  - utter_matunzo_kwa_nini_wakimbizi_wote_wana_tunziwa_tu_fasi_moja_swa
+  - utter_watoto_watoto_masomo_suluhisho_swa
+  - utter_duniya_badilikaka_siku_moja_swa
+  - utter_mapendo_swa
+  - utter_nyimbo_zetu_zita_itikiwa_uku_ukui_swa
+  - utter_michezo_kuwa_na_ruhusa_swa
+  - utter_wafu_wenye_wali_kufa_na_wafu_wenye_wali_tuacha_swa
+  - utter_wafu_tuna_weza_jenga_nafasi_ya_ukumbusho_swa
+  - utter_wafu_wali_fariki_tuwasahau_bila_kulipiza_kisasi_swa
+  - utter_kisasi_tuta_weza_lipiza_kisasi_je_swa
+  - utter_kisasi_tuta_weza_lipiza_kisasi_je_na_kulipiza_kisasi_swa
+  - utter_kisasi_komala_na_chuki_swa
+  - utter_manunguniko_komala_na_chuki_na_mungu_taka_swa
+  - utter_manunguniko_komala_na_chuki_na_mungu_taka_kuji_maliziya_maisha_swa
+  - utter_manunguniko_chuki_hapendake_komala_na_chuki_na_mungu_taka_kuji_maliziya_maisha_swa
+  - utter_chakula_kupiganiya_chakula_swa
+  - utter_njala_haiwezi_fanya_watu_majambazi_swa
+  - utter_maisha_tufanye_majambazi_swa
+  - utter_watoto_wake_shindikana_tuta_liliya_nani_watoto_wana_tushinda_swa
+  - utter_maisha_waume_wetu_wake_geuka_wabandiya_tuta_fanya_je_swa
+  - utter_sheria_iko_na_ona_haya_ypte_jj_swa
+  - utter_sheria_iko_na_ona_haya_ypte_jj_tua_swa
+  - utter_vita_mm23_njo_kusema_nini_swa
+  - utter_maisha_tuke_choma_mwizi_shida_ni_nini_swa
+  - utter_mazuku_ita_ishaka_kweli_kambi_swa
+  - utter_vita_kanyarutshinya_swa
+  - utter_chakula_swa
+  - action_query_health_facilities
+  - action_query_water_sources
+  - action_query_camps
+  - action_submit_aid_request
+
+entities:
+  - army_name
+  - business_name
+  - business_type
+  - change_amount
+  - country_name
+  - currency_name
+  - date
+  - definition_word
+  - device_name
+  - device_type
+  - doctor_type
+  - drug_type
+  - emotion_type
+  - emotional_type
+  - event_name
+  - food_name
+  - food_type
+  - general_frequency
+  - government_name
+  - government_type
+  - handicap_type
+  - house_name
+  - house_place
+  - ingredient
+  - ingredient_name
+  - language_name
+  - language_type
+  - list_name
+  - location
+  - meal_type
+  - measurement_type
+  - medical_name
+  - medical_type
+  - medicine_name
+  - medicine_type
+  - mountain_name
+  - order_type
+  - organism_type
+  - organization_name
+  - organization_type
+  - person
+  - person_name
+  - place_name
+  - population_name
+  - population_type
+  - rebel_name
+  - relation
+  - request_type
+  - salary_name
+  - service_type
+  - sickness_name
+  - sickness_type
+  - sikness_type
+  - song_name
+  - time
+  - tribe_name
+  - weather_descriptor
+  
+slots:
+  location:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: location
+  
+  service_type:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: service_type
+  
+  request_type:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: request_type
+  
+  person_name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: person_name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+  
+
+
+
+
+
+  
+  
+   
+
+
+
+
+
+  
+  
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+      
+
+  
+
+  
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+
+  
+
+
+  
+
+  
+
+  
+  
+  
+
+  
+
+  

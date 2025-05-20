@@ -1,0 +1,32 @@
+language: sw
+pipeline:
+- name: SpacyNLP
+  model: "xx_ent_wiki_sm"  # Multilingual model that supports many languages including Swahili
+  case_sensitive: false
+- name: SpacyTokenizer
+- name: SpacyFeaturizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: "char_wb"
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 100
+  batch_size: [16, 32]
+  entity_recognition: True
+- name: EntitySynonymMapper
+- name: ResponseSelector
+  epochs: 100
+
+policies:
+- name: MemoizationPolicy
+- name: RulePolicy
+  priority: 5
+  enable_fallback_prediction: false
+- name: TEDPolicy
+  priority: 10
+  max_history: 5
+  epochs: 100
+assistant_id: 20250518-113815-tough-lily

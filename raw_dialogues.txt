@@ -1,0 +1,100 @@
+User: nina penda nijue hospitali ndogo zenye ziko apa Goma?
+Bot: Samahani, hakuna vituo vya afya vilivyopatikana.
+User: nina weza tunziwa Goma?
+Bot: kuaminiya watu wa goma haiko muzuri juu kilamutu iko na tabiya yake, kuko bazuri na babaya ,haiombe Ku aminiyana kabisa.
+
+User: nitafute hospitali karibu na kambi ya Rutshuru
+Bot: Hii ni vituo vya afya vilivyopo: - Kibirizi (Rutshuru) -Birambizo (Rutshuru)
+User: kanyarutshinya iko mbali sana na rutshuru kwenye vita iko?
+Bot: kanyarutshinya ni fasi kwenye viongozi vili chagula kwaku weka kambi kwa sababu akuna vita
+
+User: nyiragongo kuko kambi?
+Bot: - RUSAYO (nyiragongo) - Uwezo: 1063 - MUDJA (nyiragongo) - Uwezo: 4918 - KANYARUCHINYA (nyiragongo) - Uwezo: 4918 - MUNIGI (nyiragongo) - Uwezo: 2280 - RUSAYO (nyiragongo) - Uwezo: 2280
+User: uku nyiragongo watu juwa lugha yetu kinyarwanda? 
+Bot: apana apa nyiragongo bana semaka kinyabwisha haiko kinyarwanda lakini binataka fanana.
+
+User: kambi ya Bulengo ina weza pokeya batu ngapi?
+Bot:  kuna aina mbili ya kambi kuko yenyi ime njengwa na ma shirika ya umoja duniyani na yenyi wakimbizi wame njenga peke yao,zile zenyi ziko pembeni ya barabara ni zenyi bakimbizi bame jijengeya, kuihamisha ina omba viongozi vya inchi ipate kwenyi wata wa peleka.
+User: watoto wangu wata weza nikuta hapa bulengo ?
+Bot: watoto ,watapata njiya,balabala iko wazi ,Ila itakuomba ubebe malalamiko Ku shirika ya CNR na OIM, juu baku saidiye kuba tafuta na kuwaleta.
+
+User: niko na lazima yaku tunziwa
+Bot: chuki haiezi kosa kuona ngisi wana pitiya hali iyi juu ku zarauliwa na ku onelewa,hakuna mwenyi aliitafuta iyi hali
+User: watoto wenye malisho mabaya wata tunziwa wapi?
+Bot: Watoto wenye malisho mabaya tuwapeleke kwenye kituo cha afia (Heal Africa) ili wapate chakula na dawa ya kujenga mwili
+
+User: Kambi za wakimbizi wapi?
+Bot: - RUSAYO 2 (Rutshuru) - Uwezo: 2280 - KASHUGA (Rutshuru) - Uwezo: 10976 - MATER DEI  (Rutshuru) - Uwezo: 460 - MPATI (Rutshuru) - Uwezo: 10976
+User: usalama ya wakimbizi ita wezekana?
+Bot: kandokando ya kambi kuna patikana wa polisi
+
+User: Nahitaji msaada wa chakula 
+Bot: Samahani, hakuna mashirika yanayotoa huduma hiyo yaliyopatikana.
+User: kwa nini tupiganiye chakula
+Bot: watu wana pinganiya chakula juu ya hali gumu ya maisha apa kwa kambi
+
+User: wapi hii ni vituo vya afya katika Goma?
+Bot: Hii ni vituo vya afya vilivyopo: - Karisimbi (Goma) - Goma (Goma)
+User: namna gani tuta tunzwa vilonda vya ndani ?
+Bot: bitatunzwa kwaku itika hali ngisi iko,nakwa umoja wa mataifa Ku hamisha batu mu inchi yenyi bata djisikiya na Amani kabisa.
+
+User: wapii vituo vya afia katika bulengo
+Bot: Apa tuko Ku kambi ya kanyaruchinya na kambi ya bushagara.
+User: tuna weza jenga nafasi ya ukumbusho juu wenzetu wenye wali fariki ?
+Bot: juya kumbukumbu ya wenzetu wenye wali fariki uko huru kutiya hema juu ya kilio lakini inaomba vyiongozi  vya kambi wakuwe wamewa arifu.
+
+User: wapi hii ni vituo vya afya katika Masisi?
+Bot: Hii ni vituo vya afya vilivyopo: - Kirotshe (Masisi) - Masisi (Masisi) - Mweso (Masisi)
+User: wenye wali baki masisi wana ishi je?
+Bot: wailiye bakiya masisi bana ishi muhali mbaya sana, hawana musaada, wana fariki namagonjwa na njaa.
+
+User: vituo vya afya Mweso?
+Bot: Hii ni vituo vya afya vilivyopo: - Kirotshe (Masisi) - Masisi (Masisi) - Mweso (Masisi)
+User: wa binti wa goma wata penda wa vijana wa masisi?
+Bot: ijapo kuwa hali mapenzi haifate ile yote, wasika wakimbizi wata pendwa hakuna shida.
+
+User: kambi za Nyiragongo zina weza pokeya watu ngapi?
+Bot: inakatazwa silaha kuingiya munkambi,zingine zina ingiya ku manyanga.
+User: tukamate silaha sisi wote?
+Bot: apana haiko njo suluhisho ,kila mtu iko na byenyi anaweza fanya, hatuezikuwa siye bote ba djeshi.
+
+User: nina taka sema juu ya ukosefu wa usalama
+Bot: masasi ina liya kila siku katika kambi kwa sababu ya wabandi wanao ingiya kwa kambi
+User: mungu iko naona ibi byote ?
+Bot: ndiyo nakilakitu Kiko na mwanzo na mwisho, ni kadari
+
+User: viongozi watu saidiye na masomo ya bure
+Bot: kwakupata jibu Ku malalamiko,na wakuu vyiogozi vya kambi
+User: watoto wetu wata soma bure? 
+Bot: Watasoma bila tatizo ndani ya kambi ,kwani kuna ma ONG zenyi zina usika na masomo ya watoto wakimbizi
+
+User: niko na lazima ya hema kwaku lalisha familia yangu
+Bot: Kama uko na hema moja na akuya kuwa musaada yoyote, ba responsable ba kambi Bata tiya mu hangar, mu kanisa, mu masomo, etc ( centres collectifs) ju ya ku chunga jibu ku husu fasi ya ku ishi na familia.
+User: nina watoto kumi nita ishi nao namna gani na sina kazi?
+Bot: niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi
+
+User: Ninaomba dawa kwa mtoto mgonjwa
+Bot: Samahani, hakuna mashirika yanayotoa huduma hiyo yaliyopatikana.
+User: ni namna gani njo tuta epuka homa?
+Bot: tudji kinge na homa kwaku kunywa maji mingi na kuji funika wakati ya baridi.
+
+User: Mimi ni Bahati, niko na lazima ya mayi
+Bot: Samahani, hakuna mashirika yanayotoa huduma hiyo yaliyopatikana.
+User: mercycorps ita leta mayi siku gani ?
+Bot: mercycorps inaleta sa yoyote maji ikataka isha.
+
+User: niko na lazima pesa ya kusaidiya familia yangu 
+Bot: ndiyo, wataikala pale ndani ya kambi kwa hema,juu wakagonjwa wata bebwa Ku matunzo.
+User: matunzo ita bakiya ya bure mpaka mwisho ya vita?
+Bot: ndiyo MSF batatunza kya bure na mpaka vita iishe juu yaku heshimu ahadi yawo kwa wakimbizi.
+
+User: apa nyiragongo kuko vituo ngapi vya afya ? 
+Bot: vituwo vya afia ni vya mingi apa nyiragongo juu ya kuudumiya wakimbizi muziri kwa afia.
+User: vituwo vya afia nyiragongo 
+Bot: vita ika fika apa nikukimbiya pamoya na bengine bakaaji kwenyi patakimbiliya.
+
+User: niko na lazima ya nafasi yaku ishi mu Goma 
+Bot: niku fanya malalamiko kwenye viongozi vya Kambi ao kutafutisha kazi kandokando ya kambi
+User: tuta pata makazi uku?
+Bot: Kama kuna kazi za mikono kwenye kambi ao kandokando viongozi ya ONG vita pewa wakimbizi ma kazi zamikono
+

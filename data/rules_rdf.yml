@@ -1,0 +1,22 @@
+version: "3.1"
+
+rules:
+  - rule: Query health facilities
+    steps:
+      - intent: query_health_facilities_swa
+      - action: action_query_health_facilities
+
+  - rule: Query water sources
+    steps:
+      - intent: query_water_sources_swa
+      - action: action_query_water_sources
+
+  - rule: Query displacement camps
+    steps:
+      - intent: query_camps_swa
+      - action: action_query_camps
+
+  - rule: Submit aid request
+    steps:
+      - intent: submit_aid_request_swa
+      - action: action_submit_aid_request 

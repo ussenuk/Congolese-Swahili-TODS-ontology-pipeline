@@ -1,0 +1,47 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye_swa
+  steps:
+  - intent: goodbye_swa
+  - action: utter_goodbye_swa
+
+- rule: Say goodbye anytime the user says goodbye_fr
+  steps:
+  - intent: goodbye_fr
+  - action: utter_goodbye_fr
+
+- rule: Say 'Mini ni roboti' anytime the user challenges_swa
+  steps:
+  - intent: bot_challenge_swa
+  - action: utter_bot_challenge_swa
+
+- rule: Say 'Je suis un bot' anytime the user challenges_fr
+  steps:
+  - intent: bot_challenge_fr
+  - action: utter_bot_challenge_fr
+
+- rule: Say 'Mimi ni Swali AI bot iliyoundwa kwaku jubu wakimbizi.
+        Mimi ni msaidizi wa sauti ya wakimbizi ya kumiliki ardhi kwa wakimbizi nchini DRC. Nikusaidie vipi?'
+        wakati wowote mtumiaji anauliza who are you_swa
+  steps:
+  - intent: who_are_you_swa
+  - action: utter_who_are_you_swa
+
+- rule: Say 'Je suis Swali AI bot créé pour les refugees.
+        Je suis un partisan de la voix du droit pour les refugiees en RDC. Comment puis-je t'aider?'
+        chaque fois que l'utilisateur demande qui vous êtes you_fr
+  steps:
+  - intent: who_are_you_fr
+  - action: utter_who_are_you_fr
+
+- rule: Greeting_swa 
+  steps: 
+  - intent: greet_swa
+  - action: utter_greet_swa
+
+- rule: Greeting_fr 
+  steps: 
+  - intent: greet_fr
+  - action: utter_greet_fr

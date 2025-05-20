@@ -1,0 +1,2991 @@
+version: "3.1"
+
+nlu:
+  - intent: greet_swa
+    examples: |
+      - jambo
+      - jambo, unaendelea je
+      - ni dje
+      - ni je
+      - sasa
+      - unaendeleaje
+      - habari ya asubuhi
+      - habari za jioni
+
+  - intent: greet_fr
+    examples: |
+      - bonjour
+      - bon après-midi
+      - bonsoir
+      - salut, comment
+      - c'est comment?
+      - comment ça va?
+      - comment allez-vous?
+      - comment te portes-tu?
+
+  - intent: goodbye_swa
+    examples: |
+      - twonane
+      - siku njema
+      - kwaheri
+      - kwaheri twonane baadaye
+      - twonane baadaye
+
+  - intent: goodbye_fr
+    examples: |
+      - aurevoir
+      - A la prochaine
+      - au plaisir
+
+  - intent: affirm_swa
+    examples: |
+      - ndio
+      - kweli
+      - bila shaka
+      - sahihi
+
+  - intent: affirm_fr
+    examples: |
+      - oui
+      - sans problème
+      - bien compris
+      - bien noté
+      - bien entendu
+      - entendu
+      - compris
+
+  - intent: deny_swa
+    examples: |
+      - nimekataa
+      - sitaki
+      - si kweli
+
+  - intent: deny_fr
+    examples: |
+      - non
+      - je refuse
+      - non, merci
+
+  - intent: mood_great_swa
+    examples: |
+      - niko poa
+      - fiti
+      - najiskia fiti
+      - nina furaha
+
+  - intent: mood_great_fr
+    examples: |
+      - bien
+      - je me porte bien
+      - content
+      - je me porte a merveille
+
+  - intent: mood_unhappy_swa
+    examples: |
+      - nina huzuni
+      - nina huzuni sana
+      - siku yangu ilikuwa mbaya
+      - sijihisi vizuri
+      - huzuni nyingi
+      - si nzuri sana
+      - inasikitisha sana
+      - niko na masikitisho
+
+  - intent: mood_unhappy_fr
+    examples: |
+      - j'ai des soucis
+      - je suis triste
+      - je ne me sens pas bien
+      - trop de soucis
+      - pas très bien
+      - je ne me sens pas dans ma peau
+
+  - intent: bot_challenge_swa
+    examples: |
+      - wewe ni roboti?
+      - wewe ni binadamu?
+      - ninazungumza na roboti?
+      - ninaongea na roboti?
+      - ninaongea na mwanadamu?
+
+  - intent: bot_challenge_fr
+    examples: |
+      - êtes-vous un robot?
+      - suis-je en train de parler à un robot?
+      - je parle à un humain?
+      - est-ce un humain?
+
+  - intent: who_are_you_swa
+    examples: |
+      - unaitwaje?
+      - waitwaje?
+      - jina lako ni nani?
+      - nikuiteje?
+      - unaitwaje?
+      - hii ni nini?
+
+  - intent: who_are_you_fr
+    examples: |
+      - comment vous appelez-vous?
+      - quel est votre nom?
+      - comment dois-je vous appeler?
+      - vous vous appelez?
+      - comment êtes-vous appelé?
+
+  - intent: rwanda_shida_swa
+    examples: |
+      - tume koseya rwanda nini?
+      - siye raia tuko na shida gani na rwanda?
+      - rwanda tume ifanya nini?
+      - rwanda tume ifanyiya makosa gani?
+
+  - intent: maji_kunywa_swa
+    examples: |
+      - [maji](ingredient) ya kunywa ita toka [wapi](place_name)?
+      - [maji](ingredient) ya kunwa ita toka [fasi](place_name) gani?
+      - Ku kunya [maji](ingredient) iko mugumu kwa [Kambi](place_name), tuta tosha [maji](ingredient) safi [wapi](place_name)?
+
+  - intent: mafunzo_kupata_swa
+    examples: |
+      - [mke wangu](relation) ana mimba, ata pata [wapi](place_name) [mafunzo ya wazazi](event_name)?
+      - [mafunzo ya wanawake](event_name) wajawazito [mke wangu](relation) ata ipataje [wakati](time) huu?
+      - [mke wangu](relation) aliye kimbiya na mimba ata weza pata [mafundisho ya wajawazito](event_name)?
+      - [wanawake wakimbizi](person) walio na mimba ita wezekana kupata [mafundisho ya wajawazito](event_name)?
+
+  - intent: hema_kupata_swa
+    examples: |
+      - nita lala je na [watoto](relation) kumi katika [hema](house_place) moja?
+      - [watoto](relation) kumi katika [hema](house_place) moja, hii ita wazekana?
+      - nita fanya je ili nilale katika [hema](house_place) moja na [watoto](relation) kumi?
+      - [hema](house_place) moja ita tosha kwa [familiya](relation) [ya watoto](relation) kumi?
+
+  - intent: kunyanyaswa_swa
+    examples: |
+      - niki nyanyaswa naweza kupata msaada namna gani?
+      - ikiwa [mtu](person) ana ni nyanyasa niite [nani](person)?
+      - [mtu](person) aki ni nyanyasa niji elekeze kwa [nani](person) ajili yaku pata msaada?
+      - niki nyanyaswa [nani](person) ata ni saidiya?
+
+  - intent: vita_wakati_swa
+    examples: |
+      - [vita](event_name) ita isha [wakati](time) gani?
+      - [vita](event_name) haita ishaka [kwetu](place_name)?
+      - ju ya nini [vita](event_name) hai ishe?
+      - hii [vita](event_name) haina suluhisho?
+
+  - intent: choo_swa
+    examples: |
+      - hatuna [choo](place_name),tuta ishi je?
+      - tuta fanya je juu ya [choo](place_name)?
+      - tuki taka enda [chooni](place_name) tufanye je katika [kambi](place_name)?
+      - [watu](person) wamekosa [choo](place_name) kwa nini?
+
+  - intent: kupokelewa_swa
+    examples: |
+      - [wakaaji](person) hawa tu pokeye vizuri, tufanye je?
+      - tuishi je na [wakaaji](person) ambao wana katala kutu itika?
+      - [wakaaji](person) ambao wana katala tupokeya tuishi nao namna gani?
+      - [wakaaji](person) hawa tupoekeye vizuri, tuta weza ishi nao?
+
+  - intent: kupata_ndui_swa
+    examples: |
+      - nili kimbiya na [mtoto wangu mchanga](relation) ata pata ndui [wapi](place_name)?
+      - ndui kwa [watoto wachanga](person) ita patokana [wakati huu](time)?
+      - ita wezekana [mtoto wangu mchanga](relation) apate ndui katika [ukimbizi](definition_word)?
+      - kwaku pata ndui ajili ya [mtoto wangu mchanga](relation), niji elekeze [wapi](place_name)?
+
+  - intent: chakula_swa
+    examples: |
+      - tuna pata [chakula](food_name) [maramoja kwa juma](date), tuta ishi namna gani bila kula?
+      - [chakula](food_name) ya [mara moja kwa juma](date) ina weza kutosheleya [watu](person)?
+      - tuna pokeya mara moja [chakula](food_name) [kwa juma moja](date),tuta tosha yengine [wapi](place_name)?
+      - kwaku pokeya [chakula](food_name) [mara moja kwa juma](date) nita ishi je na [watoto](person) kumi?
+
+  - intent: maji_kuwa_kidogo_swa
+    examples: |
+      - [maji](ingredient) ina kuwa [kidogo](order_type), ina wezekana iongezwe?
+      - tuta ishi je na [maji](ingredient) ni ya [kidogo](order_type) katika [kambi](place_name)
+      - ikiwa [maji](ingredient) ina bakiya [kidogo](order_type) katika [kambi](place_name) tuta ishi namna gani?
+      - [maji](ingredient) ina kuwa [kidogo](order_type) kwenye [kambi](place_name),ita ongezwa?
+
+  - intent: matibabu_swa
+    examples: |
+      - tuta pata matibabu ya bure?
+      - matibabu ita pewa bure kwa [wakimbizi](person)?
+      - namna gani [wakimbizi](person) wata pata matibabu?
+      - matibabu ya [wakimbizi](person) ta pangiwa namna gani?
+
+  - intent: kazi_bila_kazi_swa
+    examples: |
+      - ni namna gani naweza kuishi na [watoto](person) kumi bila [kazi](business_name)?
+      - nina fika [mjini](place_name),nilikua mlimaji sina [kazi](business_name) nita ishi je na [watoto](person) kumi?
+      - nime kimbiya bila chochote na sina [ndugu](relation) [mjini](place_name), [watoto wangu](relation) wakumi nita watunza je?
+      - [watoto wangu](relation) wakumi nita ishi nao je katika hali ya [ukimbizi](definition_word) na sina [kazi](business_name)?
+
+  - intent: masomo_bure_swa
+    examples: |
+      - [watoto wetu](relation) wata soma bure?
+      - [watoto wetu](relation) wata someya wapi?
+      - [masomo](place_name) ya bure ita wezekana juu ya [watoto wakimbizi](person)?
+      - namna gani [watoto wakimbizi](person) wata endelesha [masomo](place_name)?
+
+  - intent: vyeti_vya_shule_swa
+    examples: |
+      - hatuna vyeti vya [shule](place_name), [watoto](person) wata andikwa [shuleni](place_name)?
+      - bila vyeti vya [shule](place_name), [watoto](person) wata andikwa [shuleni](place_name)?
+      - hatukuweza kutwala vyeti vya [shule vya watoto](place_name), wata andikiwa tu?
+      - kama mtoto hana vyeti vya [shule](place_name) ata fanya je ili asome?
+
+  - intent: watoto_walio_poteya_swa
+    examples: |
+      - [watoto](person) walio poteya tuta watafuta namna gani?
+      - tufanye je ili [watoto](person) walio poteya tuwa pate
+      - [viongozi](government_name) wata tu saidiya kutafuta [watoto](person) walio poteya?
+      - ni vipi naweza kuona tena [watoto wangu](relation) walio poteya [wakati](time) waku kimbiya [vita](event_name)?
+
+  - intent: ubakaji_wakimbizi_wapi_swa
+    examples: |
+      - [binti wangu](relation) ali bakwa, nimpeleke [wapi](place_name)?
+      - [wakati](time) wa ubakaji [wahanga](person) waji elekeze [wapi](place_name)?
+      - ubakaji iki ji tokeza, tufanye namna gani?
+      - wanao bakwa waji elekeze [wapi](person)?
+
+  - intent: usalama_swa
+    examples: |
+      - katika [kambi](place_name) tuta ishi katika usalama?
+      - [nani](person) ata tu chunga katika [kambi](place_name)?
+      - usalama ya [wakimbizi](person) ita wezekana?
+      - kuna [watu](person) waku linda usalama ya [wakimbizi](person)?
+
+  - intent: viongozi_nyamaza_swa
+    examples: |
+      - kwa nini [viongozi](government_name) wame tu nyamaza?
+      - [viongozi](government_name) wame nyamaza sababu gani?
+      - [viongozi](government_name) wetu wana nyamaza ili tuishi je?
+      - tuta fanya nini [kamaviongozi](person) wana endeleya kunyamaza?
+
+  - intent: kuhara_swa
+    examples: |
+      - Kuna [chakula](food_name) ambazo zina tu [harisha](sickness_type) [wakati](time) tuna zi pokeya, tuna ruhusiwa kuzi uzisha ili tu nunue [chakula](food_name) ambayo tuna zoweya ?
+      - tuna ruhusiwa kuuzisha [chakula](food_name) yenye ina tu [harisha](sickness_type)?
+      - tuki uzisha [chakula](food_name) inayo tu [harisha](sickness_type) ni makosa?
+      - [chakula](food_name) yakutu [harisha](sickness_type) tuitiye [wapi](place_name)?
+
+  - intent: kuandikiwa_swa
+    examples: |
+      - [wakimbizi](person) wana andikiwa [wapi](place_name)?
+      - [wakimbizi](person) wana ji andikisha [wapi](place_name)?
+      - tuji andikishe kwa [kiongozi](person) gani?
+      - [kiongozi](person) anaye andika [wakimbizi](person) ana patikana [wapi](place_name)?
+
+  - intent: maisha_swa
+    examples: |
+      - tuta rudiliya [Maisha](event_name) [yetu](relation) ya kawaida ?
+      - [Maisha](event_name) [yetu](relation) ita rudiya kama [zamani](time)?
+      - kiisha [vita](event_name) ita wezekana turudiliye [Maisha](event_name) [yetu](relation) ya [zamani](time)?
+      - kiisha [vita](event_name) nini itafanyika juu [Maisha](event_name) [yetu](relation) irudiye kama [zamani](time)?
+
+  - intent: serkali_swa
+    examples: |
+      - [serkali](government_name) ita tu saidiya je?
+      - [serkali](government_name) [yetu](relation) ili panga kutu saidiya?
+      - tuta pata msaada ya [serkali](government_name)?
+      - msaada ya [serkali](government_name) ita patikana?
+
+  - intent: kazi_zita_pata_swa
+    examples: |
+      - tuta pata [makazi](business_name) [uku](place_name)?
+      - [uku](place_name) kuko [makazi](business_name)?
+      - [watu](person) wata tupa [makazi](business_name)?
+      - tuta tumika?
+
+  - intent: kazi_zitakapata_swa
+    examples: |
+      - tuna weza fanya [kazi](business_name) gani [huku](place_name)?
+      - [uku](place_name) [mukimbizi](person) ana weza fanya nini?
+      - [kazi](business_name) gani [mukimbizi](person) ana wea fanya [uku](place_name)?
+      - [kazi](business_name) gani zina weza patikana [uku](place_name)?
+
+  - intent: msaada_kwa_siye_bote_swa
+    examples: |
+      - siye bote tuta pata musaada?
+      - musaada ita patikana kwa sisi wote?
+      - ita wezekana kutu saidiya siye bote?
+      - msaada yaku eneya [wakimbizi](person) wote ita patikana?
+
+  - intent: msaada_kwa_mtu_swa
+    examples: |
+      - kama [mtu](person) hapate msaada ata ji elekeza [wapi](place_name)?
+      - kama [mtu](person) haku pata musaada ata uliza [nani](person)?
+      - [mtu](person) ake kosa msaaada aulize [nani](person)?
+      - msaada ike kosekana tuta uliza [nani](person)?
+
+  - intent: kuandikisha_swa
+    examples: |
+      - nike zala, nita andikisha [mutoto wangu](relation) [wapi](place_name)?
+      - [mutoto wangu](relation) nimu andikishe [wapi](place_name) [wakati](time) nita mu zala?
+      - kuandikisha watoto wenye wame zaliwa ni [wapi](place_name)?
+      - [mutoto wangu](relation) aliye zaliwa mu [vita](event_name) nimu andikishe [wapi](place_name)?
+
+  - intent: mashindano_ya_serkali_swa
+    examples: |
+      - [wa finalists](person) [wakimbizi](person) wata fanya [mashindano ya serikali](event_name) kama [wengine](person)?
+      - [wakimbizi](person) [wa finalistes](person) wata pokelewa kwa [mashindano ya serikali](event_name)?
+      - [serikali](person) ita ruhusu [wa finalistes wa kimbizi](person) wafanye [mashindano](event_name)?
+      - kwa [wa finalistes](person) walio  kimbiya wata fanya je [mashindano ya serikali](event_name)?
+
+  - intent: mashindano_wa_serikali_swa
+    examples: |
+      - [wa finalistes wakimbizi](person) wana weza fanya [mitiyani ya serikali](event_name) kwa bure?
+      - [mashindano ya serikali](event_name) ita wezekana kwa bure kwa [wa finalistes wakimbizi](person)?
+      - kufanya [mashindano ya serkali](event_name) kwa bure ita kuwa haki ya [wa finalistes wakimbizi](person)?
+      - [wa finalistes wakimbizi](person) wata waitikiya kufanya [mashindano ya serikali](event_name) kwa bure?
+
+  - intent: haki_kwa_wakimbizi_swa
+    examples: |
+      - haki zetu ni gani?
+      - tuna haki?
+      - haki za [wakimbizi](person) ni zipi?
+      - haki za [wakimbizi](person) zina julikana?
+
+  - intent: malisho_mabaya_swa
+    examples: |
+      - [watoto wenye malisho mabaya](sickness_type) tu wa peleke [wapi](place_name)?
+      - kuna [kituo](place_name) inayo husika na [watoto wa malisho mabaya](sickness_type)?
+      - [watoto wenye malisho mabaya](sickness_type) wata tunzwa namna gani?
+      - [watoto wenye malisho mabaya](sickness_type) wata tunziwa [wapi](place_name)?
+
+  - intent: wakimbizi_swa
+    examples: |
+      - namna gani tuta juwa [wakimbizi](person) wa kweli na wa uongo?
+      - ni [nani](person) ana husika naku tambulisha [wakimbizi](person) wa kweli na ku tosha wa uongo?
+      - [wakimbizi](person) wa uongo wata julikana namna gani?
+      - [wakimbizi](person) wa uongo wata gunduliwa namna gani?
+
+  - intent: uizi_swa
+    examples: |
+      - [mwizi](person) aki naswa apekelekwe kwa [nani](person)?
+      - [wakimbizi](person) wake kamata [mwizi](person) wamu bebe [wapi](place_name)?
+      - ikiwa kuna kuwa [wizi](person), tuwa fikishe kwa [nani](person)?
+      - [wizi](person) tuwa fanye nini tuke wa kamata?
+
+  - intent: mafugo_swa
+    examples: |
+      - tuki poteza [mafugo yetu](business_type) tuji eleze kwa [nani](person)?
+      - walio poteza [mafugo](business_type) wa ji eleze [wapi](place_name)?
+      - [mafugo](business_type) yenye ili poteya ina weza patikana?
+      - [mifugo](business_type) ilio poteya ina tafutiwa na [nani](person)?
+
+  - intent: kulala_kwa_wanaume_na_wanawake_swa
+    examples: |
+      - [wanawake](person) na [wanaume](person) wana lala pamoja katika hangar kwa nini?
+      - ni kawaida kuacha [wanaume](person) na wanamuke walale [nafasi](place_name) moja?
+      - hakuna shida fulani [wakati](time) [wanawake](person) na [wanaume](person) wana lala [fasi](place_name) moja?
+      - [wanawake](person) wana changiya [nafasi](place_name) yaku lala na [wanaume](person), hii ni vizuri?
+
+  - intent: msaada_swa
+    examples: |
+      - [viongozi](government_name) wata tu saidiya [wakati](time) gani?
+      - kwa nini ni wa [humanitaires](definition_word) tu njo wana tu saisiya bila [viongozi](government_name)?
+      - [viongozi](government_name) ndio wali tu wa [humanitaires](definition_word) [watu](person) saidiye?
+      - wa [humanitaires](definition_word) wana tu saidiya wenyewe kwa nini?
+
+  - intent: vita_kwetu_swa
+    examples: |
+      - kwa nini [vita](event_name) ili anziya [kwetu](place_name)?
+      - [vita](event_name) ili anziya [kwetu](place_name) ju ya nini?
+      - [kwetu](place_name) njo kuli anziya [vita](event_name) ju ya nini?
+      - ju ya nini [kwetu](place_name) njo [vita](event_name) ili anziya?
+
+  - intent: uchafu_swa
+    examples: |
+      - tuta tupa uchafu [wapi](place_name)?
+      - [nafasi](place_name) gani ndio ina pokeya uchafu?
+      - kwaku tupa uchafu ni [nafasi](place_name) gani?
+      - tutupe uchafu kwa [nafasi](place_name) gani?
+
+  - intent: kurudi_swa
+    examples: |
+      - tuki taka rudi tuishi na wa [rebelles](definition_word) ni shida?
+      - ikiwa [mtu](person) ana taka arudi kuishi na [rebelle](definition_word) ata pata shida?
+      - kurudi kuenda ishi na [rebelle](definition_word) ina leta shida?
+      - [mtu](person) ake rudi kwani [Maisha](event_name) ina kuwa nguvu ni shida?
+
+  - intent: vita_m23_swa
+    examples: |
+      - kwa nini [M23](rebel_name) ime rudi tena?
+      - [M23](rebel_name) ina kuja tena kutafuta nini?
+      - kwa nini [M23](rebel_name) ime [anza](time) [vita](event_name) tena?
+      - [vita](event_name) ya [M23](rebel_name) ilikuaka haiya isha?
+
+  - intent: vita_jeshi_yetu_swa
+    examples: |
+      - kwa nini [jeshi yetu](relation) ime acha [M23](rebel_name) iendeleye kutu piganisha?
+      - [jeshi yetu](relation) ime tuacha katika mikono ya [M23](rebel_name) ju ya nini?
+      - [M23](rebel_name) ina tu vamiya kwa nini na [jeshi yetu](relation) iko [pale](place_name)?
+      - [jeshi yetu](relation) ime shindwa kupigana na [M23](rebel_name)?
+
+  - intent: maongezi_swa
+    examples: |
+      - kwa nini [viongozi wetu](relation) hawataki kuongeya na wa [Rwanda](country_name) ili [vita](event_name) iishe?
+      - [viongozi wa kongo](government_type) na [wa rwanda](person) hawa ongeye kwa nini?
+      - ina omba nini ili [viongozi wa rwanda](government_type) na [wa kongo](person) waongeye?
+      - [wakongomani](population_type) na [wanyarwanda](population_type) wana shindwa ongeya ju ya nini?
+
+  - intent: vita_kongo_rwanda_swa
+    examples: |
+      - juu ya nini [kongo](country_name) na [rwanda](country_name) vina pigana?
+      - [kongo](country_name) na [rwanda](country_name) wame fiya nini?
+      - [rwanda](country_name) ina piganisha [kongo](country_name) juu ya nini?
+      - [kongo](country_name) ili fanya [rwanda](country_name) nini?
+
+  - intent: askari_swa
+    examples: |
+      - kwa nini [askari wetu](relation) wame kimbiya [wakati](time) wa [vita](event_name)?
+      - juu ya nini [wa akari wetu](relation) wana kimbiya pahali paku pigana?
+      - [wakati](time) wa [vita](event_name) juu ya nini [askari wetu](relation) wana kimbiya?
+      - [askari wetu](relation) kwa nini wana kimbiya saa ya [vita](event_name)?
+
+  - intent: viongozi_swa
+    examples: |
+      - [viongozi wetu](relation) wata kuja tuona [wakati](time) gani?
+      - ni [wakati](time) gani njo [viongozi](government_name) watakuya ona [wakimbizi](person)?
+      - [viongozi weta](relation) kuya tu tembeleya [siku](date) gani?
+      - kwa nini [viongozi](government_name) hawa kuje tuona?
+
+  - intent: wazalendo_swa
+    examples: |
+      - kwa nini [wazalendo](rebel_name) wana nyanyasa [wakimbizi](person)?
+      - ju ya nini tuna nyanyaswa na [wazalendo](rebel_name)?
+      - [wazalendo](rebel_name) wana nyanyasa [wakimbizi](person) juu ya nini?
+      - [wakimbizi](person) wame sumbuliwa na [wazalendo](rebel_name) juu ya nini?
+
+  - intent: wazalendo_jeshi_yetu_swa
+    examples: |
+      - kwa nini [wazalendo](rebel_name) wame changana ne [jeshi yetu](relation)?
+      - juu ya nini bana changa [wazalendo](rebel_name) na [jeshi yetu](relation)?
+      - kuchanga [wazalendo](rebel_name) na [jeshi](army_name) ni vizuri?
+      - juu ya nini [jeshi yetu](relation) imeitika kuchangana na [wazalendo](rebel_name)?
+
+  - intent: masomo_shida_swa
+    examples: |
+      - kwa nini [watoto wetu](relation) hawa some?
+      - [watoto wetu](relation) hawa some ju ya nini?
+      - [masomo](place_name) ime kuwa shida kwa [watoto wetu](relation) juu ya nini?
+      - [watoto wetu](relation) hawana haki ya kusoma?
+
+  - intent: vita_faidika_swa
+    examples: |
+      - [nani](person) ana faidika na iyi [vita](event_name)?
+      - ni [nani](person) njo aa pata faida kwa iyi [vita](event_name)?
+      - [nani](person) ana tafuta yake katika hii [vita](event_name)?
+      - [vita](event_name) iyi niku faida ya [nani](person)?
+
+  - intent: vita_sababu_swa
+    examples: |
+      - kwa nini [rwanda](country_name) ina piganisha [kongo](country_name)?
+      - [kongo](country_name) ina pigana na [rwanda](country_name) juu ya nini?
+      - [rwanda](country_name) ina piganisha [kongo](country_name) sababu gani?
+      - kwa nini [rwanda](country_name) ina piganisha [kongo](country_name) kila [siku](date)?
+
+  - intent: vita_rutchuru_swa
+    examples: |
+      - juu ya nini [rutchuru](place_name) njo kuna anziya [vita](event_name)?
+      - [vita](event_name) ili anziya [rutchuru](place_name) sababu gani na hakuna [madini](list_name)?
+      - [rutchuru](place_name) hakuna [madini](list_name), juu ya nini njo kwenye [vita](event_name) ili anziya?
+      - [vita](event_name) ya [rutchuru](place_name) ni ya nini ijapo hakuna [madini](list_name)?
+
+  - intent: kuzika_swa
+    examples: |
+      - [nani](person) ata zika wale wenye wali kufiya [njiyani](place_name)?
+      - [wenzetu](relation) wenye wali kufiya mu [njiya](place_name) nani njo ata wazika?
+      - wale wote wenye wali kufa waki kimbiya wata zikiwa je?
+      - [wenye](person) walikufa mu [njiya](place_name) waki kimbiya [nani](person) njo ata wazika?
+
+  - intent: kuliya_swa
+    examples: |
+      - ju ya nini [mungu](list_name) ana tu achiliya?
+      - [mungu](list_name) kwa nini me tuachiliya?
+      - ni makosa gani tuli fanye kwa [mungu](list_name)?
+      - ni sababu gani [mungu](list_name) ana tu acha tu teseke?
+
+  - intent: kuliya_lala_baches_swa
+    examples: |
+      - kwa nini tuna lala katika ma [baches](house_place)?
+      - juya nini tuna lala [ndani](place_name) ya ma [baches](house_place) mu baridi?
+      - tuna lala [ndani](place_name) ya ma [baches](house_place) ju ya nini?
+      - [baches](house_place) njo tu [nyumba](house_place) za [wakimbizi](person)?
+
+  - intent: kuliya_maliza_vita_swa
+    examples: |
+      - namna gani njo [viongozi](government_name) wata maliza hii [vita](event_name)?
+      - hii [vita](event_name) [viongozi](government_name) wata imaliza namna gani?
+      - [viongozi](government_name) wana waza kumaliza hii [vita](event_name) namna gani?
+      - hii [vita](event_name) [viongozi](government_name) wame sema ita isha namna gani?
+
+  - intent: vita_ime_anza_swa
+    examples: |
+      - hiii [vita](event_name) ili [anza](time) je?
+      - ni je njo hii [vita](event_name) ime [anza](time) tena?
+      - [vita](event_name) ime [anza](time) tena je?
+      - hii [vita](event_name) ime [anziliya](time) tena juya nini?
+
+  - intent: kuliya_wakongomani_wengine_swa
+    examples: |
+      - tuna pishana nini na [wakongomani](population_type) [wengine](person)?
+      - [wakongomani](population_type) [wengine](person) ni wazuri kutu shinda?
+      - tuna kosa nini ju tukuwe saa [wakongomani](population_type) [wengine](person)?
+      - [wengine](person) [wakongomani](population_type) ni wa lazima kutu shinda?
+
+  - intent: ubakaji_wabinti_wamama_swa
+    examples: |
+      - ju ya nini mabandiya wana tu baka?
+      - wana tu bakasababu gani?
+      - sababu gani [wabinti](person) na [waamama](person) wana bakwa?
+      - [wamama](person) na [wabinti](person) wana bakwa kwa nini?
+
+  - intent: kuliya_faida_wakongomani_swa
+    examples: |
+      - [rwanda](country_name) ina pata nini saa ina uwa [wakongomani](population_type)?
+      - [wanyarwana](population_type) wana faidika nini ku damu ya [wakongomani](population_type)?
+      - [jeshi ya rwanda](army_name) ina pata nini kuua [wakongomani](population_type)?
+      - nini njo [rwanda](country_name) ina faidika kwaku uwa [wakongomani](population_type)?
+
+  - intent: kuliya_kongo_rwanda_swa
+    examples: |
+      - ju ya nini [kongo](country_name) haipige [rwanda](country_name)?
+      - [kongo](country_name) haipige [rwanda](country_name) juya nini?
+      - [kongo](country_name) ina chunga nini ju ipige [rwanda](country_name)?
+      - [kongo](country_name) hai wezi piga [rwanda](country_name)?
+
+  - intent: kuliya_eac_sadec_wazungu_swa
+    examples: |
+      - juu ya nini [rwanda](country_name) haipatake malipizi?
+      - [rwanda](country_name) haipatake malipizi kutoka kwa [sadec](government_type),[eac](government_type) ama [wazungu](population_type)?
+      - ina omba nini juu [rwanda](country_name) ipate malipizi?
+      - ili [rwanda](country_name) ipate malipizi ina omba nini?
+
+  - intent: kuliya_viongozi_wa_kongo_na_m23_swa
+    examples: |
+      - [viongozi wa kongo](government_type) wali patanaka nini na [M23](rebel_name)?
+      - kuko mapatano gani kati ya [kongo](country_name) na [M23](rebel_name)?
+      - ni mapatano ya namna gani njo [kongo](country_name) ili kamataka na [M23](rebel_name)?
+      - [M23](rebel_name) ina dayi nini kwa [viongozi wa kongo](government_type)?
+
+  - intent: kuliya_m23_wakongomani_swa
+    examples: |
+      - [M23](rebel_name) ina faida gani kwaku uwa [wakongomani](population_type)?
+      - [M23](rebel_name) ina pata nini saa ina uwa [wakongomani](population_type)?
+      - [jeshi ya M23](rebel_name) ina pata nini kuua [wakongomani](population_type)?
+      - nini njo [M23](rebel_name) ina faidika kwaku uwa [wakongomani](population_type)?
+
+  - intent: kuliya_ina_sapoti_swa
+    examples: |
+      - ju ya nini [rwanda](country_name) ina sapoti [M23](rebel_name)?
+      - [rwanda](country_name) ina sapoti [adui](person) wa [kongo](country_name) ju ya nini?
+      - [M23](rebel_name) ina sapotiwa na [rwanda](country_name) ju ya nini?
+      - kwa nini [rwanda](country_name) ina pana pesa ku [wauwaji](person) wa [wakongomani](population_type)?
+
+  - intent: kuliya_uganda_kongo_swa
+    examples: |
+      - ju ya nini [uganda](country_name) nayo ime gaukiya [kongo](country_name) mugongo?
+      - kwa nini [uganda](country_name) ina sapoti wanao tatiza [kongo](country_name)?
+      - kwa nini wanao tatiza [kongo](country_name) wana pata sapoti ya [uganda](country_name)?
+      - [uganda](country_name) ina pata nini ku geuziya [congo](country_name) mgongo?
+
+  - intent: kuliya_wetu_viongozi_sisi_swa
+    examples: |
+      - [viongozi wetu](relation) wana tu waziya nini?
+      - [viongozi wetu](relation) wana waza waza sisi tuta ishi namna gani?
+      - sisi tuna wezachunga nini kwa [viongozi](government_name)
+      - [viongozi wetu](relation) wata tu saidiya je?
+
+  - intent: kuzika_wakimbizi_wapi_swa
+    examples: |
+      - tuta kuwa na zika [watu wetu](relation) [wapi](place_name)?
+      - [wenzetu](relation) waki fariki tukuwe na wazika [wapi](place_name)?
+      - kuna [makaburi](place_name) ilio andaliwa juu ya [wakimbizi](person)?
+      - [wakimbizi](person) wata kuwa na zikiwa [wapi](place_name)?
+
+  - intent: kuzika_wanao_kufa_swa
+    examples: |
+      - [nani](person) ata kuwa natu sadiya kwa maziko?
+      - [wenzetu](relation) wanao  kufa kuko waku tusaidiya kubazika?
+      - kuna [msaada](definition_word) ju ya kuzika [wakimbizi](person)?
+      - [wakimbizi](person) waki kufa ni [nani](person) ata saidiya kwa maziko?
+
+  - intent: kambi_wakimbizi_wote_swa
+    examples: |
+      - kwa nini [wakimbizi](person) wote hawa tiliwe [fasi moya](place_name)?
+      - juu ya nini hakuna [kambi](place_name) [moja](order_type) juu ya [wakimbizi](person) wote?
+      - [wakimbizi](person) wote haba wezi tiliwa [fasi moya](place_name)?
+      - [serkali](government_name) hainge tiya [wakimbizi](person) xote [fasi moya](place_name)?
+
+  - intent: usalama_kambi_swa
+    examples: |
+      - kwa nini masasi ina liya kila [siku](date) katika [kambi](place_name)?
+      - juu ya nini hakuna usalama katika [kambi](place_name)?
+      - [wakimbizi](person) hawana haki ya usalama?
+      - juu ya nini kila [siku](date) [wabandi](person) wana piga masasi katika [kambi](place_name)?
+
+  - intent: kuliya_saidiya_kwa_wakongomani_swa
+    examples: |
+      - faida ya [kongo](country_name) ni nini katika hii [vita](event_name)?
+      - [congo](country_name) ina pata nini [ndani](place_name) ya hii [vita](event_name)?
+      - iyi [vita](event_name) ina faida gani kwa [wakongomani](population_type)?
+      - [vita](event_name) hiyi iko na saidiya [wakongomani](population_type) ku nini?
+
+  - intent: wazalendo_wame_kwa_wapi_swa
+    examples: |
+      - [wazalendo](rebel_name) nao ni [wanani](person)?
+      - ivi hawa [wazalendo](rebel_name) nao ni [watu](person) gani?
+      - [wazalendo](rebel_name) ni [wanajeshi](army_name) wa [wapi](place_name)?
+      - na [wazalendo](rebel_name) nao wali tokeya [wapi](place_name)?
+
+  - intent: mauwaji_swa
+    examples: |
+      - ju ya nini mauwaji ina endeleya katika [kambi](place_name)?
+      - juu ya nini [bajambazi](person) biko natu uwa mu ma [kambi](place_name)?
+      - [kambi](place_name) zina kuwa amo [bauwaji](person) ju ya nini?
+      - mu [kambi](place_name) ju ya nini [mauwaji](definition_word) ina endeleya?
+
+  - intent: wazalendo_wame_pewa_mamlaka_swa
+    examples: |
+      - [wazalendo](rebel_name) biko na mamlaka gani kwa [raia](population_type)?
+      - [wazalendo](rebel_name) wame pewa mamlaka gani?
+      - ni mamlaka njo bazalendo biko nayo ku [raia](population_type)?
+      - [raia](population_type) ina ma shurti zaku pata kutoka kwa [wazalendo](rebel_name)?
+
+  - intent: wazalendo_wame_nyanyasa_wakimbizi_swa
+    examples: |
+      - [wazalendo](rebel_name) wake nyanyasa [mukimbizi](person) ata enda liliya [nani](person)?
+      - ni [wapi](place_name) njo kwaku chongeya [wazalendo](rebel_name) wanao nyanyasa [watu](person)?
+      - ikiwa [mzalendo](rebel_name) ana fanya makosa, niku ji elekeza [wapi](place_name) kumu staki?
+      - [wakimbizi](person) wenye wana nyanyaswa na [wazalendo](rebel_name) wana eza liliya [nani](person)?
+
+  - intent: mateso_swa
+    examples: |
+      - kwa nini [tuna](relation) [teseka](emotion_type)?
+      - ju ya nini [tuna](relation) [teseka](emotion_type)?
+      - iyi mateso yote ni juu ya nini?
+      - hii mateso yote ni kwa nini?
+
+  - intent: kilio_sacrifier_swa
+    examples: |
+      - tusha kuwa [sacrifice](definition_word) ya [viongozi](government_name)?
+      - [viongozi](government_name) wame itika tukufe?
+      - siye njo [viongozi](government_name) wana ona wa [sacfifier](definition_word)?
+      - manayake siye njo tusha paniwa [sacrifice](definition_word)?
+
+  - intent: jeshi_swa
+    examples: |
+      - [jeshi yetu](relation) ime kosa nguvu yaku pigana?
+      - niku sema tuko na [jeshi](army_name) yenye haina ngufu?
+      - [jeshi yetu](relation) ina kosa wana [jeshi](army_name) washujaa?
+      - [jeshi ya Kongo](army_name) haina nguvu?
+
+  - intent: jeshi_shindwa_vita_swa
+    examples: |
+      - ju ya nini [jeshi yetu](relation) hai malize hii [vita](event_name)?
+      - [jeshi yetu](relation) ju ya nini ina shindwaka tu?
+      - [vita](event_name) ime shinda [jeshi yetu](relation)?
+      - njoku sema [jeshi yetu](relation) haiwezi maliza hii [vita](event_name)?
+
+  - intent: shule_swa
+    examples: |
+      - [watoto wetu](relation) wata soma bila vifaa vya shule?
+      - [watoto wetu](relation) wata soma je bila vyombo vya shule?
+      - watoto wana funzi wata rudi je ku [masomo](place_name) bila vifaa vya shule?
+      - ku [masomo](place_name) watoto wata soma je bila [vifaa ya shule](list_name)?
+
+  - intent: shule_viongozi_wakimbizi_wapi_swa
+    examples: |
+      - [viongozi](government_name) wali panga kuapatiya [watoto wetu](relation) [vifaa vya shule](list_name)?
+      - [watoto wetu](relation) wata pata [vifaa vya shule](list_name) kutoka kwa [viongozi](government_name)?
+      - [vifaa vya shule](list_name) ya [watoto wakimbizi](person) [vita](event_name) toka kwa [viongozi](government_name)?
+      - kuhusu [vifaa ya shule](list_name), [viongozi](government_name) wata patiya [watoto wakimbizi](person)?
+
+  - intent: kilio_amani_swa
+    examples: |
+      - kwa nini [tume](relation) kosa [amani](definition_word)?
+      - [amani](definition_word) ime kosekana ju ya nini?
+      - [amani](definition_word) ita rudiya [wakati](time) gani?
+      - kwa nini [amani](definition_word) ime kosekana?
+
+  - intent: kilio_jeshi_ya_eac_swa
+    examples: |
+      - [kongo](country_name) ina faidika nini kutoka kwa [jeshi ya eac](army_name)?
+      - [eac](government_name) ilikuya saidiya [jeshi ya kongo](army_name) kweli?
+      - wana [jeshi wa eac](army_name) wata itika ku kufiya [kongo](country_name)?
+      - [jeshi ya eac](army_name) iko tayari kupiganiya [kongo](country_name)?
+
+  - intent: kilio_umoja_ya_africaswa
+    examples: |
+      - [umoja ya africa](government_name) ina sema nini ku iyi [vita](event_name)?
+      - [umoja ya africa](government_name) ina panga kusaidiya [kongo](country_name) namna gani kuiyi [vita](event_name)?
+      - ku iyi [vita](event_name) [kongo](country_name) ita pata je msaa ya [umoja ya africa](government_name)?
+      - ni msaada gani njo [kongo](country_name) ita pata kutoka kwa [umoja ya africa](government_name)?
+
+  - intent: kilio_wasaidizi_wamoja_wakimbizi_wapi_swa
+    examples: |
+      - [wa saidizi](person) wamoja wana kula rushwa ya nini ijapo [kazi](business_name) yao niku tu saidiya?
+      - ju ya nini [wasaidizi](person) wamoja wana lomba [makuta](currency_name) kwa [wakimbizi](person) juya kuwapa musaada?
+      - [viongozi](government_name) wana juwa kama kuna [wasaidizi](person) wenye wana lomba pesa kwaku pana musaada?
+      - kwa nini [wasaidizi](person) tena wana lomba pesa kwa [wakimbizi](person) ambao hawana kitu?
+
+  - intent: kilio_wakimbizi_wa_uongo_swa
+    examples: |
+      - [wakimbizi](person) wa uogo wata toshewa [nani](person) katika ma [kambi](place_name)?
+      - kwa nini [wakimbzi](person) wa uongo hawa toshewe katika [makambi](house_place)?
+      - katika [makambi](house_place) kuna yala [wakimbizi](person) wa uongo,[nani](person) njo ata watosha?
+      - [wakimbizi](person) wa uongo wata toka je katika [makambi](house_place)?
+
+  - intent: kilio_wakimbizi_wenye_haiko_swa
+    examples: |
+      - ju ya nini wenye haiko [wakimbizi](person) biko nakuya pokeya?
+      - ni kawaida kuona wenye haiko [wakimbizi](person) nao wana kuja pokeya?
+      - wenye haiko [wakimbizi](person) juu ya nini biko nakuya pokeya?
+      - juu ya nini hakuna malipizi kwa zenye wana kuya pokeya na haiko [wakimbizi](person)?
+
+  - intent: kilio_jetons_swa
+    examples: |
+      - juu ya nini [wasaidizi](person) wana pana [jetons](definition_word) [zakidogo](order_type) kwa [wakimbizi](person)?
+      - jetons za [wakimbizi](person) ju ya nini zina kuwa za [kidogo](order_type)?
+      - ina omba nini juu [wasaidizi](person) wakuwe na pana [jetons](definition_word) zaku [tosha](order_type) kwa [wakimbizi](person)?
+      - [wakimbizi](person) juu ya nini wana pata [jetons](definition_word) za [kidogo](order_type) juu yaku pokeya?
+
+  - intent: kilio_wakimbizi_wenye_damu_swa
+    examples: |
+      - [wakimbizi](person) wenye wana lumiya wata pata damu ya bure?
+      - [mukimbizi](person) aliye umiya ata pata damu kwa bure?
+      - [wakimbizi](person) wenye wana lumiya hawata uza damu?
+      - [mukimbizi](person) ake lumiya ana kuwa na lazima ya damu, ata ipata bure?
+
+  - intent: kilio_chakula_bila_makala_swa
+    examples: |
+      - juu ya nini wana pokeza [wakimbizi](person) [chakula](food_name) bila [makala](ingredient)?
+      - tuta towa [wapi](place_name) [makala](ingredient) yaku pigiya chakulayenye tuna pokeya?
+      - tuta pata na akala [wakati](time) tuta pokeya [chakula](food_name)?
+      - juu ya nini hawaku panga kutu patiya [makala](ingredient) [wakati](time) wana tupa [chakula](food_name)?
+
+  - intent: kilio_maisha_yetu_swa
+    examples: |
+      - tuta [teseka](emotion_type) [Maisha](event_name) [yetu](relation) yote?
+      - [Maisha](event_name) [yetu](relation) yote ita kuwa ya mateso tu?
+      - tuta [teseka](emotion_type) mpaka [siku](date) gani?
+      - tuta [teseka](emotion_type) tu [Maisha](event_name) [yetu](relation) yote ivi?
+
+  - intent: kilio_sikia_kwa_kilio_swa
+    examples: |
+      - tuliliye [nani](person)?
+      - [kilio](event_name) [yetu](relation) ita fikiya [nani](person)?
+      - [nani](person) njo ata sikiya [kilio](event_name) [yetu](relation)?
+      - tuta kuwa na liliya [nani](person)?
+
+  - intent: chakula_pandisha_swa
+    examples: |
+      - [chakula](food_name) ime panda beyi juya nini?
+      - juu ya nini wachuruzi wana pandisha beyi ya [chakula](food_name)?
+      - kupanda kwa beyi ya [chakula](food_name) ina tokana na nini?
+      - juu ya nini [chakula](food_name) ina uziwa beyi kali mu [vita](event_name)?
+
+  - intent: kulima_swa
+    examples: |
+      - [viongozi](government_name) wata tupatiya [nafasi](place_name) yaku lima?
+      - tuta kuwa na pata [fasi](place_name) yaku [mlima](place_name)?
+      - [nafasi](place_name) yaku [lima](place_name) ita patikana?
+      - kuta patikana [nafasi](place_name) yenye [wakimbizi](person) wata kuwa na [lima](place_name)?
+
+  - intent: kilio_tetezi_wakimbizi_wapi_njo_swa
+    examples: |
+      - [nani](person) njo ata tu teteya?
+      - mutetezi wetu ni [nani](person)?
+      - [nani](person) njo mtetezi wa [wakimbizi](person)?
+      - [wakimbizi](person) wana tetelewa na [nani](person)?
+
+  - intent: kilio_watoto_wangu_wata_chezeya_wapi_swa
+    examples: |
+      - kuna [nafasi](place_name) yenye ili andaliwa juu ya michezo ya [watoto](person)?
+      - [watoto wetu](relation) wata pata [nafasi](place_name) yaku chezeya?
+      - [watoto](person) tukuwe na watula wachezeye [wapi](place_name)?
+      - [nafasi](place_name) gani njo ili andaliwa ju ya michezo ya [watoto](person)?
+
+  - intent: kilio_kambi_zimoja_ziko_ku_barabara_swa
+    examples: |
+      - juu ya nini [kambi](place_name) ziko ku [barabara](place_name)?
+      - [kambi](place_name) zimoja ziko ku [barabara](place_name) ju ya nini?
+      - [kambi](place_name) zaku [barabara](place_name) zita toshewa?
+      - juu ya nini hawa toshe [kambi](place_name) zaku [barabara](place_name)?
+
+  - intent: usafi_swa
+    examples: |
+      - [watoto wakimbizi](person) wata pata [mafundisho juu ya usafi](definition_word)?
+      - [mafundisho ya usafi](definition_word) ita wezekana juu ya [watoto](person)?
+      - [watoto wakimbizi](person) [nani](person) ata [wafundisha juu ya usafi](definition_word)?
+      - usafi [watoto wakimbizi](person) wata ijuwa je?
+
+  - intent: hema_zetu_zengine_swa
+    examples: |
+      - [hema](house_place) zetu zike aribika tuta pata zengine?
+      - tuta pata [hema](house_place) zengine izi zike aribika na [nvula](weather_descriptor)?
+      - [nani](person) ata tupatiya [hema](house_place) zengine izi zike aribika?
+      - tuta lomba kwa [nani](person) [hema](house_place) saa izi zita aribika?
+
+  - intent: kujikinga_swa
+    examples: |
+      - juu ya [marazi ya ngono](sickness_type) [wakimbizi](person) wata fundishwa kuji kinga?
+      - [wakimbizi](person) wata funzwa na [nani](person) gisi yaku ji kinga na [marazi ya ngono](sickness_type)?
+      - mafundisho yaku ji kinga juu ya [marazi ya ngono](sickness_type) ita wezekana juu ya [wakimbizi](person)?
+      - [wakimbizi](person) wata ji funza je kuji kinga na [marazi ya ngono](sickness_type)?
+
+  - intent: maji_safi_swa
+    examples: |
+      - iyi [maji](ingredient) iko safi?
+      - [maji](ingredient) iyi iko safi?
+      - [maji](ingredient) hii ina stahili?
+      - kuko [dawa](medical_name) [ndani](place_name) ya iyi [maji](ingredient)?
+
+  - intent: rwanda_furahi_swa
+    examples: |
+      - [rwanda](country_name) ina ridhika kuona tuna [teseka](emotion_type)?
+      - [mateso yetu](relation) ina [furahisha](emotional_type) [rwanda](country_name)?
+      - [rwanda](country_name) ina [furahishwa](emotional_type) na mateso [yetu](relation)?
+      - tuna [teseka](emotion_type) na [rwanda](country_name) ina [furahi](emotion_type)?
+
+  - intent: rwanda_teseka_swa
+    examples: |
+      - [rwanda](country_name) ina pata nini katika mateso [yetu](relation)?
+      - [rwanda](country_name) ina faidika nini saa [tuna](relation) [teseka](emotion_type)?
+      - [tuna](relation) [teseka](emotion_type) [rwanda](country_name) ina pata nini?
+      - ni malipo gani [rwanda](country_name) ina pata saa [tuna](relation) [teseka](emotion_type)?
+
+  - intent: jeshi_wana_malizika_swa
+    examples: |
+      - iyi [vita](event_name) haita maliza wana [jeshi wetu](relation)?
+      - [jeshi yetu](relation) haita malizika [ndani](place_name) ya hii [vita](event_name)?
+      - [wana jeshi wetu](relation) hawata malizika na [vita](event_name)?
+      - [vita](event_name) haita [jeshi yetu](relation) yote?
+
+  - intent: jeshi_wana_gombolewa_swa
+    examples: |
+      - [jeshi yetu](relation) ita kuya tugomboa [siku](date) [gani](time)?
+      - tuta gombolewa [wakati](time) gani?
+      - [jeshi yetu](relation) ita tugomboa [wakati](time) gani?
+      - [siku](date) [gani](time) njo [jeshi yetu](relation) ina panga kutu gomboa?
+
+  - intent: jeshi_wana_juwa_mateso_swa
+    examples: |
+      - [jeshi yetu](relation) ina juwa kama tuna [teseka](emotion_type)?
+      - iyi [mateso yetu](relation) [jeshi](army_name) ina ijua?
+      - tuna [teseka](emotion_type) [jeshi](army_name) ina juwa?
+      - [jeshi yetu](relation) ina juwa mateso yenye tuna pitiya?
+
+  - intent: rwanda_chukiya_swa
+    examples: |
+      - ju ya nini [rwanda](country_name) ina chukiya [kongo](country_name)?
+      - [kongo](country_name) ime chukiliwa na [rwanda](country_name) ju ya nini?
+      - juu ya nini [rwanda](country_name) ina tu chukiya?
+      - [rwanda](country_name) ina chukiya [kongo](country_name) sababu gani?
+
+  - intent: chunvi_swa
+    examples: |
+      - tuta pata chunvi [wapi](place_name)?
+      - chunvi tuta ipata [wapi](place_name)?
+      - [wapi](place_name) njo tuta pata chunvi?
+      - tuna weza pata chunvi?
+
+  - intent: maji_juwa_swa
+    examples: |
+      - tuta juwa je kama [maji](ingredient) iko safi?
+      - [maji](ingredient) safi tuta ijuwa je?
+      - [maji](ingredient) yenye iko safi tuta ijuwa je?
+      - [maji](ingredient) safi ita julikana je?
+
+  - intent: maji_shoteya_swa
+    examples: |
+      - tuta shoteya [maji](ingredient) mu nini?
+      - kitu gani njo tushoteye [ndani](place_name) [maji](ingredient)?
+      - [maji](ingredient) tuishoteye [ndani](place_name) ya nini?
+      - nini njo tushoteye amo [maji](ingredient)?
+
+  - intent: kanisa_swa
+    examples: |
+      - [kanisa](place_name) tuta ipata [wapi](place_name)?
+      - [wapi](place_name) njo kuko [kanisa](place_name)?
+      - [kanisa](place_name) iko ngambo gani?
+      - [wapi](place_name) njo [kanisa](place_name) iko?
+
+  - intent: dini_swa
+    examples: |
+      - [dini](definition_word) zote zina itikiwa [apa](place_name) [nyirangongo](place_name)?
+      - [apa](place_name) [nyirangongo](place_name) hakuna shida ya [dini](definition_word)?
+      - [dini](definition_word) zote zina tumika [apa](place_name) [nyirangongo](place_name) bila shida?
+      - [apa](place_name) [nyirangongo](place_name) [dini](definition_word) zote zina itikiwa?
+
+  - intent: kanisa_nyirangongo_swa
+    examples: |
+      - kuna [kanisa](place_name) ngapi [apa](place_name) [nyirangongo](place_name)?
+      - [apa](place_name) kuko [kanisa](place_name) ngapi?
+      - [kanisa](place_name) za [apa](place_name) ziko ngapi?
+      - [apa](place_name) [nyirangongo](place_name) kuna patikana [kanisa](place_name) ngapi?
+
+  - intent: kanisa_njenga_kwa_kambi_swa
+    examples: |
+      - tuna ruhusa yaku jenga [kanisa](place_name) [ndani](place_name) ya [kambi](place_name)?
+      - [ndani](place_name) ya [kambi](place_name) tuko na ruhusa yaku jenga [kanisa](place_name)?
+      - [kanisa](place_name) [yetu](relation) tuna weza ijenga [ndani](place_name) ya [kambi](place_name)?
+      - tuka jenga [kanisa](place_name) [ndani](place_name) ya [kambi](place_name) ni [mubaya](order_type)?
+
+  - intent: chakula_tuiweke_swa
+    examples: |
+      - namna gani njo tuweke [chakula](food_name)?
+      - [chakula](food_name) tuiweke namna gani?
+      - tuna weza weka [chakula](food_name) vipi?
+      - ni vipi njo tukuwe na weka [chakula](food_name)?
+
+  - intent: bwaki_swa
+    examples: |
+      - [watoto](person) waki [gonjwa bwaki](sickness_type) tuwa peleke [wapi](place_name)?
+      - [wapi](place_name) njo tupeleke watoto waku [gonjwa bwaki](sickness_type)?
+      - [watoto](person) waku [gonjwa bwaki](sickness_type) wepelekwe [wapi](place_name)?
+      - [watoto](person) kama wana [gonjwa bwaki](sickness_type) tukue na wabeba [wapi](place_name)?
+
+  - intent: bwaki_ya_wajawazito_swa
+    examples: |
+      - [wajawazito](person) waki [gonjwa bwaki](sickness_type) tuwa peleke [wapi](place_name)?
+      - [wapi](place_name) njo tupeleke [wajawazito](person) waku [gonjwa bwaki](sickness_type)?
+      - ni [wapi](place_name) njo tukuwe na peleka [wajawazito](person) kama wana [gonjwa bwaki](sickness_type)?
+      - [wajawazito](person) kama wana [gonjwa bwaki](sickness_type) tukue na wabeba [wapi](place_name)?
+
+  - intent: kulima_viongozi_wakimbizi_wapi_swa
+    examples: |
+      - tuna weza lima [ndani](place_name) ya [kambi](place_name)?
+      - tuna ruhusa yakulima [ndani](place_name) ya [kambi](place_name)?
+      - kulima [ndani](place_name) ya [kambi](place_name) ina ruhusiwa?
+      - katika [kambi](place_name) ina ruhusiwa kulima [ndani](place_name)?
+
+  - intent: wakati_swa
+    examples: |
+      - ni [wakati](time) gani njo tukuwe na rudiya [ndani](place_name) ya [kambi](place_name)?
+      - [saa](time) ngapi njo [wakimbizi](person) wakuwe na rudiya katika [kambi](place_name)?
+      - ni [saangapi](time) njo tukuwe na rudiya katika [kambi](place_name)?
+      - katika [kambi](place_name) tuna weza kuwa na rudiya [sangapi](time)?
+
+  - intent: hema_ike_aribika_swa
+    examples: |
+      - [hema](house_place) [yangu](relation) ike aribika nilombe msaada kwa [nani](person)?
+      - [nani](person) njo ata nisaidiya [hema](house_place) [yangu](relation) ike ariibika?
+      - nilombe msaada kwa [nani](person) kama [hema](house_place) [yangu](relation) ina aribika?
+      - [hema](house_place) ike aribike kwa [nani](person) njo naeza lomba msaada?
+
+  - intent: dawa_ya_wagojnwa_wa_ukimwi_swa
+    examples: |
+      - [watu](person) waku [gonjwa ukimwi](sickness_type) wata pata [dawa](medical_name) yao?
+      - [dawa](medical_name) za [wagonjwa wa ukimwi](sickness_type) zita patikana?
+      - [wagojnwa wa ukimwi](sickness_type) wata pata [dawa](medical_name) yao [wapi](place_name)?
+      - [dawa](medical_name) za [wagojnwa wa ukimwi](sickness_type) ita onekana katika [kambi](place_name)?
+
+  - intent: dawa_ya_wagojnwa_wa_sukari_swa
+    examples: |
+      - [dawa](medical_name) za [watu wa sukari](sickness_type) zita onekana?
+      - [dawa](medical_name) za [wagonjwa wa sukari](sickness_type) zita patikana?
+      - [wagojnwa wa sukari](sickness_type) wata pata [dawa](medical_name) yao [wapi](place_name)?
+      - [dawa](medical_name) za [wagojnwa wa sukari](sickness_type) ita onekana katika [kambi](place_name)?
+
+  - intent: chakula_watu_wa_regime_swa
+    examples: |
+      - wata gabula [chakula](food_name) za [watu wa régime](meal_type)?
+      - [watu wa régime](meal_type) wata pata [chakula](food_name)?
+      - [chakula](food_name) ya [watu wa régime](meal_type) ita patikana?
+      - waku gabula [chakula](food_name) wali waza [watu wa régime](meal_type)?
+
+  - intent: chadaruwa_swa
+    examples: |
+      - tuta pata [chadaruwa](medical_type) za bure?
+      - [chadaruwa](medical_type) za bure ziko?
+      - [chadaruwa](medical_type) za bure zili andaliwa?
+      - tuta pata [chadaruwa](medical_type) bila malipo?
+
+  - intent: wagonjwa_swa
+    examples: |
+      - [dawa](medical_name) za [watu](person) wa [magonjwa ya kichwa](sickness_type) zita onekana?
+      - [watu](person) waku [gonjwa kichwa](sickness_type) wata pata [dawa](medical_name) yao?
+      - [dawa](medical_name) za [wagonjwa wa kichwa](sickness_type) zita patikana?
+      - [dawa](medical_name) za [wagojnwa wa kichwa](sickness_type) ita onekana katika [kambi](place_name)?
+
+  - intent: psychologues_swa
+    examples: |
+      - tuta onana na [wa psychologues](doctor_type)?
+      - [wa psychologues](doctor_type) wata patikana juu [yetu](relation)?
+      - tuta pata [wa psychologues](doctor_type)?
+      - kuna [wa psychologues](doctor_type) ambao wata tu fatiliya?
+
+  - intent: volkeno_swa
+    examples: |
+      - [volkeno nyirangongo](mountain_name) ike tomboka tuta fanya je?
+      - kama [volkeno nyirangongo](mountain_name) ina tomboka tuta kuwa je?
+      - tuta fanta je kama [volkeno nyirangongo](mountain_name) ina tomboka?
+      - kama [volkeno nyirangongo](mountain_name) ina tomboka tuta enda [wapi](place_name)?
+
+  - intent: nvula_swa
+    examples: |
+      - [nvula](weather_descriptor) ike zamisha [hema](house_place) zetu tuta fanya nini?
+      - [nvula](weather_descriptor) ike zamisha [hema](house_place) zetu tuliliye [nani](person)?
+      - tuta fanya je [hema](house_place) zetu zike zama na [nvula](weather_descriptor)?
+      - kama [hema](house_place) zetu zina zama na [nvula](weather_descriptor) tuta fanya je?
+
+  - intent: ambulance_swa
+    examples: |
+      - ambulances ziko?
+      - [uku](place_name) [mugunga]kutakuwa ambulance?
+      - tuta kuwa na pata ambulance?
+      - ambilance ita patikana [uku](place_name) [mugunga]?
+
+  - intent: usafi_ndani_kambi_swa
+    examples: |
+      - [nani](person) ana husika na usafi [ndani](place_name) ya [kambi](place_name)?
+      - usafi ya [kambi](place_name) ni [nani](person) ana husika nayo?
+      - usafi yamu [kambi](place_name) ita fanyika na [nani](person)?
+      - ni [nani](person) njo ata kuwa na fanya usafi wa [kambi](place_name)?
+
+  - intent: chakula_haribika_swa
+    examples: |
+      - kama [chakula](food_name)ya wa fazili [PAM](organization_name) ina haribika tuta juwa je?
+      - kama wa fazili [PAM](organization_name) wana tupatiya [chakula](food_name)yaku aribika tuta juwa je?
+      - nini njo ita tuonesha kama [chakula](food_name)yaku pokeya ina aribika?
+      - [chakula](food_name)yaku aribika yaku toka kwa wa fazili [PAM](organization_name) tuta ijuwa je?
+
+  - intent: dawa_ina_haribika_swa
+    examples: |
+      - kama [dawa](medical_name) ina haribika tuta juwa je?
+      - kama [dawa](medical_name) aribika tuta juwa je?
+      - nini njo ita tuonesha kama [dawa](medical_name) ina aribika?
+      - [dawa](medical_name) yaku aribika tuta ijuwa je?
+
+  - intent: uzazi_swa
+    examples: |
+      - [tupange uzazi](definition_word) namna gani?
+      - [uzazi](definition_word) tuta ipanga namna gani?
+      - ni je njo tuta panga [uzazi](definition_word)?
+      - [uzazi](definition_word) tuta ipanga je?
+
+  - intent: uzazi_kwa_wakimbizi_wapi_swa
+    examples: |
+      - kuna [mtu](person) ata tu [fundisha kupanga uzazi](event_name)?
+      - kuko [mtu](person) ali chaguliwa juu yaku tu [fundisha kupanga uzazi](event_name)?
+      - kuna [mtu](person) mwenye ana husika kufundisha [wakimbizi](person) kupanga uzazi?
+      - tuta pata je [mafunzo yaku panga uzazi](event_name)?
+
+  - intent: choo_tujengeya_swa
+    examples: |
+      - [choo](place_name) ita jengwa na [nani](person)?
+      - kuna [mtu](person) ata kuja tujengeya [choo](place_name)?
+      - ni mfazili gani njo ata tujengeya [choo](place_name)?
+      - kujenga [choo](place_name) ya wakimbizi ni [kazi](business_name) ya [nani](person)?
+
+  - intent: magongwa_swa
+    examples: |
+      - namna gani tuta epuka [malali](sickness_type) ya [kifu kikuu](sickness_type)?
+      - tuta epuka je [malali](sickness_type) ya [kifu kikuu](sickness_type)?
+      - [malali](sickness_type) ya [kifu kikuu] (sickness_type)iepuka je?
+      - tuji kinge je na [malali](sickness_type) ya [kifu kikuu](sickness_type)?
+
+  - intent: magongwa_ya_infections_swa
+    examples: |
+      - namna gani tuta epuka [malali ya infections] (sickness_type)?
+      - tuta epuka je [malali ya infections](sickness_type)?
+      - [malali ya infection](sickness_type)  tuta iepuka je?
+      - ni namna gani njo tuta epuka [malali infections](sickness_type)?
+
+  - intent: homa_swa
+    examples: |
+      - namna gani tuta epuka [homa](sickness_type)?
+      - tuta epuka je [homa](sickness_type)?
+      - [homa](sickness_type) tuta iepuka je?
+      - tuji kinge je na [homa](sickness_type)?
+
+  - intent: magongwa_ya_malaria_swa
+    examples: |
+      - tuta epuka je [malaria](sickness_type)?
+      - [malaria] (sickness_type)tuta iepuka je?
+      - ni namna gani njo tuta epuka [malaria](sickness_type)?
+      - tuji kinge je na [malaria](sickness_type)?
+
+  - intent: magongwa_ya_walemavu_swa
+    examples: |
+      - [nani](person) ata hudumiya [walemavu](handicap_type)?
+      - kuna [mtu](person) ambaye ata hudumiya [walemavu](handicap_type)?
+      - [walemavu](handicap_type) wata hudumiwa na [nani](person)?
+      - [walemavu](handicap_type) wata kuwa na hudumiwa na [nani](person)?
+
+  - intent: masomo_tumika_swa
+    examples: |
+      - [masomo](place_name) yamu [kambi](place_name) ita kuwa na tumika [kila siku](general_frequency)?
+      - mu [kambi](place_name) [masomo](place_name) ita kuwa na tumika [kila siku](general_frequency)?
+      - [kila siku](general_frequency) [masomo](place_name) yamu [kambi](place_name) ita kuwa na tumika?
+      - [kila siku](general_frequency) [masomo](place_name) yamu ita kuwa na pokeya wanafuzi?
+
+  - intent: kazi_kulipa_swa
+    examples: |
+      - [waalimu wakimbiizi](person) wata endeleya [ku lipiwa](business_type)?
+      - [serkali](government_name) ita endeleya [kulipa](business_type) [waalimu wakimbizi](person)?
+      - [mshaara](salary_name) ya [waalimu wakimbizi](person) ita kuwa na kuja?
+      - [serkali](government_name) ita endeleya kutuma [mshahara](salary_name) ya [waalimu wakimbizi](person)?
+
+  - intent: kazi_za_goma_swa
+    examples: |
+      - [waalimu wakimbizi](person) wata pata [kazi](business_name) [uku](place_name) [Goma](place_name)?
+      - [uku](place_name)[Goma](place_name)[waalimu wakimbizi](person) wata pata [makazi](business_name)?
+      - [waalimu wakimbizi](person) wata itikiwa katika [shule](place_name) za [uku](place_name) [Goma](place_name)?
+      - [Goma](place_name) wata itika [kutumika](business_type) na [waalimu wakimbizi](person)?
+
+  - intent: kazi_endeleya_lipiwa_swa
+    examples: |
+      - [serkali](government_name) ita endeleya [kulipa](business_type) [wanganga wakimbizi](person)?
+      - [wanganga wakmbizi](person) wata endeleya kupata [mshahara](salary_name) yao?
+      - [mshaara](salary_name) ya [wanganga wakimbizi](person) ita kuwa na kuja?
+      - [serkali](government_name) ita endeleya kutuma [mshahara](salary_name) ya [wanganga wakimbizi](person)?
+
+  - intent: kazi_goma_zitakapata_swa
+    examples: |
+      - [waganga wakimbizi](person) wata pata [kazi](business_name) [uku](place_name) [Goma](place_name)?
+      - [waganga wakimbizi](person) wata itikiwa katika [shule](place_name) za [uku](place_name) [Goma](place_name)?
+      - [Goma](place_name) wata itika [kutumika](business_type) na [waganga wakimbizi](person)?
+      - [waganga wa Goma](place_name) wata itika [kutumika](business_type) na [waganga wakimbizi](person)?
+
+  - intent: kazi_serkali_zitakapata_swa
+    examples: |
+      - wafanya [kazi](business_name) wa [serkali](government_name) waji oneshe kwa [nani](person)?
+      - wafanya [kazi](business_name) wa [serkali](government_name) wata ona [nani](person)?
+      - kwa [nani](person) njo wafanya [kazi](business_name) wa [serkali](government_name) waende jionesha?
+      - [nani](person) njo iko na pokeya [wafanya kazi](person) wa [serkali](government_name)?
+
+  - intent: uchuruzi_swa
+    examples: |
+      - tuna eza fanya [uchuruzi](business_type) [ndani](place_name) ya [kambi](place_name)?
+      - tuna weza [churuza](business_type) [ndani](place_name) ya [kambi](place_name)?
+      - [ndani](place_name) ya [kambi](place_name) tuko na ruhusa yaku [churuza](business_type)?
+      - [uchuruzi](business_type) [ndani](place_name) ya [kambi](place_name) ina ruhusiwa?
+
+  - intent: kuni_swa
+    examples: |
+      - tuna eza enda twala [kuni](ingredient) [ndani](place_name) ya [parc ya virunga](place_name)?
+      - tuna ruhusiwa kukata [kuni](ingredient) [ndani](place_name) ya [parc ya virunga](place_name)?
+      - [ndani](place_name) ya [parc ya virunga](place_name) tuna ruhusiwa kuenda tafuta [kuni](ingredient)?
+      - tuki enda twala [kuni](ingredient) [ndani](place_name) ya [parc ya virunga](place_name) ni vibaya?
+
+  - intent: uongozi_swa
+    examples: |
+      - [nani](person) njo ata [tusimamiya](relation) ?
+      - mwenye ata [tu simamiya](relation) ni [nani](person)?
+      - [nani](person) njo ali chaguliwa kusimamiya [wakimbizi](person)?
+      - ni [nani](person) njo [msimamizi wetu](relation)?
+
+  - intent: uongozi_kwa_wakimbizi_wapi_swa
+    examples: |
+      - ni [mukimbizi](person) tu njo ana pashwa ongoza [wakimbizi](person)?
+      - ni lazima [mtu](person) akuwe [mukimbizi](person) ju yaku ongoza [wakimbizi](person)?
+      - [wakimbizi](person) wana pashwa ongozwa tu na [mukimbizi](person) kama wao?
+      - ina bidi tu [mtu](person) akuwe [mukimbizi](person) ju yaku ongoza [wakimbizi](person)?
+
+  - intent: vita_kanyarutshinya_swa
+    examples: |
+      - [apa](place_name) [kanyarutshinya](place_name) tuko [mbali](place_name) na [vita](event_name)?
+      - [kanyarutshinya](place_name) iko [mbali](place_name) sana na [rutshuru] kwenye [vita](event_name) iko?
+      - [vita](event_name) iko [mbali](place_name) na [apa](place_name) [kanyarutshinya](place_name)?
+      - kwenye kuko [vita](event_name) ni [mbali](place_name) na [apa](place_name) [kanyarutshinya](place_name)?
+
+  - intent: vita_salama_swa
+    examples: |
+      - nini ina onesha kama [apa](place_name) [kanyarutshinya](place_name) kuko salama?
+      - tuta juwa je kama [apa](place_name) [kanyarutshinya](place_name) kuko usalama?
+      - ni nini njo ita tuonesha kama [apa](place_name) [kanyarutshinya](place_name) kuko usalama?
+      - dalili gani jjo ita onesha kama [apa](place_name) [kanyarutshinya](place_name) uko usalama?
+
+  - intent: vita_wapi_swa
+    examples: |
+      - nina eza weka [wapi](place_name) [documents](definition_word) [zangu](relation) za [parcelle](place_name)?
+      - ni tafutiye [wapi](place_name) [documents](definition_word) [zangu](relation) za [parcelle](place_name)?
+      - [documents](definition_word) [zangu](relation) za [parcelle](place_name) ni zi tafutiye [wapi](place_name)?
+      - niende tafutiya [wapi](place_name) [documents](definition_word) [zangu](relation) za [parcelle](place_name)?
+
+  - intent: usalama_apa_ndani_kambi_swa
+    examples: |
+      - [watoto wetu](relation) biko katika usalama [apa](place_name) ndni ya [kambi](place_name)?
+      - [ndani](place_name) ya [kambi](place_name) kuko usalama juu ya [watoto](person)?
+      - usalama iko [ndani](place_name) ya [kambi](place_name) juu ya [watoto](person)?
+      - [watoto wakimbizi](person) wata ishi katika usalama apa?
+
+  - intent: vita_fika_swa
+    examples: |
+      - [apa](place_name) tuko [wapi](place_name) ?
+      - ni [wapi](place_name) [apa](place_name) kwenye tuna fika?
+      - tuna fika [wapi](place_name)?
+      - [wapi](place_name) [apa](place_name) kwenye tuko?
+
+  - intent: vita_karibu_na_sisi_swa
+    examples: |
+      - ju ya nini [karibu](place_name) na siye kuko [position](place_name) ya [jeshi FARDC](army_name) ?
+      - [position](place_name) ya [jeshi FARDC](army_name) ina fanya nini [pembeni](place_name) ya [wakimbizi](person)?
+      - [nani](person) ali ruhusu [position](place_name) ya [jeshi FARDC](army_name) ikuwe [pembeni](place_name) ya [wakimbizi](person)?
+      - [wakimbizi](person) wana eza ishi [pembeni](place_name) ya [position](place_name) ya [jeshi FARDC](army_name)?
+
+  - intent: vita_ingiya_kambi_swa
+    examples: |
+      - [wa askari](army_name) wana eza ingiya [ndani](place_name) ya [kambi](place_name)?
+      - ni kawaida [jeshi](army_name) kuingiya [ndani](place_name) ya [kambi](place_name)?
+      - [ndani](place_name) ya [kambi](place_name) [jeshi](army_name) ana ruhusiwa kuingiya?
+      - [nani](person) ali ruhusu wana [jeshi](army_name) kufika [ndani](place_name) ya [kambi](place_name)?
+
+  - intent: lugha_swa
+    examples: |
+      - [uku](place_name) [kanyarutshinya](place_name) [wakaaji](person) wana sema [lugha](language_name) gani?
+      - [wakaaji](person) wa [uku](place_name) [kanyarutshinya](place_name) wana semaka [lugha](language_name) gani?
+      - ni [lugha](language_name) gani njo [watu](person) wana semaka [apa](place_name) [kanyarutshinya](place_name)?
+      - [lugha](language_name) gani njo ina semewaka na [wakaaji](person) wa [apa](place_name) [kanyarutshinya](place_name)?
+
+  - intent: lugha_kinyarwanda_swa
+    examples: |
+      - [uku](place_name) [nyiragongo](place_name) [watu](person) juwa [lugha](language_name) [yetu](relation) [kinyarwanda](language_type)?
+      - [lugha](language_name) [yetu](relation) ina julikana [uku](place_name) [nyiragongo](place_name)?
+      - kuna [watu](person) wa [apa](place_name) [nyiragongo](place_name) wenye wana juwa [lugha](language_name) [yetu](relation) [kinyarwanda](language_type)?
+      - tuta pata [apa](place_name) [nyiragongo](place_name) [watu](person) wakusema [lugha](language_name) [yetu](relation) [kinyarwanda](language_type)?
+
+  - intent: usalama_mpaka_na_rwanda_swa
+    examples: |
+      - [apa](place_name) Tuko ku [mpaka](place_name) na [rwanda](country_name), haiko shida?
+      - haiko shida kuishi ku [mpaka](place_name) na [rwanda](country_name)?
+      - tuko [ndani](place_name) ya usalama ata kama tuko ku [mpaka](place_name) na [rwanda](country_name)?
+      - kukuwa [apa](place_name) ku [mpaka](place_name) na [rwanda](country_name) haiko shida?
+
+  - intent: usalama_nyiragongo_swa
+    examples: |
+      - [apa](place_name) [nyiragongo](place_name) [vita](event_name) ike fika tuta enda [wapi](place_name)?
+      - tuna weza kimbiliya [wapi](place_name) kama [vita](event_name) ina fika [apa](place_name) [nyiragongo](place_name)?
+      - [nyiragongo](place_name) nako [vita](event_name) ike fika tuta enda [wapi](place_name)?
+      - [vita](event_name) ike fika mpaka uku [nyiragongo](place_name) tuta kimbiliya [wapi](place_name)?
+
+  - intent: mtandao_swa
+    examples: |
+      - kuko [mtandao](business_type) [apa](place_name)?
+      - [apa](place_name) tuta pata [mtandao](business_type)?
+      - [mtandao](business_type) ita patikana [apa](place_name)?
+      - [apa](place_name) tuta pata [mtandao](business_type)?
+
+  - intent: usalama_vita_nyiragongo_swa
+    examples: |
+      - tuta juwa je kama [vita](event_name) haita fika [apa](place_name) [nyiragongo](place_name)?
+      - nini njo ita onesha kama [vita](event_name) haita fika [apa](place_name) [nyiragongo](place_name)?
+      - tuta juwa je kama [apa](place_name) [nyiragongo](place_name) [vita](event_name) haita fika?
+      - tuta kuwa na uhakika gani kama [vita](event_name) haita fika [apa](place_name) [nyiragongo](place_name)?
+
+  - intent: usalama_askari_swa
+    examples: |
+      - tunaeza aminiya [askari](army_name) wenye tuna kutana [apa](place_name)?
+      - hawa wa [askari](army_name) wenye wako [apa](place_name)tuna eza waaminiya?
+      - wa [askari](army_name) wenye wana ishi [apa](place_name) ni [watu](person) [wazima](definition_word)?
+      - wa [askari](army_name) wenye wako [apa](place_name) tuna weza waaminiya?
+
+  - intent: jamaa_swa
+    examples: |
+      - [jamaa yangu](relation) ntaipata je?
+      - [jamaa yangu](relation) nita watosha [wapi](place_name)?
+      - [jamaa yangu](relation) nita itosha [wapi](place_name)?
+      - nita fanya je ju nipate [jamaa yangu](relation)?
+
+  - intent: usalama_watoto_wangu_swa
+    examples: |
+      - nita juwa je kama [watoto wangu](relation) wangali [wazima](definition_word)?
+      - kama [watoto wangu](relation) wangali [wazima](definition_word) nita juwa je?
+      - nini njo ita ni julisha kama [watoto wangu](relation) wangali [wazima](definition_word)?
+      - nifanye je ju nijuwe kama [watoto wangu](relation) wangali [wazima](definition_word)?
+
+  - intent: usalama_bulengo_swa
+    examples: |
+      - [apa](place_name) [bulengo](place_name)[watoto wangu](relation) wata pafika je?
+      - [watoto wangu](relation) wata fika je [apa](place_name) [bulengo](place_name)?
+      - nifanye je ili [watoto wangu](relation) wani kutane hapa [bulengo](place_name)?
+      - [watoto wangu](relation) wata pata [njiya](place_name) ju wani kutane [bulengo](place_name)?
+
+  - intent: usalama_vita_kwa_watoto_wangu_swa
+    examples: |
+      - tuta wezaka sahau je iyi mambo yote ya [vita](event_name)?
+      - ita wezekana tusahau iyi mambo ya [vita](event_name) [siku moja](date)?
+      - iyi mambo ya [vita](event_name) tuta wezaka isahau?
+      - tufanye je ili tusahau iyi mambo ya [vita](event_name) [siku moja](date)?
+
+  - intent: usalama_hasira_swa
+    examples: |
+      - kwa nini nina [hasira](definition_word) ?
+      - hiyi [hasira](definition_word) yenye niko nayo ni ju ya nini?
+      - iyi [hasira](definition_word) ina toka [wapi](place_name)?
+      - iyi [hasira](definition_word) [kubwa](order_type) yenye niko nayo ina tokeya [wapi](place_name)?
+
+  - intent: uoga_swa
+    examples: |
+      - nita rudiya na roho kama ya [zamani](time) ?
+      - [roho yangu](relation) ita rudiya kama [zamani](time)?
+      - ita wezekana ni rudiye kama nilikuaka [zamani](time)?
+      - [hali yangu](relation) ya [zamani](time) nita ipata tena?
+
+  - intent: hali_swa
+    examples: |
+      - kwa nini nina choka [kila wakati](time)?
+      - juu ya nini [kila wakati](time) niko na sikiya nina choka?
+      - iyi muchoko ya [kila wakati](time) ni ya nini?
+      - kwa nini [kila wakati](time) nina ji sikiya [kuchoka sana](general_frequency)?
+
+  - intent: hali_usingizi_swa
+    examples: |
+      - kwa nini sipate [usingizi](event_name)?
+      - juu ya nini [silalake](event_name) tena?
+      - [usingizi](event_name) ina kosekana juu ya nini?
+      - sababu gani nina kosa [usingizi](event_name)?
+
+  - intent: hali_ndoto_swa
+    examples: |
+      - kwa nini nina lota [ndoto](definition_word) za [mubaya](order_type) tu?
+      - juu ya nini niko tu na lota [ndoto](definition_word) za [mubaya](order_type)?
+      - nini njo iko na tuma nina lota [mubaya](order_type)?
+      - izi [ndoto](definition_word) za [mubaya](order_type) [kila siku](general_frequency) niju ya nini?
+
+  - intent: hali_watoto_wangu_swa
+    examples: |
+      - [watoto](person) wata elewa iyi [hali](event_name)?
+      - iyi [hali](event_name) [watoto](person) wata weza ielewa?
+      - iyi [hali](event_name) ita eleweka kwa [watoto](person)?
+      - [watoto](person) wana weza sikiya [hali](event_name) hii?
+
+  - intent: hali_viongozi_wakimbizi_wapi_swa
+    examples: |
+      - [viongozi](government_name) Wana tu angaikiya ?
+      - [viongozi](government_name) wana angaikiya [hali](event_name) [yetu](relation)?
+      - [viongozi](government_name) wana juwa gisi tuna [teseka](definition_word)?
+      - [hali](event_name) [yetu](relation) [viongozi](government_name) wana iiangaikiya?
+
+  - intent: hali_mzigo_swa
+    examples: |
+      - [wakongomani](population_type) [wengine](person) wana tuona kama [mzigo](definition_word)?
+      - [watu](person) wenye haiko [wakimbizi](person) wana tuona kama [mzigo](definition_word) [kwao](place_name)?
+      - tuna pana sura yaku kuwa [mzigo](definition_word) kwa [wakongomani](population_type) [wengine](person)?
+      - tuna kuwa [mzigo](definition_word) kwa [wakongomani](population_type) [wengine](person)?
+
+  - intent: malalamiko_sisi_wangu_swa
+    examples: |
+      - tukamate [silaha](device_type) sisi wote?
+      - ita omba sisi wote tukamate [silaha](device_type)?
+      - [watu](person) wote wakamate [silaha](device_type) tupigane vita?
+      - [wakimbizi](person) tukamate [silaha](device_type)?
+
+  - intent: malalamiko_kwa_wakimbizi_wapi_swa
+    examples: |
+      - [nani](person) ata tupanguza machozi ?
+      - ni [nani](person) ata tu panguza machozi?
+      - mwenye ata tupanguza machozi ni [nani](person)?
+      - ni [nani](person) ata weza panguza machozi yetu?
+
+  - intent: malalamiko_wazima_swa
+    examples: |
+      - tuta kuwa tena [watu](person) [wazima](definition_word) kweli?
+      - tuta kuwa [watu](person) [wazima](definition_word) kama [zamani](time)?
+      - [ndani](place_name) ya kichwa zetu tuta bakiya [wazima](definition_word)?
+      - tuta kuwaka teba [watu](person) [wazima](definition_word) [ndani](place_name) yetu?
+
+  - intent: malalamiko_elewe_swa
+    examples: |
+      - ju ya nini [watu](person) habiko natu elewa?
+      - hakuna anaye tuelewa ju ya nini?
+      - hakuna waku tuelewa kwa nini?
+      - kwa nini [watu](person) hawa elewe [mateso yetu](relation)?
+
+  - intent: malalamiko_kula_chakula_swa
+    examples: |
+      - tuta kuwa na kula [kila siku](general_frequency)?
+      - [kila siku](general_frequency) tuta kuwa na kula?
+      - [chakula](food_name)ita kuwa na patikana [kila siku](general_frequency)?
+      - [kila siku](general_frequency) [chakula](food_name)ita kuwa na patikana?
+
+  - intent: malalamiko_mungu_swa
+    examples: |
+      - ibi byote [mungu](list_name) iko na biona?
+      - [mungu](list_name) iko na ona iyi [mateso yetu](relation)?
+      - kwa kweli [mungu](list_name) iko na ona ibi byote?
+      - tuna weza sema kama [mungu](list_name) iko na ona iyi mambo yote?
+
+  - intent: malalamiko_mungu_ana_tupenda_swa
+    examples: |
+      - [mungu](list_name) ana tupenda kweli?
+      - kweli [mungu](list_name) ana tupenda?
+      - mapendo ya [mungu](list_name) iko juu [yetu](relation) kweli?
+      - yaani kweli [mungu](list_name) ana weza sema ana tupenda?
+
+  - intent: malalamiko_mungu_ana_ruhusu_tukuwe_wakimbizi_wapi_swa
+    examples: |
+      - [mungu](list_name) njo ana ruhusu tukuwe [wakimbizi](person)?
+      - [mungu](list_name) njo ali tufanya [wakimbizi](person)?
+      - [mungu](list_name) njo ali penda tu teseke?
+      - [mungu](list_name) njo ali ruhusu iyi hali itu pate?
+
+  - intent: malalamiko_duniya_swa
+    examples: |
+      - duniya iko na faida gani sasa?
+      - iyi duniya tena ingali na faida?
+      - kuko faida tena ya duniya?
+      - ni faida gani ya duniya tuta ona tena?
+
+  - intent: malalamiko_mtetezi_wakimbizi_wapi_swa
+    examples: |
+      - mtetezi wetu ni [nani](person) ?
+      - [nani](person) njo ata tu teteya mu iyi duniya?
+      - ni [nani](person) njo mtetezi wetu katika hali hii?
+      - [ndani](place_name) ya hali hii [nani](person) njo mtetezi wetu?
+
+  - intent: malalamiko_kiswahili_swa
+    examples: |
+      - tuli poteza vitambulisho tuta vipata tena ?
+      - vitambulisho [vyetu](relation) vilipoteya tuta vipata tena?
+      - kiisha kupoteza vitambulisho [vyetu](relation) tuta vipata tena?
+      - tuta pata tena vitambulisho v[yetu](relation) vilivyo poteya?
+
+  - intent: malalamiko_kiswahili_kwa_wakimbizi_wapi_swa
+    examples: |
+      - tuta juwa kiswahili je?
+      - namna gani tuta juwa kiswahili?
+      - kiswahili tuta ijuwa je?
+      - tuji funziye [wapi](place_name) kiswahili?
+
+  - intent: malalamiko_goma_swa
+    examples: |
+      - [watu](person) wa [Goma](place_name) wata tu penda kweli?
+      - [Goma](place_name) [watu](person) wata tupenda kweli?
+      - tuta pendewa na [watu](person) wa goma?
+      - wakaai wa [Goma](place_name) wata tupenda?
+
+  - intent: malalamiko_goma_kwa_wakimbizi_wapi_swa
+    examples: |
+      - [watu](person) wa [Goma](place_name) wana tabiya kama zetu?
+      - [Goma](place_name) [watu](person) wana tabiya kama zetu?
+      - tabiya zetu zita ambatana na tabiya za [Goma](place_name)?
+      - [wakaaji](person) wa [Goma](place_name) wana tabiya waku fanan zetu?
+
+  - intent: malalamiko_watoto_wa_goma_swa
+    examples: |
+      - [watoto](person) wa [Goma](place_name) wata itika kufanya urafiki na [watoto wetu](relation)?
+      - [watoto](person) wa [Goma](place_name) wata fanya urafiki na [watoto wetu](relation)?
+      - [watoto wetu](relation) wata pata [watoto wengine](person) [uku](place_name) [Goma](place_name) waku cheza nao?
+      - watoto wa [Goma](place_name) wate ona [watoto wetu](relation) kama warafiki?
+
+  - intent: malalamiko_itika_ku_changana_na_siye_swa
+    examples: |
+      - [watu](person) wa [uku](place_name) [Goma](place_name) wata itika ku changana na siye ?
+      - tuta changana bila shida na [watu](person) wa [Goma](place_name)?
+      - [Goma](place_name) [watu](person) wana itikaka kuchangana na [wengine](person)?
+      - tuta changana bila mashaka na [wakaaji](person) wa [Goma](place_name)?
+
+  - intent: malalamiko_maisha_kwa_kesho_swa
+    examples: |
+      - [Maisha](event_name) [yetu](relation) ya [kesho](date) ita kuwa je ?
+      - [kesho](date) [yetu](relation) ita kuwa je?
+      - ita kuwa je [Maisha](event_name) [yetu](relation) ya [kesho](date)?
+      - namna gani [Maisha](event_name) [yetu](relation) ita kuwa [kesho](date)?
+
+  - intent: malalamiko_maisha_kwa_zamani_swa
+    examples: |
+      - [Maisha](event_name) yetu ita kuwa tena kama [zamani](time) kiisha [vita](event_name)?
+      - tuta rudiliya [Maisha](event_name) [yetu](relation) ya [zamani](time) kiisha [vita](event_name)?
+      - kiisha [vita](event_name) tuta weza tena ishi kama [zamani](time)?
+      - tuta weza ishi tena kama [zamani](time) kiisha [vita](event_name)?
+
+  - intent: malalamiko_waelezeya_kwa_kesho_swa
+    examples: |
+      - tuta elezaka nini kwa [watoto wetu](relation) [kesho](date)?
+      - vizazi vyenye vina kuja tuta waelezeya nini?
+      - ni nini tuta waelezeya [watoto wetu](relation) [kesho](date)?
+      - [kesho](date) tuta ambiya nini vizavi vyenye vina kuja?
+
+  - intent: masomo_kawaida_swa
+    examples: |
+      - [watoto](person) wata weza soma [ndani](place_name) ya iyi hali?
+      - [watoto](person) wata soma kawaida [ndani](place_name) ya hii hali ya ukimbizi?
+      - [ndani](place_name) ya hali ya ukimbizi [watoto](person) wata sima vizuri?
+      - [watoto](person) wata sikiya mafunzo [ndani](place_name) ya hali hii?
+
+  - intent: malalamiko_vilonda_vya_ndani_swa
+    examples: |
+      - mna jua kama tuna [lumiya](sickness_type) [sana](general_frequency) [ndani](place_name) mwetu?
+      - mnajua kama tume jaa [vilonda](sickness_type) vya [ndani](place_name)?
+      - [vilonda](sickness_type) vya [ndani](place_name) vime tuvamiye mnajua hio?
+      - mnajua kama tuna [teseka](emotion_type) [sana](general_frequency) na [vilonda](sickness_type) vya [ndani](place_name)?
+
+  - intent: mashaka_swa
+    examples: |
+      - je [vilonda](sickness_type) vya [ndani](place_name) vina [pona](medical_type)?
+      - ni namna gani njo tuna weza ponya [vilonda](sickness_type) [vyetu](relation) vya [ndani](place_name)?
+      - mnajua gisi yaku ponya [vilonda](sickness_type) vya [ndani](place_name)?
+      - [vilonda](sickness_type) vya [ndani](place_name) vina [dawa](medical_name)?
+
+  - intent: mashaka_shuleni_kwa_watoto_wangu_swa
+    examples: |
+      - [watoto wetu](relation) wata kuwa [ndani](place_name) usalaa katika [shule](place_name)?
+      - usalama iko katika [shule](place_name) za [watoto](person)?
+      - tuna eza amini kama [shuleni](place_name) kwa [watoto](person) kuko usalama?
+      - mna uhakika kama [watoto](person) wata kuwa katika usalama [ndani](place_name) ya [shule](place_name)?
+
+  - intent: malalamiko_waalimu_tayarishwa_kupokeya_watoto_wakimbizi_wapi_swa
+    examples: |
+      - [Waalimu](person) wako tayari kupokeya [watoto wakimbizi](person)?
+      - [watoto wakimbizi](person) wata pokelewa bila shida [ndani](place_name) ya [shule](place_name)?
+      - [Waalimu](person) hawata bagua [watoto wakimbizi](person)?
+      - [watoto wakimbizi](person) wata pokelewa vizuri na [Waalimu](person)?
+
+  - intent: mashaka_waalimu_fundisha_watoto_wakimbizi_wapi_swa
+    examples: |
+      - kuna mafundisho juu ya kupona [vidonda](sickness_type) vya [ndani](place_name)?
+      - [vidonda](sickness_type) vya [ndani](place_name) [vita](event_name) weza pona kupitiya mafundisho ya [shule](place_name)?
+      - [waalimu](person) wali tayarishwa juu ya kuponya [vilonda](sickness_type) vya [ndani](place_name) vya [watoto](person)?
+      - [watoto](person) wata fundishwa kupona [vidonda](sickness_type) vya [ndani](place_name)?
+
+  - intent: malalamiko_askari_kwa_wakimbizi_wapi_swa
+    examples: |
+      - siye bote tukuwe wa [askari](army_name) ?
+      - sisi wote tukamate [silaha](device_type)?
+      - tugeuke wa [askari](army_name) siye bote?
+      - siye bote tukuwe wana [jeshi](army_name)?
+
+  - intent: malalamiko_maibobo_kwa_wakimbizi_wapi_swa
+    examples: |
+      - [watoto wetu](relation) hawata kuwa wa [maibobo](person)?
+      - tufanye je ili [watoto wetu](relation) waikue wa [maibobo](person)?
+      - tukinge je [watoto](person) ili wasi kuwa wa [maibobo](person)?
+      - ili [watoto wetu](relation) waikuwe wa [maibobo](person) tufanye je?
+
+  - intent: malalamiko_vitabu_kwa_watoto_wangu_swa
+    examples: |
+      - [watoto wetu](relation) wana onelewa kwa nini?
+      - kwa nini [watoto wetu](relation) wana onelewa hivi?
+      - juu ya nini ni [watoto wetu](relation) njo wana onelewa?
+      - [watoto wetu](relation) wana onelewa hivi kwa nini?
+
+  - intent: malalamiko_kuko_kwa_watoto_wangu_swa
+    examples: |
+      - kuko [vitabu](device_type) juu ya [Watoto](person)?
+      - kuna kuwa [vitabu](device_type) juu yaku fundisha [watoto](person)?
+      - watoto wata pata [vitabu](device_type)?
+      - [vitabu](device_type) vya [watoto](person) [vita](event_name) patikana?
+
+  - intent: malalamiko_masomo_i_kwa_watoto_wangu_swa
+    examples: |
+      - [masomo](place_name) ita saidiya [watoto](person) kusahau [vita](event_name) ?
+      - [watoto](person) wata sahau [vita](event_name) waki soma?
+      - [masomo](place_name) ita leta [watoto](person) kusahau [vita](event_name)?
+      - iyi via [watoto](person) wata isahau kupitiya [masomo](place_name)?
+
+  - intent: malalamiko_maisha_kwa_watoto_raha_swa
+    examples: |
+      - [watoto](person) wata pataka tena [raha](emotion_type) ya [Maisha](event_name) ?
+      - [watoto wetu](relation) watawezaka pata tena [raha](emotion_type) ya [Maisha](event_name)?
+      - kiisha [vita](event_name) [watoto wetu](relation) wata pataka tena [raha](emotion_type) ya [Maisha](event_name)?
+      - [watoto wetu](relation) wata pataka tena [raha](emotion_type) ya [Maisha](event_name) kiisha [vita](event_name)?
+
+  - intent: malalamiko_waambiya_nini_kwa_watoto_wangu_swa
+    examples: |
+      - tuta waambiya [watoto wetu](relation) nini ili tukiya?
+      - tuambiye [watoto](person) nini ina pitikana?
+      - [watoto](person) tutu waambiya nini ilitukiya?
+      - nini njo taumbiye [watoto](person) kuhusu [vita](event_name)?
+
+  - intent: masomo_weza_soma_swa
+    examples: |
+      - [watoto](person) wata weza [masomo](place_name) ?
+      - [ndani](place_name) ya hii hali [watoto](person) wata weza [masomo](place_name)?
+      - [masomo](place_name) ita wezekana kwa [watoto](person) [ndani](place_name) ya hali hii?
+      - [watoto](person) wako kabisa tayari kusoma?
+
+  - intent: malalamiko_waweze_masomo_swa
+    examples: |
+      - tuwa saidiye je ili waweze [masomo](place_name) ?
+      - tusaidiye je [watoto](person) ili waweze [masomo](place_name)?
+      - [watoto](person) ili waweze [masomo](place_name) tuwasaidiye  je?
+      - [masomo](place_name) ili [watoto](person) waiweze tuwa saidiye je?
+
+  - intent: malalamiko_pendaka_tena_maisha_swa
+    examples: |
+      - [watoto](person) hawa wata pendaka tena [Maisha](event_name)?
+      - [watoto](person) hawa wata kuwa tena na onjo ya [Maisha](event_name)?
+      - [watoto wetu](relation) wata penda [Maisha](event_name) kama [zamani](time)?
+      - hawa [watoto](person) wata penda tena [Maisha](event_name) gisi ilikua [zamamni](time)?
+
+  - intent: malalamiko_tuchangiye_kwa_amani_swa
+    examples: |
+      - tuchangiye je ku [Amani](definition_word) ?
+      - tuta changiya namna gani kwa [amani](definition_word)?
+      - tulete mchango gani kwa [amani](definition_word)?
+      - tuchangiye je ili [amani](definition_word) irudiye?
+
+  - intent: malalamiko_sherehe_kwa_wakimbizi_wapi_swa
+    examples: |
+      - [wakati](time) wa [sherehe](event_name) tuta kuwa na [raha](emotion_type) tena?
+      - tuta wezaka tena fanya [sherehe](event_name)?
+      - saa ya [sherehe](event_name) tuta kuwa na [furahi](emotion_type) kama [zamani](time)?
+      - tuna weza tena pata [furaha](emotion_type) kama [zamani](time) [wakati](time) wa ma [sherehe](event_name)?
+
+  - intent: malalamiko_kusherehe_mwaka_mpya_kwa_watoto_wangu_swa
+    examples: |
+      - [watoto wetu](relation) wata [sherehe](event_name) je [mwaka mpya](date)?
+      - kwa [mwaka mpya](date) ijayo [watoto wetu](relation) wata kuwa na [raha](emotion_type)?
+      - [kusherehe mwaka mpya](event_name) kwa [watoto wetu](relation) ita kuwa kama [zamani](time)?
+      - [watoto wetu](relation) wata pata [raha](emotion_type) yaku [sherehe](event_name) [mwaka mpya](date)?
+
+  - intent: malalamiko_kusherehe_mwaka_mpya_kwa_watoto_wangu_siku_mpya_swa
+    examples: |
+      - na weza aminiya [mtu](person) ni [mtu](person) [Goma](place_name)  ?
+      - nina weza aminiya kila [mtu](person) [Goma](place_name) ?
+      - nina weza tumainiya [watu](person) wote wa [Goma](place_name) ?
+      - tuna weza aminiyana na [watu](person) wa [Goma](place_name) ?
+
+  - intent: mashaka_yetu_elewa_nani_swa
+    examples: |
+      - [nani](person) njo ana weza elewa [mateso](emotion_type) [yetu](relation)?
+      - [mateso](emotion_type) [yetu](relation) [nani](person) njo ana weza ielewa?
+      - [nani](person) ana weza kutu elewa katika hii [mateso](emotion_type) [yetu](relation)?
+      - iyi [mateso](emotion_type) [yetu](relation) ni [nani](person) njo ana weza ielewa?
+
+  - intent: mashaka_tuta_wezaka_hurumiya_wanyarwanda_swa
+    examples: |
+      - tuta wezaka hurumiya [wanyarwanda](population_type) ?
+      - tuta pataka ngufu yaku hurumiya [wanyarwanda](population_type)?
+      - [wanyarwanda](population_type) tuta wezaka wa hurumiya?
+      - kiisha hiyi yote tuta wezaka hurumiya [wanyarwanda](population_type)?
+
+  - intent: mashaka_historia_kwa_kongo_swa
+    examples: |
+      - iyi ita tiliwa [ndani](place_name) ya historia ya inchi [kongo](country_name) ?
+      - haya yote yata andikiwa [ndani](place_name) ya historia ya inchi [kongo](country_name)?
+      - iyi yote gisi iko na pitika ita andikiwaka [ndani](place_name) ya historia ya iyi  [kongo](country_name)?
+      - [ndani](place_name) ya historia ya [kongo](country_name) wata ongeza amo iyi yenye tuko na pitiya?
+
+  - intent: mashaka_tunzwa_kwa_vilonda_vya_ndani_swa
+    examples: |
+      - namna gani tuta tunzwa [vilonda](sickness_type) vya [ndani](place_name) ?
+      - namna gani njo tuta weza tunziwa [vilonda](sickness_type) vya [ndani](place_name)?
+      - [vilonda](sickness_type) [vyetu](relation) vya [ndani](place_name) [vita](event_name) tunziwa je?
+      - ni namna gani njo tuta tunzwa [vilonda](sickness_type) [vyetu](relation) vya [ndani](place_name)?
+
+  - intent: mashaka_amani_kwa_masisi_swa
+    examples: |
+      - tuna weza amini kama Amani ita rudiyaka [kwetu](place_name) [masisi](place_name) ?
+      - amani ita rudiyaka [kwetu](place_name) [masisi](place_name)?
+      - [masisi](place_name) kuta kuwaka tena amani siku moya?
+      - amani ina wezekana tena siku moya [masisi](place_name)?
+
+  - intent: mashaka_sheriya_kwa_rwanda_swa
+    examples: |
+      - [sheriya](government_type) ita fanya [kazi](business_name) yake?
+      - [sheriya](government_type) ita tatua iyi hali?
+      - tuna weza kuamini kama [siku moja](date) [sheriya](government_type) ita fanya [kazi](business_name) yake?
+      - kuna uhakika kama [siku moja](date) [sheriya](government_type) ita fanya [kazi](business_name) yake?
+
+  - intent: mashaka_mahakama_kwa_rwanda_swa
+    examples: |
+      - ni [Mmahakama](government_type) gani njo iteza fata [rwanda](country_name) ?
+      - [wapi](place_name) njo [rwanda](country_name) ina weza kuwa pata hukumu?
+      - ni [mahakama](government_type) gani njo ina weza hukumu [rwanda](country_name)?
+      - tuke taka kufata [rwanda](country_name) tuende kwenye [mahakama](government_type) gani?
+
+  - intent: mashaka_amani_bila_vita_haiwezi_patikana_swa
+    examples: |
+      - kuna weza kuwa Amani bila [vita](event_name)?
+      - amani haiwezi patikana bila [vita](event_name)?
+      - bila [vita](event_name) amani haiwezi patikana?
+      - tuna weza pata amani bila kufanya [vita](event_name)?
+
+  - intent: mashaka_iyi_vita_ni_ya_nini_swa
+    examples: |
+      - [vita](event_name) iyi ni ya nini?
+      - ni [vita](event_name) ya nini iyi?
+      - ni ya nini iyi [vita](event_name)?
+      - nini njo ina tuma tuko mu [vita](event_name)?
+
+  - intent: mashaka_nani_ali_anzaka_vita_swa
+    examples: |
+      - ni [nani](person) njo ali [anzaka](time) iyi [vita](event_name)?
+      - iyi [vita](event_name) [nani](person) mwenye ali [ianzaka](time)?
+      - ni [nani](person) njo ali [anzisha](time) vta hii?
+      - [vita](event_name) hii anni njo ali [ianzaka](time)?
+
+  - intent: mashaka_watoto_wakimbizi_wapi_kwa_kesho_swa
+    examples: |
+      - [Maisha](event_name) ya [kesho](date) ya [watoto wetu](relation) ita okolewa kweli?
+      - [kesho](date) ya [watoto wetu](relation) ita okolewa?
+      - [Maisha](event_name) ya [kesho](date) ya [watoto wetu](relation) ita okolewa?
+      - [kesho](date) [Maisha](event_name) ya [watoto wetu](relation) ita kuwa je?
+
+  - intent: mashaka_wenswa_kwa_wakimbizi_wapi_swa
+    examples: |
+      - wenye Wana fanya [vita](event_name) kweli wata hukumiwa [siku moja](date)?
+      - [siku moja](date) wanao fanya [vita](event_name) wata hukumiwa?
+      - kuta kuwa hukumu [siku moja](date) kwa wale wanao fanya [vita](event_name)?
+      - wenye wana fanya [vita](event_name) kuna siku wata hukumiwa?
+
+  - intent: mashaka_duniya_mzima_kwa_kilio_swa
+    examples: |
+      - duniya mzima ina sikiya [kilio](event_name) [yetu](relation)?
+      - [kilio](event_name) [yetu](relation) ina sikika duniya mzima?
+      - duniya iko ana sikiya [kilio](event_name) chetu?
+      - ni duniya mzima njo iko na sikiya iyi [kilio](event_name) [yetu](relation)?
+
+  - intent: mashaka_umoja_wa_mataifa_kwa_teseka_swa
+    examples: |
+      - [umoja wa mataifa](government_name) ina juwa kama tuna [teseka](emotion_type)?
+      - [umoja wa mataifa](government_name) ina juwa [mateso](emotion_type) [yetu](relation)?
+      - kwenye [umoja wa mataifa](government_name) washa pata habari kama tuna [teseka](emotion_type)?
+      - iyi [mateso](emotion_type) tuko na pitiya ina julikana kwenye [umoja wa mataifa](government_name)?
+
+  - intent: mashaka_kuko_kwa_teseka_apa_swa
+    examples: |
+      - tuta lipa [apa](place_name) kwenye tuna ishi?
+      - [apa](place_name) kwenye tuna ishi tuta pa lipaka?
+      - bata tulipisha [apa](place_name) kwenye tuna ikala?
+      - [apa](place_name) kwenye tuna ikala kuko mwenye ata kuya tulipisha?
+
+  - intent: mashaka_nyumbani_kwa_goma_swa
+    examples: |
+      - nina weza sema [apa](place_name) [Goma](place_name) ni [kwetu](place_name)?
+      - [apa](place_name) [Goma](place_name) nako ni [kwetu](place_name)?
+      - naeza ona [apa](place_name) [Goma](place_name) kama [nyumbani](house_place)?
+      - ni [kwetu](place_name) [apa](place_name) [Goma](place_name)?
+
+  - intent: mashaka_apa_kuko_usalama_swa
+    examples: |
+      - tuta juwa je kama tuko [ndani](place_name) ya usalama?
+      - ni dalili gani njo zita tuonesha kama [apa](place_name) kuko usalama?
+      - [fasi](place_name) kwenye kuko usalama tuta pajuwa je?
+      - kama [apa](place_name) kuko usalama tuta juwa je?
+
+  - intent: kulala_na_watoto_wanazaliwa_swa
+    examples: |
+      - na [watoto](person) waku zaliwa Wana weza lala [ndani](place_name) ya [hema](house_place)?
+      - [watoto wanchanga](person) tulale nao [ndani](place_name) ya [hema](house_place)?
+      - [ndani](place_name) ya [hema](house_place) tuna weza lala na [watoto wetu wachanga](relation)?
+      - nime zaa kuna pita siku chache, mtoto huyo ata lala [ndani](place_name) ya [hema](house_place)?
+
+  - intent: kulala_na_wazehe_wakongwe_swa
+    examples: |
+      - [wazehe](person) piya tulale nao [ndani](place_name) ya [hema](house_place)?
+      - [ndani](place_name) ya [hema](house_place) tuna weza lala na [wazehe](person) [wetu](person)?
+      - [mama yangu](relation) ni mzee sana,naye ata lala [ndani](place_name) ya [hema](house_place)?
+      - na [wazehe wakongwe](person) tutale nao [ndani](place_name) ya [hema](house_place)?
+
+  - intent: kulala_na_wazazi_na_watoto_swa
+    examples: |
+      - [wazazi](person) wata lala na [watoto](person) [nafasi](place_name) moja?
+      - [watoto](person) wata lala na [wazazi](person) [nafasi](place_name) moya?
+      - ni [nafasi](place_name) moya njo [jamaa](person) muzima ita lala?
+      - [watoto](person) tuta lala nao [nafasi](place_name) moya?
+
+  - intent: mashaka_viongosi_nafasi_swa
+    examples: |
+      - [viongozi](government_type) wana weza tu achiya iyi [nafasi](place_name)?
+      - ina wezekana [viongozi](government_type) watu achiye iyi [nafasi](place_name)?
+      - iyi [nafasi](place_name) [viongozi](government_type) wana weza tuachiya ayo?
+      - baada ya [vita](event_name) tuna weza bakiya na iyi [nafasi](place_name) tuna ishi?
+
+  - intent: viwanja_chakula_kila_siku_ku_mustariswa_swa
+    examples: |
+      - ju tupate [chakula](food_type) kila [siku](general_frequency) tukue na enda fata [mustari](place_name)?
+      - ina omba kila [siku](general_frequency) tukue naenda fata [mustari](place_name) ju tukule?
+      - ju yaku kula, ita omba kila [siku](general_frequency) tukuwe na enda ku [mustari](place_name)?
+      - kila [siku](general_frequency) ita omba kuenda ku [mustari](place_name) ju ya kupata [chakula](food_type)?
+
+  - intent: mashaka_chakula_sawa_sawa_swa
+    examples: |
+      - tuta pata [chakula](food_type) sawa sawa?
+      - tuta pata [sisi wote](relation) [chakula](food_type) kwa [kiwanngo](measurement_type) moja?
+      - [chakula](food_type) yenye tuta pokeya ita kuwa sawa sawa?
+      - [wafazii](organization_type) wata tu gabuliya [chakula](food_type) sawa sawa?
+
+  - intent: chakula_chagua_nina_penda_swa
+    examples: |
+      - na weza [chagua](change_amount) [chakula](food_type) yenye Nina penda?
+      - naweza lomba [chakula](food_type) gisi nina penda?
+      - naweza kuwa na pata [chakula](food_type) selon hamu [yangu](relation)?
+      - naweza lomba [chakula](food_type) kufatana na hamu [yangu](relation)?
+
+  - intent: chakula_tuta_kuwa_na_shiba_swa
+    examples: |
+
+
+  - intent: chakula_hai_eneye_swa
+    examples: |
+      - kama [chakula](food_type) hai eneye naeza lomba yengine?
+      - niki pata [chakula](food_type) [kidogo](change_amount) naeza lomba yengine?
+      - kama [watoto](person) hawa shibe naweza lomba [chakula](food_type) yengine?
+      - naweza lomba [chakula](food_type) yengine kama sipate yaku tosha?
+
+  - intent: chakula_hii_swa
+    examples: |
+      - tuta kuwa na pata [chakula](food_type) yaku ivya?
+      - tuta kuwa na pokeya [chakula](food_type) yaku ivya?
+      - [wafazili](organization_type) wata kuwa na leta [chakula](food_type) yaku ivya?
+      - [chakula](food_type) yenye tuta kuwana pokeya ita kuwa yaku ivya?
+
+  - intent: maisha_onekana_kama_wa_maskini_sana_swa
+    examples: |
+      - tuna onekana kama wa [maskini](definition_word) sana?
+      - [watu](person) wana tuona wa [maskini](definition_word) sana?
+      - tuna fanana wa [maskini](definition_word) sana?
+      - waku tuona ana ona tuko wa [maskini](definition_word) sana?
+
+  - intent: maisha_hali_itadumu_siku_mingi_swa
+    examples: |
+      - hiyi hali ita dumu [siku mingi](general_frequency)?
+      - hali hiyi ita dumu [siku mingi](general_frequency)?
+      - tuta fanya [mda mrefu](general_frequency) [ndani](place_name) ya hii hali?
+      - tuta fanya [wakati mingi](general_frequency) katika hali hii?
+
+  - intent: matunzo_nyiragongo_kuko_vituo_ngapi_vya_afya_swa
+    examples: |
+      - kuna patikana [vituo](place_name) ngapi vya afya apa [nyiragongo](place_name)?
+      - kuko [vituo](place_name) ngapi vya afya apa [nyiragongo](place_name)?
+      - [nyiragongo](place_name) kuna [vituo](event_name) ngapi vya afya?
+      - ni [vituo](place_name) ngapi vya afya njo vina patikana apa [nyiragongo](place_name)?
+
+  - intent: maisha_yenye_nili_ishi_swa
+    examples: |
+      - [mambo](event_name) yenye nili ishi katika [vita](event_name) naweza elezeya nani?
+      - ni nani njo naweza ambiya [mambo](event_name) yenye nili ishi?
+      - nani njo naweza elezeya yenye nili ishi?
+      - yote yenye nili ishi katika [vita](event_name) naweza iambiya nani?
+
+  - intent: maisha_zala_katika_hali_nzuri_swa
+    examples: |
+      - tuta [zala](event_name) katika hali nzuri apa [nyiragongo](place_name)?
+      - [watoto wetu](relation) wata [zaliwa](event_name) [ndani](place_name) ya hali nzuri?
+      - [vituo](place_name) vya hapa vita tu ruhusu [tuzae](event_name) katika hali nzuri?
+      - tuta kuwa na [zala](event_name) katika hali nzuri [ndani](place_name) ya hiyi hali?
+
+  - intent: malalamiko_nani_ata_fatana_na_trauma_swa
+    examples: |
+      - nani ata fatana na [trauma](sickness_type) yetu?
+      - ni nani njo ata fatana na [trauma](sickness_type) [zetu](relation)?
+      - nani njo ata ji husisha na [trauma](sickness_type) [yetu](relation)?
+      - hii [trauma](sickness_type) tunayo, ni nani njo ata tu shurulikiya?
+
+  - intent: malalamiko_waganga_wata_tu_tunza_na_mapendo_swa
+    examples: |
+      - [waganga](person) wata tu tunza na mapendo ?
+      - ndani ya hali hiyi [waganga](person) wata tu tunza na mapendo?
+      - tuta tunziwa katika mapendo ndani ya hali hii?
+      - [waganga](person) wata tu tunza katika mapendo?
+
+  - intent: malalamiko_sheriya_zamu_kambi_swa
+    examples: |
+      - [sheriya](government_type) zamu [kambi](place_name) zina sema je?
+      - tuna weza juwa [sheriya](government_type) zamu [kambi](place_name)?
+      - [kambi](place_name) ina [sheriya](government_type) gani?
+      - ni zipi njo [sheriya](government_type) za [kambi](place_name)?
+
+  - intent: malalamiko_mungu_angali_swa
+    examples: |
+      - [mungu](definition_word) iko?
+      - [mungu](definition_word) angali?
+      - [mungu](definition_word) yupo tu?
+      - [mungu](definition_word) iko [wapi](place_name) sasa hivi?
+
+  - intent: malalamiko_mungu_lipiza_zambi_zetu_swa
+    examples: |
+      - [mungu](definition_word) ana tu lipiza [zambi](definition_word) zetu ?
+      - [mungu](definition_word) iko natu lipiza [zambi](definition_word) zetu ?
+      - iyi ni malipo ya [mungu](definition_word)?
+      - [mungu](definition_word) njo iko na tu lainiya juu ya [zambi](definition_word) zetu?
+
+  - intent: malalamiko_mungu_ngufu_yaku_omba_mungu_swa
+    examples: |
+      - nita pata ngufu yaku omba [mungu](definition_word) ?
+      - naweza tena pata tena [courage](definition_word) yaku omba [mungu](definition_word)?
+      - naweza tosha wapi tena ngufu yaku omba [mungu](definition_word)?
+      - ngufu yaku omba [mungu](definition_word) naweza itowa wapi?
+
+  - intent: mashaka_tunzwa_na_MSF_bure_swa
+    examples: |
+      - [shirika ya wanganga](organization_type) [MSF](organization_type) ita tu tunza bure mpaka [mwisho](time) ya [vita](event_name)?
+      - tuta tunziwa bure na [MSF](organization_type) mpaka [mwisho](time) ya [viita](event_name)?
+      - [MSF](organization_type) iko na nguvu yaku tu tunza bure mpaka [mwisho](time) ya [vita](event_name)?
+      - mpaka [mwisho](time) ya [vita](event_name) [MSF](organization_type) ita tu tunza bure?
+
+  - intent: mashaka_MSF_iko_na_banganga_bazuri_swa
+    examples: |
+      - [wanganga](doctor_type) wazuri njo wana tumika na [MSF](organization_type)?
+      - [MSF](organization_type) ina tumika na [wanganga](doctor_type) wazuri?
+      - [wanganga](doctor_type) wa [MSF](organization_type) ni wazuri?
+      - [MSF](organization_type) iko na tumika na [banganga](doctor_type) bazuri kweli?
+
+  - intent: mashaka_MSF_ita_tunza_na_malali_ya_kichwa_swa
+    examples: |
+      - [MSF](organization_type) ita tunza na [malali ya kichwa](sickness_type)?
+      - [malali ya kichwa](sickness_type) nayo ita tunzwa na [MSF](organization_type)?
+      - [malali ya kichwa](sickness_type) ni moja ya magonjwa zenye [MSF](organization_type) ita tunza bure?
+      - [MSF](organization_type) ita tunza [malali ya kichwa](sickness_type) kwa bure?
+
+  - intent: mashaka_juwa_wakimbizi_wa_uongo_swa
+    examples: |
+      - [PAM](organization_type) ita juwa [wakimbizi](person) wa uongo?
+      - [wakimbizi](person) wa uongo wata julikana na [PAM](organization_type)?
+      - [PAM](organization_type) ita tafuta kujuwa [wakimbizi](person) wa uongo?
+      - [wakati](time) waku gabula [chakula](food_type) [PAM](organization_type) ita juwa [wakimbizi](person) wa uongo?
+
+  - intent: mashaka_wakimbizi_wa_uongo_kati_yetu_swa
+    examples: |
+      - [PAM](organization_type) ita juwa je [wakimbizi](person) wa uongo kati [yetu](relation)?
+      - [wakimbizi](person) wa uongo kuwa kati [yetu](relation) [PAM](organization_type) ita wajua je?
+      - hawa [wakimbizi](person) wote wa uongo [PAM](organization_type) ita wagundua je?
+      - ni namna gani njo [PAM](organization_type) ita gundua [wakimbizi](person) wa uongo?
+
+  - intent: mashaka_wafanya_kazi_wa_PAM_wakorofi_swa
+    examples: |
+      - wafanya kazi wa [PAM](organization_type) wakorofi tuta wachongeya wapi?
+      - tuta chongeya wapi [wafanyakazi](person) wa [PAM](organization_type) waku fanya ukorofi?
+      - wakorofi wa [PAM](organization_type) tuta wachongeya kwa nani?
+      - wafanya kazi  wa [PAM](organization_type) wake fanya ukorofi tuambiye nani?
+
+  - intent: mashaka_mganga_wa_MSF_ana_ni_tunza_mubaya_nina_eza_end_kwa_nani_swa
+    examples: |
+      - kama [mganga](person) wa [MSF](organization_type) ake ni tunza vibaya nipeleke malalamiko kwa nani?
+      - ikiwa [mganga](person) wa [MSF](organization_type) ana ni kamata mubaya niende [wapi](place_name)?
+      - nike tunziwa mubaya na [muganga](person) wa [MSF](organization_type) niambiye nani?
+      - saa [mganga](person) wa [MSF](organization_type) ana ni tunza mubaya nina eza enda kwa nani?
+
+  - intent: mashaka_yangu_iko_na_maana_swa
+    examples: |
+      - maisha yangu iko na maana?
+      - maisha yangu ina maana gani?
+      - hapa sasa maisha ina mafaa gani?
+      - maisha yangu ina samani?
+
+  - intent: mashaka_siku_iyi_yote_ita_badilika_swa
+    examples: |
+
+
+  - intent: mashaka_viongozi_wata_tuambiyaka_nini_tena_ok_swa
+    examples: |
+      - [viongozi](government_type) [wetu](relation) wata tuambiyaka nini tena?
+      - kuna tena chenye [viongozi](government_type) [wetu](relation) wata weza tuambiya?
+      - [viongozi](government_type) wana weza tena tuambiya nini kulingana na haya yote?
+      - kwa kuona haya yote [viongozi](government_type) wata tuambiya nini?
+
+  - intent: mashaka_ita_jenga_sule_umu_swa
+    examples: |
+      - [UNICEF](organization_type) ita jenga [shule](place_name) umu mu [kambi](place_name) juu ya [watoto](person) ?
+      - mu [kambi](place_name) [UNICEF](organization_type) ita jengeya [watoto](person) [masomo](place_name)?
+      - ita wezekana [UNICEF](organization_type) ijengeye [watoto](person) wetu [shule](place_name) mu [kambi](place_name)?
+      - [masomo](place_name) ya [watoto](person) ita jengwa na [UNICEF](organization_type) ndani ya [kambi](place_name)?
+
+  - intent: mashaka_ita_patiya_watoto_vyombo_vya_shule_swa
+    examples: |
+      - [UNICEF](organization_type) ita patiya [watoto](person) [vyombo](list_name) vya [shule](place_name)?
+      - ina wezekaana [UNICEF](organization_type) ipatiye [watoto](person) wetu [vyombo](list_name) vya [shule](place_name)?
+      - [watoto](person) wetu wata pata [vyombo](list_name) vya [shule](place_name) kupitiya [UNICEF](organization_type)?
+      - [UNICEF](organization_type) ina weza patiya [watoto](person) wetu [vyombo](list_name) vya [shule](place_name)?
+
+  - intent: mashaka_tuta_pataka_tena_onjo_ya_maisha_swa
+    examples: |
+      - tuta pataka tena onjo ya maisha?
+      - onjo ya maisha tuta ipataka tena?
+      - tuta wezaka tena pata onjo ya maisha?
+      - maisha yetu ita kuwaka tena na onjo?
+
+  - intent: mashaka_watoto_kititi_hawaelewe_swa
+    examples: |
+      - [watoto](person) [wetu](relation) wata elewa iyi [shida](event_name)?
+      - [watoto](person) wana weza elewa iyi [shida](event_name)?
+      - iyi [shida](event_name) [watoto](person) [wetu](relation) wata ielewa?
+      - iyi [hali](event_name) [watoto](person) wata ielewa kwepesi?
+
+  - intent: mashaka_vita_ni_ya_muzuri_kwetu_kweli_swa
+    examples: |
+      - [vita](event_name) ni ya muzuri?
+      - [vita](event_name) hiyi ni ya muzuri?
+      - hiyi [vita](event_name) ni ya muzuri?
+      - [vita](event_name) ni nzuri?
+
+  - intent: mashaka_ju_ya_nini_hakuna_suhulisho_swa
+    examples: |
+      - [suluhisho](definition_word) haipatikane juu ya nini?
+      - juu ya nini [suluhisho](definition_word) haipatikane?
+      - [suluhisho](definition_word) juu ya nini haipatikane?
+      - juu ya nini [viongozi](government_type) hawapate [suluhisho](definition_word)?
+
+  - intent: mashaka_nasiye_tukamate_silaha_swa
+    examples: |
+      - nasiye tukamate [silaha](device_type) ?
+      - tukamate [silaha](device_type) na siye?
+      - siye bote tukamate [silaha](device_type)?
+      - [watu](person) wote wakamate [silaha](device_type)?
+
+  - intent: mashaka_juu_ya_nini_niko_na_pumua_mubaya_swa
+    examples: |
+      - juu ya nini Niko na [pumua mubaya](sickness_type)?
+      - nina [pumua vibaya](sickness_type) kwa nini?
+      - kwa nini nina [pumua mubaya](sickness_type)?
+      - niko na [pumua vibaya](sickness_type) [siku hizi](date) kwa nini?
+
+  - intent: mashaka_juu_ya_nini_usiku_silale_swa
+    examples: |
+      - juu ya nini [usiku](time) silale ?
+      - ju ya nini sipatake tena [busingizi](event_name)?
+      - kwa nini nina [kosa usingizi](sickness_type)?
+      - kwa nini [usiku silale](sickness_type)?
+
+  - intent: mashaka_kuna_Kongo_na_Rwanda_wata_ishi_kwa_Amani_swa
+    examples: |
+      - [Kongo](place_name) na [Rwanda](place_name) wata sikilizanaka [siku](date) moja?
+      - [Kongo](place_name) na [Rwanda](place_name) wata pataka [suluhisho](definition_word) [siku](date) moja?
+      - [siku](date) moja [Kongo](place_name) na [Rwanda](place_name) wata sikilizanaka?
+      - kuna [siku](date) [Kongo](place_name) kuta kuwa [amani](definition_word) kati ya [Kongo](place_name) na [Rwanda](place_name)?
+
+  - intent: mashaka_watoto_wetu_wata_komala_na_roho_muzuri_swa
+    examples: |
+      - [watoto](person) [wetu](relation) wata komala na [roho](organism_type) muzuri?
+      - [roho](organism_type) gani njo [watoto](person) [wetu](relation) wata komala nayo?
+      - katika [hali](event_name) hii [watoto](person) [wetu](relation) wata komala na [roho](organism_type) mzuri?
+      - [watoto](person) [wetu](relation) wana weza kuwa na [roho](organism_type) mzuri mwa iyi [hali](event_name)?
+
+  - intent: mashaka_watoto_wetu_hawata_geuka_wa_bandiya_swa
+    examples: |
+      - [watoto](person) [wetu](relation) hawata geuka wa [bandiya](person)?
+      - iyi [vita](event_name) haita fanya [watoto](person) [wetu](relation) kuwa ma [bandiya](person)?
+      - [watoto](person) [wetu](relation) hawata kuwa mabandiya ndani ya hii [vita](event_name)?
+      - iyi haita geuza [watoto](person) [wetu](relation) kuwa [mabandiya](person)?
+
+  - intent: mashaka_juu_ya_nini_bangi_iko_mu_kambi_swa
+    examples: |
+      - [bangi](drug_type) ina patikana je katika [kambi](place_name)?
+      - katika [kambi](place_name) juu ya nini kuko [bangi](drug_type)?
+      - juu ya nini [ndani](place_name) ya [kambi](place_name) kuna patikana [bangi](drug_type)?
+      - sababu gani [bangi](drug_type) ina patikana [ndani](place_name) ya [kambi](place_name)?
+
+  - intent: mashaka_tuta_sahawaka_iyi_mateso_ndani_swa
+    examples: |
+      - tuta sahawaka iyi mateso ?
+      - iyi mateso ita vutikanaka ndani ya [roho](organism_type) zetu?
+      - tuta wezaka sahau iyi mateso?
+      - [roho](organism_type) zetu zita wezaka sahau iyi mateso?
+
+  - intent: mashaka_tuta_pataka_amani_ya_roho_ndani_zetu_swa
+    examples: |
+      - tuna weza pata [Amani](definition_word) ya [roho](organism_type) [siku moja](date)?
+      - [amani](definition_word) ya [roho](organism_type) tuta ipataka [siku moja](date)?
+      - [amani](definition_word) ita rudiyaka ndani ya [roho](organism_type) zetu?
+      - tuta pataka [amani](definition_word) ya [roho](organism_type)?
+
+  - intent: mashaka_na_weza_kuwaminiya_tena_viongozi_swa
+    examples: |
+      - na weza kuwaminiya tena [viongozi](government_type) wa [Kongo](place_name)?
+      - tuna weza kuwa na sikiya tena maneno ya [viongozi](government_type) wa [Kongo](place_name)?
+      - [viongozi](government_type) wa [Kongo](place_name) tuna weza waaminiya?
+      - tuaminiye tena [viongozi](government_type) wa [Kongo](place_name)?
+
+  - intent: mashaka_kusema_kinyarwanda_apa_goma_ita_onekana_je_swa
+    examples: |
+      - sisi waku sema [kinyarwanda](language_type) [goma](place_name) wata tuona je?
+      - wata tuona je sisi waku sema [kinyarwanda](language_type) apa [goma](place_name)?
+      - [goma](place_name) sisi tunao ongeya [kinyarwanda](language_type) wata tuona je?
+      - wata tuona je [goma](place_name) sisi waku sema [kinyarwanda](language_type)?
+
+  - intent: mashaka_ubaguzi_wa_kabila_ina_toka_wapi_swa
+    examples: |
+      - ubaguzi wa [kabila](tribe_name) ina toka [wapi](place_name)?
+      - ubaguzi wa [kabila](tribe_name) ili anza je?
+      - ili tokeya [wapi](place_name) hii ubaguzi ya [kabila](tribe_name)?
+      - hii ubaguzi ya [ukabila](tribe_name) ilitokeya [wapi](place_name)?
+
+  - intent: mashaka_wanande_wata_itika_na_wa_hutu_bila_shida_apa_swa
+    examples: |
+      - [wanande](tribe_name) wata ikala na wa [Hutu](tribe_name) bila shida apa?
+      - ita wezekana [wanande](tribe_name) na wa [hutu](tribe_name) kuikala pamoja?
+      - kuikala pamoja kati ya [wanande](tribe_name) na [wahutu](tribe_name) ita wezekana?
+      - hakuta kuwa shida [wanande](tribe_name) na [wahitu](tribe_name) kuikala mapoja?
+
+  - intent: mashaka_watoto_wata_pendana_wetu_swa
+    examples: |
+      - [watoto](person) [wetu](relation) wata pendana ?
+      - ita wezekana [watoto](person) [wetu](relation) wapendane?
+      - [watoto](person) wata pendana ndani ya hii [hali](event_name)?
+      - [hali](event_name) hi ita ruhusu [watoto](person) [wetu](relation) wapendane?
+
+  - intent: mashaka_sisi_wakimbiziwenye_tuna_weza_kuwa_na_enda_tembeya_swa
+    examples: |
+      - sisi [wakimbizi](person) wenye tuko [nyiragongo](place_name) tuna weza kuwa na enda tembeya [goma](place_name)?
+      - [wakimbizi](person) ambao wako [nyiragongo](place_name) wana ruhusa yaku enda tembeya [goma](place_name)?
+      - tuna ruhusa yaku fika katika mji wa [goma](place_name)?
+      - [goma](place_name) wata itika [wakimbizi](person) wakue nafika kule?
+
+  - intent: mashaka_duniya_ita_badilikaka_siku_moya_swa
+    examples: |
+      - [siku moya](date) [duniya](place_name) ita badilikaka ?
+      - [duniya](place_name) [siku moya](date) ita badilikaka?
+      - kuko [siku](date) [duniya](place_name) ita badilikaka?
+      - [duniya](place_name) ina weza badilikaka [siku moya](date)?
+
+  - intent: wakati_tuta_wezaka_rudisha_wakati_yenye_tusha_poteza_swa
+    examples: |
+      - tuta wezaka Rudisha iyi [wakati](time) yenye tusha poteza?
+      - iyi [wakati](time) yenye tusha poteza tuta wezaka irudisha ?
+      - tusha poteza [wakati](time) mingi, tuta wezaka irudisha ?
+      - Ina wezekana kurudisha [wakati](time) yenye tusha poteza ?
+
+  - intent: kifo_hatuta_kufa_siye_bote_swa
+    examples: |
+      - Hatuta kufa siye bote?
+      - hatuta ishiya muiyi [vita](event_name)?
+      - Iyi [vita](event_name) haita tumaliza ?
+      - siye bita hatuta kufa muiyi [vita](event_name)?
+
+  - intent: mashaka_mwisho_ya_iyi_mateso_ni_nini_swa
+    examples: |
+      - [mwisho](time) ya iyi mateso ni nini?
+      - iyi mateso [mwisho](time) yayo ni nini ?
+      - iyi mateso ita ishiya [wapi](place_name)?
+      - ni nini njo [mwisho](time) ya iyi mateso ?
+
+  - intent: mashaka_tuna_weza_saidiyana_namna_gani_kati_yetu_swa
+    examples: |
+      - tuna weza saidiyana namna gani kati yetu?
+      - ni Namna gani njo tuna weza saidiyana kati yetu?
+      - ni msaada gani tuna weza pana wamoja kwa wengine?
+      - wamoja na wengine tuna weza saidiyana je?
+
+  - intent: ugonvi_tuta_epuka_ugonvi_namna_gani_swa
+    examples: |
+      - tuta epuka ugonvi namna gani?
+      - ni namna gani njo tuta epuka ugonvi?
+      - [kati](place_name) [yetu](relation) ugonvi tuta iepuka namna gani ?
+      - namna gani kuepuka ugonvi ?
+
+  - intent: masambo_jirani_wake_kosana_wata_samba_wapi_swa
+    examples: |
+      - wa [jirani](person) wake kosana wata samba kwa [nani](person)?
+      - ikiwa [wajirani](person) wana korogana wata enda samba [wapi](place_name)?
+      - [wajirani](person) wake korogana wata enda samba [wapi](place_name)?
+      - kwa [nani](person) njo [wajirani](person) wana weza enda samba kama wana kosana ?
+
+  - intent: mashaka_tuna_onekana_kama_watu_swa
+    examples: |
+      - tuna onekana kama [watu](person)?
+      - tungali na onekana kama [watu](person) ?
+      - [watu](person) [wengine](relation) wangali na tu ona kama [watu](person) kweli ?
+      - tuna onekana [watu](person) kama [wengine](relation) ?
+
+  - intent: mali_nani_ata_lipaka_mali_yetu_yenye_isha_poteya_swa
+    examples: |
+      - nani ata lipaka [mali](definition_word) [yetu](relation) yenye isha poteya?
+      - mwenye ata tulipaka mami yetu ni nani?
+      - nani njo ata lipaka [mali](definition_word) [yetu](relation) yenye tusha poteza ?
+      - tuta lipiwaka na nani [mali](definition_word) [yetu](relation) yenye tusha poteza ?
+
+  - intent: mashaka_wenye_wali_baki_masisi_wana_ishi_je_swa
+    examples: |
+      - [wenye](person) wali baki [masisi](place_name) wana ishi je?
+      - [benye](person) baki bakiyaka [masisi](place_name) biko na ishi je?
+      - [masisi](place_name) maisha iko je ?
+      - wana ishi je [wenye](person) wali bakiya [masisi](place_name) ?
+
+  - intent: mashaka_ju_ya_nini_ma_gombora_ziko_na_anguka_mu_ma_kambi_swa
+    examples: |
+      - mu ma [kambi](place_name) muko na anguka ma [gombora](device_type) kwa nini ?
+      - kwa nini ma [gombora](device_type) Zina anguka mu ma [kambi](place_name) ?
+      - [gombora](device_type) ziko na anguka mu ma [kambi](place_name) kwa nini ?
+      - ni kwa nini [gombora](device_type) zina anguka ndani ya [makambi](place_name) ?
+
+  - intent: mashaka_apa_kuko_wa_askari_waku_tosha_juya_ku_tu_chunga_sisi_wote_swa
+    examples: |
+      - apa kuko wa [askari](person) waku tosha juya ku tu chunga sisi [wote](relation)?
+      - [askari](person) wenye biko apa wata weza tu chunga?
+      - hawa wa [askari](person) wana tosha Akili yaku tulinda ?
+      - idadi ya hawa wa [askari](person) ina tosha kwaku tu lindiya usalama ?
+
+  - intent: vita_nasiye_tuende_fanya_vita_rwanda_swa
+    examples: |
+      - nasiye tuende fanya [vita](event_name) [Rwanda](place_name) ?
+      - tuende nasiye tatiza [Rwanda](place_name) ?
+      - tuende nasiye kupiga [wanyarwanda](population_type) ?
+      - tukamate nasiye silaha tuende pigana [Rwanda](place_name) ?
+
+  - intent: maswali_kazi_ya_croix_rouge_ni_nini_swa
+    examples: |
+      - kazi ya shirika ya musalaba mwekundu [croix rouge](organization_type) ni nini?
+      - tuna weza elewa je kazi ya [croix rouge](organization_type)?
+      - [croix rouge](organization_type) ina husika na nini?
+      - ni nini njo kazi ya [croix rouge](organization_type)?
+
+  - intent: wakimbizi_mukimbizi_ana_pashwa_kula_mara_ngapi_kwa_siku_swa
+    examples: |
+      - [mkimbizi](person) ana stahili [kula](meal_type) mara Ngapi kwa [siku](date)?
+      - ime semeka kama [mkimbizi](person) ana pashwa [kula](meal_type) mara ngapi kwa [siku](date) ?
+      - ni mara ngapi kwa [siku](date) njo [mkimbizi](person) ana stahili [kula](meal_type) ?
+      - [mkimbizi](person) ana haki yaku [kula](meal_type) mara Ngapi kwa [siku](date)?
+
+  - intent: watutsi_nina_weza_fanya_urafiki_na_mututsi_swa
+    examples: |
+      - Nina weza fanya urafiki na [mututsi](population_type) ?
+      - [mutusi](population_type) ana weza kuwa rafiki [wangu](relation) ?
+      - nina weza kuanzisha urafiki na [mutusi](population_type) ?
+      - urafiki ina wezekana kati ya [mutusi](population_type) na [mukongomani](population_type) ?
+
+  - intent: wakimbizi_watutsi_wote_ni_watu_wabaya_swa
+    examples: |
+      - [watutsi](population_type) wote ni watu wa [roho mbaya](emotion_type) ?
+      - [watutsi](population_type) wote ni wabaya?
+      - tuna weza sema kama [watutsi](population_type) wote wana [roho mbaya](emotion_type) ?
+      - [watutsi](population_type) wote ni wauwaji?
+
+  - intent: undugu_wa_nani_njo_wa_ndugu_yetu_apa_swa
+    examples: |
+      - [wandugu](population_type) [wetu](relation) ni [wanani](person) apa [goma](place_name) ?
+      - apa [goma](place_name) [wanani](person) njo wa [ndugu](relation) [wetu](relation) ?
+      - [nani](person) njo tuna weza ona kama ndugu [yetu](relation) apa [goma](place_name) ?
+      - [wanani](person) njo tukamate sawa [wandugu](relation) [wetu](relation) [apa](place_name)?
+
+  - intent: utulizo_ya_iyi_matata_yote_ita_fanyikaka_swa
+    examples: |
+      - tulizo ya iyi matata yote ita fanyikaka ?
+      - iyi matata yote ita wezaka kuwa na kitulizo?
+      - ni tulizo gani yenye ita fanyikaka Kisha iyi mateso yote?
+      - tulizo ita wezaka fanyika baada ya iyi mateso?
+
+  - intent: mashaka_reparation_ita_fanyikaka_swa
+    examples: |
+      - tuna weza tumaini kama kuta kuwaka [réparation](definition_word) ?
+      - [réparation](definition_word) ita fanyikaka baada ya haya yote?
+      - tuna weza chunga [réparation](definition_word) ya hii mateso yote?
+      - tu chunge [réparation](definition_word) ya iyi shida yote?
+
+  - intent: mashaka_tuna_weza_ona_iyi_vita_kama_genocide_swa
+    examples: |
+      - tuseme Iyi [vita](event_name) kama [génocide](event_name) kwa [wakongomani](population_type)?
+      - iyi yenye tuko na ishi ni [génocide](event_name)  ?
+      - iyi [vita](event_name) tuyi fananishe na [génocide](event_name) ?
+      - iyi [vita](event_name) ni [génocide](event_name) ?
+
+  - intent: mashaka_ni_wakati_gani_njo_tuna_weza_sema_vita_ni_genocide_swa
+    examples: |
+      - ni [wakati](time) gani njo tuna weza sema [vita](event_name) ni [génocide](event_name) ?
+      - [génocide](event_name) ni nini?
+      - ni [wakati](time) gani njo [vita](event_name) ina itwa [génocide](event_name) ?
+      - [génocide](event_name) ni [vita](event_name) ya namna gani ?
+
+  - intent: mashaka_kabila_tafauti_na_tu_aminiyane_swa
+    examples: |
+      - tuna weza kuwa [kabila](tribe_name) tafauti na tu [aminiyane](definition_word) ?
+      - tuna weza [aminiyana](definition_word) hata hatuko [kabila](tribe_name) moya ?
+      - watu wenye haiko wa [kabila](tribe_name) moya sana weza [aminiyana](definition_word) ?
+      - [uaminifu](definition_word) ita wezekana kati yetu ijapo tuko ma [kabila](tribe_name) tafauti ?
+
+  - intent: mashaka_o_swa
+    examples: |
+      - naweza pendewa na [mutu](person) mwenye haseme [lugha](language_type) yangu?
+      - [mutu](person) mwenye haseme [lugha](language_type) moya na moye ana weza ni penda ?
+      - tuna weza pendana inapo hatu seme [lugha](language_type) moya?
+      - mapendo ina wezekana kati ya [watu](person) wenye hawa seme [lugha](language_type) moya?
+
+  - intent: ziwa_kivu_iko_wapi_swa
+    examples: |
+      - [ziwa kivu](place_name) iko wapi?
+      - njiya yaku fika kwenye [ziwa Kivu](place_name) ni wapi ?
+      - [ziwa Kivu](place_name) iko ngambo gani?
+      - wapi njo kuko [ziwa Kivu](place_name) ?
+
+  - intent: muungano_tuna_weza_ungana_na_hatu_juwane_swa
+    examples: |
+      - hatu juwane, tuta ungana kweli ?
+      - tuta ungana ijapo hatu juwane kati yetu?
+      - tuta ungana je na hatu juwane?
+      - bila kujuwana tuta ungana ?
+
+  - intent: watu_wazuri_wangali_duniyani_swa
+    examples: |
+      - [watu](person) wazuri wangali [duniyani](place_name)?
+      - [watu](person) wazuri wana kuwaka tena [kuduniya](place_name) ?
+      - [watu](person) wazuri wangali na kuwaka ku iyi [duniya](place_name)?
+      - iyi [duniya](place_name) ingali na [watu](person) wazuri?
+
+  - intent: vita_juu_ya_nini_ina_kwaiya_swa
+    examples: |
+      - juu ya nini iyi [vita](event_name) ina [kawiya](time)?
+      - iyi [vita](event_name) ina fanya [siku mingi](general_frequency) ju ya nini?
+      - ni juu ya nini iyi [vita](event_name) ina [kawa](time)?
+      - iyi [vita](event_name) ina [kawiya](time) hivi kwa nini?
+
+  - intent: amani_ingali_nakuwaka_swa
+    examples: |
+      - [amani](definition_word) ingali na kuwaka?
+      - kuko [fasi](place_name) kwenye kuna kuwaka [amani](definition_word) ku [duniya](place_name)?
+      - [amani](definition_word) ina kuwaka [wapi](place_name) kuiyi [duniya](place_name)?
+      - [amani](definition_word) ina kuwaka ata [fasi](place_name) moya mu [kongo](place_name)?
+
+  - intent: hasira_ita_ishaka_kweli_swa
+    examples: |
+      - iyi [hasira](emotion_type) ita ishaka ?
+      - iyi [hasira](emotion_type) yenye niko na sikiya ita ishaka ?
+      - iyi [hasira](emotion_type) yenye niko nayo ina weza isha?
+      - ita ishaka iyi [hasira](emotion_type)?
+
+  - intent: mungu_mungu_ata_hurumiyaka_rwanda_swa
+    examples: |
+      - [mungu](definition_word) ana weza hurumiya [rwanda](place_name)?
+      - [rwanda](place_name) ina hurumiwaka na [mungu](definition_word) ?
+      - kweli [mungu](definition_word) ana weza hurumiya [rwanda](place_name)?
+      - [mungu](definition_word) ina wezekana ahurumiye [rwanda](place_name)?
+
+  - intent: sheriya_weza_lomba_bila_hasira_swa
+    examples: |
+      - bila [hasira](emotion_type) naweza lomba [sheriya](government_type)?
+      - [sheriya](government_type) ina wezekana bila [hasira](emotion_type)?
+      - naweza lomba [sheriya](government_type) bila [kisirani](emotion_type)?
+      - bila [kisirani](emotion_type) naweza lomba [sheriya](government_type)?
+
+  - intent: sheriya_ina_kuwaka_mu_kongo_kweli_swa
+    examples: |
+      - [sheriya](government_type) ina kuwaka mu [kongo](place_name)?
+      - [sheriya](government_type) ina kuwaka wapi mu [kongo](place_name)?
+      - tuta pataka [sheriya](government_type)?
+      - [sheriya](government_type) gani yenye ina kuwaka mu [kongo](place_name)?
+
+  - intent: sheriya_waziri_wa_sheriya_swa
+    examples: |
+      - [waziri](person) wa [sheriya](government_type) ni nani?
+      - nani njo [waziri](person) wa [sheriya](government_type)?
+      - [sheriya](government_type) ya [kongo](place_name) ina ongozwa na [Nani](person) ?
+      - [Nani](person) njo ana husika na mambo ya [sheriya](government_type)?
+
+  - intent: kibinadamu_waziri_wa_mambo_ya_kibinadamu_swa
+    examples: |
+
+
+  - intent: sheriya_waziri_wa_genre_famille_et_enfant_swa
+    examples: |
+
+
+  - intent: wanyarwanda_wana_pata_usingizi_kweli_swa
+    examples: |
+      - [wanyarwanda](population_type) wana pata [usingizi](event_name) kweli ?
+      - [wanyarwanda](population_type) wana [lalaka](event_name) kweli?
+      - [wanyarwanda](population_type) wana wezaka [lala](event_name) kweli?
+      - [wanyarwanda](population_type) wana [lalaka](event_name) kweli ?
+
+  - intent: kutoka_tutoke_mu_kongo_swa
+    examples: |
+      - tutoke mu [kongo](place_name) ?
+      - tuende mu [inchi](place_name) zengine?
+      - tutoke mu iyi [inchi](place_name)?
+      - tuende mbali na [kongo](place_name) ?
+
+  - intent: wanyarwanda_ita_lombaka_huruma_swa
+    examples: |
+      - [rwanda](place_name) ita tu lombaka [huruma](emotion_type) ?
+      - ita wezekanaka [rwanda](place_name) itulombe [huruma](emotion_type)?
+      - [rwanda](place_name) ita wezaka lomba [huruma](emotion_type) kwa [wakongomani](population_type)?
+      - [rwanda](place_name) ita lombaka [huruma](emotion_type) kuiyi mabaya yote?
+
+  - intent: watoto_watoto_wetu_wata_pendaka_wanyarwanda_swa
+    examples: |
+      - [watoto](person) [wetu](relation) wata pendaka [wanyarwanda](population_type) ?
+      - [wanyarwanda](population_type) wata pendewaka na [watoto wetu](person)?
+      - [watoto](person) [wetu](relation) wata pendaka [wanyarwanda](population_type) baada ya iyi mateso ?
+      - kulingana na iyi mateso, [watoto](person) [wetu](relation) wata pendaka [wanyarwanda](population_type) ?
+
+  - intent: wanyarwanda_wana_pendaka_watu_malize_swa
+    examples: |
+      - [wanyarwanda](population_type) wana pendaka [watu](person) malize ?
+      - [wanyarwanda](population_type) wana penda [watu](person) malize ?
+      - niya ya [wanyarwanda](population_type) niku tu maliza?
+      - [wanyarwanda](population_type) wana taka [watu](person) poteze ?
+
+  - intent: watoto_namna_gani_na_weza_kinga_watoto_wangu_swa
+    examples: |
+      - namna gani na weza kinga [watoto](person) wangu?
+      - [watoto](person) wangu ni wa kinge je?
+      - ni kinge je [watoto](person) wangu?
+      - [watoto](person) ni wa kinge je?
+
+  - intent: ndoa_zita_kuwa_na_wezekana_swa
+    examples: |
+      - [ndoa](event_name) zita [kuwa](time) na wezekana?
+      - tuta [kuwa](time) na lungisha [watoto](person) [wetu](relation)?
+      - ndani ya [kambi](place_name) kusherehe [ndoa](event_name) ita wezekana?
+      - [kusherehe](event_name) [ndoa](event_name) bita wezekana [ndani](place_name) ya [kambi](place_name)?
+
+  - intent: ndoa_nani_njo_ata_kuwa_na_tu_lungisha_swa
+    examples: |
+      - [nani](person) njo ata kuwa na tu [lungisha](event_name) ?
+      - ni [nani](person) njo ata kuwa na [lungisha](event_name) [wakimbizi](person)?
+      - kuko [mtu](person) waku [lungisha](event_name) [wakimbizi](person) ?
+      - [nani](person) njo Iko na ruhusa yaku tu [lungisha](event_name) ?
+
+  - intent: ndoa_tuta_kuwa_na_lungiya_wapi_swa
+    examples: |
+      - [tuta](person) kuwa na [fanyiya](event_name) ndoa wapi?
+      - ni [wapi](place_name) njo tukuwe na enda [lungiya](event_name)?
+      - kuko [fasi](place_name) yenye ili tayarishiwa juu ya [ndoa](event_name) za [wakimbizi](person)?
+      - ni [wapi](place_name) njo tuta kuwa na enda fanya [ndoa](event_name) sisi [wakimbizi](person)?
+
+  - intent: ndoa_vijana_wa_uku_wana_eza_owa_basika_betu_swa
+    examples: |
+      - [vijana](person) wa uku wana eza owa [basika](person) [betu](relation)?
+      - ba [kiyana](person) ya [goma](place_name) wana weza penda wa [musika](person) wa [rutsuru](place_name)?
+      - [bakiyana](person) ba [goma](place_name) wana eza owa [basika](person) baku toka [rutsuru](place_name)?
+      - [wasichana](person) waku toka [rutsuru](place_name) wana weza pendana na [wavijana](person) wa [goma](place_name) ?
+
+  - intent: maisha_uku_wana_eshimiyaka_watu_ya_kazi_swa
+    examples: |
+      - [uku](place_name) wana eshimiyaka watu waku watumikiya ?
+      - [tuke](person) tumikiyana [uku](place_name) wata tueshimiya ?
+      - [wata](person) tueshimiya [uku](place_name) tuke anza tumika ?
+      - [tuta](person) pata heshima tuke tumikiya [watu](person) [wauku](relation) ?
+
+  - intent: maisha_hawata_kuwa_natu_ogopa_uku_swa
+    examples: |
+      - [watu](person) hawata kuwa natu ogopa ?
+      - iyi [hali](event_name) [yetu](relation) haita kuwa na ogopesha [watu](person)?
+      - [watu](person) [wauku](relation) hawata kuwa natu ogopa ?
+      - [uku](place_name) [watu](person) hawata kuwa natu ogopa ?
+
+  - intent: maisha_watu_wa_uku_biko_na_umutu_swa
+    examples: |
+      - [watu](person) wa [uku](place_name) biko na [umutu](definition_word) ?
+      - [uku](place_name) [watu](person) biko na [umutu](definition_word) ?
+      - [watu](person) wana kuwaka na [umutu](definition_word) [uku](place_name) ?
+      - [watu](person) [wauku](relation) wana juwa [umutu](definition_word) ?
+
+  - intent: maisha_nafasi_gani_njo_hatuezi_enda_bila_ruhusa_swa
+    examples: |
+      - ni [nafasi](place_name) gani njo hatuezi enda bila ruhusa?
+      - [wapi](place_name) njo hatuezi enda bila ruhusa?
+      - ni [wapi](place_name) njo hatuezi fika bila ruhusa?
+      - [ngambo](place_name) gani njo hatuezi fika bila ruhusa?
+
+  - intent: mazuku_na_lac_vert_swa
+    examples: |
+      - [tuta](person) kuwa namna gani [fasi](place_name) kwenye kuko [mazuku](definition_word) apa [lac vert](place_name)?
+      - [tuta](person) ishi je pembeni ya [mazuku](definition_word)?
+      - [apa](place_name) mu [mazuku](definition_word) [tuta](person) ishi je?
+      - [apa](place_name) mu [lac vert](place_name) kuna yala [mazuku](definition_word), [tuta](person) ishi je?
+
+  - intent: mazuku_ni_nini_swa
+    examples: |
+      - [mazuku](definition_word) ni nini ?
+      - [mazuku](definition_word) ina fananishwa na nini?
+      - [mazuku](definition_word) njo [kitu](device_type) gani ?
+      - [mazuku](definition_word) tuna weza ifananisha na nini?
+
+  - intent: mazuku_ina_uwa_swa
+    examples: |
+      - [mazuku](definition_word) ina uwa?
+      - [mazuku](definition_word) ina uwaka [watu](person)?
+      - [watu](person) wana weza kufa na [mazuku](definition_word)?
+      - [mazuku](definition_word) ina weza maliza [maisha](event_name) ya [mtu](person)?
+
+  - intent: mazuku_tufanye_je_ju_tusi_kufe_na_mazuku_swa
+    examples: |
+      - tuji kinge Namna gani na [mazuku](definition_word)?
+      - tuna weza fanya je ju tuji kinge na [mazuku](definition_word)?
+      - ni ukingo gani njo ina tu faa ju ya [mazuku](definition_word)?
+      - tuna weza ji kinga je na [mazuku](definition_word)?
+
+  - intent: kambi_kwa_nini_wali_tu_tiya_kambi_ya_bulengo_mbali_na_watu_swa
+    examples: |
+      - kwa nini wali tu tiya [kambi](place_name) ya [bulengo](place_name) mbali na [watu](person)?
+      - juu ya nini tuko mbali na [watu](person) [uku](place_name) [bulengo](place_name)?
+      - tuko mbali na [watu](person) juu ya nini?
+      - tuko [bulengo](place_name) mbali na bengine juu ya nini?
+
+  - intent: kambi_kwa_nini_wali_tiya_kambi_fasi_na_mazuku_swa
+    examples: |
+      - kwa nini wali tiya [kambi](place_name) [fasi](place_name) ya [mazuku](definition_word)?
+      - apa kwenye tuko kuko [mazuku](definition_word) juu ya nini?
+      - bali tiya [kambi](place_name) katika [mazuku](definition_word) juu ya nini?
+      - [kambi](place_name) [yetu](relation) iko kati kati ya [mazuku](definition_word) juu ya nini?
+
+  - intent: mazuku_ake_kamatwa_na_mazuku_tunaeza_muokowa_je_swa
+    examples: |
+      - [mtu](person) ake kamatwa na [mazuku](definition_word) tunaeza muokowa je?
+      - [tuna](relation) weza okowa je [mutu](person) mwenye ame kamatwa na [mazuku](definition_word)?
+      - [mtu](person) waku kamatwa na [mazuku](definition_word) [tuna](relation) weza muokowa namna gani?
+      - [tuke](person) ona [mutu](person) ana kamatwa na [mazuku](definition_word) kumuokowa inaweza fanyika je?
+
+  - intent: mazuku_ita_ishaka_kweli_kambi_swa
+    examples: |
+      - [mazuku](definition_word) ina weza isha?
+      - [tuna](relation) weza tumaini kama [mazuku](definition_word) ita ishaka?
+      - apa kwenye tuko [mazuku](definition_word) ita ishaka?
+      - [mazuku](definition_word) ita weza isha ?
+
+  - intent: mazuku_mazuku_nayo_ni_moja_kati_ya_mali_za_kongo_swa
+    examples: |
+      - [mazuku](definition_word) nayo ni moja kati ya [mali](definition_word) za [kongo](place_name) ?
+      - [mazuku](definition_word) nayo ina weza hesabika kati ya [mali](definition_word) za [kongo](place_name)?
+      - katika [mali](definition_word) za [kongo](place_name) tuna weza [hesabiya](change_amount) [mazuku](definition_word)?
+      - [mazuku](definition_word) ina weza kamatiwa kama [mali](definition_word) ya [kongo](place_name)?
+
+  - intent: amani_oo_swa
+    examples: |
+      - [kuko](place_name) fasi kwenye [Amani](definition_word) ina kuwaka mu [kongo](place_name)?
+      - mu [kongo](place_name) wapi njo [Amani](definition_word) ina kuwaka ?
+      - [Amani](definition_word) ina kuwaka ata fasi moya mu [kongo](place_name)?
+      - [kongo](place_name) iko na fasi kwenye kuna kuwaka [Amani](definition_word)?
+
+  - intent: wakongomani_wanapendaka_wenzao_wenzao_swa
+    examples: |
+      - [wakongomani](population_type) wana pendaka wenzao?
+      - kuko mapendo kati ya [wakongomani](population_type)?
+      - [wakongomani](population_type) wana pendaka [wakongomani](population_type) wenzao?
+      - kuna mapendo kati ya [wakongomani](population_type) ?
+
+  - intent: duniya_ina_fika_mwisho_swa
+    examples: |
+
+
+  - intent: vijana_wa_binti_wa_goma_wata_penda_wa_vijana_wa_masisi_swa
+    examples: |
+      - [wasichana](person) [goma](place_name) wata penda [vijana](person) waku ona [masisi](place_name)?
+      - [vijana](person) waku toka [masisi](place_name) wana weza pendewa na wasika wa [goma](place_name)?
+      - [wasika](person) wa [goma](place_name) wata itika ku olewa na [vijana](person) wa [masisi](place_name)?
+      - ijapo [hali](event_name) ya wa [vijana wetu](relation), wana weza pendewa na wa [binti](person) wa [goma](place_name) na kandokando?
+
+  - intent: vijana_wa_binti_wa_goma_wata_penda_wa_vijana_wa_ructhuru_swa
+    examples: |
+      - wa [binti](person) wa [goma](place_name) wata itika wa [vijana](person) wa [ructhuru](place_name)?
+      - [goma](place_name) [wasichana](person) wana eza itika kuolewa na [vijana](person) wa [ructhuru](place_name)?
+      - ikiwa [kijana](person) ana toka [ructhuru](place_name) ana weaza owa musika wa [goma](place_name)?
+      - [wasika](person) wa [goma](place_name) wata itika ku olewa na [vijana](person) wa [ructhuru](place_name)?
+
+  - intent: kanisa_ita_tu_saidiya_je_swa
+    examples: |
+      - [kanisa](place_name) ita tu saidiya je?
+      - tuna weza chunga msaada gani toka kwa [kanisa](place_name)?
+      - [kanisa](place_name) ita tupatiya msaada gani?
+      - tuna weza ngoja nini kutoka kwa [kanisa](place_name)?
+
+  - intent: vijana_wa_goma_wata_pokeya_je_vijana_wenzao_wa_masisi_swa
+    examples: |
+      - [vijana](person) wa [goma](place_name) wata pokeya je [vijana](person) wenzao wa [masisi](place_name)?
+      - [vijana](person) wa [goma](place_name) wata karibisha [wenzao](person) namna gani?
+      - [vijana wakimbizi](person) wana weza chunga msaada ya namna gani kwa [wenzao](person) wa [goma](place_name)?
+      - [vijana wakimbizi](person) wata pokelewa je na [wenzao](person) wa [goma](place_name)?
+
+  - intent: vijana_kazi_ya_vijana_ita_kuwa_nini_mu_kambi_swa
+    examples: |
+      - [vijana](person) wata kuwa na fanya nini mu [kambi](place_name)
+      - mu [kambi](place_name) [kazi](business_name) ya [vijana](person) ita kuwa nini?
+      - [vijana](person) kazi yao ita kuwa nini ndani ya [kambi](place_name)?
+      - ndani ya [kambi](place_name) [vijana](person) wata kuwa na [kazi](business_name) gani?
+
+  - intent: wababa_kazi_ya_wa_baba_ni_nini_ndani_ya_kambi_swa
+    examples: |
+      - [wababa](person) wata kuwa na fanya nini mu [kambi](place_name)
+      - mu [kambi](place_name) [kazi](business_name) ya [wa baba](person) ita kuwa nini?
+      - [wababa](person) [kazi](business_name) yao ita kuwa nini ndani ya [kambi](place_name)?
+      - ndani ya [kambi](place_name) [wababa](person) wata kuwa na [kazi](business_name) gani?
+
+  - intent: radios_za_goma_zita_tu_teteya_swa
+    examples: |
+      - ma [radios](device_type) za [goma](place_name) Zita tu teteya ?
+      - [radios](device_type) za [goma](place_name) Zita kuwa nasi katika [muda huu](time) ?
+      - ma [radios](device_type) za [goma](place_name) Zita kuwa na pitisha malalamiko yetu?
+      - tuta kuwa na sikiya shida zetu kwenye ma [radios](device_type) za [goma](place_name)?
+
+  - intent: makabila_kuko_ubaguzi_ya_wale_ambao_wana_baguwana_juu_ya_ukabila_swa
+    examples: |
+      - [goma](place_name) kuko [ubaguzi](definition_word) ya [makabila](tribe_name)?
+      - [goma](place_name) nayo ina watu wa [ubaguzi](definition_word)?
+      - katika [mji](place_name) wa [goma](place_name) kuna wale ambao wana baguwana juu ya [ukabila](definition_word)?
+      - [makabila](tribe_name) za [goma](place_name) zina baguwanaka ?
+
+  - intent: makabila_kuko_kabila_gani_njo_ina_watu_wengi_swa
+    examples: |
+      - [kabila](tribe_name) gani njo ina [watu](person) wengi [goma](place_name) ?
+      - [goma](place_name) ni [kabila](tribe_name) gani njo Iko na [watu wengi](person) ?
+      - ni [kabila](tribe_name) gani njo ina kuwa na [watu wengi](person) pa [goma](place_name)?
+      - [watu wengi](person) wa [goma](place_name) wana kuwa katika [Kabila](tribe_name) gani?
+
+  - intent: maisha_watu_wote_wa_goma_wana_ishi_vizuri_swa
+    examples: |
+      - [watu wote](person) wa [goma](place_name) wana ishi vizuri?
+      - [wakaaji](person) wa [goma](place_name) wote ni [watajiri](business_name) ?
+      - [wakaaji](person) wote wa [goma](place_name) wame weza [maisha](event_name)?
+
+  - intent: uchumi_goma_ina_simama_swa
+    examples: |
+      - [goma](place_name) [uchumi](business_name) ina [simama](event_name)?
+      - [uchumi](business_name) ni nzuri pa [goma](place_name)?
+      - pa [goma](place_name)  [hali](event_name) ya [uchumi](business_name) iko sawa?
+      - [goma](place_name) ime ji panga vizuri ki [uchumi](business_name)?
+
+  - intent: vijana_wa_goma_wana_changiya_je_kwa_amani_swa
+    examples: |
+      - vijana wa [goma](place_name) wana changiya je kwa [amani](definition_word)?
+      - ni mchango gani njo vijana wa [goma](place_name) wata leta kwaku jenga [amani](definition_word)?
+      - vijana wa [goma](place_name) wana tarajiya kuleta mchango gani kwa [amani](definition_word)?
+      - ili [amani](definition_word) irudi, vijana wa [goma](place_name) wata changiya je?
+
+  - intent: usalama_hali_ya_usalama_iko_je_mjini_goma_swa
+    examples: |
+      - [hali](event_name) ya [usalama](definition_word) iko je [mjini goma](place_name) ?
+      - [hali](event_name) ya [usalama](definition_word) ni je pa [goma](place_name)?
+      - [mjini goma](place_name) [hali](event_name) ya [usalama](definition_word) iko je?
+      - vipi kuhusu [usalama](definition_word) pa [goma](place_name)?
+
+  - intent: haki_viongozi_wa_goma_wana_juwa_haki_zetu_swa
+    examples: |
+      - [viongozi wa goma](government_type) wana juwa [haki zetu](definition_word) ?
+      - [viongozi](government_type) wa [mjini goma](place_name) wale elewa [haki](definition_word) za [wakimbizi](person) ?
+      - [haki](definition_word) za [wakimbizi](person) zime julikana na [viongozi wa goma](government_type)?
+      - [haki](definition_word) za [wakimbizi](person) zina eleweka na [viongozi wa mjini wa goma](government_type)?
+
+  - intent: shamba_goma_hakuna_shamba_tuta_paishi_je_swa
+    examples: |
+      - [tuta](person) ishi je [ndani ya mji](place_name) yenye haina [shamba](place_name)?
+      - ikiwa hakuna [shamba](place_name) [goma](place_name), [wakimbizi](person) wata ishi je [huko](place_name) ?
+      - [walimaji](business_type) wa fanye nini [goma](place_name) kwenye hakuna [shamba](place_name)?
+      - fasi ambapo hakuna [shamba](place_name) tuta paishi je ?
+
+  - intent: ukarimu_watu_wa_goma_ni_wakarimu_swa
+    examples: |
+      - [watu wa goma](person) ni [wakarimu](definition_word) ?
+      - [watu wa goma](person) wanajuwa pana?
+      - [goma](place_name) [watu](person) ni wa [karimu](definition_word) ?
+      - [wakaaji wa goma](person) wana kuwa [wakarimu](definition_word)?
+
+  - intent: wakristu_wa_goma_wata_saidiya_wa_kristo_wenzao_swa
+    examples: |
+      - [wa Kristu wa goma](person) wata saidiya wa [kristu wenzao wakimbizi](person) ?
+      - [wakristu wa goma](person) wame andaa msaada juu [yetu](person)?
+      - [tuta](person) pata msaada kutoka kwa [wa kristu wa goma](person) ?
+      - [tuna](person) weza chunga msaada kutoka [kwa wakristu wenzetu wa goma](person)?
+
+  - intent: waislamu_wa_goma_wata_saidiya_wa_islamu_wenzao_swa
+    examples: |
+      - [wa islamu wa goma](person) wali andaa gisi wata saidiya [waislamu wakimbizi](person) ?
+      - [tuta](person) pata msaada kutoka kwa [wa islamu  wa goma](person) ?
+      - [tuna](person) weza chunga msaada kutoka kwa [wa islamu  wenzetu wa goma](person)?
+      - [goma](place_name) [wa islamu](person) wata saidiya [wenzao wakristu wakimbizi](relation)?
+
+  - intent: vita_iiyi_ita_ishaka_je_namna_gani_swa
+    examples: |
+      - iiyi [vita](event_name) ita [ishaka](time) je?
+      - [mwisho](time) ya iyi [vita](event_name) ita kuwaka je?
+      - iyi [vita](event_name) ita [ishaka](time) namna gani?
+      - ni je njo iyi [vita](event_name) ita [ishaka](time)
+
+  - intent: vita_iongozi_biko_naona_iyi_mauwaji_yote_swa
+    examples: |
+      - [viongozi](government_type) biko naona iyi [mauwaji](event_name) yote?
+      - [viongozi](government_type) wana onaka iyi [mauwaji](event_name) yote?
+      - iyi [mauwaji](event_name) yote [viongozi](government_type) biko naiona ?
+      - [Viongozi](government_type) wana onaka iyi [mauwaji](event_name) ?
+
+  - intent: vita_kongo_na_rwanda_naona_iyi_buchokozi_ili_anziyaka_wapi_swa
+    examples: |
+      - kati ya [kongo](place_name) na [rwanda](place_name) buchokozi ili [anziyaka](time) [wapi](place_name)?
+      - [buchokozi](event_name) ili [anziyaka](time) kwa nani kati ya [kongo](place_name) na [rwanda](place_name) ?
+      - [kongo](place_name) na [rwanda](place_name) nani njo ali [anzaka](time) buchokozi?
+      - [Nani](person) njo ali [anzaka](time) chokoza [mwengine](person) kati ya [kongo](place_name) na [rwanda](place_name)?
+
+  - intent: vita_ju_ya_nini_haki_za_binadamu_hazi_eshimike_swa
+    examples: |
+      - ju ya nini [haki](definition_word) za [binadamu](person) hazi eshimike?
+      - [haki](definition_word) za [binadamu](person) hazi eshimike sababu gani?
+      - kwa nini [haki](definition_word) za [binadamu](person) hazi eshimike?
+      - hakuna waku heshimu [haki](definition_word) za [binadamu](person) kwa nini?
+
+  - intent: chakula_iyi_chakula_ya_pam_haita_tu_gonjwesha_swa
+    examples: |
+      - iyi chakula ya [pam](organization_name) haita tu [gonjwesha](sickness_name) ?
+      - chakula yenye tuko na pata ku [pam](organization_name) haita tu [gonjwesha](sickness_name)?
+      - hatuta [gonjwa](sickness_name) tuke kula Iyi [chakula](food_name) ya [pam](organization_name)?
+      - [chakula](food_name) ya [pam](organization_name) haita tupatiya [magonjwa](sickness_name) ?
+
+  - intent: kuni_tuta_kuwa_na_tosha_kuni_wapi_swa
+    examples: |
+      - tuta kuwa na tosha [kuni](ingredient_name) [wapi](place_name)?
+      - tuta tosha ma [kuni](ingredient_name) [wapi](place_name)?
+      - makuni tuzi toshe [wapi](place_name) ?
+      - ni [wapi](place_name) njo tuta kuwa na tosha [kuni](ingredient_name) ?
+
+  - intent: kuni_kuwaka_makuni_swa
+    examples: |
+      - [goma](place_name) tuta pata [kuni](ingredient_name)?
+      - kuna patikana [makuni](ingredient_name) [goma](place_name)?
+      - tuna weza pata [kuni](ingredient_name) [goma](place_name)?
+      - [goma](place_name) tuna weza pata ako [kuni](ingredient_name)?
+
+  - intent: makala_mufuko_ni_ngapi_goma_swa
+    examples: |
+      - [mufuko ya makala](ingredient_name) ni [ngapi](change_amount) [goma](place_name)?
+      - [mufuko ya makali](ingredient_name) ni [ngapi](change_amount) [goma](place_name)?
+      - [goma](place_name) [mufuko ya makala](ingredient_name) ni [makuta ngapi](change_amount)?
+      - [mufuko ya makala](ingredient_name) iko na [uziwa ngapi](change_amount) [goma](place_name)?
+
+  - intent: makala_nyiragongo_swa
+    examples: |
+      - [nyiragongo](place_name) [mufuko ya makala](ingredient_name) ni [ngapi](change_amount)?
+      - [mufuko ya makala](ingredient_name) ni [ngapi](change_amount) [nyiragongo](place_name)?
+      - [mufuko ya makali](ingredient_name) ni [ngapi](change_amount) [nyiragongo](place_name)?
+      - [makala](ingredient_name) ni [ngapi](change_amount) [nyiragongo](place_name)?
+      - [mufuko ya makala](ingredient_name) iko na [uziwa ngapi](change_amount) [goma](place_name) na kandokando?
+
+  - intent: makala_mercycorps_swa
+    examples: |
+      - [mercycorps](organization_name) ita leta [mayi](ingredient_name) [siku](date) gani ?
+      - [mayi](ingredient_name) ya [mercycorps](organization_name) ita fika [siku](date) gani?
+      - [mercycorps](organization_name) ina panga kuleta [mayi](ingredient_name) [uku](place_name) [siku](date) gani?
+      - ni [wakati](time) gani Njo [mercycorps](organization_name) ita leteya [wakimbizi](person) [maji](ingredient_name)?
+
+  - intent: maisha_kambi_vizuri_siku_swa
+    examples: |
+      - tuta anza ishi mu [kambi](place_name) vizuri [siku](date) gani ?
+      - [siku](date) gani njo tuta anza ishi vizuri ndani ya [kambi](place_name)?
+      - [maisha](event_name) yamu [kambi](place_name) ita kuwa vizuri [siku](date) gani?
+      - [Maisha](event_name) ya [wakimbizi](person) ndani ya [kambi](place_name) ita kuwa muzuri [siku](date) gani?
+
+  - intent: maisha_tena_ku_mwanzo_swa
+    examples: |
+      - [nianziliye](time) [maisha](event_name) tena ku [mwanzo](time) ?
+      - [nianze](time) [maisha](event_name) tena?
+      - ni rudi nyuma?
+      - [nianziliye](time) [Maisha](event_name) upya ?
+
+  - intent: maisha_umaskini_watoto_wangu_wana_niona_je_swa
+    examples: |
+      - [nina](person) pana [Sura](ingredient_name) gani kwa [watoto wangu](person) ndani ya hii [umaskini](event_name) ?
+      - [watoto](person) wana niona je katika hii [hali](event_name)?
+      - muiyi [hali](event_name) ya [umaskini](event_name) [watoto](person) wana niona je ?
+      - namna gani [watoto wangu](person) wana niona ha pa katika [umaskini](event_name) ?
+
+  - intent: maisha_watoto_hawata_ni_chukiya_swa
+    examples: |
+      - [watoto wangu](relation) hawata ni [chukiya](emotion_type) juu ya [umaskini](event_name) huu?
+      - iyi [umaskini](event_name) haita zalisha chuki katika [watoto wangu](relation) ?
+      - [watoto wangu](relation) hawata [anza](time) ni [chukiya](emotion_type) sababu ya [umaskini](event_name)?
+      - [chuki](emotion_type) haita zalika ndani ya [watoto](person) kulingana na iyi [umaskini](event_name)?
+
+  - intent: maisha_i_watoto_endeleya_kuni_sikiya_katika_umaskini_swa
+    examples: |
+      - [watoto](person) wata [endeleya](time) kuni [sikiya](emotion_type) katika [umaskini](event_name) ?
+      - [watoto](person) wata ni [sikiya](emotion_type) tena ijapo niko [maskini](event_name)?
+      - [watoto wetu](relation) wata tu [sikiya](emotion_type) katika hii [hali](event_name) ya [umaskini](event_name)?
+      - [katika](time) hii [umaskini](event_name) [watoto](person) wata tu [heshimu](definition_word)?
+
+  - intent: maisha_iko_nguvu_goma_swa
+    examples: |
+      - juu ya nini [goma](place_name) maisha Iko nguvu ?
+      - [goma](place_name) [maisha](event_name) Iko ngufu sababu gani?
+      - [maisha](event_name) ya [goma](place_name) Iko nguvu juu ya nini?
+      - ni sababu gani njo [goma](place_name) [maisha](event_name) Iko nguvu hivyo ?
+
+  - intent: maisha_tuta_weza_maisha_ya_goma_bila_makazi_swa
+    examples: |
+      - [tuta](person) weza [maisha](event_name) ya [goma](place_name) bila [makazi](business_type) ?
+      - bila [makazi](business_type) tuta weza ishi [maisha](event_name) ya [goma](place_name)?
+      - [maisha](event_name) ya [goma](place_name) tuta iweza namna gani bila [makazi](business_type)?
+      - bila [kazi](business_type) iyi [maisha](event_name) ya [goma](place_name) tuta iweza?
+
+  - intent: maisha_wa_ume_wetu_hawata_geuka_wa_mwizi_swa
+    examples: |
+      - wa [ume](person) wetu hawata geuka wa [mwizi](person)?
+      - wa bwana wetu hawata kuwa wa [mwizi](person) huu ya [umaskini](event_name)?
+      - iyi [hali](event_name) haita geuza wa [ume](person) wetu kuwa wa [mwizi](person)?
+      - juu ya hali ya [umaskini](event_name) wa [ume](person) wetu hawata geuka wa [mwizi](person)?
+
+  - intent: maisha_tuta_choma_mwizi_gani_swa
+    examples: |
+      - juu ya nini hatuezi choma [mwizi](person)?
+      - tuke kamata [mwizi](person) juu ya nini tusi mu chome moto?
+      - wana katala tuchome wa [mwizi](person) sababu gani?
+      - ni sababu gani njo bana katalaka tuchome wa [mwizi](person)?
+
+  - intent: maisha_tuke_choma_mwizi_shida_ni_nini_swa
+    examples: |
+      - tuke choma [mwizi](person) [shida](definition_word) ni nini?
+      - nini ita tokeya tuke choma [mwizi](person)?
+      - [shida](definition_word) ni nini ikiwa tuna choma [mwizi](person)?
+      - kama tuna choma [mwizi](person) nini ita tokeya?
+
+  - intent: wizi_wata_isha_je_ndani_ya_kambi_swa
+    examples: |
+      - wa [mwizi](person) wata isha je ndani ya [kambi](place_name)?
+      - ivi Namna gani wa [mwizi](person) wata ishaka ndani ya [kambi](place_name)?
+      - wa [mwizi](person) wata malizikaka je ndani ya [kambi](place_name)?
+      - ndani ya [kambi](place_name) wa [mwizi](person) wata ishaka je?
+
+  - intent: usalama_bunduki_zina_fikaka_swa
+    examples: |
+      - [bunduki](device_name) Zina fikaka je mu [kambi](place_name) ?
+      - namna gani [bunduki](device_name) zina fikaka mu [kambi](place_name)?
+      - ina kuwa je [bunduki](device_name) zi fike ndani ya [kambi](place_name)?
+      - katika [kambi](place_name) [bunduki](device_name) zina fikaka amo namna gani?
+
+  - intent: usalama_bunduki_patiyaka_wakimbizi_swa
+    examples: |
+
+
+  - intent: muchoko_dawa_muchoko_gani_swa
+    examples: |
+
+
+  - intent: matunzo_kwa_nini_wakimbizi_wote_wana_tunziwa_tu_fasi_moja_swa
+    examples: |
+      - kwa nini [wakimbizi](person) wana [tunziwa](medicine_type) tu [nafasi moja](place_name)?
+      - juu ya nini [wakimbizi](person) wote wana [tunziwa](medicine_type) tu [fasi moja](place_name)?
+      - [wakimbizi](person) wote wana [tunziwa](medicine_type) wote [fasi moja](place_name) tu kwa nini?
+
+  - intent: watoto_watoto_masomo_suluhisho_swa
+    examples: |
+      - [watoto](person) wake shindwa [masomo](place_name) [suluhisho](definition_word) ina kuwa nini ?
+      - [tuta](person) fanya je [watoto](person) kama wana shindwa [masomo](place_name)?
+      - [suluhisho](definition_word) ita kuwa nini [watoto](person) [masomo](place_name) ike wa shinda?
+      - [masomo](place_name) Ike shinda [watoto](person) [suluhisho](definition_word) ita kuwa nini?
+
+  - intent: duniya_badilikaka_siku_moja_swa
+    examples: |
+      - [duniya](place_name) ita badilikaka [siku moja](date) ?
+      - [siku moja](date) kuta kuwaka mabadiliko?
+      - [duniya](place_name) ina eza badilika [siku moya](date)?
+      - [siku moja](date) [duniya](place_name) ina weza badilika kuwa vizuri?
+
+  - intent: mapendo_swa
+    examples: |
+      - [watu](person) wata pendanaka [siku moja](date)?
+      - [watu](person) wata pendanaka kama [zamani](time)?
+      - [mapendo](definition_word) ita rudiyaka kati ya [watu](person)?
+      - [kuta](time) kuwaka tena [mapendo](definition_word) kati ya [watu](person) [siku moja](date)?
+
+  - intent: nyimbo_zetu_zita_itikiwa_uku_ukui_swa
+    examples: |
+      - [tuko](place_name) na [ruhusa](definition_word) yaku imba [nyimbo](song_name) za [kwetu](house_name) [masisi](place_name)?
+      - [nyimbo](song_name) zetu zita itikiwa uku?
+      - [wakati](time) wa [sherehe](definition_word) tuna weza imba [nyimbo](song_name) za [kwetu](house_name) [masisi](place_name)?
+      - [nyimbo](song_name) za [masisi](place_name) Tuko na [ruhusa](definition_word) yaku zi imba [goma](place_name)?
+
+  - intent: michezo_kuwa_na_ruhusa_swa
+    examples: |
+
+
+  - intent: wafu_wenye_wali_kufa_na_wafu_wenye_wali_tuacha_swa
+    examples: |
+      - tuta kuwa na enda toleya heshima [wapi](place_name) kwa [wale](person) wenye [wali tuacha](definition_word)?
+      - wale wenye [wali tuacha](definition_word) ndani ya hii [vita](place_name) tuta kuwa na wa toleya heshima [wapi](place_name)?
+      - ni [wapi](place_name) njo tuta kuwa na toleya heshima kwa [wale](person) wenye [wali tuacha](definition_word) ndani ya [vita](event_name)?
+
+  - intent: wafu_tuna_weza_jenga_nafasi_ya_ukumbusho_swa
+    examples: |
+      - tuna weza ji [jengeya nafasi yaku kumbuka](place_name) [watu wetu](relation) ?
+      - tuna weza jenga [hema](place_name) ambayo ita kuwa [nafasi yaku kumbuka](place_name) [wenzetu](person) wenye [wali tuacha](definition_word)?
+      - [wenzetu](person) wenye [wali tuacha](definition_word) tuna weza wajengeya [nafasi ya kuwa kumbuka](place_name)?
+      - juu ya [kumbu kumbu ya wafu](place_name) wetu tuna weza jenga [hema](place_name) apa?
+
+  - intent: wafu_wali_fariki_tuwasahau_bila_kulipiza_kisasi_swa
+    examples: |
+      - wenye [wali fariki](definition_word) tuwasahau bila [kulipiza kisasi](definition_word) ?
+      - tuna wezaka sahau bila [kulipiza kisasi](definition_word) ?
+      - ina wezekana kusahau bila [kulipiza kisasi](definition_word) ?
+      - tuna sahawaka [wafu wetu](relation) kama hatu [lipize kisasi](definition_word) ?
+
+  - intent: kisasi_tuta_weza_lipiza_kisasi_je_swa
+    examples: |
+      - tuna weza [lipiza kisasi](definition_word) je?
+      - ni namna gani njo tuna weza [lipiza kisasi](definition_word)?
+      - tuna [lipiza kisasi](definition_word) namna gani?
+      - [kisasi](definition_word) tuna weza ilipiza je ?
+
+  - intent: kisasi_tuta_weza_lipiza_kisasi_je_na_kulipiza_kisasi_swa
+    examples: |
+      - [kulipiza kisasi](definition_word) ina weza poleza [myoyo](emotion_type) za [watoto wetu](relation)?
+      - [kulipiza kisasi](definition_word) ina weza ponyesha [kisirani](emotion_type) ya [watoto wetu](relation)?
+      - [kisasi](definition_word) ina weza tuliza [myoyo](emotion_type) zetu ba za [watoto wetu](relation)?
+      - juu yaku poleza [myoyo](emotion_type) za [watoto wetu](relation) si ni vizuri [kulipiza kisasi](definition_word)?
+
+  - intent: kisasi_komala_na_chuki_swa
+    examples: |
+      - [watoto wetu](relation) hawata [komala](definition_word) na [chuki](emotion_type) ?
+      - [watoto wetu](relation) hawata anza [chuki](emotion_type) wanyarwanda?
+      - [watoto](person) hawata kuwa na [Akili za maiwaji](definition_word)?
+      - [chuki](emotion_type) haita ji panda katika [myoyo](emotion_type) za [watoto wetu](relation)?
+
+  - intent: manunguniko_komala_na_chuki_na_mungu_taka_swa
+    examples: |
+      - nifanye je [wakati](time) nina sikiya nina taka ji uwa?
+      - nike sikiya nina taka ji uwa misa ye je?
+      - nikuwe na fanya nini ju nisi waze byaku ji uwa ?
+      - mawazo yaku taka kuji maliziya [maisha](event_name) ike fika, niji kamate je?
+
+  - intent: manunguniko_komala_na_chuki_na_mungu_taka_kuji_maliziya_maisha_swa
+    examples: |
+      - ju yaku ji [tuliza](emotion_type), nike jiuwa haezi kuwa sawa?
+      - haiezi kuwa sawa nike ji uwa ju nipunguze [maumivu](emotion_type) ya [moyo](organism_type)?
+      - [maumivu](emotion_type) ya [moyo](organism_type) siezi tu imaliza nike ji [maliziya maisha](event_name)?
+      - kuji [maliziya maisha](event_name) haiezi kuwa suluhisho kwa [maumivu](emotion_type) ya [moyo](organism_type) ?
+
+  - intent: manunguniko_chuki_hapendake_komala_na_chuki_na_mungu_taka_kuji_maliziya_maisha_swa
+    examples: |
+      - mungu ashaka [chuki](emotion_type) [wakongomani](population_name)?
+      - [wakongomani](population_name) hawa pendewake na mungu ?
+      - mungu haiko wa [bakongomani](population_name) ?
+      - tuna [chuki](emotion_type) liwa na mungu sisi [wakongomani](population_name)?
+
+  - intent: chakula_kupiganiya_chakula_swa
+    examples: |
+      - kwa nini tupiganiye [chakula](food_name) ?
+      - tuna piganiya [chakula](food_name) sababu gani?
+      - juu ya nini tuna piganiyaka [chakula](food_name)?
+      - kupiganiya ma [chakula](food_name) kwa nini tuna fanya hivyo ?
+
+  - intent: njala_haiwezi_fanya_watu_majambazi_swa
+    examples: |
+      - [njala](definition_word) haiwezi fanya [watu](person) majambazi ?
+      - [njala](definition_word) haiwezi tuma tuna geuka [mabandiya](person)?
+      - juu ya [njala](definition_word) hatuezi uwana ?
+      - hatuezi gauka [wajambazi](definition_word) huu ya [njala](definition_word)?
+
+  - intent: maisha_tufanye_majambazi_swa
+    examples: |
+      - [maisha](event_name) ike tushinda, tufanye je ?
+      - ikiwa [maisha](event_name) ina tushinda tuna fanya nini ?
+      - tuke shindwa [maisha](event_name) tufanya Namna gani?
+      - tufanye nini kama [maisha](event_name) ina tushinda?
+
+  - intent: watoto_wake_shindikana_tuta_liliya_nani_watoto_wana_tushinda_swa
+    examples: |
+      - [watoto](person) wake shindikana tuta liliya nani ?
+      - kama [watoto](person) wana tushinda tuliliye wapi?
+      - tuna weza liliya nani ikiwa [watoto](person) wana tushinda ?
+      - [watoto](person) wake shindikana tuta liliya nani ?
+
+  - intent: maisha_waume_wetu_wake_geuka_wabandiya_tuta_fanya_je_swa
+    examples: |
+      - [waume](person) [wetu](relation) wake geuka [wabandiya](person) tuta fanya je ?
+      - ikiwa [waume](person) [wetu](relation) wata geuka [wabandiya](person) tubi pokeye je?
+      - tuji kamate namna gani kama [waume](person) [wetu](relation) wana kuwa [mabandiya](person)?
+      - tufanye namna gani kama [waume](person) [wetu](relation) wana kuwa [wabandiya](person) ?
+
+  - intent: sheria_iko_na_ona_haya_ypte_jj_swa
+    examples: |
+      - [cpi](organization_name) iko na ona haya yote ?
+      - [cpi](organization_name) ina ona iyi [mambo](event_name) yote?
+      - [cpi](organization_name) iko na fatiliya haya yote?
+      - iyi [mambo](event_name) yote ina onekana kwa macho ya [cpi](organization_name)?
+
+  - intent: sheria_iko_na_ona_haya_ypte_jj_tua_swa
+    examples: |
+      - [cpi](organization_name) ina weza tusaisiya je ?
+      - [cpi](organization_name) ina weza tu leteya msaada gani?
+      - msaada ya namna gani njo tuna weza pata kutoka kwa [cpi](organization_name)?
+      - [cpi](organization_name) ina panaka msaada ya namna gani ?
+
+  - intent: vita_mm23_njo_kusema_nini_swa
+    examples: |
+      - [m23](organization_name) njo [kusema nini](definition_word)?
+      - [maana](definition_word) ya [m23](organization_name) ni nini?
+      - tuna eza elewa [m23](organization_name) namna gani?
+      - [m23](organization_name) ni nini?
+

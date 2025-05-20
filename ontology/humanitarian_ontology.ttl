@@ -1,0 +1,174 @@
+@prefix : <http://example.org/humanitarian#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Ontology Declaration
+<http://example.org/humanitarian> a owl:Ontology ;
+    rdfs:label "Humanitarian Assistance Ontology for North Kivu"@en ;
+    rdfs:label "Ontologie d'Assistance Humanitaire pour Nord-Kivu"@fr ;
+    rdfs:label "Ontolojia ya Musaada wa Kibinadamu kwa Nord-Kivu"@sw .
+
+# Main Classes
+:DisplacedPerson a owl:Class ;
+    rdfs:label "Displaced Person"@en ;
+    rdfs:label "Personne Déplacée"@fr ;
+    rdfs:label "Mtu Aliyeshambuliwa"@sw .
+
+:Camp a owl:Class ;
+    rdfs:label "Displacement Camp"@en ;
+    rdfs:label "Camp de Déplacement"@fr ;
+    rdfs:label "Kambi ya Wakimbizi"@sw .
+
+:HealthFacility a owl:Class ;
+    rdfs:label "Health Facility"@en ;
+    rdfs:label "Établissement de Santé"@fr ;
+    rdfs:label "Kituo cha Afya"@sw .
+
+:WaterSource a owl:Class ;
+    rdfs:label "Water Source"@en ;
+    rdfs:label "Source d'Eau"@fr ;
+    rdfs:label "Chanzo cha Maji"@sw .
+
+:FoodDistribution a owl:Class ;
+    rdfs:label "Food Distribution"@en ;
+    rdfs:label "Distribution de Nourriture"@fr ;
+    rdfs:label "Ugawaji wa Chakula"@sw .
+
+:SecurityIssue a owl:Class ;
+    rdfs:label "Security Issue"@en ;
+    rdfs:label "Problème de Sécurité"@fr ;
+    rdfs:label "Suala la Usalama"@sw .
+
+:AidRequest a owl:Class ;
+    rdfs:label "Aid Request"@en ;
+    rdfs:label "Demande d'Aide"@fr ;
+    rdfs:label "Ombi la Msaada"@sw .
+
+:EducationService a owl:Class ;
+    rdfs:label "Education Service"@en ;
+    rdfs:label "Service d'Éducation"@fr ;
+    rdfs:label "Huduma ya Elimu"@sw .
+
+:NGO a owl:Class ;
+    rdfs:label "Non-Governmental Organization"@en ;
+    rdfs:label "Organisation Non Gouvernementale"@fr ;
+    rdfs:label "Shirika Lisilo la Kiserikali"@sw .
+
+# Properties
+:hasLocation a owl:ObjectProperty ;
+    rdfs:label "has location"@en ;
+    rdfs:label "a pour emplacement"@fr ;
+    rdfs:label "ina mahali"@sw ;
+    rdfs:domain owl:Thing ;
+    rdfs:range :Location .
+
+:providesService a owl:ObjectProperty ;
+    rdfs:label "provides service"@en ;
+    rdfs:label "fournit un service"@fr ;
+    rdfs:label "inatoa huduma"@sw ;
+    rdfs:domain [ owl:unionOf (:NGO :HealthFacility :Camp) ] ;
+    rdfs:range [ owl:unionOf (:HealthService :FoodDistribution :WaterService :EducationService) ] .
+
+:hasStatus a owl:DatatypeProperty ;
+    rdfs:label "has status"@en ;
+    rdfs:label "a pour statut"@fr ;
+    rdfs:label "ina hali"@sw ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+:hasCapacity a owl:DatatypeProperty ;
+    rdfs:label "has capacity"@en ;
+    rdfs:label "a pour capacité"@fr ;
+    rdfs:label "ina uwezo"@sw ;
+    rdfs:domain [ owl:unionOf (:Camp :HealthFacility) ] ;
+    rdfs:range xsd:integer .
+
+:registeredAt a owl:ObjectProperty ;
+    rdfs:label "registered at"@en ;
+    rdfs:label "enregistré à"@fr ;
+    rdfs:label "imeandikishwa katika"@sw ;
+    rdfs:domain :DisplacedPerson ;
+    rdfs:range :Camp .
+
+:requestsAid a owl:ObjectProperty ;
+    rdfs:label "requests aid"@en ;
+    rdfs:label "demande de l'aide"@fr ;
+    rdfs:label "anaomba msaada"@sw ;
+    rdfs:domain :DisplacedPerson ;
+    rdfs:range :AidRequest .
+
+:hasNeed a owl:ObjectProperty ;
+    rdfs:label "has need"@en ;
+    rdfs:label "a besoin"@fr ;
+    rdfs:label "ana hitaji"@sw ;
+    rdfs:domain :DisplacedPerson ;
+    rdfs:range [ owl:unionOf (:FoodNeed :WaterNeed :HealthNeed :ShelterNeed :EducationNeed) ] .
+
+:treats a owl:ObjectProperty ;
+    rdfs:label "treats"@en ;
+    rdfs:label "traite"@fr ;
+    rdfs:label "inatunza"@sw ;
+    rdfs:domain :HealthFacility ;
+    rdfs:range :HealthNeed .
+
+# Subclasses for specific needs and services
+:FoodNeed a owl:Class ;
+    rdfs:subClassOf :Need .
+
+:WaterNeed a owl:Class ;
+    rdfs:subClassOf :Need .
+
+:HealthNeed a owl:Class ;
+    rdfs:subClassOf :Need .
+
+:ShelterNeed a owl:Class ;
+    rdfs:subClassOf :Need .
+
+:EducationNeed a owl:Class ;
+    rdfs:subClassOf :Need .
+
+:Need a owl:Class .
+
+:HealthService a owl:Class .
+:WaterService a owl:Class .
+
+# Location class and instances for North Kivu
+:Location a owl:Class .
+
+:Goma a :Location ;
+    rdfs:label "Goma"@en ;
+    rdfs:label "Goma"@fr ;
+    rdfs:label "Goma"@sw .
+
+:Nyiragongo a :Location ;
+    rdfs:label "Nyiragongo"@en ;
+    rdfs:label "Nyiragongo"@fr ;
+    rdfs:label "Nyiragongo"@sw .
+
+:Rutshuru a :Location ;
+    rdfs:label "Rutshuru"@en ;
+    rdfs:label "Rutshuru"@fr ;
+    rdfs:label "Rutshuru"@sw .
+
+:Bulengo a :Location ;
+    rdfs:label "Bulengo"@en ;
+    rdfs:label "Bulengo"@fr ;
+    rdfs:label "Bulengo"@sw .
+
+# Example instances
+:camp_bulengo a :Camp ;
+    :hasLocation :Bulengo ;
+    :hasCapacity 5000 ;
+    :hasStatus "Active" .
+
+:clinic_goma a :HealthFacility ;
+    :hasLocation :Goma ;
+    :providesService :vaccination_service ;
+    :hasCapacity 200 .
+
+:vaccination_service a :HealthService ;
+    rdfs:label "Vaccination Service"@en ;
+    rdfs:label "Service de Vaccination"@fr ;
+    rdfs:label "Huduma ya Chanjo"@sw . 

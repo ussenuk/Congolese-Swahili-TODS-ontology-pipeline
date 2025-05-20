@@ -1,0 +1,1768 @@
+@prefix humanitarian: <http://example.org/humanitarian#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+humanitarian:camp_CD61010204004CC a humanitarian:Camp ;
+    rdfs:label "MUSAWATO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 88 ;
+    humanitarian:hasLocation humanitarian:location_Goma ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.654571 ;
+    humanitarian:longitude 29.207173 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MUSAWATO"@fr .
+
+humanitarian:camp_CD61010204005CC a humanitarian:Camp ;
+    rdfs:label "EP NEEMA/DON BOSCO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 4202 ;
+    humanitarian:hasLocation humanitarian:location_Goma ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.648042 ;
+    humanitarian:longitude 29.229914 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "EP NEEMA/DON BOSCO"@fr .
+
+humanitarian:camp_CD61010205004SN a humanitarian:Camp ;
+    rdfs:label "LAC VERT/BULENGO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 25273 ;
+    humanitarian:hasLocation humanitarian:location_Goma ;
+    humanitarian:hasStatus "Site Spontané"@fr ;
+    humanitarian:latitude -1.622729 ;
+    humanitarian:longitude 29.120203 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "LAC VERT/BULENGO"@fr .
+
+humanitarian:camp_CD61010205005SN a humanitarian:Camp ;
+    rdfs:label "LUSHAGALA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_UNHCR,
+        "UNHCR"@fr ;
+    humanitarian:hasCapacity 13520 ;
+    humanitarian:hasLocation humanitarian:location_Goma ;
+    humanitarian:hasStatus "Site Spontané"@fr ;
+    humanitarian:latitude -1.602613 ;
+    humanitarian:longitude 29.128416 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "LUSHAGALA"@fr .
+
+humanitarian:camp_CD61010205008SN a humanitarian:Camp ;
+    rdfs:label "LAC VERT/8eme CEPAC MUGUNGA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 4561 ;
+    humanitarian:hasLocation humanitarian:location_Goma ;
+    humanitarian:hasStatus "Site Spontané"@fr ;
+    humanitarian:latitude -1.606967 ;
+    humanitarian:longitude 29.12917 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "LAC VERT/8eme CEPAC MUGUNGA"@fr .
+
+humanitarian:camp_CD61020102001CC a humanitarian:Camp ;
+    rdfs:label "8e CEPAC BUHAMA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 239 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.59749 ;
+    humanitarian:longitude 29.26636 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "8e CEPAC BUHAMA"@fr .
+
+humanitarian:camp_CD61020102002CC a humanitarian:Camp ;
+    rdfs:label "ADVENTISTE KANYARYUCHINYA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 225 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.608731 ;
+    humanitarian:longitude 29.258963 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "ADVENTISTE KANYARYUCHINYA"@fr .
+
+humanitarian:camp_CD61020102003CC a humanitarian:Camp ;
+    rdfs:label "ADVENTISTE KASENYI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 61 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.609126 ;
+    humanitarian:longitude 29.258741 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "ADVENTISTE KASENYI"@fr .
+
+humanitarian:camp_CD61020102004CC a humanitarian:Camp ;
+    rdfs:label "ASSAMBLE 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 172 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61006 ;
+    humanitarian:longitude 29.258678 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "ASSAMBLE 1"@fr .
+
+humanitarian:camp_CD61020102006CC a humanitarian:Camp ;
+    rdfs:label "BUVIRA BUREAU"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 112 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61633 ;
+    humanitarian:longitude 29.25621 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "BUVIRA BUREAU"@fr .
+
+humanitarian:camp_CD61020102007CC a humanitarian:Camp ;
+    rdfs:label "KIGURI 2"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 66 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61578 ;
+    humanitarian:longitude 29.25631 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "KIGURI 2"@fr .
+
+humanitarian:camp_CD61020102008CC a humanitarian:Camp ;
+    rdfs:label "KIGURI 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 341 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61422 ;
+    humanitarian:longitude 29.25669 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "KIGURI 1"@fr .
+
+humanitarian:camp_CD61020102009CC a humanitarian:Camp ;
+    rdfs:label "SAINT JEAN VUBIRO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 103 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.609568 ;
+    humanitarian:longitude 29.259604 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "SAINT JEAN VUBIRO"@fr .
+
+humanitarian:camp_CD61020102010CC a humanitarian:Camp ;
+    rdfs:label "SIKATENDA 2"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 6 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.611579 ;
+    humanitarian:longitude 29.259062 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "SIKATENDA 2"@fr .
+
+humanitarian:camp_CD61020102011CC a humanitarian:Camp ;
+    rdfs:label "EP KANYARUCHINYA 2"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 336 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61751 ;
+    humanitarian:longitude 29.25582 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "EP KANYARUCHINYA 2"@fr .
+
+humanitarian:camp_CD61020102012CC a humanitarian:Camp ;
+    rdfs:label "EP KANYARUCHINYA EXTERIEUR"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 377 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61915 ;
+    humanitarian:longitude 29.25625 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "EP KANYARUCHINYA EXTERIEUR"@fr .
+
+humanitarian:camp_CD61020102013CC a humanitarian:Camp ;
+    rdfs:label "EP MBOGA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 617 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.612904 ;
+    humanitarian:longitude 29.257633 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "EP MBOGA"@fr .
+
+humanitarian:camp_CD61020102014CC a humanitarian:Camp ;
+    rdfs:label "EP MBOGA EXTERIEUR"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 63 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61246 ;
+    humanitarian:longitude 29.25742 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "EP MBOGA EXTERIEUR"@fr .
+
+humanitarian:camp_CD61020102015SN a humanitarian:Camp ;
+    rdfs:label "HANGAR BUVIRA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 2 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Site Spontané"@fr ;
+    humanitarian:latitude -1.611934 ;
+    humanitarian:longitude 29.262079 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "HANGAR BUVIRA"@fr .
+
+humanitarian:camp_CD61020102016SN a humanitarian:Camp ;
+    rdfs:label "HANGAR SINISTRE KANYARUCHINYA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 70 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Site Spontané"@fr ;
+    humanitarian:latitude -1.618606 ;
+    humanitarian:longitude 29.256884 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "HANGAR SINISTRE KANYARUCHINYA"@fr .
+
+humanitarian:camp_CD61020102017SN a humanitarian:Camp ;
+    rdfs:label "BUVIRA MAKAO II"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 614 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Site Spontané"@fr ;
+    humanitarian:latitude -1.611031 ;
+    humanitarian:longitude 29.261866 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "BUVIRA MAKAO II"@fr .
+
+humanitarian:camp_CD61020102019CC a humanitarian:Camp ;
+    rdfs:label "CEBCE KANYARUCHINYA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 115 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.612587 ;
+    humanitarian:longitude 29.258118 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "CEBCE KANYARUCHINYA"@fr .
+
+humanitarian:camp_CD61020102020CC a humanitarian:Camp ;
+    rdfs:label "DOS D ANE 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 136 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.610046 ;
+    humanitarian:longitude 29.258245 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "DOS D ANE 1"@fr .
+
+humanitarian:camp_CD61020102021CC a humanitarian:Camp ;
+    rdfs:label "EP BUDJARI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 1321 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.607893 ;
+    humanitarian:longitude 29.262688 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "EP BUDJARI"@fr .
+
+humanitarian:camp_CD61020103001SP a humanitarian:Camp ;
+    rdfs:label "BUSHAGARA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 5857 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.615499 ;
+    humanitarian:longitude 29.238506 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "BUSHAGARA"@fr .
+
+humanitarian:camp_CD61020103003CC a humanitarian:Camp ;
+    rdfs:label "8e CEPAC ARARATI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 143 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.631106 ;
+    humanitarian:longitude 29.2523 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "8e CEPAC ARARATI"@fr .
+
+humanitarian:camp_CD61020103004CC a humanitarian:Camp ;
+    rdfs:label "8e CEPAC BETHANIE"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 290 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.615782 ;
+    humanitarian:longitude 29.256028 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "8e CEPAC BETHANIE"@fr .
+
+humanitarian:camp_CD61020103005CC a humanitarian:Camp ;
+    rdfs:label "8e CEPAC MORIYA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 80 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.609285 ;
+    humanitarian:longitude 29.259722 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "8e CEPAC MORIYA"@fr .
+
+humanitarian:camp_CD61020103006CC a humanitarian:Camp ;
+    rdfs:label "AFDI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 223 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.612666 ;
+    humanitarian:longitude 29.254858 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "AFDI"@fr .
+
+humanitarian:camp_CD61020103007CC a humanitarian:Camp ;
+    rdfs:label "SHIRIKA CATHOLIQUE JANGA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 212 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.617623 ;
+    humanitarian:longitude 29.254969 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "SHIRIKA CATHOLIQUE JANGA"@fr .
+
+humanitarian:camp_CD61020103008CC a humanitarian:Camp ;
+    rdfs:label "STADE KIBATI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 330 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.613867 ;
+    humanitarian:longitude 29.253878 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "STADE KIBATI"@fr .
+
+humanitarian:camp_CD61020103009CC a humanitarian:Camp ;
+    rdfs:label "UEBCO KIBATI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 314 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.589392 ;
+    humanitarian:longitude 29.262678 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "UEBCO KIBATI"@fr .
+
+humanitarian:camp_CD61020103010CC a humanitarian:Camp ;
+    rdfs:label "CEBCA KANYARUCHINYA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 102 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.611162 ;
+    humanitarian:longitude 29.255098 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "CEBCA KANYARUCHINYA"@fr .
+
+humanitarian:camp_CD61020103011CC a humanitarian:Camp ;
+    rdfs:label "NEO APOSTOLIQUE"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 516 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.607545 ;
+    humanitarian:longitude 29.2598 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "NEO APOSTOLIQUE"@fr .
+
+humanitarian:camp_CD61020103012CC a humanitarian:Camp ;
+    rdfs:label "SHIRIKA CATHOLIC 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 67 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.606758 ;
+    humanitarian:longitude 29.259972 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "SHIRIKA CATHOLIC 1"@fr .
+
+humanitarian:camp_CD61020103013CC a humanitarian:Camp ;
+    rdfs:label "SHIRIKA CATHOLIC 2"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 127 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.607023 ;
+    humanitarian:longitude 29.259848 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "SHIRIKA CATHOLIC 2"@fr .
+
+humanitarian:camp_CD61020103014CC a humanitarian:Camp ;
+    rdfs:label "SHIRIKA CATHOLIC BUGARURA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 2 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.63051 ;
+    humanitarian:longitude 29.25102 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "SHIRIKA CATHOLIC BUGARURA"@fr .
+
+humanitarian:camp_CD61020103015CC a humanitarian:Camp ;
+    rdfs:label "SHIRIKA CATHOLIC KIGURI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 39 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61698 ;
+    humanitarian:longitude 29.25707 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "SHIRIKA CATHOLIC KIGURI"@fr .
+
+humanitarian:camp_CD61020103016CC a humanitarian:Camp ;
+    rdfs:label "SHIRIKA CATHOLIC MUDJOGA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 123 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.590623 ;
+    humanitarian:longitude 29.261164 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "SHIRIKA CATHOLIC MUDJOGA"@fr .
+
+humanitarian:camp_CD61020103017CC a humanitarian:Camp ;
+    rdfs:label "METHODISTE 3"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 272 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.64931 ;
+    humanitarian:longitude 29.22964 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "METHODISTE 3"@fr .
+
+humanitarian:camp_CD61020103018SN a humanitarian:Camp ;
+    rdfs:label "MONUSCO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 628 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Site Spontané"@fr ;
+    humanitarian:latitude -1.622513 ;
+    humanitarian:longitude 29.254164 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MONUSCO"@fr .
+
+humanitarian:camp_CD61020103019CC a humanitarian:Camp ;
+    rdfs:label "MUGERWA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 299 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.59296 ;
+    humanitarian:longitude 29.26237 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MUGERWA"@fr .
+
+humanitarian:camp_CD61020103020CC a humanitarian:Camp ;
+    rdfs:label "MWANZA 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 318 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.607841 ;
+    humanitarian:longitude 29.258836 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MWANZA 1"@fr .
+
+humanitarian:camp_CD61020103021CC a humanitarian:Camp ;
+    rdfs:label "MWANZA 2"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 56 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61551 ;
+    humanitarian:longitude 29.25636 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MWANZA 2"@fr .
+
+humanitarian:camp_CD61020103022CC a humanitarian:Camp ;
+    rdfs:label "MWANZA 3"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 197 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.6091 ;
+    humanitarian:longitude 29.25867 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MWANZA 3"@fr .
+
+humanitarian:camp_CD61020103023CC a humanitarian:Camp ;
+    rdfs:label "LCDECO 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 38 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.60814 ;
+    humanitarian:longitude 29.25794 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "LCDECO 1"@fr .
+
+humanitarian:camp_CD61020103025CC a humanitarian:Camp ;
+    rdfs:label "MAISON KAGURI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 9 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.6099 ;
+    humanitarian:longitude 29.25836 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MAISON KAGURI"@fr .
+
+humanitarian:camp_CD61020103026CC a humanitarian:Camp ;
+    rdfs:label "MAMAN FIFI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 509 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.599201 ;
+    humanitarian:longitude 29.260697 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MAMAN FIFI"@fr .
+
+humanitarian:camp_CD61020103027CC a humanitarian:Camp ;
+    rdfs:label "METHODISTE 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 17 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61265 ;
+    humanitarian:longitude 29.25649 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "METHODISTE 1"@fr .
+
+humanitarian:camp_CD61020103028CC a humanitarian:Camp ;
+    rdfs:label "METHODISTE 2"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 48 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61113 ;
+    humanitarian:longitude 29.26066 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "METHODISTE 2"@fr .
+
+humanitarian:camp_CD61020103030CC a humanitarian:Camp ;
+    rdfs:label "HEMURA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 60 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61113 ;
+    humanitarian:longitude 29.25776 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "HEMURA"@fr .
+
+humanitarian:camp_CD61020103031CC a humanitarian:Camp ;
+    rdfs:label "HOREBU 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 70 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.60978 ;
+    humanitarian:longitude 29.25666 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "HOREBU 1"@fr .
+
+humanitarian:camp_CD61020103032CC a humanitarian:Camp ;
+    rdfs:label "HOREBU 2"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 37 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61027 ;
+    humanitarian:longitude 29.25743 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "HOREBU 2"@fr .
+
+humanitarian:camp_CD61020103033CC a humanitarian:Camp ;
+    rdfs:label "JANGA EDINGO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 174 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61677 ;
+    humanitarian:longitude 29.25584 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "JANGA EDINGO"@fr .
+
+humanitarian:camp_CD61020103035CC a humanitarian:Camp ;
+    rdfs:label "CS KIBATI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 1207 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.58696 ;
+    humanitarian:longitude 29.268011 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "CS KIBATI"@fr .
+
+humanitarian:camp_CD61020103037CC a humanitarian:Camp ;
+    rdfs:label "EGLISE NAZAREEN"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 31 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61465 ;
+    humanitarian:longitude 29.25635 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "EGLISE NAZAREEN"@fr .
+
+humanitarian:camp_CD61020103038CC a humanitarian:Camp ;
+    rdfs:label "EP KIBAYA ANTENNE"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 305 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.58744 ;
+    humanitarian:longitude 29.26825 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "EP KIBAYA ANTENNE"@fr .
+
+humanitarian:camp_CD61020103039CC a humanitarian:Camp ;
+    rdfs:label "EP NYAKABANDA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 1498 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.596396 ;
+    humanitarian:longitude 29.262685 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "EP NYAKABANDA"@fr .
+
+humanitarian:camp_CD61020103040SN a humanitarian:Camp ;
+    rdfs:label "HANGAR AFDI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 58 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Site Spontané"@fr ;
+    humanitarian:latitude -1.612666 ;
+    humanitarian:longitude 29.254858 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "HANGAR AFDI"@fr .
+
+humanitarian:camp_CD61020103041CC a humanitarian:Camp ;
+    rdfs:label "AFDI2"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 75 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61365 ;
+    humanitarian:longitude 29.25511 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "AFDI2"@fr .
+
+humanitarian:camp_CD61020103042CC a humanitarian:Camp ;
+    rdfs:label "BATIMENT KAGURI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 341 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.604584 ;
+    humanitarian:longitude 29.260431 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "BATIMENT KAGURI"@fr .
+
+humanitarian:camp_CD61020103044CC a humanitarian:Camp ;
+    rdfs:label "BUSHAGARA JANGA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 40 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61822 ;
+    humanitarian:longitude 29.25517 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "BUSHAGARA JANGA"@fr .
+
+humanitarian:camp_CD61020103045CC a humanitarian:Camp ;
+    rdfs:label "CHILDREN VOICE"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 115 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.583236 ;
+    humanitarian:longitude 29.271352 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "CHILDREN VOICE"@fr .
+
+humanitarian:camp_CD61020103046CC a humanitarian:Camp ;
+    rdfs:label "CENI KAGURI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 37 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.61219 ;
+    humanitarian:longitude 29.2573 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "CENI KAGURI"@fr .
+
+humanitarian:camp_CD61020105001SN a humanitarian:Camp ;
+    rdfs:label "MUDJA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 3433 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Site Spontané"@fr ;
+    humanitarian:latitude -1.612051 ;
+    humanitarian:longitude 29.216221 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MUDJA"@fr .
+
+humanitarian:camp_CD61020106001CC a humanitarian:Camp ;
+    rdfs:label "8eme CEPAC SINAI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 30 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.64435 ;
+    humanitarian:longitude 29.25248 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "8eme CEPAC SINAI"@fr .
+
+humanitarian:camp_CD61020106002CC a humanitarian:Camp ;
+    rdfs:label "BASSIN DU CONGO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 159 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.643664 ;
+    humanitarian:longitude 29.252756 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "BASSIN DU CONGO"@fr .
+
+humanitarian:camp_CD61020106003CC a humanitarian:Camp ;
+    rdfs:label "LA MAIN DE DIEU"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 427 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.645485 ;
+    humanitarian:longitude 29.25211 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "LA MAIN DE DIEU"@fr .
+
+humanitarian:camp_CD61020106004CC a humanitarian:Camp ;
+    rdfs:label "LA SOURCE"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 76 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.638638 ;
+    humanitarian:longitude 29.254797 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "LA SOURCE"@fr .
+
+humanitarian:camp_CD61020106005CC a humanitarian:Camp ;
+    rdfs:label "NURU YA ULIMWENGU"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 72 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.643776 ;
+    humanitarian:longitude 29.248736 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "NURU YA ULIMWENGU"@fr .
+
+humanitarian:camp_CD61020106006CC a humanitarian:Camp ;
+    rdfs:label "8ème CEPAC ALPHA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 85 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.64314 ;
+    humanitarian:longitude 29.24997 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "8ème CEPAC ALPHA"@fr .
+
+humanitarian:camp_CD61020106008CC a humanitarian:Camp ;
+    rdfs:label "SAINT JEAN BUHOMBO 2"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 83 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.62917 ;
+    humanitarian:longitude 29.25311 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "SAINT JEAN BUHOMBO 2"@fr .
+
+humanitarian:camp_CD61020106011CC a humanitarian:Camp ;
+    rdfs:label "LCDM BUHOMBO 2"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 39 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.63484 ;
+    humanitarian:longitude 29.24889 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "LCDM BUHOMBO 2"@fr .
+
+humanitarian:camp_CD61020106012CC a humanitarian:Camp ;
+    rdfs:label "MOSQUE MUNIGI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 1 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.63656 ;
+    humanitarian:longitude 29.24713 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MOSQUE MUNIGI"@fr .
+
+humanitarian:camp_CD61020106013CC a humanitarian:Camp ;
+    rdfs:label "MUGARA 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 710 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.620331 ;
+    humanitarian:longitude 29.254971 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MUGARA 1"@fr .
+
+humanitarian:camp_CD61020106014CC a humanitarian:Camp ;
+    rdfs:label "MUGARA 2"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 615 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.62022 ;
+    humanitarian:longitude 29.25496 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MUGARA 2"@fr .
+
+humanitarian:camp_CD61020106015CC a humanitarian:Camp ;
+    rdfs:label "MUGARA 3"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 534 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.62046 ;
+    humanitarian:longitude 29.25577 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MUGARA 3"@fr .
+
+humanitarian:camp_CD61020106018CC a humanitarian:Camp ;
+    rdfs:label "EP KINGARAME"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 207 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.628052 ;
+    humanitarian:longitude 29.254713 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "EP KINGARAME"@fr .
+
+humanitarian:camp_CD61020106019CC a humanitarian:Camp ;
+    rdfs:label "ERDSM / BUHOMBO 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 99 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.63054 ;
+    humanitarian:longitude 29.25332 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "ERDSM / BUHOMBO 1"@fr .
+
+humanitarian:camp_CD61020106020CC a humanitarian:Camp ;
+    rdfs:label "EGLISE GOSPEL"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 51 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.62934 ;
+    humanitarian:longitude 29.25213 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "EGLISE GOSPEL"@fr .
+
+humanitarian:camp_CD61020106021CC a humanitarian:Camp ;
+    rdfs:label "KAHEMBE TERRAIN"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 2367 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.636771 ;
+    humanitarian:longitude 29.249331 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "KAHEMBE TERRAIN"@fr .
+
+humanitarian:camp_CD61020106023CC a humanitarian:Camp ;
+    rdfs:label "ANGLICAN 2"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 275 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.619735 ;
+    humanitarian:longitude 29.253663 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "ANGLICAN 2"@fr .
+
+humanitarian:camp_CD61020106024CC a humanitarian:Camp ;
+    rdfs:label "AVE MARIA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 1 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.642034 ;
+    humanitarian:longitude 29.23563 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "AVE MARIA"@fr .
+
+humanitarian:camp_CD61020106025CC a humanitarian:Camp ;
+    rdfs:label "BETHLEEM BUHOMBO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 1 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.63173 ;
+    humanitarian:longitude 29.25161 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "BETHLEEM BUHOMBO"@fr .
+
+humanitarian:camp_CD61020106026CC a humanitarian:Camp ;
+    rdfs:label "BETHLEEM MUNIGI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 10 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.631045 ;
+    humanitarian:longitude 29.251656 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "BETHLEEM MUNIGI"@fr .
+
+humanitarian:camp_CD61020106027SN a humanitarian:Camp ;
+    rdfs:label "CAMP MUCHANGA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 573 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Site Spontané"@fr ;
+    humanitarian:latitude -1.625249 ;
+    humanitarian:longitude 29.253948 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "CAMP MUCHANGA"@fr .
+
+humanitarian:camp_CD61020106028CC a humanitarian:Camp ;
+    rdfs:label "CATHOLIC KIHERU SHIRIKA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 340 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.63493 ;
+    humanitarian:longitude 29.25174 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "CATHOLIC KIHERU SHIRIKA"@fr .
+
+humanitarian:camp_CD61020106030CC a humanitarian:Camp ;
+    rdfs:label "8e CEPAC BEROYA BUHOMBO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 1 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.63132 ;
+    humanitarian:longitude 29.25227 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "8e CEPAC BEROYA BUHOMBO"@fr .
+
+humanitarian:camp_CD61020106032CC a humanitarian:Camp ;
+    rdfs:label "8ème CEPAC MUNIGI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 2432 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.636372 ;
+    humanitarian:longitude 29.244987 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "8ème CEPAC MUNIGI"@fr .
+
+humanitarian:camp_CD61020106033CC a humanitarian:Camp ;
+    rdfs:label "ADVENTISTE BUHOMBO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 48 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "ADVENTISTE BUHOMBO"@fr .
+
+humanitarian:camp_CD61020106034CC a humanitarian:Camp ;
+    rdfs:label "ANGLICAN 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 122 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.62066 ;
+    humanitarian:longitude 29.25438 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "ANGLICAN 1"@fr .
+
+humanitarian:camp_CD61020107002SN a humanitarian:Camp ;
+    rdfs:label "RUSAYO 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 18674 ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:hasStatus "Site Spontané"@fr ;
+    humanitarian:latitude -1.60118 ;
+    humanitarian:longitude 29.16852 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "RUSAYO 1"@fr .
+
+humanitarian:camp_CD61030101005SN a humanitarian:Camp ;
+    rdfs:label "NZULO 1"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_UNHCR,
+        "UNHCR"@fr ;
+    humanitarian:hasCapacity 9122 ;
+    humanitarian:hasLocation humanitarian:location_Masisi ;
+    humanitarian:hasStatus "Site Spontané"@fr ;
+    humanitarian:latitude -1.614823 ;
+    humanitarian:longitude 29.09591 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "NZULO 1"@fr .
+
+humanitarian:camp_CD61030103003SP a humanitarian:Camp ;
+    rdfs:label "KIBABI/POLICE"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 322 ;
+    humanitarian:hasLocation humanitarian:location_Masisi ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.555794 ;
+    humanitarian:longitude 28.830086 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "KIBABI/POLICE"@fr .
+
+humanitarian:camp_CD61030201001SP a humanitarian:Camp ;
+    rdfs:label "BWERU"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 531 ;
+    humanitarian:hasLocation humanitarian:location_Masisi ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.096746 ;
+    humanitarian:longitude 28.946296 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "BWERU"@fr .
+
+humanitarian:camp_CD61030201002SP a humanitarian:Camp ;
+    rdfs:label "KITSO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 232 ;
+    humanitarian:hasLocation humanitarian:location_Masisi ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.126611 ;
+    humanitarian:longitude 28.833908 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "KITSO"@fr .
+
+humanitarian:camp_CD61030201005SP a humanitarian:Camp ;
+    rdfs:label "BIBWE"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 1612 ;
+    humanitarian:hasLocation humanitarian:location_Masisi ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.111075 ;
+    humanitarian:longitude 28.811277 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "BIBWE"@fr .
+
+humanitarian:camp_CD61030201007SP a humanitarian:Camp ;
+    rdfs:label "KIHIMBA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 1033 ;
+    humanitarian:hasLocation humanitarian:location_Masisi ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.166566 ;
+    humanitarian:longitude 28.989628 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "KIHIMBA"@fr .
+
+humanitarian:camp_CD61030202003SP a humanitarian:Camp ;
+    rdfs:label "MUHETO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 1076 ;
+    humanitarian:hasLocation humanitarian:location_Masisi ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.336 ;
+    humanitarian:longitude 28.95 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "MUHETO"@fr .
+
+humanitarian:camp_CD61030404001SP a humanitarian:Camp ;
+    rdfs:label "KATOYI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 406 ;
+    humanitarian:hasLocation humanitarian:location_Masisi ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.588 ;
+    humanitarian:longitude 28.774 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "KATOYI"@fr .
+
+humanitarian:camp_CD61030502001SP a humanitarian:Camp ;
+    rdfs:label "KATALE"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 1760 ;
+    humanitarian:hasLocation humanitarian:location_Masisi ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.43901 ;
+    humanitarian:longitude 28.87328 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "KATALE"@fr .
+
+humanitarian:camp_CD61110101002SP a humanitarian:Camp ;
+    rdfs:label "KIZIMBA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 1295 ;
+    humanitarian:hasLocation humanitarian:location_Rutshuru ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.248806 ;
+    humanitarian:longitude 29.094417 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "KIZIMBA"@fr .
+
+humanitarian:camp_CD61110104001SP a humanitarian:Camp ;
+    rdfs:label "RUSHASHI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 451 ;
+    humanitarian:hasLocation humanitarian:location_Rutshuru ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.12507 ;
+    humanitarian:longitude 29.20164 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "RUSHASHI"@fr .
+
+humanitarian:camp_CD61110104002SP a humanitarian:Camp ;
+    rdfs:label "KANABA"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 752 ;
+    humanitarian:hasLocation humanitarian:location_Rutshuru ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.22834 ;
+    humanitarian:longitude 29.22041 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "KANABA"@fr .
+
+humanitarian:camp_CD61110104003SP a humanitarian:Camp ;
+    rdfs:label "KABIZO"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 665 ;
+    humanitarian:hasLocation humanitarian:location_Rutshuru ;
+    humanitarian:hasStatus "Site Planifié"@fr ;
+    humanitarian:latitude -1.16402 ;
+    humanitarian:longitude 29.22758 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "KABIZO"@fr .
+
+humanitarian:camp_DRC08002010603SS a humanitarian:Camp ;
+    rdfs:label "ACOGENOKI"@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        "OIM"@fr ;
+    humanitarian:hasCapacity 667 ;
+    humanitarian:hasLocation humanitarian:location_Goma ;
+    humanitarian:hasStatus "Centre Collectif"@fr ;
+    humanitarian:latitude -1.666893 ;
+    humanitarian:longitude 29.179017 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "ACOGENOKI"@fr .
+
+humanitarian:camp_No_data a humanitarian:Camp ;
+    rdfs:label "ADVENTISTE "@fr,
+        "BIHITO"@fr,
+        "BUHIMBA"@fr,
+        "BUKOMBO"@fr,
+        "IBUGA "@fr,
+        "KAHE "@fr,
+        "KALEMBE-KALONGE "@fr,
+        "KALENGERA"@fr,
+        "KALINGA"@fr,
+        "KASHAKA "@fr,
+        "KASHUGA"@fr,
+        "KASOKO"@fr,
+        "KIHONDO"@fr,
+        "KIKUKU"@fr,
+        "KISOKO"@fr,
+        "KIVUYE "@fr,
+        "LUSHAGALA EXTENSION "@fr,
+        "LWASHI "@fr,
+        "MATER DEI "@fr,
+        "MPATI"@fr,
+        "MUNGOTE"@fr,
+        "MWESO"@fr,
+        "NYANGE "@fr,
+        "NYANZALE MARCHE "@fr,
+        "NZULO 2"@fr,
+        "REGO"@fr,
+        "RUSAYO 2"@fr,
+        "RUSAYO 2 EXTENSION "@fr ;
+    humanitarian:coordinatedBy humanitarian:organization_OIM,
+        humanitarian:organization_UNHCR,
+        "OIM"@fr,
+        "UNHCR"@fr ;
+    humanitarian:hasCapacity 387,
+        460,
+        625,
+        919,
+        960,
+        1015,
+        1063,
+        1117,
+        1302,
+        1304,
+        1609,
+        1800,
+        1905,
+        2103,
+        2280,
+        2871,
+        3123,
+        3351,
+        3567,
+        4311,
+        4918,
+        5198,
+        6605,
+        7105,
+        9154,
+        10976,
+        11663,
+        15455 ;
+    humanitarian:hasLocation humanitarian:location_Goma,
+        humanitarian:location_Masisi,
+        humanitarian:location_Nyiragongo,
+        humanitarian:location_Rutshuru,
+        humanitarian:location_Walikale ;
+    humanitarian:hasStatus "Site Planifié"@fr,
+        "Site Spontané"@fr ;
+    humanitarian:latitude -1.6322,
+        -1.60545,
+        -1.600233,
+        -1.407136,
+        -1.404786,
+        -1.402564,
+        -1.394042,
+        -1.392522,
+        -1.330367,
+        -1.256964,
+        -1.236019,
+        -1.149919,
+        -1.149217,
+        -1.129592,
+        -1.121642,
+        -1.085117,
+        -1.063897,
+        -1.05285,
+        -1.047244,
+        -1.024331,
+        -1.021064,
+        -0.971292 ;
+    humanitarian:longitude 28.772278,
+        28.811406,
+        28.823036,
+        28.824708,
+        28.853008,
+        28.860417,
+        28.904417,
+        28.904419,
+        28.90735,
+        28.942689,
+        28.987683,
+        28.995117,
+        29.038556,
+        29.056406,
+        29.057928,
+        29.070628,
+        29.115064,
+        29.117808,
+        29.123128,
+        29.12533,
+        29.1465,
+        29.172003 ;
+    humanitarian:managedBy humanitarian:organization_AIDES,
+        "AIDES"@fr ;
+    humanitarian:name "ADVENTISTE "@fr,
+        "BIHITO"@fr,
+        "BUHIMBA"@fr,
+        "BUKOMBO"@fr,
+        "IBUGA "@fr,
+        "KAHE "@fr,
+        "KALEMBE-KALONGE "@fr,
+        "KALENGERA"@fr,
+        "KALINGA"@fr,
+        "KASHAKA "@fr,
+        "KASHUGA"@fr,
+        "KASOKO"@fr,
+        "KIHONDO"@fr,
+        "KIKUKU"@fr,
+        "KISOKO"@fr,
+        "KIVUYE "@fr,
+        "LUSHAGALA EXTENSION "@fr,
+        "LWASHI "@fr,
+        "MATER DEI "@fr,
+        "MPATI"@fr,
+        "MUNGOTE"@fr,
+        "MWESO"@fr,
+        "NYANGE "@fr,
+        "NYANZALE MARCHE "@fr,
+        "NZULO 2"@fr,
+        "REGO"@fr,
+        "RUSAYO 2"@fr,
+        "RUSAYO 2 EXTENSION "@fr .
+
+humanitarian:health_area_BIBWE a humanitarian:HealthArea ;
+    rdfs:label "BIBWE"@fr ;
+    humanitarian:name "BIBWE"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Mweso .
+
+humanitarian:health_area_BIRAMBIZO a humanitarian:HealthArea ;
+    rdfs:label "BIRAMBIZO"@fr ;
+    humanitarian:name "BIRAMBIZO"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Birambizo .
+
+humanitarian:health_area_BISHUSHA a humanitarian:HealthArea ;
+    rdfs:label "BISHUSHA"@fr ;
+    humanitarian:name "BISHUSHA"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Birambizo .
+
+humanitarian:health_area_BUHIMBA a humanitarian:HealthArea ;
+    rdfs:label "BUHIMBA"@fr ;
+    humanitarian:name "BUHIMBA"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Goma .
+
+humanitarian:health_area_BUSUMBA a humanitarian:HealthArea ;
+    rdfs:label "BUSUMBA"@fr ;
+    humanitarian:name "BUSUMBA"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Mweso .
+
+humanitarian:health_area_BWERU a humanitarian:HealthArea ;
+    rdfs:label "BWERU"@fr ;
+    humanitarian:name "BWERU"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Mweso .
+
+humanitarian:health_area_Bukombo a humanitarian:HealthArea ;
+    rdfs:label "Bukombo"@fr ;
+    humanitarian:name "Bukombo"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Masisi .
+
+humanitarian:health_area_KABIZO a humanitarian:HealthArea ;
+    rdfs:label "KABIZO"@fr ;
+    humanitarian:name "KABIZO"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Birambizo .
+
+humanitarian:health_area_KANYARUCHINYA a humanitarian:HealthArea ;
+    rdfs:label "KANYARUCHINYA"@fr ;
+    humanitarian:name "KANYARUCHINYA"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Nyiragongo .
+
+humanitarian:health_area_KATALE a humanitarian:HealthArea ;
+    rdfs:label "KATALE"@fr ;
+    humanitarian:name "KATALE"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Masisi .
+
+humanitarian:health_area_KATOYI a humanitarian:HealthArea ;
+    rdfs:label "KATOYI"@fr ;
+    humanitarian:name "KATOYI"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Masisi .
+
+humanitarian:health_area_KESHERO a humanitarian:HealthArea ;
+    rdfs:label "KESHERO"@fr ;
+    humanitarian:name "KESHERO"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Goma .
+
+humanitarian:health_area_KIBABI a humanitarian:HealthArea ;
+    rdfs:label "KIBABI"@fr ;
+    humanitarian:name "KIBABI"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Masisi .
+
+humanitarian:health_area_Kalembe a humanitarian:HealthArea ;
+    rdfs:label "Kalembe"@fr ;
+    humanitarian:name "Kalembe"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Walikale .
+
+humanitarian:health_area_Kalinga a humanitarian:HealthArea ;
+    rdfs:label "Kalinga"@fr ;
+    humanitarian:name "Kalinga"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Masisi .
+
+humanitarian:health_area_Kashuga a humanitarian:HealthArea ;
+    rdfs:label "Kashuga"@fr ;
+    humanitarian:name "Kashuga"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Birambizo,
+        humanitarian:health_zone_Masisi .
+
+humanitarian:health_area_MUDJA a humanitarian:HealthArea ;
+    rdfs:label "MUDJA"@fr ;
+    humanitarian:name "MUDJA"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Nyiragongo .
+
+humanitarian:health_area_MUGUNGA a humanitarian:HealthArea ;
+    rdfs:label "MUGUNGA"@fr ;
+    humanitarian:name "MUGUNGA"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Goma,
+        humanitarian:health_zone_Karisimbi .
+
+humanitarian:health_area_MUHETO a humanitarian:HealthArea ;
+    rdfs:label "MUHETO"@fr ;
+    humanitarian:name "MUHETO"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Masisi .
+
+humanitarian:health_area_MUNIGI a humanitarian:HealthArea ;
+    rdfs:label "MUNIGI"@fr ;
+    humanitarian:name "MUNIGI"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Nyiragongo .
+
+humanitarian:health_area_Masisi a humanitarian:HealthArea ;
+    rdfs:label "Masisi"@fr ;
+    humanitarian:name "Masisi"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Masisi .
+
+humanitarian:health_area_Mpati a humanitarian:HealthArea ;
+    rdfs:label "Mpati"@fr ;
+    humanitarian:name "Mpati"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Mweso .
+
+humanitarian:health_area_Mugunga a humanitarian:HealthArea ;
+    rdfs:label "Mugunga"@fr ;
+    humanitarian:name "Mugunga"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Karisimbi .
+
+humanitarian:health_area_Mugunga_ a humanitarian:HealthArea ;
+    rdfs:label "Mugunga "@fr ;
+    humanitarian:name "Mugunga "@fr ;
+    humanitarian:partOf humanitarian:health_zone_Karisimbi .
+
+humanitarian:health_area_Mweso a humanitarian:HealthArea ;
+    rdfs:label "Mweso"@fr ;
+    humanitarian:name "Mweso"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Mweso .
+
+humanitarian:health_area_MÉTHODISTE a humanitarian:HealthArea ;
+    rdfs:label "MÉTHODISTE"@fr ;
+    humanitarian:name "MÉTHODISTE"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Karisimbi .
+
+humanitarian:health_area_No_Data a humanitarian:HealthArea ;
+    rdfs:label "No Data"@fr ;
+    humanitarian:name "No Data"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Mweso .
+
+humanitarian:health_area_Nyanzale a humanitarian:HealthArea ;
+    rdfs:label "Nyanzale"@fr ;
+    humanitarian:name "Nyanzale"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Kibirizi .
+
+humanitarian:health_area_Nzulo a humanitarian:HealthArea ;
+    rdfs:label "Nzulo"@fr ;
+    humanitarian:name "Nzulo"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Kirotshe .
+
+humanitarian:health_area_RUSAYO a humanitarian:HealthArea ;
+    rdfs:label "RUSAYO"@fr ;
+    humanitarian:name "RUSAYO"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Nyiragongo .
+
+humanitarian:health_area_Singa a humanitarian:HealthArea ;
+    rdfs:label "Singa"@fr ;
+    humanitarian:name "Singa"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Kibirizi .
+
+humanitarian:health_area_St_benoit a humanitarian:HealthArea ;
+    rdfs:label "St benoit"@fr ;
+    humanitarian:name "St benoit"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Birambizo,
+        humanitarian:health_zone_Mweso .
+
+humanitarian:health_area_mpati a humanitarian:HealthArea ;
+    rdfs:label "mpati"@fr ;
+    humanitarian:name "mpati"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Mweso .
+
+humanitarian:health_area_nzulo a humanitarian:HealthArea ;
+    rdfs:label "nzulo"@fr ;
+    humanitarian:name "nzulo"@fr ;
+    humanitarian:partOf humanitarian:health_zone_Kirotshe .
+
+humanitarian:health_zone_Walikale a humanitarian:HealthFacility ;
+    rdfs:label "Walikale"@fr ;
+    humanitarian:hasLocation humanitarian:location_Walikale ;
+    humanitarian:name "Walikale"@fr .
+
+humanitarian:health_zone_Kibirizi a humanitarian:HealthFacility ;
+    rdfs:label "Kibirizi"@fr ;
+    humanitarian:hasLocation humanitarian:location_Rutshuru ;
+    humanitarian:name "Kibirizi"@fr .
+
+humanitarian:health_zone_Kirotshe a humanitarian:HealthFacility ;
+    rdfs:label "Kirotshe"@fr ;
+    humanitarian:hasLocation humanitarian:location_Masisi ;
+    humanitarian:name "Kirotshe"@fr .
+
+humanitarian:location_Walikale a humanitarian:Location ;
+    rdfs:label "Walikale"@fr .
+
+humanitarian:health_zone_Goma a humanitarian:HealthFacility ;
+    rdfs:label "Goma"@fr ;
+    humanitarian:hasLocation humanitarian:location_Goma ;
+    humanitarian:name "Goma"@fr .
+
+humanitarian:organization_UNHCR a humanitarian:NGO ;
+    rdfs:label "UNHCR"@fr ;
+    humanitarian:name "UNHCR"@fr .
+
+humanitarian:health_zone_Karisimbi a humanitarian:HealthFacility ;
+    rdfs:label "Karisimbi"@fr ;
+    humanitarian:hasLocation humanitarian:location_Goma ;
+    humanitarian:name "Karisimbi"@fr .
+
+humanitarian:health_zone_Nyiragongo a humanitarian:HealthFacility ;
+    rdfs:label "Nyiragongo"@fr ;
+    humanitarian:hasLocation humanitarian:location_Nyiragongo ;
+    humanitarian:name "Nyiragongo"@fr .
+
+humanitarian:health_zone_Birambizo a humanitarian:HealthFacility ;
+    rdfs:label "Birambizo"@fr ;
+    humanitarian:hasLocation humanitarian:location_Rutshuru ;
+    humanitarian:name "Birambizo"@fr .
+
+humanitarian:location_Rutshuru a humanitarian:Location ;
+    rdfs:label "Rutshuru"@fr .
+
+humanitarian:health_zone_Masisi a humanitarian:HealthFacility ;
+    rdfs:label "Masisi"@fr ;
+    humanitarian:hasLocation humanitarian:location_Masisi ;
+    humanitarian:name "Masisi"@fr .
+
+humanitarian:health_zone_Mweso a humanitarian:HealthFacility ;
+    rdfs:label "Mweso"@fr ;
+    humanitarian:hasLocation humanitarian:location_Masisi ;
+    humanitarian:name "Mweso"@fr .
+
+humanitarian:location_Goma a humanitarian:Location ;
+    rdfs:label "Goma"@fr .
+
+humanitarian:location_Masisi a humanitarian:Location ;
+    rdfs:label "Masisi"@fr .
+
+humanitarian:location_Nyiragongo a humanitarian:Location ;
+    rdfs:label "Nyiragongo"@fr .
+
+humanitarian:organization_OIM a humanitarian:NGO ;
+    rdfs:label "OIM"@fr ;
+    humanitarian:name "OIM"@fr .
+
+humanitarian:organization_AIDES a humanitarian:NGO ;
+    rdfs:label "AIDES"@fr ;
+    humanitarian:name "AIDES"@fr .
+
