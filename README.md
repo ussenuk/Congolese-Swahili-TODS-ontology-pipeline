@@ -1,6 +1,6 @@
 # Humanitarian Dialogue System with RDF Ontologies
 
-A task-oriented dialogue system in Congolese Swahili for humanitarian assistance in North Kivu displacement camps. This system integrates Rasa NLU with RDF ontologies to provide semantic query capabilities.
+A task-oriented dialogue system in Congolese Swahili for humanitarian assistance in displacement camps. This system integrates Rasa NLU with RDF ontologies to provide semantic query capabilities.
 
 ## Project Overview
 
