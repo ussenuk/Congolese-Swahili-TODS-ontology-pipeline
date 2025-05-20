@@ -61,16 +61,19 @@ cd apache-jena-fuseki-4.8.0
 ./fuseki-server --mem /humanitarian
 ```
 
+Or use the provided installation script:
+
+```bash
+bash scripts/install_and_setup_fuseki.sh
+```
+
 ### 3. Load RDF Data
 
 Convert the DTM DRC - BA North Kivu Excel data to RDF format:
 
 ```bash
-# Download the Excel file
-wget -O nord_kivu_data.xlsx "https://data.humdata.org/dataset/5fc24740-a6f4-49b3-9187-220580828e9b/resource/bb5d4ef0-bbaa-4403-bad0-a4dad80267e2/download/oim_rdc_dtm_mt_nord-kivu_2024_2_public_hdx.xlsx"
-
 # Convert Excel to RDF
-python scripts/excel_to_rdf.py nord_kivu_data.xlsx data/humanitarian_data.ttl
+python scripts/excel_to_rdf.py oim_rdc_dtm_mt_nord-kivu_2024_2_public_hdx.xlsx data/humanitarian_data.ttl
 
 # Load initial ontology
 curl -X POST --data-binary @ontology/humanitarian_ontology.ttl \
@@ -91,16 +94,43 @@ Update the SPARQL endpoint in `actions/sparql_actions.py` if needed:
 SPARQL_ENDPOINT = "http://localhost:3030/humanitarian/query"
 ```
 
-### 5. Start Rasa Action Server
+### 5. Train the Rasa Model
+
+Before you can run the bot, you need to train the model:
+
+```bash
+# Train the Rasa model with the default config
+rasa train
+
+# Alternatively, use a specific config file
+rasa train --config config_1.yml
+```
+
+### 6. Start Rasa Action Server
 
 ```bash
 rasa run actions
 ```
 
-### 6. Start Rasa Server
+### 7. Start Rasa Server
 
 ```bash
-rasa run --enable-api --cors "*"
+rasa run --enable-api --cors "*" #(optional)
+```
+
+### 8. Test with Rasa Shell
+
+For interactive testing of the dialogue system:
+
+```bash
+# Basic shell for testing
+rasa shell
+
+# Debug mode with NLU details
+rasa shell --debug
+
+# Test with a specific model
+rasa shell -m models/20240515-123456.tar.gz
 ```
 
 ## Usage Examples
@@ -144,22 +174,45 @@ WHERE {
 }
 ```
 
+## Evaluation
+
+For detailed information about how to evaluate the system, please refer to [EVALUATION_README.md](EVALUATION_README.md). This document describes the evaluation framework, metrics, and provides instructions for:
+
+- Collecting and annotating dialogues
+- Running the evaluation scripts
+- Visualizing performance results
+- Calculating task success metrics
+
+The evaluation framework includes tools to measure task completion rate, dialogue efficiency, and response accuracy.
+
 ## Project Structure
 
 ```
 .
-├── actions/                  # Rasa custom actions
-│   ├── actions.py            # Standard actions
-│   └── sparql_actions.py     # SPARQL query actions
-├── data/                     # Training data, RDF data
-├── ontology/                 # RDF ontology definitions  
-│   └── humanitarian_ontology.ttl  # Main ontology file
-├── scripts/                  # Utility scripts
-│   └── excel_to_rdf.py       # Excel to RDF converter
-├── config.yml                # Rasa configuration
-├── domain.yml                # Domain definition
-├── endpoints.yml             # Action server config
-└── README.md                 # This documentation
+├── actions/                      # Rasa custom actions
+│   ├── actions.py                # Standard actions
+│   ├── ontology_population.py    # Ontology data loading
+│   ├── preprocessing.py          # Text preprocessing
+│   ├── query_builder.py          # SPARQL query construction
+│   └── sparql_actions.py         # SPARQL query execution
+├── data/                         # Training data, RDF data
+│   ├── humanitarian_data.ttl     # RDF data
+│   ├── nlu_rdf.yml               # NLU training data for RDF
+│   ├── rules_rdf.yml             # Rules for RDF responses
+│   └── train/                    # Training data split
+├── ontology/                     # RDF ontology definitions  
+│   └── humanitarian_ontology.ttl # Main ontology file
+├── scripts/                      # Utility scripts
+│   ├── excel_to_rdf.py           # Excel to RDF converter
+│   └── install_and_setup_fuseki.sh # Fuseki setup script
+├── tests/                        # Test configuration
+├── annotated_dialogues.json      # Evaluation dialogue data
+├── config.yml                    # Rasa configuration
+├── domain.yml                    # Domain definition
+├── EVALUATION_README.md          # Evaluation documentation
+├── raw_dialogues.txt             # User-bot conversation samples
+├── requirements.txt              # Python dependencies
+└── README.md                     # This documentation
 ```
 
 ## Contributing
